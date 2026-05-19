@@ -22,6 +22,7 @@ import html as html_lib
 import json
 import os
 import re
+import urllib.parse
 
 # ---------- config ----------------------------------------------------------
 
@@ -259,9 +260,23 @@ def render_post(post, all_posts):
     folder  = post['folder']
     title   = post['title']
     title_e = html_lib.escape(title)
-    cat     = post['categories'][0] if post['categories'] else ''
+    cats    = post['categories']
+    cat     = cats[0] if cats else ''
     cat_e   = html_lib.escape(cat)
     date_e  = html_lib.escape(post['date'])
+
+    # Category tag pills — each links to the filtered homepage
+    tag_links = ''.join(
+        f'<a class="post-tag" href="../../index.html?cat={urllib.parse.quote_plus(c)}">'
+        f'{html_lib.escape(c)}</a>'
+        for c in cats
+    )
+    tags_html = f'  <div class="post-tags">{tag_links}</div>' if tag_links else ''
+
+    # Hero category as a clickable link
+    cat_href  = f'../../index.html?cat={urllib.parse.quote_plus(cat)}' if cat else ''
+    cat_label = (f'<a class="post-hero-category" href="{cat_href}">{cat_e}</a>'
+                 if cat_href else f'<span class="post-hero-category">{cat_e}</span>')
 
     blocks = post.get('blocks', [])
 
@@ -399,11 +414,13 @@ def render_post(post, all_posts):
     {hero_pic}
     <div class="post-hero-overlay"></div>
     <div class="post-hero-body">
-      <p class="post-hero-category">{cat_e}</p>
+      {cat_label}
       <h1 class="post-hero-title">{title_e}</h1>
       <p class="post-hero-date">{date_e}</p>
     </div>
   </div>
+
+{tags_html}
 
   <main class="post-content">
 
