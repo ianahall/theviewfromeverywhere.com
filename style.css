@@ -167,9 +167,9 @@ body.lb-open { overflow: hidden; }
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0,0,0,0.55) 0%,
-    rgba(0,0,0,0.06) 40%,
-    rgba(0,0,0,0)    62%
+    rgba(0,0,0,0.72) 0%,
+    rgba(0,0,0,0.18) 45%,
+    rgba(0,0,0,0)    68%
   );
 }
 .post-hero-body {
@@ -183,11 +183,12 @@ body.lb-open { overflow: hidden; }
 }
 .post-hero-category {
   font-family: 'Lora', Georgia, serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.60);
+  color: rgba(255,255,255,0.85);
   margin-bottom: 10px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
 }
 .post-hero-title {
   font-family: 'Newsreader', Georgia, serif;
@@ -197,15 +198,16 @@ body.lb-open { overflow: hidden; }
   letter-spacing: 0;
   line-height: 1.03;
   color: #fff;
-  text-shadow: 0 2px 18px rgba(0,0,0,0.28);
+  text-shadow: 0 2px 24px rgba(0,0,0,0.55);
 }
 .post-hero-date {
   font-family: 'Lora', Georgia, serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.42);
+  color: rgba(255,255,255,0.75);
   margin-top: 14px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
 }
 
 /* Post text blocks */
@@ -340,7 +342,7 @@ body.lb-open { overflow: hidden; }
 .related-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0) 55%);
+  background: linear-gradient(to top, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0) 60%);
   pointer-events: none;
 }
 .related-card-body {
@@ -348,25 +350,27 @@ body.lb-open { overflow: hidden; }
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 28px 14px 14px;
+  padding: 32px 16px 16px;
   text-align: center;
   color: #fff;
 }
 .related-card-category {
   font-family: 'Lora', Georgia, serif;
-  font-size: 8px;
+  font-size: 9px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.55);
-  margin-bottom: 4px;
+  color: rgba(255,255,255,0.80);
+  margin-bottom: 5px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
 }
 .related-card-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 17px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: 400;
   letter-spacing: 0;
   color: #fff;
+  text-shadow: 0 1px 10px rgba(0,0,0,0.5);
 }
 
 /* ============================================================
