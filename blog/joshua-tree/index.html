@@ -10,9 +10,9 @@
   <meta property="og:description" content="Joshua Tree, yeah you know me!">
   <meta property="og:type"        content="article">
   <meta property="og:url"         content="https://www.theviewfromeverywhere.com/blog/joshua-tree/">
-  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/joshua-tree.jpg">
+  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/web/joshua-tree.jpg">
   <meta name="twitter:card"       content="summary_large_image">
-  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/joshua-tree.jpg">
+  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/joshua-tree.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -21,7 +21,10 @@
 <body>
 
   <header class="site-header">
-    <nav aria-label="Primary">
+    <div class="site-title">
+      <a href="../../index.html">The View from Everywhere</a>
+    </div>
+    <nav class="site-nav-primary" aria-label="Primary">
       <a href="../../index.html?cat=all" data-filter="all">All</a>
       <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
       <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
@@ -29,10 +32,7 @@
       <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <div class="site-title">
-      <a href="../../index.html">The View from Everywhere</a>
-    </div>
-    <nav aria-label="Secondary">
+    <nav class="site-nav-secondary" aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
       <a href="../../our-story/index.html">About</a>
     </nav>
@@ -48,18 +48,18 @@
     <a class="mobile-ig" href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">IG</a>
   </div>
   <nav id="mobile-nav" class="mobile-nav" hidden>
-    <a href="../../index.html?cat=all">All</a>
-    <a href="../../index.html?cat=United+States">USA</a>
-    <a href="../../index.html?cat=Parks">Parks</a>
-    <a href="../../index.html?cat=Europe">Europe</a>
-    <a href="../../index.html?cat=Africa">Africa</a>
-    <a href="../../index.html?cat=Asia">Asia</a>
+    <a href="../../index.html?cat=all" data-filter="all">All</a>
+    <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
+    <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
+    <a href="../../index.html?cat=Europe" data-filter="Europe">Europe</a>
+    <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
+    <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="../../our-story/index.html">About</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
   <div class="post-hero">
-    <picture><source type="image/webp" srcset="../../images/web/joshua-tree.webp"><img src="../../images/web/joshua-tree.jpg" alt="Joshua Tree" loading="eager" decoding="async"></picture>
+    <picture><source type="image/webp" srcset="../../images/web/joshua-tree-sm.webp 480w, ../../images/web/joshua-tree.webp 900w" sizes="100vw"><img srcset="../../images/web/joshua-tree-sm.jpg 480w, ../../images/web/joshua-tree.jpg 900w" sizes="100vw" src="../../images/web/joshua-tree.jpg" alt="Joshua Tree" loading="eager" decoding="async"></picture>
     <div class="post-hero-overlay"></div>
     <div class="post-hero-body">
       <p class="post-hero-category">United States</p>
@@ -75,215 +75,215 @@
   <div class="post-gallery" id="gallery">
 
     <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
-      <picture><source type="image/webp" srcset="images/web/000013420017.webp"><img src="images/web/000013420017.jpg" alt="Joshua Tree — photo 1" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013420017-sm.webp 800w, images/web/000013420017.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013420017-sm.jpg 800w, images/web/000013420017.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013420017.jpg" alt="Joshua Tree — photo 1" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
-      <picture><source type="image/webp" srcset="images/web/000013420016.webp"><img src="images/web/000013420016.jpg" alt="Joshua Tree — photo 2" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013420016-sm.webp 800w, images/web/000013420016.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013420016-sm.jpg 800w, images/web/000013420016.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013420016.jpg" alt="Joshua Tree — photo 2" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
-      <picture><source type="image/webp" srcset="images/web/000013480024.webp"><img src="images/web/000013480024.jpg" alt="Joshua Tree — photo 3" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013480024-sm.webp 800w, images/web/000013480024.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013480024-sm.jpg 800w, images/web/000013480024.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013480024.jpg" alt="Joshua Tree — photo 3" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
-      <picture><source type="image/webp" srcset="images/web/IMG_4890.webp"><img src="images/web/IMG_4890.jpg" alt="Joshua Tree — photo 4" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4890-sm.webp 800w, images/web/IMG_4890.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4890-sm.jpg 800w, images/web/IMG_4890.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4890.jpg" alt="Joshua Tree — photo 4" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
-      <picture><source type="image/webp" srcset="images/web/IMG_4894.webp"><img src="images/web/IMG_4894.jpg" alt="Joshua Tree — photo 5" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4894-sm.webp 800w, images/web/IMG_4894.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4894-sm.jpg 800w, images/web/IMG_4894.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4894.jpg" alt="Joshua Tree — photo 5" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
-      <picture><source type="image/webp" srcset="images/web/DSCF9893.webp"><img src="images/web/DSCF9893.jpg" alt="Joshua Tree — photo 6" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF9893-sm.webp 800w, images/web/DSCF9893.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF9893-sm.jpg 800w, images/web/DSCF9893.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF9893.jpg" alt="Joshua Tree — photo 6" width="1600" height="1062" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
-      <picture><source type="image/webp" srcset="images/web/DSCF9896.webp"><img src="images/web/DSCF9896.jpg" alt="Joshua Tree — photo 7" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF9896-sm.webp 800w, images/web/DSCF9896.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF9896-sm.jpg 800w, images/web/DSCF9896.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF9896.jpg" alt="Joshua Tree — photo 7" width="1600" height="1062" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
-      <picture><source type="image/webp" srcset="images/web/000013420021.webp"><img src="images/web/000013420021.jpg" alt="Joshua Tree — photo 8" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013420021-sm.webp 800w, images/web/000013420021.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013420021-sm.jpg 800w, images/web/000013420021.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013420021.jpg" alt="Joshua Tree — photo 8" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
-      <picture><source type="image/webp" srcset="images/web/IMG_4934.webp"><img src="images/web/IMG_4934.jpg" alt="Joshua Tree — photo 9" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4934-sm.webp 800w, images/web/IMG_4934.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4934-sm.jpg 800w, images/web/IMG_4934.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4934.jpg" alt="Joshua Tree — photo 9" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
-      <picture><source type="image/webp" srcset="images/web/IMG_4939.webp"><img src="images/web/IMG_4939.jpg" alt="Joshua Tree — photo 10" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4939-sm.webp 800w, images/web/IMG_4939.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4939-sm.jpg 800w, images/web/IMG_4939.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4939.jpg" alt="Joshua Tree — photo 10" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
-      <picture><source type="image/webp" srcset="images/web/IMG_4946.webp"><img src="images/web/IMG_4946.jpg" alt="Joshua Tree — photo 11" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4946-sm.webp 800w, images/web/IMG_4946.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4946-sm.jpg 800w, images/web/IMG_4946.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4946.jpg" alt="Joshua Tree — photo 11" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
-      <picture><source type="image/webp" srcset="images/web/IMG_4836.webp"><img src="images/web/IMG_4836.jpg" alt="Joshua Tree — photo 12" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4836-sm.webp 800w, images/web/IMG_4836.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4836-sm.jpg 800w, images/web/IMG_4836.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4836.jpg" alt="Joshua Tree — photo 12" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
-      <picture><source type="image/webp" srcset="images/web/IMG_4929.webp"><img src="images/web/IMG_4929.jpg" alt="Joshua Tree — photo 13" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4929-sm.webp 800w, images/web/IMG_4929.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4929-sm.jpg 800w, images/web/IMG_4929.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4929.jpg" alt="Joshua Tree — photo 13" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
-      <picture><source type="image/webp" srcset="images/web/000013420019.webp"><img src="images/web/000013420019.jpg" alt="Joshua Tree — photo 14" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013420019-sm.webp 800w, images/web/000013420019.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013420019-sm.jpg 800w, images/web/000013420019.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013420019.jpg" alt="Joshua Tree — photo 14" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
-      <picture><source type="image/webp" srcset="images/web/IMG_6401.webp"><img src="images/web/IMG_6401.jpg" alt="Joshua Tree — photo 15" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_6401-sm.webp 800w, images/web/IMG_6401.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_6401-sm.jpg 800w, images/web/IMG_6401.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_6401.jpg" alt="Joshua Tree — photo 15" width="1600" height="1201" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="15" aria-label="Open photo 16">
-      <picture><source type="image/webp" srcset="images/web/DSCF9938.webp"><img src="images/web/DSCF9938.jpg" alt="Joshua Tree — photo 16" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF9938-sm.webp 800w, images/web/DSCF9938.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF9938-sm.jpg 800w, images/web/DSCF9938.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF9938.jpg" alt="Joshua Tree — photo 16" width="1063" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="16" aria-label="Open photo 17">
-      <picture><source type="image/webp" srcset="images/web/DSCF9940.webp"><img src="images/web/DSCF9940.jpg" alt="Joshua Tree — photo 17" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF9940-sm.webp 800w, images/web/DSCF9940.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF9940-sm.jpg 800w, images/web/DSCF9940.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF9940.jpg" alt="Joshua Tree — photo 17" width="1063" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="17" aria-label="Open photo 18">
-      <picture><source type="image/webp" srcset="images/web/DSCF9939.webp"><img src="images/web/DSCF9939.jpg" alt="Joshua Tree — photo 18" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF9939-sm.webp 800w, images/web/DSCF9939.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF9939-sm.jpg 800w, images/web/DSCF9939.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF9939.jpg" alt="Joshua Tree — photo 18" width="1063" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="18" aria-label="Open photo 19">
-      <picture><source type="image/webp" srcset="images/web/IMG_4910.webp"><img src="images/web/IMG_4910.jpg" alt="Joshua Tree — photo 19" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4910-sm.webp 800w, images/web/IMG_4910.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4910-sm.jpg 800w, images/web/IMG_4910.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4910.jpg" alt="Joshua Tree — photo 19" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="19" aria-label="Open photo 20">
-      <picture><source type="image/webp" srcset="images/web/IMG_4930.webp"><img src="images/web/IMG_4930.jpg" alt="Joshua Tree — photo 20" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4930-sm.webp 800w, images/web/IMG_4930.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4930-sm.jpg 800w, images/web/IMG_4930.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4930.jpg" alt="Joshua Tree — photo 20" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="20" aria-label="Open photo 21">
-      <picture><source type="image/webp" srcset="images/web/DSCF9915.webp"><img src="images/web/DSCF9915.jpg" alt="Joshua Tree — photo 21" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF9915-sm.webp 800w, images/web/DSCF9915.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF9915-sm.jpg 800w, images/web/DSCF9915.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF9915.jpg" alt="Joshua Tree — photo 21" width="1600" height="1062" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="21" aria-label="Open photo 22">
-      <picture><source type="image/webp" srcset="images/web/IMG_4838.webp"><img src="images/web/IMG_4838.jpg" alt="Joshua Tree — photo 22" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4838-sm.webp 800w, images/web/IMG_4838.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4838-sm.jpg 800w, images/web/IMG_4838.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4838.jpg" alt="Joshua Tree — photo 22" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="22" aria-label="Open photo 23">
-      <picture><source type="image/webp" srcset="images/web/IMG_4842.webp"><img src="images/web/IMG_4842.jpg" alt="Joshua Tree — photo 23" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4842-sm.webp 800w, images/web/IMG_4842.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4842-sm.jpg 800w, images/web/IMG_4842.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4842.jpg" alt="Joshua Tree — photo 23" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="23" aria-label="Open photo 24">
-      <picture><source type="image/webp" srcset="images/web/IMG_5492.webp"><img src="images/web/IMG_5492.jpg" alt="Joshua Tree — photo 24" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5492-sm.webp 800w, images/web/IMG_5492.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5492-sm.jpg 800w, images/web/IMG_5492.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5492.jpg" alt="Joshua Tree — photo 24" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="24" aria-label="Open photo 25">
-      <picture><source type="image/webp" srcset="images/web/IMG_5491.webp"><img src="images/web/IMG_5491.jpg" alt="Joshua Tree — photo 25" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5491-sm.webp 800w, images/web/IMG_5491.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5491-sm.jpg 800w, images/web/IMG_5491.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5491.jpg" alt="Joshua Tree — photo 25" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="25" aria-label="Open photo 26">
-      <picture><source type="image/webp" srcset="images/web/IMG_5493.webp"><img src="images/web/IMG_5493.jpg" alt="Joshua Tree — photo 26" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5493-sm.webp 800w, images/web/IMG_5493.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5493-sm.jpg 800w, images/web/IMG_5493.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5493.jpg" alt="Joshua Tree — photo 26" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="26" aria-label="Open photo 27">
-      <picture><source type="image/webp" srcset="images/web/000013480033.webp"><img src="images/web/000013480033.jpg" alt="Joshua Tree — photo 27" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013480033-sm.webp 800w, images/web/000013480033.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013480033-sm.jpg 800w, images/web/000013480033.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013480033.jpg" alt="Joshua Tree — photo 27" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="27" aria-label="Open photo 28">
-      <picture><source type="image/webp" srcset="images/web/000013480032.webp"><img src="images/web/000013480032.jpg" alt="Joshua Tree — photo 28" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013480032-sm.webp 800w, images/web/000013480032.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013480032-sm.jpg 800w, images/web/000013480032.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013480032.jpg" alt="Joshua Tree — photo 28" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="28" aria-label="Open photo 29">
-      <picture><source type="image/webp" srcset="images/web/IMG_5464.webp"><img src="images/web/IMG_5464.jpg" alt="Joshua Tree — photo 29" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5464-sm.webp 800w, images/web/IMG_5464.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5464-sm.jpg 800w, images/web/IMG_5464.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5464.jpg" alt="Joshua Tree — photo 29" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="29" aria-label="Open photo 30">
-      <picture><source type="image/webp" srcset="images/web/IMG_5423.webp"><img src="images/web/IMG_5423.jpg" alt="Joshua Tree — photo 30" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5423-sm.webp 800w, images/web/IMG_5423.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5423-sm.jpg 800w, images/web/IMG_5423.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5423.jpg" alt="Joshua Tree — photo 30" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="30" aria-label="Open photo 31">
-      <picture><source type="image/webp" srcset="images/web/IMG_5426.webp"><img src="images/web/IMG_5426.jpg" alt="Joshua Tree — photo 31" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5426-sm.webp 800w, images/web/IMG_5426.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5426-sm.jpg 800w, images/web/IMG_5426.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5426.jpg" alt="Joshua Tree — photo 31" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="31" aria-label="Open photo 32">
-      <picture><source type="image/webp" srcset="images/web/IMG_4993.webp"><img src="images/web/IMG_4993.jpg" alt="Joshua Tree — photo 32" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4993-sm.webp 800w, images/web/IMG_4993.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4993-sm.jpg 800w, images/web/IMG_4993.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4993.jpg" alt="Joshua Tree — photo 32" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="32" aria-label="Open photo 33">
-      <picture><source type="image/webp" srcset="images/web/IMG_5528.webp"><img src="images/web/IMG_5528.jpg" alt="Joshua Tree — photo 33" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5528-sm.webp 800w, images/web/IMG_5528.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5528-sm.jpg 800w, images/web/IMG_5528.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5528.jpg" alt="Joshua Tree — photo 33" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="33" aria-label="Open photo 34">
-      <picture><source type="image/webp" srcset="images/web/IMG_5073.webp"><img src="images/web/IMG_5073.jpg" alt="Joshua Tree — photo 34" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5073-sm.webp 800w, images/web/IMG_5073.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5073-sm.jpg 800w, images/web/IMG_5073.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5073.jpg" alt="Joshua Tree — photo 34" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="34" aria-label="Open photo 35">
-      <picture><source type="image/webp" srcset="images/web/IMG_4976.webp"><img src="images/web/IMG_4976.jpg" alt="Joshua Tree — photo 35" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4976-sm.webp 800w, images/web/IMG_4976.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4976-sm.jpg 800w, images/web/IMG_4976.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4976.jpg" alt="Joshua Tree — photo 35" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="35" aria-label="Open photo 36">
-      <picture><source type="image/webp" srcset="images/web/IMG_5532.webp"><img src="images/web/IMG_5532.jpg" alt="Joshua Tree — photo 36" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5532-sm.webp 800w, images/web/IMG_5532.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5532-sm.jpg 800w, images/web/IMG_5532.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5532.jpg" alt="Joshua Tree — photo 36" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="36" aria-label="Open photo 37">
-      <picture><source type="image/webp" srcset="images/web/IMG_5161.webp"><img src="images/web/IMG_5161.jpg" alt="Joshua Tree — photo 37" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5161-sm.webp 800w, images/web/IMG_5161.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5161-sm.jpg 800w, images/web/IMG_5161.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5161.jpg" alt="Joshua Tree — photo 37" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="37" aria-label="Open photo 38">
-      <picture><source type="image/webp" srcset="images/web/IMG_4812.webp"><img src="images/web/IMG_4812.jpg" alt="Joshua Tree — photo 38" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4812-sm.webp 800w, images/web/IMG_4812.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4812-sm.jpg 800w, images/web/IMG_4812.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4812.jpg" alt="Joshua Tree — photo 38" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="38" aria-label="Open photo 39">
-      <picture><source type="image/webp" srcset="images/web/DSCF0012.webp"><img src="images/web/DSCF0012.jpg" alt="Joshua Tree — photo 39" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF0012-sm.webp 800w, images/web/DSCF0012.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF0012-sm.jpg 800w, images/web/DSCF0012.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF0012.jpg" alt="Joshua Tree — photo 39" width="1600" height="1062" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="39" aria-label="Open photo 40">
-      <picture><source type="image/webp" srcset="images/web/DSCF0029.webp"><img src="images/web/DSCF0029.jpg" alt="Joshua Tree — photo 40" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF0029-sm.webp 800w, images/web/DSCF0029.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF0029-sm.jpg 800w, images/web/DSCF0029.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF0029.jpg" alt="Joshua Tree — photo 40" width="1600" height="1062" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="40" aria-label="Open photo 41">
-      <picture><source type="image/webp" srcset="images/web/DSCF0035.webp"><img src="images/web/DSCF0035.jpg" alt="Joshua Tree — photo 41" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF0035-sm.webp 800w, images/web/DSCF0035.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF0035-sm.jpg 800w, images/web/DSCF0035.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF0035.jpg" alt="Joshua Tree — photo 41" width="1600" height="1062" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="41" aria-label="Open photo 42">
-      <picture><source type="image/webp" srcset="images/web/IMG_5272.webp"><img src="images/web/IMG_5272.jpg" alt="Joshua Tree — photo 42" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5272-sm.webp 800w, images/web/IMG_5272.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5272-sm.jpg 800w, images/web/IMG_5272.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5272.jpg" alt="Joshua Tree — photo 42" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="42" aria-label="Open photo 43">
-      <picture><source type="image/webp" srcset="images/web/IMG_5236.webp"><img src="images/web/IMG_5236.jpg" alt="Joshua Tree — photo 43" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5236-sm.webp 800w, images/web/IMG_5236.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5236-sm.jpg 800w, images/web/IMG_5236.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5236.jpg" alt="Joshua Tree — photo 43" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="43" aria-label="Open photo 44">
-      <picture><source type="image/webp" srcset="images/web/DSCF0084.webp"><img src="images/web/DSCF0084.jpg" alt="Joshua Tree — photo 44" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF0084-sm.webp 800w, images/web/DSCF0084.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF0084-sm.jpg 800w, images/web/DSCF0084.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF0084.jpg" alt="Joshua Tree — photo 44" width="1600" height="1062" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="44" aria-label="Open photo 45">
-      <picture><source type="image/webp" srcset="images/web/IMG_5299.webp"><img src="images/web/IMG_5299.jpg" alt="Joshua Tree — photo 45" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5299-sm.webp 800w, images/web/IMG_5299.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5299-sm.jpg 800w, images/web/IMG_5299.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5299.jpg" alt="Joshua Tree — photo 45" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="45" aria-label="Open photo 46">
-      <picture><source type="image/webp" srcset="images/web/IMG_5285.webp"><img src="images/web/IMG_5285.jpg" alt="Joshua Tree — photo 46" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5285-sm.webp 800w, images/web/IMG_5285.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5285-sm.jpg 800w, images/web/IMG_5285.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5285.jpg" alt="Joshua Tree — photo 46" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="46" aria-label="Open photo 47">
-      <picture><source type="image/webp" srcset="images/web/DSCF0059.webp"><img src="images/web/DSCF0059.jpg" alt="Joshua Tree — photo 47" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF0059-sm.webp 800w, images/web/DSCF0059.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF0059-sm.jpg 800w, images/web/DSCF0059.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF0059.jpg" alt="Joshua Tree — photo 47" width="1063" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="47" aria-label="Open photo 48">
-      <picture><source type="image/webp" srcset="images/web/IMG_5246.webp"><img src="images/web/IMG_5246.jpg" alt="Joshua Tree — photo 48" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5246-sm.webp 800w, images/web/IMG_5246.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5246-sm.jpg 800w, images/web/IMG_5246.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5246.jpg" alt="Joshua Tree — photo 48" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="48" aria-label="Open photo 49">
-      <picture><source type="image/webp" srcset="images/web/IMG_5194.webp"><img src="images/web/IMG_5194.jpg" alt="Joshua Tree — photo 49" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5194-sm.webp 800w, images/web/IMG_5194.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5194-sm.jpg 800w, images/web/IMG_5194.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5194.jpg" alt="Joshua Tree — photo 49" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="49" aria-label="Open photo 50">
-      <picture><source type="image/webp" srcset="images/web/IMG_5195.webp"><img src="images/web/IMG_5195.jpg" alt="Joshua Tree — photo 50" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_5195-sm.webp 800w, images/web/IMG_5195.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5195-sm.jpg 800w, images/web/IMG_5195.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5195.jpg" alt="Joshua Tree — photo 50" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="50" aria-label="Open photo 51">
-      <picture><source type="image/webp" srcset="images/web/IMG_6152.webp"><img src="images/web/IMG_6152.jpg" alt="Joshua Tree — photo 51" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_6152-sm.webp 800w, images/web/IMG_6152.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_6152-sm.jpg 800w, images/web/IMG_6152.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_6152.jpg" alt="Joshua Tree — photo 51" width="1280" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="51" aria-label="Open photo 52">
-      <picture><source type="image/webp" srcset="images/web/IMG_6130.webp"><img src="images/web/IMG_6130.jpg" alt="Joshua Tree — photo 52" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_6130-sm.webp 800w, images/web/IMG_6130.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_6130-sm.jpg 800w, images/web/IMG_6130.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_6130.jpg" alt="Joshua Tree — photo 52" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="52" aria-label="Open photo 53">
-      <picture><source type="image/webp" srcset="images/web/DSCF9934.webp"><img src="images/web/DSCF9934.jpg" alt="Joshua Tree — photo 53" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/DSCF9934-sm.webp 800w, images/web/DSCF9934.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/DSCF9934-sm.jpg 800w, images/web/DSCF9934.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/DSCF9934.jpg" alt="Joshua Tree — photo 53" width="1600" height="1062" loading="lazy" decoding="async"></picture>
     </button>
 
   </div>
@@ -293,7 +293,7 @@
     <div class="related-posts-grid">
 
       <a class="related-card" href="../hawaii/">
-        <picture><source type="image/webp" srcset="../../images/web/hawaii.webp"><img src="../../images/web/hawaii.jpg" alt="Hawaii" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/hawaii-sm.webp 480w, ../../images/web/hawaii.webp 900w" sizes="100vw"><img srcset="../../images/web/hawaii-sm.jpg 480w, ../../images/web/hawaii.jpg 900w" sizes="100vw" src="../../images/web/hawaii.jpg" alt="Hawaii" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -302,7 +302,7 @@
       </a>
 
       <a class="related-card" href="../badlands/">
-        <picture><source type="image/webp" srcset="../../images/web/badlands.webp"><img src="../../images/web/badlands.jpg" alt="Badlands" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/badlands-sm.webp 480w, ../../images/web/badlands.webp 900w" sizes="100vw"><img srcset="../../images/web/badlands-sm.jpg 480w, ../../images/web/badlands.jpg 900w" sizes="100vw" src="../../images/web/badlands.jpg" alt="Badlands" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -311,7 +311,7 @@
       </a>
 
       <a class="related-card" href="../yellowstone/">
-        <picture><source type="image/webp" srcset="../../images/web/yellowstone.webp"><img src="../../images/web/yellowstone.jpg" alt="Yellowstone" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/yellowstone-sm.webp 480w, ../../images/web/yellowstone.webp 900w" sizes="100vw"><img srcset="../../images/web/yellowstone-sm.jpg 480w, ../../images/web/yellowstone.jpg 900w" sizes="100vw" src="../../images/web/yellowstone.jpg" alt="Yellowstone" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -320,7 +320,7 @@
       </a>
 
       <a class="related-card" href="../monument-rocks/">
-        <picture><source type="image/webp" srcset="../../images/web/monument-rocks.webp"><img src="../../images/web/monument-rocks.jpg" alt="Monument Rocks" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/monument-rocks-sm.webp 480w, ../../images/web/monument-rocks.webp 900w" sizes="100vw"><img srcset="../../images/web/monument-rocks-sm.jpg 480w, ../../images/web/monument-rocks.jpg 900w" sizes="100vw" src="../../images/web/monument-rocks.jpg" alt="Monument Rocks" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -329,7 +329,7 @@
       </a>
 
       <a class="related-card" href="../acadia/">
-        <picture><source type="image/webp" srcset="../../images/web/acadia.webp"><img src="../../images/web/acadia.jpg" alt="Acadia" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/acadia-sm.webp 480w, ../../images/web/acadia.webp 900w" sizes="100vw"><img srcset="../../images/web/acadia-sm.jpg 480w, ../../images/web/acadia.jpg 900w" sizes="100vw" src="../../images/web/acadia.jpg" alt="Acadia" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -338,7 +338,7 @@
       </a>
 
       <a class="related-card" href="../great-salt-plains/">
-        <picture><source type="image/webp" srcset="../../images/web/great-salt-plains.webp"><img src="../../images/web/great-salt-plains.jpg" alt="Great Salt Plains" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/great-salt-plains-sm.webp 480w, ../../images/web/great-salt-plains.webp 900w" sizes="100vw"><img srcset="../../images/web/great-salt-plains-sm.jpg 480w, ../../images/web/great-salt-plains.jpg 900w" sizes="100vw" src="../../images/web/great-salt-plains.jpg" alt="Great Salt Plains" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>

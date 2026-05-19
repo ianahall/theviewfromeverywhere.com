@@ -10,9 +10,9 @@
   <meta property="og:title"       content="The View from Everywhere">
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://www.theviewfromeverywhere.com/">
-  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/hawaii.jpg">
+  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/web/hawaii.jpg">
   <meta name="twitter:card"       content="summary_large_image">
-  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/hawaii.jpg">
+  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/hawaii.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -21,7 +21,10 @@
 <body>
 
   <header class="site-header">
-    <nav aria-label="Primary">
+    <div class="site-title">
+      <a href="./index.html">The View from Everywhere</a>
+    </div>
+    <nav class="site-nav-primary" aria-label="Primary">
       <a href="./index.html?cat=all" data-filter="all">All</a>
       <a href="./index.html?cat=United+States" data-filter="United States">USA</a>
       <a href="./index.html?cat=Parks" data-filter="Parks">Parks</a>
@@ -29,10 +32,7 @@
       <a href="./index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="./index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <div class="site-title">
-      <a href="./index.html">The View from Everywhere</a>
-    </div>
-    <nav aria-label="Secondary">
+    <nav class="site-nav-secondary" aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
       <a href="./our-story/index.html">About</a>
     </nav>
@@ -48,12 +48,12 @@
     <a class="mobile-ig" href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">IG</a>
   </div>
   <nav id="mobile-nav" class="mobile-nav" hidden>
-    <a href="./index.html?cat=all">All</a>
-    <a href="./index.html?cat=United+States">USA</a>
-    <a href="./index.html?cat=Parks">Parks</a>
-    <a href="./index.html?cat=Europe">Europe</a>
-    <a href="./index.html?cat=Africa">Africa</a>
-    <a href="./index.html?cat=Asia">Asia</a>
+    <a href="./index.html?cat=all" data-filter="all">All</a>
+    <a href="./index.html?cat=United+States" data-filter="United States">USA</a>
+    <a href="./index.html?cat=Parks" data-filter="Parks">Parks</a>
+    <a href="./index.html?cat=Europe" data-filter="Europe">Europe</a>
+    <a href="./index.html?cat=Africa" data-filter="Africa">Africa</a>
+    <a href="./index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="./our-story/index.html">About</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
@@ -61,7 +61,7 @@
   <main class="blog-list" id="blog-list">
 
     <a class="blog-card" href="blog/capetown/" data-categories="Africa">
-      <picture><source type="image/webp" srcset="images/web/capetown.webp"><img class="blog-card-image" src="images/web/capetown.jpg" alt="Cape Town" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/capetown-sm.webp 480w, images/web/capetown.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/capetown-sm.jpg 480w, images/web/capetown.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/capetown.jpg" alt="Cape Town" width="900" height="675" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Africa</p>
@@ -72,7 +72,7 @@
     </a>
 
     <a class="blog-card" href="blog/iceland/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/iceland.webp"><img class="blog-card-image" src="images/web/iceland.jpg" alt="Iceland" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/iceland-sm.webp 480w, images/web/iceland.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/iceland-sm.jpg 480w, images/web/iceland.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/iceland.jpg" alt="Iceland" width="900" height="600" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -83,7 +83,7 @@
     </a>
 
     <a class="blog-card" href="blog/tunisia/" data-categories="Africa">
-      <picture><source type="image/webp" srcset="images/web/tunisia.webp"><img class="blog-card-image" src="images/web/tunisia.jpg" alt="Tunisia" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/tunisia-sm.webp 480w, images/web/tunisia.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/tunisia-sm.jpg 480w, images/web/tunisia.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/tunisia.jpg" alt="Tunisia" width="900" height="608" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Africa</p>
@@ -94,7 +94,7 @@
     </a>
 
     <a class="blog-card" href="blog/barcelona/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/barcelona.webp"><img class="blog-card-image" src="images/web/barcelona.jpg" alt="Barcelona" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/barcelona-sm.webp 480w, images/web/barcelona.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/barcelona-sm.jpg 480w, images/web/barcelona.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/barcelona.jpg" alt="Barcelona" width="596" height="900" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -105,7 +105,7 @@
     </a>
 
     <a class="blog-card" href="blog/cinque-terre/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/cinque-terre.webp"><img class="blog-card-image" src="images/web/cinque-terre.jpg" alt="Cinque Terre" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/cinque-terre-sm.webp 480w, images/web/cinque-terre.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/cinque-terre-sm.jpg 480w, images/web/cinque-terre.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/cinque-terre.jpg" alt="Cinque Terre" width="675" height="900" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -116,7 +116,7 @@
     </a>
 
     <a class="blog-card" href="blog/florence/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/florence.webp"><img class="blog-card-image" src="images/web/florence.jpg" alt="Florence" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/florence-sm.webp 480w, images/web/florence.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/florence-sm.jpg 480w, images/web/florence.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/florence.jpg" alt="Florence" width="675" height="900" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -127,7 +127,7 @@
     </a>
 
     <a class="blog-card" href="blog/milan/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/milan.webp"><img class="blog-card-image" src="images/web/milan.jpg" alt="Milan" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/milan-sm.webp 480w, images/web/milan.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/milan-sm.jpg 480w, images/web/milan.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/milan.jpg" alt="Milan" width="900" height="867" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -138,7 +138,7 @@
     </a>
 
     <a class="blog-card" href="blog/naples/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/naples.webp"><img class="blog-card-image" src="images/web/naples.jpg" alt="Naples" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/naples-sm.webp 480w, images/web/naples.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/naples-sm.jpg 480w, images/web/naples.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/naples.jpg" alt="Naples" width="675" height="900" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -149,7 +149,7 @@
     </a>
 
     <a class="blog-card" href="blog/rome/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/rome.webp"><img class="blog-card-image" src="images/web/rome.jpg" alt="Rome" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/rome-sm.webp 480w, images/web/rome.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/rome-sm.jpg 480w, images/web/rome.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/rome.jpg" alt="Rome" width="900" height="597" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -160,7 +160,7 @@
     </a>
 
     <a class="blog-card" href="blog/venice/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/venice.webp"><img class="blog-card-image" src="images/web/venice.jpg" alt="Venice" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/venice-sm.webp 480w, images/web/venice.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/venice-sm.jpg 480w, images/web/venice.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/venice.jpg" alt="Venice" width="900" height="600" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -171,7 +171,7 @@
     </a>
 
     <a class="blog-card" href="blog/hong-kong/" data-categories="Asia">
-      <picture><source type="image/webp" srcset="images/web/hong-kong.webp"><img class="blog-card-image" src="images/web/hong-kong.jpg" alt="Hong Kong" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/hong-kong-sm.webp 480w, images/web/hong-kong.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/hong-kong-sm.jpg 480w, images/web/hong-kong.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/hong-kong.jpg" alt="Hong Kong" width="900" height="597" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Asia</p>
@@ -182,7 +182,7 @@
     </a>
 
     <a class="blog-card" href="blog/nara/" data-categories="Asia">
-      <picture><source type="image/webp" srcset="images/web/nara.webp"><img class="blog-card-image" src="images/web/nara.jpg" alt="Nara" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/nara-sm.webp 480w, images/web/nara.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/nara-sm.jpg 480w, images/web/nara.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/nara.jpg" alt="Nara" width="900" height="597" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Asia</p>
@@ -193,7 +193,7 @@
     </a>
 
     <a class="blog-card" href="blog/hawaii/" data-categories="United States">
-      <picture><source type="image/webp" srcset="images/web/hawaii.webp"><img class="blog-card-image" src="images/web/hawaii.jpg" alt="Hawaii" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/hawaii-sm.webp 480w, images/web/hawaii.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/hawaii-sm.jpg 480w, images/web/hawaii.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/hawaii.jpg" alt="Hawaii" width="900" height="597" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">United States</p>
@@ -204,7 +204,7 @@
     </a>
 
     <a class="blog-card" href="blog/paris/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/paris.webp"><img class="blog-card-image" src="images/web/paris.jpg" alt="Paris" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/paris-sm.webp 480w, images/web/paris.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/paris-sm.jpg 480w, images/web/paris.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/paris.jpg" alt="Paris" width="900" height="675" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -215,7 +215,7 @@
     </a>
 
     <a class="blog-card" href="blog/amsterdam/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/amsterdam.webp"><img class="blog-card-image" src="images/web/amsterdam.jpg" alt="Amsterdam" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/amsterdam-sm.webp 480w, images/web/amsterdam.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/amsterdam-sm.jpg 480w, images/web/amsterdam.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/amsterdam.jpg" alt="Amsterdam" width="900" height="675" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -226,7 +226,7 @@
     </a>
 
     <a class="blog-card" href="blog/london/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/london.webp"><img class="blog-card-image" src="images/web/london.jpg" alt="London" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/london-sm.webp 480w, images/web/london.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/london-sm.jpg 480w, images/web/london.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/london.jpg" alt="London" width="597" height="900" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -237,7 +237,7 @@
     </a>
 
     <a class="blog-card" href="blog/copenhagen/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/copenhagen.webp"><img class="blog-card-image" src="images/web/copenhagen.jpg" alt="Copenhagen" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/copenhagen-sm.webp 480w, images/web/copenhagen.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/copenhagen-sm.jpg 480w, images/web/copenhagen.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/copenhagen.jpg" alt="Copenhagen" width="900" height="675" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -248,7 +248,7 @@
     </a>
 
     <a class="blog-card" href="blog/vienna/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/vienna.webp"><img class="blog-card-image" src="images/web/vienna.jpg" alt="Vienna" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/vienna-sm.webp 480w, images/web/vienna.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/vienna-sm.jpg 480w, images/web/vienna.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/vienna.jpg" alt="Vienna" width="900" height="600" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -259,7 +259,7 @@
     </a>
 
     <a class="blog-card" href="blog/budapest/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/budapest.webp"><img class="blog-card-image" src="images/web/budapest.jpg" alt="Budapest" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/budapest-sm.webp 480w, images/web/budapest.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/budapest-sm.jpg 480w, images/web/budapest.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/budapest.jpg" alt="Budapest" width="900" height="596" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -270,7 +270,7 @@
     </a>
 
     <a class="blog-card" href="blog/berlin/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/berlin.webp"><img class="blog-card-image" src="images/web/berlin.jpg" alt="Berlin" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/berlin-sm.webp 480w, images/web/berlin.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/berlin-sm.jpg 480w, images/web/berlin.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/berlin.jpg" alt="Berlin" width="900" height="597" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -281,7 +281,7 @@
     </a>
 
     <a class="blog-card" href="blog/prague/" data-categories="Europe">
-      <picture><source type="image/webp" srcset="images/web/prague.webp"><img class="blog-card-image" src="images/web/prague.jpg" alt="Prague" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/prague-sm.webp 480w, images/web/prague.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/prague-sm.jpg 480w, images/web/prague.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/prague.jpg" alt="Prague" width="900" height="675" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
@@ -292,7 +292,7 @@
     </a>
 
     <a class="blog-card" href="blog/osaka/" data-categories="Asia">
-      <picture><source type="image/webp" srcset="images/web/osaka.webp"><img class="blog-card-image" src="images/web/osaka.jpg" alt="Osaka" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/osaka-sm.webp 480w, images/web/osaka.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/osaka-sm.jpg 480w, images/web/osaka.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/osaka.jpg" alt="Osaka" width="900" height="596" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Asia</p>
@@ -303,7 +303,7 @@
     </a>
 
     <a class="blog-card" href="blog/kyoto/" data-categories="Asia">
-      <picture><source type="image/webp" srcset="images/web/kyoto.webp"><img class="blog-card-image" src="images/web/kyoto.jpg" alt="Kyoto" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/kyoto-sm.webp 480w, images/web/kyoto.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/kyoto-sm.jpg 480w, images/web/kyoto.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/kyoto.jpg" alt="Kyoto" width="900" height="596" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Asia</p>
@@ -314,7 +314,7 @@
     </a>
 
     <a class="blog-card" href="blog/tokyo/" data-categories="Asia">
-      <picture><source type="image/webp" srcset="images/web/tokyo.webp"><img class="blog-card-image" src="images/web/tokyo.jpg" alt="Tokyo" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/tokyo-sm.webp 480w, images/web/tokyo.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/tokyo-sm.jpg 480w, images/web/tokyo.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/tokyo.jpg" alt="Tokyo" width="900" height="596" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Asia</p>
@@ -325,7 +325,7 @@
     </a>
 
     <a class="blog-card" href="blog/joshua-tree/" data-categories="United States Parks">
-      <picture><source type="image/webp" srcset="images/web/joshua-tree.webp"><img class="blog-card-image" src="images/web/joshua-tree.jpg" alt="Joshua Tree" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/joshua-tree-sm.webp 480w, images/web/joshua-tree.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/joshua-tree-sm.jpg 480w, images/web/joshua-tree.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/joshua-tree.jpg" alt="Joshua Tree" width="900" height="597" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">United States</p>
@@ -336,7 +336,7 @@
     </a>
 
     <a class="blog-card" href="blog/badlands/" data-categories="United States Parks">
-      <picture><source type="image/webp" srcset="images/web/badlands.webp"><img class="blog-card-image" src="images/web/badlands.jpg" alt="Badlands" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/badlands-sm.webp 480w, images/web/badlands.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/badlands-sm.jpg 480w, images/web/badlands.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/badlands.jpg" alt="Badlands" width="900" height="597" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">United States</p>
@@ -346,7 +346,7 @@
     </a>
 
     <a class="blog-card" href="blog/yellowstone/" data-categories="United States Parks">
-      <picture><source type="image/webp" srcset="images/web/yellowstone.webp"><img class="blog-card-image" src="images/web/yellowstone.jpg" alt="Yellowstone" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/yellowstone-sm.webp 480w, images/web/yellowstone.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/yellowstone-sm.jpg 480w, images/web/yellowstone.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/yellowstone.jpg" alt="Yellowstone" width="900" height="597" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">United States</p>
@@ -356,7 +356,7 @@
     </a>
 
     <a class="blog-card" href="blog/monument-rocks/" data-categories="United States">
-      <picture><source type="image/webp" srcset="images/web/monument-rocks.webp"><img class="blog-card-image" src="images/web/monument-rocks.jpg" alt="Monument Rocks" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/monument-rocks-sm.webp 480w, images/web/monument-rocks.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/monument-rocks-sm.jpg 480w, images/web/monument-rocks.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/monument-rocks.jpg" alt="Monument Rocks" width="900" height="600" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">United States</p>
@@ -367,7 +367,7 @@
     </a>
 
     <a class="blog-card" href="blog/acadia/" data-categories="United States Parks">
-      <picture><source type="image/webp" srcset="images/web/acadia.webp"><img class="blog-card-image" src="images/web/acadia.jpg" alt="Acadia" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/acadia-sm.webp 480w, images/web/acadia.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/acadia-sm.jpg 480w, images/web/acadia.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/acadia.jpg" alt="Acadia" width="900" height="675" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">United States</p>
@@ -377,7 +377,7 @@
     </a>
 
     <a class="blog-card" href="blog/great-salt-plains/" data-categories="United States Parks">
-      <picture><source type="image/webp" srcset="images/web/great-salt-plains.webp"><img class="blog-card-image" src="images/web/great-salt-plains.jpg" alt="Great Salt Plains" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/great-salt-plains-sm.webp 480w, images/web/great-salt-plains.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/great-salt-plains-sm.jpg 480w, images/web/great-salt-plains.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/great-salt-plains.jpg" alt="Great Salt Plains" width="900" height="659" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">United States</p>
@@ -387,7 +387,7 @@
     </a>
 
     <a class="blog-card" href="blog/yosemite/" data-categories="United States Parks">
-      <picture><source type="image/webp" srcset="images/web/yosemite.webp"><img class="blog-card-image" src="images/web/yosemite.jpg" alt="Yosemite" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/yosemite-sm.webp 480w, images/web/yosemite.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/yosemite-sm.jpg 480w, images/web/yosemite.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/yosemite.jpg" alt="Yosemite" width="900" height="600" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">United States</p>
@@ -397,7 +397,7 @@
     </a>
 
     <a class="blog-card" href="blog/great-sand-dunes/" data-categories="United States Parks">
-      <picture><source type="image/webp" srcset="images/web/great-sand-dunes.webp"><img class="blog-card-image" src="images/web/great-sand-dunes.jpg" alt="Great Sand Dunes" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/great-sand-dunes-sm.webp 480w, images/web/great-sand-dunes.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/great-sand-dunes-sm.jpg 480w, images/web/great-sand-dunes.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/great-sand-dunes.jpg" alt="Great Sand Dunes" width="900" height="600" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">United States</p>
@@ -407,7 +407,7 @@
     </a>
 
     <a class="blog-card" href="blog/death-valley/" data-categories="Parks United States">
-      <picture><source type="image/webp" srcset="images/web/death-valley.webp"><img class="blog-card-image" src="images/web/death-valley.jpg" alt="Death Valley" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/death-valley-sm.webp 480w, images/web/death-valley.webp 900w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/death-valley-sm.jpg 480w, images/web/death-valley.jpg 900w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/death-valley.jpg" alt="Death Valley" width="900" height="597" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Parks</p>

@@ -17,7 +17,14 @@ blog/*/images/*.png
 !our-story/ian-and-kellyn.jpg
 !our-story/ian-and-kellyn.webp
 
+# Generated scripts — reproducible via python3 build.py
+download_images.sh
+
 # Python
 __pycache__/
 *.pyc
 .DS_Store
+
+# Local tools / exports
+.claude/
+*.xml

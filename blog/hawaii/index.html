@@ -10,9 +10,9 @@
   <meta property="og:description" content="Oh what a Hawaii!">
   <meta property="og:type"        content="article">
   <meta property="og:url"         content="https://www.theviewfromeverywhere.com/blog/hawaii/">
-  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/hawaii.jpg">
+  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/web/hawaii.jpg">
   <meta name="twitter:card"       content="summary_large_image">
-  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/hawaii.jpg">
+  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/hawaii.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -21,7 +21,10 @@
 <body>
 
   <header class="site-header">
-    <nav aria-label="Primary">
+    <div class="site-title">
+      <a href="../../index.html">The View from Everywhere</a>
+    </div>
+    <nav class="site-nav-primary" aria-label="Primary">
       <a href="../../index.html?cat=all" data-filter="all">All</a>
       <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
       <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
@@ -29,10 +32,7 @@
       <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <div class="site-title">
-      <a href="../../index.html">The View from Everywhere</a>
-    </div>
-    <nav aria-label="Secondary">
+    <nav class="site-nav-secondary" aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
       <a href="../../our-story/index.html">About</a>
     </nav>
@@ -48,18 +48,18 @@
     <a class="mobile-ig" href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">IG</a>
   </div>
   <nav id="mobile-nav" class="mobile-nav" hidden>
-    <a href="../../index.html?cat=all">All</a>
-    <a href="../../index.html?cat=United+States">USA</a>
-    <a href="../../index.html?cat=Parks">Parks</a>
-    <a href="../../index.html?cat=Europe">Europe</a>
-    <a href="../../index.html?cat=Africa">Africa</a>
-    <a href="../../index.html?cat=Asia">Asia</a>
+    <a href="../../index.html?cat=all" data-filter="all">All</a>
+    <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
+    <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
+    <a href="../../index.html?cat=Europe" data-filter="Europe">Europe</a>
+    <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
+    <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="../../our-story/index.html">About</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
   <div class="post-hero">
-    <picture><source type="image/webp" srcset="../../images/web/hawaii.webp"><img src="../../images/web/hawaii.jpg" alt="Hawaii" loading="eager" decoding="async"></picture>
+    <picture><source type="image/webp" srcset="../../images/web/hawaii-sm.webp 480w, ../../images/web/hawaii.webp 900w" sizes="100vw"><img srcset="../../images/web/hawaii-sm.jpg 480w, ../../images/web/hawaii.jpg 900w" sizes="100vw" src="../../images/web/hawaii.jpg" alt="Hawaii" loading="eager" decoding="async"></picture>
     <div class="post-hero-overlay"></div>
     <div class="post-hero-body">
       <p class="post-hero-category">United States</p>
@@ -75,187 +75,187 @@
   <div class="post-gallery" id="gallery">
 
     <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
-      <picture><source type="image/webp" srcset="images/web/IMG_0263.webp"><img src="images/web/IMG_0263.jpg" alt="Hawaii — photo 1" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0263-sm.webp 800w, images/web/IMG_0263.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0263-sm.jpg 800w, images/web/IMG_0263.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0263.jpg" alt="Hawaii — photo 1" width="1600" height="1200" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
-      <picture><source type="image/webp" srcset="images/web/RAII6253.webp"><img src="images/web/RAII6253.jpg" alt="Hawaii — photo 2" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/RAII6253-sm.webp 800w, images/web/RAII6253.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/RAII6253-sm.jpg 800w, images/web/RAII6253.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/RAII6253.jpg" alt="Hawaii — photo 2" width="1600" height="1200" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
-      <picture><source type="image/webp" srcset="images/web/000079580036.webp"><img src="images/web/000079580036.jpg" alt="Hawaii — photo 3" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079580036-sm.webp 800w, images/web/000079580036.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079580036-sm.jpg 800w, images/web/000079580036.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079580036.jpg" alt="Hawaii — photo 3" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
-      <picture><source type="image/webp" srcset="images/web/IMG_0314.webp"><img src="images/web/IMG_0314.jpg" alt="Hawaii — photo 4" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0314-sm.webp 800w, images/web/IMG_0314.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0314-sm.jpg 800w, images/web/IMG_0314.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0314.jpg" alt="Hawaii — photo 4" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
-      <picture><source type="image/webp" srcset="images/web/IMG_0329.webp"><img src="images/web/IMG_0329.jpg" alt="Hawaii — photo 5" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0329-sm.webp 800w, images/web/IMG_0329.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0329-sm.jpg 800w, images/web/IMG_0329.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0329.jpg" alt="Hawaii — photo 5" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
-      <picture><source type="image/webp" srcset="images/web/000079600023.webp"><img src="images/web/000079600023.jpg" alt="Hawaii — photo 6" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079600023-sm.webp 800w, images/web/000079600023.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079600023-sm.jpg 800w, images/web/000079600023.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079600023.jpg" alt="Hawaii — photo 6" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
-      <picture><source type="image/webp" srcset="images/web/000079600026.webp"><img src="images/web/000079600026.jpg" alt="Hawaii — photo 7" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079600026-sm.webp 800w, images/web/000079600026.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079600026-sm.jpg 800w, images/web/000079600026.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079600026.jpg" alt="Hawaii — photo 7" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
-      <picture><source type="image/webp" srcset="images/web/000079580025.webp"><img src="images/web/000079580025.jpg" alt="Hawaii — photo 8" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079580025-sm.webp 800w, images/web/000079580025.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079580025-sm.jpg 800w, images/web/000079580025.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079580025.jpg" alt="Hawaii — photo 8" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
-      <picture><source type="image/webp" srcset="images/web/LEAB6274.webp"><img src="images/web/LEAB6274.jpg" alt="Hawaii — photo 9" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/LEAB6274-sm.webp 800w, images/web/LEAB6274.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/LEAB6274-sm.jpg 800w, images/web/LEAB6274.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/LEAB6274.jpg" alt="Hawaii — photo 9" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
-      <picture><source type="image/webp" srcset="images/web/TFMA9841.webp"><img src="images/web/TFMA9841.jpg" alt="Hawaii — photo 10" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/TFMA9841-sm.webp 800w, images/web/TFMA9841.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/TFMA9841-sm.jpg 800w, images/web/TFMA9841.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/TFMA9841.jpg" alt="Hawaii — photo 10" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
-      <picture><source type="image/webp" srcset="images/web/000079560016.webp"><img src="images/web/000079560016.jpg" alt="Hawaii — photo 11" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079560016-sm.webp 800w, images/web/000079560016.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079560016-sm.jpg 800w, images/web/000079560016.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079560016.jpg" alt="Hawaii — photo 11" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
-      <picture><source type="image/webp" srcset="images/web/IMG_0533.webp"><img src="images/web/IMG_0533.jpg" alt="Hawaii — photo 12" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0533-sm.webp 800w, images/web/IMG_0533.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0533-sm.jpg 800w, images/web/IMG_0533.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0533.jpg" alt="Hawaii — photo 12" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
-      <picture><source type="image/webp" srcset="images/web/IMG_0564.webp"><img src="images/web/IMG_0564.jpg" alt="Hawaii — photo 13" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0564-sm.webp 800w, images/web/IMG_0564.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0564-sm.jpg 800w, images/web/IMG_0564.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0564.jpg" alt="Hawaii — photo 13" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
-      <picture><source type="image/webp" srcset="images/web/MUEQ8596.webp"><img src="images/web/MUEQ8596.jpg" alt="Hawaii — photo 14" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/MUEQ8596-sm.webp 800w, images/web/MUEQ8596.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/MUEQ8596-sm.jpg 800w, images/web/MUEQ8596.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/MUEQ8596.jpg" alt="Hawaii — photo 14" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
-      <picture><source type="image/webp" srcset="images/web/000079590001.webp"><img src="images/web/000079590001.jpg" alt="Hawaii — photo 15" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079590001-sm.webp 800w, images/web/000079590001.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079590001-sm.jpg 800w, images/web/000079590001.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079590001.jpg" alt="Hawaii — photo 15" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="15" aria-label="Open photo 16">
-      <picture><source type="image/webp" srcset="images/web/000079590005.webp"><img src="images/web/000079590005.jpg" alt="Hawaii — photo 16" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079590005-sm.webp 800w, images/web/000079590005.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079590005-sm.jpg 800w, images/web/000079590005.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079590005.jpg" alt="Hawaii — photo 16" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="16" aria-label="Open photo 17">
-      <picture><source type="image/webp" srcset="images/web/000079560006.webp"><img src="images/web/000079560006.jpg" alt="Hawaii — photo 17" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079560006-sm.webp 800w, images/web/000079560006.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079560006-sm.jpg 800w, images/web/000079560006.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079560006.jpg" alt="Hawaii — photo 17" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="17" aria-label="Open photo 18">
-      <picture><source type="image/webp" srcset="images/web/000079590017.webp"><img src="images/web/000079590017.jpg" alt="Hawaii — photo 18" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079590017-sm.webp 800w, images/web/000079590017.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079590017-sm.jpg 800w, images/web/000079590017.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079590017.jpg" alt="Hawaii — photo 18" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="18" aria-label="Open photo 19">
-      <picture><source type="image/webp" srcset="images/web/000079590018.webp"><img src="images/web/000079590018.jpg" alt="Hawaii — photo 19" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079590018-sm.webp 800w, images/web/000079590018.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079590018-sm.jpg 800w, images/web/000079590018.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079590018.jpg" alt="Hawaii — photo 19" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="19" aria-label="Open photo 20">
-      <picture><source type="image/webp" srcset="images/web/ARYA8170.webp"><img src="images/web/ARYA8170.jpg" alt="Hawaii — photo 20" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/ARYA8170-sm.webp 800w, images/web/ARYA8170.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/ARYA8170-sm.jpg 800w, images/web/ARYA8170.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/ARYA8170.jpg" alt="Hawaii — photo 20" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="20" aria-label="Open photo 21">
-      <picture><source type="image/webp" srcset="images/web/IMG_0795.webp"><img src="images/web/IMG_0795.jpg" alt="Hawaii — photo 21" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0795-sm.webp 800w, images/web/IMG_0795.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0795-sm.jpg 800w, images/web/IMG_0795.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0795.jpg" alt="Hawaii — photo 21" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="21" aria-label="Open photo 22">
-      <picture><source type="image/webp" srcset="images/web/000079600016.webp"><img src="images/web/000079600016.jpg" alt="Hawaii — photo 22" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079600016-sm.webp 800w, images/web/000079600016.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079600016-sm.jpg 800w, images/web/000079600016.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079600016.jpg" alt="Hawaii — photo 22" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="22" aria-label="Open photo 23">
-      <picture><source type="image/webp" srcset="images/web/000079570005.webp"><img src="images/web/000079570005.jpg" alt="Hawaii — photo 23" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079570005-sm.webp 800w, images/web/000079570005.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079570005-sm.jpg 800w, images/web/000079570005.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079570005.jpg" alt="Hawaii — photo 23" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="23" aria-label="Open photo 24">
-      <picture><source type="image/webp" srcset="images/web/000079540005.webp"><img src="images/web/000079540005.jpg" alt="Hawaii — photo 24" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079540005-sm.webp 800w, images/web/000079540005.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079540005-sm.jpg 800w, images/web/000079540005.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079540005.jpg" alt="Hawaii — photo 24" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="24" aria-label="Open photo 25">
-      <picture><source type="image/webp" srcset="images/web/000079540009.webp"><img src="images/web/000079540009.jpg" alt="Hawaii — photo 25" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079540009-sm.webp 800w, images/web/000079540009.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079540009-sm.jpg 800w, images/web/000079540009.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079540009.jpg" alt="Hawaii — photo 25" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="25" aria-label="Open photo 26">
-      <picture><source type="image/webp" srcset="images/web/000079540030.webp"><img src="images/web/000079540030.jpg" alt="Hawaii — photo 26" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079540030-sm.webp 800w, images/web/000079540030.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079540030-sm.jpg 800w, images/web/000079540030.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079540030.jpg" alt="Hawaii — photo 26" width="1600" height="1061" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="26" aria-label="Open photo 27">
-      <picture><source type="image/webp" srcset="images/web/000079540025.webp"><img src="images/web/000079540025.jpg" alt="Hawaii — photo 27" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079540025-sm.webp 800w, images/web/000079540025.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079540025-sm.jpg 800w, images/web/000079540025.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079540025.jpg" alt="Hawaii — photo 27" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="27" aria-label="Open photo 28">
-      <picture><source type="image/webp" srcset="images/web/IMG_0848.webp"><img src="images/web/IMG_0848.jpg" alt="Hawaii — photo 28" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0848-sm.webp 800w, images/web/IMG_0848.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0848-sm.jpg 800w, images/web/IMG_0848.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0848.jpg" alt="Hawaii — photo 28" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="28" aria-label="Open photo 29">
-      <picture><source type="image/webp" srcset="images/web/000079540002.webp"><img src="images/web/000079540002.jpg" alt="Hawaii — photo 29" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079540002-sm.webp 800w, images/web/000079540002.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079540002-sm.jpg 800w, images/web/000079540002.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079540002.jpg" alt="Hawaii — photo 29" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="29" aria-label="Open photo 30">
-      <picture><source type="image/webp" srcset="images/web/IMG_1148.webp"><img src="images/web/IMG_1148.jpg" alt="Hawaii — photo 30" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1148-sm.webp 800w, images/web/IMG_1148.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1148-sm.jpg 800w, images/web/IMG_1148.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1148.jpg" alt="Hawaii — photo 30" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="30" aria-label="Open photo 31">
-      <picture><source type="image/webp" srcset="images/web/000079570010.webp"><img src="images/web/000079570010.jpg" alt="Hawaii — photo 31" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079570010-sm.webp 800w, images/web/000079570010.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079570010-sm.jpg 800w, images/web/000079570010.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079570010.jpg" alt="Hawaii — photo 31" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="31" aria-label="Open photo 32">
-      <picture><source type="image/webp" srcset="images/web/HDEE3712.webp"><img src="images/web/HDEE3712.jpg" alt="Hawaii — photo 32" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/HDEE3712-sm.webp 800w, images/web/HDEE3712.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/HDEE3712-sm.jpg 800w, images/web/HDEE3712.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/HDEE3712.jpg" alt="Hawaii — photo 32" width="1600" height="1199" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="32" aria-label="Open photo 33">
-      <picture><source type="image/webp" srcset="images/web/000079610007.webp"><img src="images/web/000079610007.jpg" alt="Hawaii — photo 33" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079610007-sm.webp 800w, images/web/000079610007.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079610007-sm.jpg 800w, images/web/000079610007.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079610007.jpg" alt="Hawaii — photo 33" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="33" aria-label="Open photo 34">
-      <picture><source type="image/webp" srcset="images/web/000079610001.webp"><img src="images/web/000079610001.jpg" alt="Hawaii — photo 34" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079610001-sm.webp 800w, images/web/000079610001.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079610001-sm.jpg 800w, images/web/000079610001.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079610001.jpg" alt="Hawaii — photo 34" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="34" aria-label="Open photo 35">
-      <picture><source type="image/webp" srcset="images/web/IMG_0429.webp"><img src="images/web/IMG_0429.jpg" alt="Hawaii — photo 35" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0429-sm.webp 800w, images/web/IMG_0429.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0429-sm.jpg 800w, images/web/IMG_0429.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0429.jpg" alt="Hawaii — photo 35" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="35" aria-label="Open photo 36">
-      <picture><source type="image/webp" srcset="images/web/000079570012.webp"><img src="images/web/000079570012.jpg" alt="Hawaii — photo 36" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079570012-sm.webp 800w, images/web/000079570012.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079570012-sm.jpg 800w, images/web/000079570012.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079570012.jpg" alt="Hawaii — photo 36" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="36" aria-label="Open photo 37">
-      <picture><source type="image/webp" srcset="images/web/000079570021.webp"><img src="images/web/000079570021.jpg" alt="Hawaii — photo 37" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079570021-sm.webp 800w, images/web/000079570021.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079570021-sm.jpg 800w, images/web/000079570021.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079570021.jpg" alt="Hawaii — photo 37" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="37" aria-label="Open photo 38">
-      <picture><source type="image/webp" srcset="images/web/000079590026.webp"><img src="images/web/000079590026.jpg" alt="Hawaii — photo 38" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079590026-sm.webp 800w, images/web/000079590026.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079590026-sm.jpg 800w, images/web/000079590026.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079590026.jpg" alt="Hawaii — photo 38" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="38" aria-label="Open photo 39">
-      <picture><source type="image/webp" srcset="images/web/IMG_1313.webp"><img src="images/web/IMG_1313.jpg" alt="Hawaii — photo 39" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1313-sm.webp 800w, images/web/IMG_1313.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1313-sm.jpg 800w, images/web/IMG_1313.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1313.jpg" alt="Hawaii — photo 39" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="39" aria-label="Open photo 40">
-      <picture><source type="image/webp" srcset="images/web/000079570015.webp"><img src="images/web/000079570015.jpg" alt="Hawaii — photo 40" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079570015-sm.webp 800w, images/web/000079570015.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079570015-sm.jpg 800w, images/web/000079570015.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079570015.jpg" alt="Hawaii — photo 40" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="40" aria-label="Open photo 41">
-      <picture><source type="image/webp" srcset="images/web/000079540022.webp"><img src="images/web/000079540022.jpg" alt="Hawaii — photo 41" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079540022-sm.webp 800w, images/web/000079540022.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079540022-sm.jpg 800w, images/web/000079540022.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079540022.jpg" alt="Hawaii — photo 41" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="41" aria-label="Open photo 42">
-      <picture><source type="image/webp" srcset="images/web/000079560022.webp"><img src="images/web/000079560022.jpg" alt="Hawaii — photo 42" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079560022-sm.webp 800w, images/web/000079560022.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079560022-sm.jpg 800w, images/web/000079560022.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079560022.jpg" alt="Hawaii — photo 42" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="42" aria-label="Open photo 43">
-      <picture><source type="image/webp" srcset="images/web/IMG_1453.webp"><img src="images/web/IMG_1453.jpg" alt="Hawaii — photo 43" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1453-sm.webp 800w, images/web/IMG_1453.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1453-sm.jpg 800w, images/web/IMG_1453.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1453.jpg" alt="Hawaii — photo 43" width="1600" height="1096" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="43" aria-label="Open photo 44">
-      <picture><source type="image/webp" srcset="images/web/000079570027.webp"><img src="images/web/000079570027.jpg" alt="Hawaii — photo 44" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079570027-sm.webp 800w, images/web/000079570027.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079570027-sm.jpg 800w, images/web/000079570027.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079570027.jpg" alt="Hawaii — photo 44" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="44" aria-label="Open photo 45">
-      <picture><source type="image/webp" srcset="images/web/IMG_1511.webp"><img src="images/web/IMG_1511.jpg" alt="Hawaii — photo 45" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1511-sm.webp 800w, images/web/IMG_1511.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1511-sm.jpg 800w, images/web/IMG_1511.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1511.jpg" alt="Hawaii — photo 45" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="45" aria-label="Open photo 46">
-      <picture><source type="image/webp" srcset="images/web/000079570031.webp"><img src="images/web/000079570031.jpg" alt="Hawaii — photo 46" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000079570031-sm.webp 800w, images/web/000079570031.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000079570031-sm.jpg 800w, images/web/000079570031.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000079570031.jpg" alt="Hawaii — photo 46" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
   </div>
@@ -265,7 +265,7 @@
     <div class="related-posts-grid">
 
       <a class="related-card" href="../joshua-tree/">
-        <picture><source type="image/webp" srcset="../../images/web/joshua-tree.webp"><img src="../../images/web/joshua-tree.jpg" alt="Joshua Tree" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/joshua-tree-sm.webp 480w, ../../images/web/joshua-tree.webp 900w" sizes="100vw"><img srcset="../../images/web/joshua-tree-sm.jpg 480w, ../../images/web/joshua-tree.jpg 900w" sizes="100vw" src="../../images/web/joshua-tree.jpg" alt="Joshua Tree" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -274,7 +274,7 @@
       </a>
 
       <a class="related-card" href="../badlands/">
-        <picture><source type="image/webp" srcset="../../images/web/badlands.webp"><img src="../../images/web/badlands.jpg" alt="Badlands" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/badlands-sm.webp 480w, ../../images/web/badlands.webp 900w" sizes="100vw"><img srcset="../../images/web/badlands-sm.jpg 480w, ../../images/web/badlands.jpg 900w" sizes="100vw" src="../../images/web/badlands.jpg" alt="Badlands" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -283,7 +283,7 @@
       </a>
 
       <a class="related-card" href="../yellowstone/">
-        <picture><source type="image/webp" srcset="../../images/web/yellowstone.webp"><img src="../../images/web/yellowstone.jpg" alt="Yellowstone" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/yellowstone-sm.webp 480w, ../../images/web/yellowstone.webp 900w" sizes="100vw"><img srcset="../../images/web/yellowstone-sm.jpg 480w, ../../images/web/yellowstone.jpg 900w" sizes="100vw" src="../../images/web/yellowstone.jpg" alt="Yellowstone" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -292,7 +292,7 @@
       </a>
 
       <a class="related-card" href="../monument-rocks/">
-        <picture><source type="image/webp" srcset="../../images/web/monument-rocks.webp"><img src="../../images/web/monument-rocks.jpg" alt="Monument Rocks" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/monument-rocks-sm.webp 480w, ../../images/web/monument-rocks.webp 900w" sizes="100vw"><img srcset="../../images/web/monument-rocks-sm.jpg 480w, ../../images/web/monument-rocks.jpg 900w" sizes="100vw" src="../../images/web/monument-rocks.jpg" alt="Monument Rocks" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -301,7 +301,7 @@
       </a>
 
       <a class="related-card" href="../acadia/">
-        <picture><source type="image/webp" srcset="../../images/web/acadia.webp"><img src="../../images/web/acadia.jpg" alt="Acadia" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/acadia-sm.webp 480w, ../../images/web/acadia.webp 900w" sizes="100vw"><img srcset="../../images/web/acadia-sm.jpg 480w, ../../images/web/acadia.jpg 900w" sizes="100vw" src="../../images/web/acadia.jpg" alt="Acadia" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -310,7 +310,7 @@
       </a>
 
       <a class="related-card" href="../great-salt-plains/">
-        <picture><source type="image/webp" srcset="../../images/web/great-salt-plains.webp"><img src="../../images/web/great-salt-plains.jpg" alt="Great Salt Plains" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/great-salt-plains-sm.webp 480w, ../../images/web/great-salt-plains.webp 900w" sizes="100vw"><img srcset="../../images/web/great-salt-plains-sm.jpg 480w, ../../images/web/great-salt-plains.jpg 900w" sizes="100vw" src="../../images/web/great-salt-plains.jpg" alt="Great Salt Plains" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>

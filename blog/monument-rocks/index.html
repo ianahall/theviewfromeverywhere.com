@@ -10,9 +10,9 @@
   <meta property="og:description" content="The Chalk Pyramids">
   <meta property="og:type"        content="article">
   <meta property="og:url"         content="https://www.theviewfromeverywhere.com/blog/monument-rocks/">
-  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/monument-rocks.jpg">
+  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/web/monument-rocks.jpg">
   <meta name="twitter:card"       content="summary_large_image">
-  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/monument-rocks.jpg">
+  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/monument-rocks.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -21,7 +21,10 @@
 <body>
 
   <header class="site-header">
-    <nav aria-label="Primary">
+    <div class="site-title">
+      <a href="../../index.html">The View from Everywhere</a>
+    </div>
+    <nav class="site-nav-primary" aria-label="Primary">
       <a href="../../index.html?cat=all" data-filter="all">All</a>
       <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
       <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
@@ -29,10 +32,7 @@
       <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <div class="site-title">
-      <a href="../../index.html">The View from Everywhere</a>
-    </div>
-    <nav aria-label="Secondary">
+    <nav class="site-nav-secondary" aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
       <a href="../../our-story/index.html">About</a>
     </nav>
@@ -48,18 +48,18 @@
     <a class="mobile-ig" href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">IG</a>
   </div>
   <nav id="mobile-nav" class="mobile-nav" hidden>
-    <a href="../../index.html?cat=all">All</a>
-    <a href="../../index.html?cat=United+States">USA</a>
-    <a href="../../index.html?cat=Parks">Parks</a>
-    <a href="../../index.html?cat=Europe">Europe</a>
-    <a href="../../index.html?cat=Africa">Africa</a>
-    <a href="../../index.html?cat=Asia">Asia</a>
+    <a href="../../index.html?cat=all" data-filter="all">All</a>
+    <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
+    <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
+    <a href="../../index.html?cat=Europe" data-filter="Europe">Europe</a>
+    <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
+    <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="../../our-story/index.html">About</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
   <div class="post-hero">
-    <picture><source type="image/webp" srcset="../../images/web/monument-rocks.webp"><img src="../../images/web/monument-rocks.jpg" alt="Monument Rocks" loading="eager" decoding="async"></picture>
+    <picture><source type="image/webp" srcset="../../images/web/monument-rocks-sm.webp 480w, ../../images/web/monument-rocks.webp 900w" sizes="100vw"><img srcset="../../images/web/monument-rocks-sm.jpg 480w, ../../images/web/monument-rocks.jpg 900w" sizes="100vw" src="../../images/web/monument-rocks.jpg" alt="Monument Rocks" loading="eager" decoding="async"></picture>
     <div class="post-hero-overlay"></div>
     <div class="post-hero-body">
       <p class="post-hero-category">United States</p>
@@ -75,47 +75,47 @@
   <div class="post-gallery" id="gallery">
 
     <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
-      <picture><source type="image/webp" srcset="images/web/IMG_1217.webp"><img src="images/web/IMG_1217.jpg" alt="Monument Rocks — photo 1" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1217-sm.webp 800w, images/web/IMG_1217.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1217-sm.jpg 800w, images/web/IMG_1217.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1217.jpg" alt="Monument Rocks — photo 1" width="1600" height="1067" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
-      <picture><source type="image/webp" srcset="images/web/000013570017.webp"><img src="images/web/000013570017.jpg" alt="Monument Rocks — photo 2" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013570017-sm.webp 800w, images/web/000013570017.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013570017-sm.jpg 800w, images/web/000013570017.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013570017.jpg" alt="Monument Rocks — photo 2" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
-      <picture><source type="image/webp" srcset="images/web/IMG_1323.webp"><img src="images/web/IMG_1323.jpg" alt="Monument Rocks — photo 3" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1323-sm.webp 800w, images/web/IMG_1323.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1323-sm.jpg 800w, images/web/IMG_1323.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1323.jpg" alt="Monument Rocks — photo 3" width="1600" height="1067" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
-      <picture><source type="image/webp" srcset="images/web/000013570016.webp"><img src="images/web/000013570016.jpg" alt="Monument Rocks — photo 4" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013570016-sm.webp 800w, images/web/000013570016.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013570016-sm.jpg 800w, images/web/000013570016.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013570016.jpg" alt="Monument Rocks — photo 4" width="1064" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
-      <picture><source type="image/webp" srcset="images/web/000013570006.webp"><img src="images/web/000013570006.jpg" alt="Monument Rocks — photo 5" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013570006-sm.webp 800w, images/web/000013570006.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013570006-sm.jpg 800w, images/web/000013570006.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013570006.jpg" alt="Monument Rocks — photo 5" width="1064" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
-      <picture><source type="image/webp" srcset="images/web/IMG_7171.webp"><img src="images/web/IMG_7171.jpg" alt="Monument Rocks — photo 6" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_7171-sm.webp 800w, images/web/IMG_7171.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_7171-sm.jpg 800w, images/web/IMG_7171.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_7171.jpg" alt="Monument Rocks — photo 6" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
-      <picture><source type="image/webp" srcset="images/web/IMG_1288.webp"><img src="images/web/IMG_1288.jpg" alt="Monument Rocks — photo 7" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1288-sm.webp 800w, images/web/IMG_1288.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1288-sm.jpg 800w, images/web/IMG_1288.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1288.jpg" alt="Monument Rocks — photo 7" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
-      <picture><source type="image/webp" srcset="images/web/IMG_1282.webp"><img src="images/web/IMG_1282.jpg" alt="Monument Rocks — photo 8" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1282-sm.webp 800w, images/web/IMG_1282.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1282-sm.jpg 800w, images/web/IMG_1282.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1282.jpg" alt="Monument Rocks — photo 8" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
-      <picture><source type="image/webp" srcset="images/web/IMG_1257.webp"><img src="images/web/IMG_1257.jpg" alt="Monument Rocks — photo 9" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1257-sm.webp 800w, images/web/IMG_1257.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1257-sm.jpg 800w, images/web/IMG_1257.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1257.jpg" alt="Monument Rocks — photo 9" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
-      <picture><source type="image/webp" srcset="images/web/IMG_1276.webp"><img src="images/web/IMG_1276.jpg" alt="Monument Rocks — photo 10" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1276-sm.webp 800w, images/web/IMG_1276.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1276-sm.jpg 800w, images/web/IMG_1276.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1276.jpg" alt="Monument Rocks — photo 10" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
-      <picture><source type="image/webp" srcset="images/web/000013570007.webp"><img src="images/web/000013570007.jpg" alt="Monument Rocks — photo 11" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013570007-sm.webp 800w, images/web/000013570007.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013570007-sm.jpg 800w, images/web/000013570007.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013570007.jpg" alt="Monument Rocks — photo 11" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
   </div>
@@ -125,7 +125,7 @@
     <div class="related-posts-grid">
 
       <a class="related-card" href="../hawaii/">
-        <picture><source type="image/webp" srcset="../../images/web/hawaii.webp"><img src="../../images/web/hawaii.jpg" alt="Hawaii" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/hawaii-sm.webp 480w, ../../images/web/hawaii.webp 900w" sizes="100vw"><img srcset="../../images/web/hawaii-sm.jpg 480w, ../../images/web/hawaii.jpg 900w" sizes="100vw" src="../../images/web/hawaii.jpg" alt="Hawaii" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -134,7 +134,7 @@
       </a>
 
       <a class="related-card" href="../joshua-tree/">
-        <picture><source type="image/webp" srcset="../../images/web/joshua-tree.webp"><img src="../../images/web/joshua-tree.jpg" alt="Joshua Tree" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/joshua-tree-sm.webp 480w, ../../images/web/joshua-tree.webp 900w" sizes="100vw"><img srcset="../../images/web/joshua-tree-sm.jpg 480w, ../../images/web/joshua-tree.jpg 900w" sizes="100vw" src="../../images/web/joshua-tree.jpg" alt="Joshua Tree" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -143,7 +143,7 @@
       </a>
 
       <a class="related-card" href="../badlands/">
-        <picture><source type="image/webp" srcset="../../images/web/badlands.webp"><img src="../../images/web/badlands.jpg" alt="Badlands" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/badlands-sm.webp 480w, ../../images/web/badlands.webp 900w" sizes="100vw"><img srcset="../../images/web/badlands-sm.jpg 480w, ../../images/web/badlands.jpg 900w" sizes="100vw" src="../../images/web/badlands.jpg" alt="Badlands" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -152,7 +152,7 @@
       </a>
 
       <a class="related-card" href="../yellowstone/">
-        <picture><source type="image/webp" srcset="../../images/web/yellowstone.webp"><img src="../../images/web/yellowstone.jpg" alt="Yellowstone" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/yellowstone-sm.webp 480w, ../../images/web/yellowstone.webp 900w" sizes="100vw"><img srcset="../../images/web/yellowstone-sm.jpg 480w, ../../images/web/yellowstone.jpg 900w" sizes="100vw" src="../../images/web/yellowstone.jpg" alt="Yellowstone" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -161,7 +161,7 @@
       </a>
 
       <a class="related-card" href="../acadia/">
-        <picture><source type="image/webp" srcset="../../images/web/acadia.webp"><img src="../../images/web/acadia.jpg" alt="Acadia" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/acadia-sm.webp 480w, ../../images/web/acadia.webp 900w" sizes="100vw"><img srcset="../../images/web/acadia-sm.jpg 480w, ../../images/web/acadia.jpg 900w" sizes="100vw" src="../../images/web/acadia.jpg" alt="Acadia" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -170,7 +170,7 @@
       </a>
 
       <a class="related-card" href="../great-salt-plains/">
-        <picture><source type="image/webp" srcset="../../images/web/great-salt-plains.webp"><img src="../../images/web/great-salt-plains.jpg" alt="Great Salt Plains" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/great-salt-plains-sm.webp 480w, ../../images/web/great-salt-plains.webp 900w" sizes="100vw"><img srcset="../../images/web/great-salt-plains-sm.jpg 480w, ../../images/web/great-salt-plains.jpg 900w" sizes="100vw" src="../../images/web/great-salt-plains.jpg" alt="Great Salt Plains" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>

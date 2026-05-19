@@ -10,9 +10,9 @@
   <meta property="og:description" content="la Ville LumièreGay Perry!">
   <meta property="og:type"        content="article">
   <meta property="og:url"         content="https://www.theviewfromeverywhere.com/blog/paris/">
-  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/paris.jpg">
+  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/web/paris.jpg">
   <meta name="twitter:card"       content="summary_large_image">
-  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/paris.jpg">
+  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/paris.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -21,7 +21,10 @@
 <body>
 
   <header class="site-header">
-    <nav aria-label="Primary">
+    <div class="site-title">
+      <a href="../../index.html">The View from Everywhere</a>
+    </div>
+    <nav class="site-nav-primary" aria-label="Primary">
       <a href="../../index.html?cat=all" data-filter="all">All</a>
       <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
       <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
@@ -29,10 +32,7 @@
       <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <div class="site-title">
-      <a href="../../index.html">The View from Everywhere</a>
-    </div>
-    <nav aria-label="Secondary">
+    <nav class="site-nav-secondary" aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
       <a href="../../our-story/index.html">About</a>
     </nav>
@@ -48,18 +48,18 @@
     <a class="mobile-ig" href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">IG</a>
   </div>
   <nav id="mobile-nav" class="mobile-nav" hidden>
-    <a href="../../index.html?cat=all">All</a>
-    <a href="../../index.html?cat=United+States">USA</a>
-    <a href="../../index.html?cat=Parks">Parks</a>
-    <a href="../../index.html?cat=Europe">Europe</a>
-    <a href="../../index.html?cat=Africa">Africa</a>
-    <a href="../../index.html?cat=Asia">Asia</a>
+    <a href="../../index.html?cat=all" data-filter="all">All</a>
+    <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
+    <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
+    <a href="../../index.html?cat=Europe" data-filter="Europe">Europe</a>
+    <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
+    <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="../../our-story/index.html">About</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
   <div class="post-hero">
-    <picture><source type="image/webp" srcset="../../images/web/paris.webp"><img src="../../images/web/paris.jpg" alt="Paris" loading="eager" decoding="async"></picture>
+    <picture><source type="image/webp" srcset="../../images/web/paris-sm.webp 480w, ../../images/web/paris.webp 900w" sizes="100vw"><img srcset="../../images/web/paris-sm.jpg 480w, ../../images/web/paris.jpg 900w" sizes="100vw" src="../../images/web/paris.jpg" alt="Paris" loading="eager" decoding="async"></picture>
     <div class="post-hero-overlay"></div>
     <div class="post-hero-body">
       <p class="post-hero-category">Europe</p>
@@ -75,183 +75,183 @@
   <div class="post-gallery" id="gallery">
 
     <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
-      <picture><source type="image/webp" srcset="images/web/21A_2.webp"><img src="images/web/21A_2.jpg" alt="Paris — photo 1" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/21A_2-sm.webp 800w, images/web/21A_2.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/21A_2-sm.jpg 800w, images/web/21A_2.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/21A_2.jpg" alt="Paris — photo 1" width="1080" height="1600" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
-      <picture><source type="image/webp" srcset="images/web/1494588479986-O2YC2CRLE1WKIUQ73BPC.webp"><img src="images/web/1494588479986-O2YC2CRLE1WKIUQ73BPC.jpg" alt="Paris — photo 2" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494588479986-O2YC2CRLE1WKIUQ73BPC-sm.webp 800w, images/web/1494588479986-O2YC2CRLE1WKIUQ73BPC.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494588479986-O2YC2CRLE1WKIUQ73BPC-sm.jpg 800w, images/web/1494588479986-O2YC2CRLE1WKIUQ73BPC.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494588479986-O2YC2CRLE1WKIUQ73BPC.jpg" alt="Paris — photo 2" width="1081" height="1600" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
-      <picture><source type="image/webp" srcset="images/web/IMG_0297.webp"><img src="images/web/IMG_0297.jpg" alt="Paris — photo 3" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0297-sm.webp 800w, images/web/IMG_0297.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0297-sm.jpg 800w, images/web/IMG_0297.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0297.jpg" alt="Paris — photo 3" width="1600" height="1200" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
-      <picture><source type="image/webp" srcset="images/web/1494588600974-XPSI3WJDAWIIW34O0D47.webp"><img src="images/web/1494588600974-XPSI3WJDAWIIW34O0D47.jpg" alt="Paris — photo 4" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494588600974-XPSI3WJDAWIIW34O0D47-sm.webp 800w, images/web/1494588600974-XPSI3WJDAWIIW34O0D47.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494588600974-XPSI3WJDAWIIW34O0D47-sm.jpg 800w, images/web/1494588600974-XPSI3WJDAWIIW34O0D47.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494588600974-XPSI3WJDAWIIW34O0D47.jpg" alt="Paris — photo 4" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
-      <picture><source type="image/webp" srcset="images/web/1494588618869-BVO7757ER0YJZ2J7HF62.webp"><img src="images/web/1494588618869-BVO7757ER0YJZ2J7HF62.jpg" alt="Paris — photo 5" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494588618869-BVO7757ER0YJZ2J7HF62-sm.webp 800w, images/web/1494588618869-BVO7757ER0YJZ2J7HF62.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494588618869-BVO7757ER0YJZ2J7HF62-sm.jpg 800w, images/web/1494588618869-BVO7757ER0YJZ2J7HF62.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494588618869-BVO7757ER0YJZ2J7HF62.jpg" alt="Paris — photo 5" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
-      <picture><source type="image/webp" srcset="images/web/1494588670345-1PEXBDPV4GXGC8HRSKPW.webp"><img src="images/web/1494588670345-1PEXBDPV4GXGC8HRSKPW.jpg" alt="Paris — photo 6" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494588670345-1PEXBDPV4GXGC8HRSKPW-sm.webp 800w, images/web/1494588670345-1PEXBDPV4GXGC8HRSKPW.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494588670345-1PEXBDPV4GXGC8HRSKPW-sm.jpg 800w, images/web/1494588670345-1PEXBDPV4GXGC8HRSKPW.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494588670345-1PEXBDPV4GXGC8HRSKPW.jpg" alt="Paris — photo 6" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
-      <picture><source type="image/webp" srcset="images/web/1494588697508-0H6BQZWRDI96QZ5OWO8V.webp"><img src="images/web/1494588697508-0H6BQZWRDI96QZ5OWO8V.jpg" alt="Paris — photo 7" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494588697508-0H6BQZWRDI96QZ5OWO8V-sm.webp 800w, images/web/1494588697508-0H6BQZWRDI96QZ5OWO8V.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494588697508-0H6BQZWRDI96QZ5OWO8V-sm.jpg 800w, images/web/1494588697508-0H6BQZWRDI96QZ5OWO8V.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494588697508-0H6BQZWRDI96QZ5OWO8V.jpg" alt="Paris — photo 7" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
-      <picture><source type="image/webp" srcset="images/web/1494588763739-MO3KREJPQDSZ35EOU8VI.webp"><img src="images/web/1494588763739-MO3KREJPQDSZ35EOU8VI.jpg" alt="Paris — photo 8" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494588763739-MO3KREJPQDSZ35EOU8VI-sm.webp 800w, images/web/1494588763739-MO3KREJPQDSZ35EOU8VI.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494588763739-MO3KREJPQDSZ35EOU8VI-sm.jpg 800w, images/web/1494588763739-MO3KREJPQDSZ35EOU8VI.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494588763739-MO3KREJPQDSZ35EOU8VI.jpg" alt="Paris — photo 8" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
-      <picture><source type="image/webp" srcset="images/web/1494588824593-FP2WXXKU0YI8QSMMS5B7.webp"><img src="images/web/1494588824593-FP2WXXKU0YI8QSMMS5B7.jpg" alt="Paris — photo 9" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494588824593-FP2WXXKU0YI8QSMMS5B7-sm.webp 800w, images/web/1494588824593-FP2WXXKU0YI8QSMMS5B7.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494588824593-FP2WXXKU0YI8QSMMS5B7-sm.jpg 800w, images/web/1494588824593-FP2WXXKU0YI8QSMMS5B7.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494588824593-FP2WXXKU0YI8QSMMS5B7.jpg" alt="Paris — photo 9" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
-      <picture><source type="image/webp" srcset="images/web/1494588802740-E1QTOXCFTLN3JK27POAQ.webp"><img src="images/web/1494588802740-E1QTOXCFTLN3JK27POAQ.jpg" alt="Paris — photo 10" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494588802740-E1QTOXCFTLN3JK27POAQ-sm.webp 800w, images/web/1494588802740-E1QTOXCFTLN3JK27POAQ.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494588802740-E1QTOXCFTLN3JK27POAQ-sm.jpg 800w, images/web/1494588802740-E1QTOXCFTLN3JK27POAQ.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494588802740-E1QTOXCFTLN3JK27POAQ.jpg" alt="Paris — photo 10" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
-      <picture><source type="image/webp" srcset="images/web/IMG_0048.webp"><img src="images/web/IMG_0048.jpg" alt="Paris — photo 11" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0048-sm.webp 800w, images/web/IMG_0048.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0048-sm.jpg 800w, images/web/IMG_0048.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0048.jpg" alt="Paris — photo 11" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
-      <picture><source type="image/webp" srcset="images/web/1494592234946-4MEDAB940INXM3ZOTPEQ.webp"><img src="images/web/1494592234946-4MEDAB940INXM3ZOTPEQ.jpg" alt="Paris — photo 12" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494592234946-4MEDAB940INXM3ZOTPEQ-sm.webp 800w, images/web/1494592234946-4MEDAB940INXM3ZOTPEQ.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494592234946-4MEDAB940INXM3ZOTPEQ-sm.jpg 800w, images/web/1494592234946-4MEDAB940INXM3ZOTPEQ.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494592234946-4MEDAB940INXM3ZOTPEQ.jpg" alt="Paris — photo 12" width="1600" height="1059" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
-      <picture><source type="image/webp" srcset="images/web/1494591771411-6LOADLNCZQ2YD2MQIESB.webp"><img src="images/web/1494591771411-6LOADLNCZQ2YD2MQIESB.jpg" alt="Paris — photo 13" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494591771411-6LOADLNCZQ2YD2MQIESB-sm.webp 800w, images/web/1494591771411-6LOADLNCZQ2YD2MQIESB.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494591771411-6LOADLNCZQ2YD2MQIESB-sm.jpg 800w, images/web/1494591771411-6LOADLNCZQ2YD2MQIESB.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494591771411-6LOADLNCZQ2YD2MQIESB.jpg" alt="Paris — photo 13" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
-      <picture><source type="image/webp" srcset="images/web/1494591791307-EOPPJ8RIPAESQHHMY3OC.webp"><img src="images/web/1494591791307-EOPPJ8RIPAESQHHMY3OC.jpg" alt="Paris — photo 14" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494591791307-EOPPJ8RIPAESQHHMY3OC-sm.webp 800w, images/web/1494591791307-EOPPJ8RIPAESQHHMY3OC.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494591791307-EOPPJ8RIPAESQHHMY3OC-sm.jpg 800w, images/web/1494591791307-EOPPJ8RIPAESQHHMY3OC.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494591791307-EOPPJ8RIPAESQHHMY3OC.jpg" alt="Paris — photo 14" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
-      <picture><source type="image/webp" srcset="images/web/1494591916211-YZUDTU4D9BSEI3Z7XHFQ.webp"><img src="images/web/1494591916211-YZUDTU4D9BSEI3Z7XHFQ.jpg" alt="Paris — photo 15" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494591916211-YZUDTU4D9BSEI3Z7XHFQ-sm.webp 800w, images/web/1494591916211-YZUDTU4D9BSEI3Z7XHFQ.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494591916211-YZUDTU4D9BSEI3Z7XHFQ-sm.jpg 800w, images/web/1494591916211-YZUDTU4D9BSEI3Z7XHFQ.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494591916211-YZUDTU4D9BSEI3Z7XHFQ.jpg" alt="Paris — photo 15" width="1081" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="15" aria-label="Open photo 16">
-      <picture><source type="image/webp" srcset="images/web/1494591892883-QU5QI276T8F3SCWPUIDM.webp"><img src="images/web/1494591892883-QU5QI276T8F3SCWPUIDM.jpg" alt="Paris — photo 16" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494591892883-QU5QI276T8F3SCWPUIDM-sm.webp 800w, images/web/1494591892883-QU5QI276T8F3SCWPUIDM.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494591892883-QU5QI276T8F3SCWPUIDM-sm.jpg 800w, images/web/1494591892883-QU5QI276T8F3SCWPUIDM.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494591892883-QU5QI276T8F3SCWPUIDM.jpg" alt="Paris — photo 16" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="16" aria-label="Open photo 17">
-      <picture><source type="image/webp" srcset="images/web/1494591964964-FAMOPO5J6WJ329M51IE5.webp"><img src="images/web/1494591964964-FAMOPO5J6WJ329M51IE5.jpg" alt="Paris — photo 17" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494591964964-FAMOPO5J6WJ329M51IE5-sm.webp 800w, images/web/1494591964964-FAMOPO5J6WJ329M51IE5.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494591964964-FAMOPO5J6WJ329M51IE5-sm.jpg 800w, images/web/1494591964964-FAMOPO5J6WJ329M51IE5.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494591964964-FAMOPO5J6WJ329M51IE5.jpg" alt="Paris — photo 17" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="17" aria-label="Open photo 18">
-      <picture><source type="image/webp" srcset="images/web/1494591991745-2CO2BT6XXPY6DWWWVPN0.webp"><img src="images/web/1494591991745-2CO2BT6XXPY6DWWWVPN0.jpg" alt="Paris — photo 18" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494591991745-2CO2BT6XXPY6DWWWVPN0-sm.webp 800w, images/web/1494591991745-2CO2BT6XXPY6DWWWVPN0.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494591991745-2CO2BT6XXPY6DWWWVPN0-sm.jpg 800w, images/web/1494591991745-2CO2BT6XXPY6DWWWVPN0.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494591991745-2CO2BT6XXPY6DWWWVPN0.jpg" alt="Paris — photo 18" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="18" aria-label="Open photo 19">
-      <picture><source type="image/webp" srcset="images/web/1494592208346-NK6AC9VIXT06ESU7XJ71.webp"><img src="images/web/1494592208346-NK6AC9VIXT06ESU7XJ71.jpg" alt="Paris — photo 19" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494592208346-NK6AC9VIXT06ESU7XJ71-sm.webp 800w, images/web/1494592208346-NK6AC9VIXT06ESU7XJ71.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494592208346-NK6AC9VIXT06ESU7XJ71-sm.jpg 800w, images/web/1494592208346-NK6AC9VIXT06ESU7XJ71.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494592208346-NK6AC9VIXT06ESU7XJ71.jpg" alt="Paris — photo 19" width="1600" height="1081" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="19" aria-label="Open photo 20">
-      <picture><source type="image/webp" srcset="images/web/1494592053277-7YGHSW322R0GZHQO44XA.webp"><img src="images/web/1494592053277-7YGHSW322R0GZHQO44XA.jpg" alt="Paris — photo 20" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494592053277-7YGHSW322R0GZHQO44XA-sm.webp 800w, images/web/1494592053277-7YGHSW322R0GZHQO44XA.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494592053277-7YGHSW322R0GZHQO44XA-sm.jpg 800w, images/web/1494592053277-7YGHSW322R0GZHQO44XA.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494592053277-7YGHSW322R0GZHQO44XA.jpg" alt="Paris — photo 20" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="20" aria-label="Open photo 21">
-      <picture><source type="image/webp" srcset="images/web/1494592077985-F6XXLGABDTKUBIQKOECH.webp"><img src="images/web/1494592077985-F6XXLGABDTKUBIQKOECH.jpg" alt="Paris — photo 21" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494592077985-F6XXLGABDTKUBIQKOECH-sm.webp 800w, images/web/1494592077985-F6XXLGABDTKUBIQKOECH.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494592077985-F6XXLGABDTKUBIQKOECH-sm.jpg 800w, images/web/1494592077985-F6XXLGABDTKUBIQKOECH.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494592077985-F6XXLGABDTKUBIQKOECH.jpg" alt="Paris — photo 21" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="21" aria-label="Open photo 22">
-      <picture><source type="image/webp" srcset="images/web/1494592345899-9JV6DA3LAF93U8W0J5R4.webp"><img src="images/web/1494592345899-9JV6DA3LAF93U8W0J5R4.jpg" alt="Paris — photo 22" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494592345899-9JV6DA3LAF93U8W0J5R4-sm.webp 800w, images/web/1494592345899-9JV6DA3LAF93U8W0J5R4.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494592345899-9JV6DA3LAF93U8W0J5R4-sm.jpg 800w, images/web/1494592345899-9JV6DA3LAF93U8W0J5R4.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494592345899-9JV6DA3LAF93U8W0J5R4.jpg" alt="Paris — photo 22" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="22" aria-label="Open photo 23">
-      <picture><source type="image/webp" srcset="images/web/1494592372218-V0NTF1H2K4ICM655F9A7.webp"><img src="images/web/1494592372218-V0NTF1H2K4ICM655F9A7.jpg" alt="Paris — photo 23" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494592372218-V0NTF1H2K4ICM655F9A7-sm.webp 800w, images/web/1494592372218-V0NTF1H2K4ICM655F9A7.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494592372218-V0NTF1H2K4ICM655F9A7-sm.jpg 800w, images/web/1494592372218-V0NTF1H2K4ICM655F9A7.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494592372218-V0NTF1H2K4ICM655F9A7.jpg" alt="Paris — photo 23" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="23" aria-label="Open photo 24">
-      <picture><source type="image/webp" srcset="images/web/1494598082394-5YDIEIBQ01QTMBOA7PUX.webp"><img src="images/web/1494598082394-5YDIEIBQ01QTMBOA7PUX.jpg" alt="Paris — photo 24" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598082394-5YDIEIBQ01QTMBOA7PUX-sm.webp 800w, images/web/1494598082394-5YDIEIBQ01QTMBOA7PUX.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598082394-5YDIEIBQ01QTMBOA7PUX-sm.jpg 800w, images/web/1494598082394-5YDIEIBQ01QTMBOA7PUX.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598082394-5YDIEIBQ01QTMBOA7PUX.jpg" alt="Paris — photo 24" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="24" aria-label="Open photo 25">
-      <picture><source type="image/webp" srcset="images/web/1494598102538-55M4DN238IRFL3DFNCCC.webp"><img src="images/web/1494598102538-55M4DN238IRFL3DFNCCC.jpg" alt="Paris — photo 25" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598102538-55M4DN238IRFL3DFNCCC-sm.webp 800w, images/web/1494598102538-55M4DN238IRFL3DFNCCC.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598102538-55M4DN238IRFL3DFNCCC-sm.jpg 800w, images/web/1494598102538-55M4DN238IRFL3DFNCCC.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598102538-55M4DN238IRFL3DFNCCC.jpg" alt="Paris — photo 25" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="25" aria-label="Open photo 26">
-      <picture><source type="image/webp" srcset="images/web/1494598129229-ITD2GGO33EWYKUIY5COG.webp"><img src="images/web/1494598129229-ITD2GGO33EWYKUIY5COG.jpg" alt="Paris — photo 26" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598129229-ITD2GGO33EWYKUIY5COG-sm.webp 800w, images/web/1494598129229-ITD2GGO33EWYKUIY5COG.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598129229-ITD2GGO33EWYKUIY5COG-sm.jpg 800w, images/web/1494598129229-ITD2GGO33EWYKUIY5COG.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598129229-ITD2GGO33EWYKUIY5COG.jpg" alt="Paris — photo 26" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="26" aria-label="Open photo 27">
-      <picture><source type="image/webp" srcset="images/web/1494598173225-Q6TUW3JHZGPSFU7C2KZJ.webp"><img src="images/web/1494598173225-Q6TUW3JHZGPSFU7C2KZJ.jpg" alt="Paris — photo 27" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598173225-Q6TUW3JHZGPSFU7C2KZJ-sm.webp 800w, images/web/1494598173225-Q6TUW3JHZGPSFU7C2KZJ.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598173225-Q6TUW3JHZGPSFU7C2KZJ-sm.jpg 800w, images/web/1494598173225-Q6TUW3JHZGPSFU7C2KZJ.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598173225-Q6TUW3JHZGPSFU7C2KZJ.jpg" alt="Paris — photo 27" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="27" aria-label="Open photo 28">
-      <picture><source type="image/webp" srcset="images/web/1494598198724-AR6AZG4D25PSFQ6W9SHX.webp"><img src="images/web/1494598198724-AR6AZG4D25PSFQ6W9SHX.jpg" alt="Paris — photo 28" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598198724-AR6AZG4D25PSFQ6W9SHX-sm.webp 800w, images/web/1494598198724-AR6AZG4D25PSFQ6W9SHX.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598198724-AR6AZG4D25PSFQ6W9SHX-sm.jpg 800w, images/web/1494598198724-AR6AZG4D25PSFQ6W9SHX.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598198724-AR6AZG4D25PSFQ6W9SHX.jpg" alt="Paris — photo 28" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="28" aria-label="Open photo 29">
-      <picture><source type="image/webp" srcset="images/web/1494598233930-CEDM6EQD4P6IQHLWVGNG.webp"><img src="images/web/1494598233930-CEDM6EQD4P6IQHLWVGNG.jpg" alt="Paris — photo 29" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598233930-CEDM6EQD4P6IQHLWVGNG-sm.webp 800w, images/web/1494598233930-CEDM6EQD4P6IQHLWVGNG.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598233930-CEDM6EQD4P6IQHLWVGNG-sm.jpg 800w, images/web/1494598233930-CEDM6EQD4P6IQHLWVGNG.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598233930-CEDM6EQD4P6IQHLWVGNG.jpg" alt="Paris — photo 29" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="29" aria-label="Open photo 30">
-      <picture><source type="image/webp" srcset="images/web/1494598262329-WZF76SCNA1G3BH3KYI5X.webp"><img src="images/web/1494598262329-WZF76SCNA1G3BH3KYI5X.jpg" alt="Paris — photo 30" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598262329-WZF76SCNA1G3BH3KYI5X-sm.webp 800w, images/web/1494598262329-WZF76SCNA1G3BH3KYI5X.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598262329-WZF76SCNA1G3BH3KYI5X-sm.jpg 800w, images/web/1494598262329-WZF76SCNA1G3BH3KYI5X.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598262329-WZF76SCNA1G3BH3KYI5X.jpg" alt="Paris — photo 30" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="30" aria-label="Open photo 31">
-      <picture><source type="image/webp" srcset="images/web/1494598437839-QQTZOHHHFPGVQAAU37QO.webp"><img src="images/web/1494598437839-QQTZOHHHFPGVQAAU37QO.jpg" alt="Paris — photo 31" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598437839-QQTZOHHHFPGVQAAU37QO-sm.webp 800w, images/web/1494598437839-QQTZOHHHFPGVQAAU37QO.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598437839-QQTZOHHHFPGVQAAU37QO-sm.jpg 800w, images/web/1494598437839-QQTZOHHHFPGVQAAU37QO.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598437839-QQTZOHHHFPGVQAAU37QO.jpg" alt="Paris — photo 31" width="1600" height="1059" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="31" aria-label="Open photo 32">
-      <picture><source type="image/webp" srcset="images/web/1494598456952-AXTDQ6UQ5XE8UNMPSRYY.webp"><img src="images/web/1494598456952-AXTDQ6UQ5XE8UNMPSRYY.jpg" alt="Paris — photo 32" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598456952-AXTDQ6UQ5XE8UNMPSRYY-sm.webp 800w, images/web/1494598456952-AXTDQ6UQ5XE8UNMPSRYY.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598456952-AXTDQ6UQ5XE8UNMPSRYY-sm.jpg 800w, images/web/1494598456952-AXTDQ6UQ5XE8UNMPSRYY.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598456952-AXTDQ6UQ5XE8UNMPSRYY.jpg" alt="Paris — photo 32" width="1600" height="1081" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="32" aria-label="Open photo 33">
-      <picture><source type="image/webp" srcset="images/web/1494598513277-PEJV6X5HMERLRM9OJ23T.webp"><img src="images/web/1494598513277-PEJV6X5HMERLRM9OJ23T.jpg" alt="Paris — photo 33" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598513277-PEJV6X5HMERLRM9OJ23T-sm.webp 800w, images/web/1494598513277-PEJV6X5HMERLRM9OJ23T.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598513277-PEJV6X5HMERLRM9OJ23T-sm.jpg 800w, images/web/1494598513277-PEJV6X5HMERLRM9OJ23T.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598513277-PEJV6X5HMERLRM9OJ23T.jpg" alt="Paris — photo 33" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="33" aria-label="Open photo 34">
-      <picture><source type="image/webp" srcset="images/web/1494598542326-OYKO6PJK1RD0F3DV8BK2.webp"><img src="images/web/1494598542326-OYKO6PJK1RD0F3DV8BK2.jpg" alt="Paris — photo 34" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598542326-OYKO6PJK1RD0F3DV8BK2-sm.webp 800w, images/web/1494598542326-OYKO6PJK1RD0F3DV8BK2.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598542326-OYKO6PJK1RD0F3DV8BK2-sm.jpg 800w, images/web/1494598542326-OYKO6PJK1RD0F3DV8BK2.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598542326-OYKO6PJK1RD0F3DV8BK2.jpg" alt="Paris — photo 34" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="34" aria-label="Open photo 35">
-      <picture><source type="image/webp" srcset="images/web/1494598604889-0ZJ0BHWLNGYSOWDTGFN3.webp"><img src="images/web/1494598604889-0ZJ0BHWLNGYSOWDTGFN3.jpg" alt="Paris — photo 35" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598604889-0ZJ0BHWLNGYSOWDTGFN3-sm.webp 800w, images/web/1494598604889-0ZJ0BHWLNGYSOWDTGFN3.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598604889-0ZJ0BHWLNGYSOWDTGFN3-sm.jpg 800w, images/web/1494598604889-0ZJ0BHWLNGYSOWDTGFN3.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598604889-0ZJ0BHWLNGYSOWDTGFN3.jpg" alt="Paris — photo 35" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="35" aria-label="Open photo 36">
-      <picture><source type="image/webp" srcset="images/web/1494598580813-4JT5XQBNRY5W7LG4J6RL.webp"><img src="images/web/1494598580813-4JT5XQBNRY5W7LG4J6RL.jpg" alt="Paris — photo 36" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598580813-4JT5XQBNRY5W7LG4J6RL-sm.webp 800w, images/web/1494598580813-4JT5XQBNRY5W7LG4J6RL.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598580813-4JT5XQBNRY5W7LG4J6RL-sm.jpg 800w, images/web/1494598580813-4JT5XQBNRY5W7LG4J6RL.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598580813-4JT5XQBNRY5W7LG4J6RL.jpg" alt="Paris — photo 36" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="36" aria-label="Open photo 37">
-      <picture><source type="image/webp" srcset="images/web/1494598931075-VJUP2CJX89NBT0BB8ONX.webp"><img src="images/web/1494598931075-VJUP2CJX89NBT0BB8ONX.jpg" alt="Paris — photo 37" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598931075-VJUP2CJX89NBT0BB8ONX-sm.webp 800w, images/web/1494598931075-VJUP2CJX89NBT0BB8ONX.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598931075-VJUP2CJX89NBT0BB8ONX-sm.jpg 800w, images/web/1494598931075-VJUP2CJX89NBT0BB8ONX.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598931075-VJUP2CJX89NBT0BB8ONX.jpg" alt="Paris — photo 37" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="37" aria-label="Open photo 38">
-      <picture><source type="image/webp" srcset="images/web/1494598902570-D4UU8SQW7T6D9VGB5DGJ.webp"><img src="images/web/1494598902570-D4UU8SQW7T6D9VGB5DGJ.jpg" alt="Paris — photo 38" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598902570-D4UU8SQW7T6D9VGB5DGJ-sm.webp 800w, images/web/1494598902570-D4UU8SQW7T6D9VGB5DGJ.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598902570-D4UU8SQW7T6D9VGB5DGJ-sm.jpg 800w, images/web/1494598902570-D4UU8SQW7T6D9VGB5DGJ.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598902570-D4UU8SQW7T6D9VGB5DGJ.jpg" alt="Paris — photo 38" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="38" aria-label="Open photo 39">
-      <picture><source type="image/webp" srcset="images/web/1494598954027-U5VI04ZPKQLKBY5NV9I3.webp"><img src="images/web/1494598954027-U5VI04ZPKQLKBY5NV9I3.jpg" alt="Paris — photo 39" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598954027-U5VI04ZPKQLKBY5NV9I3-sm.webp 800w, images/web/1494598954027-U5VI04ZPKQLKBY5NV9I3.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598954027-U5VI04ZPKQLKBY5NV9I3-sm.jpg 800w, images/web/1494598954027-U5VI04ZPKQLKBY5NV9I3.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598954027-U5VI04ZPKQLKBY5NV9I3.jpg" alt="Paris — photo 39" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="39" aria-label="Open photo 40">
-      <picture><source type="image/webp" srcset="images/web/1494598977036-YU0MQRSMA6S6X3P3ZJ41.webp"><img src="images/web/1494598977036-YU0MQRSMA6S6X3P3ZJ41.jpg" alt="Paris — photo 40" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494598977036-YU0MQRSMA6S6X3P3ZJ41-sm.webp 800w, images/web/1494598977036-YU0MQRSMA6S6X3P3ZJ41.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494598977036-YU0MQRSMA6S6X3P3ZJ41-sm.jpg 800w, images/web/1494598977036-YU0MQRSMA6S6X3P3ZJ41.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494598977036-YU0MQRSMA6S6X3P3ZJ41.jpg" alt="Paris — photo 40" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="40" aria-label="Open photo 41">
-      <picture><source type="image/webp" srcset="images/web/1494599166012-XXGX9MFPVIKNEPMAREGR.webp"><img src="images/web/1494599166012-XXGX9MFPVIKNEPMAREGR.jpg" alt="Paris — photo 41" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494599166012-XXGX9MFPVIKNEPMAREGR-sm.webp 800w, images/web/1494599166012-XXGX9MFPVIKNEPMAREGR.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494599166012-XXGX9MFPVIKNEPMAREGR-sm.jpg 800w, images/web/1494599166012-XXGX9MFPVIKNEPMAREGR.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494599166012-XXGX9MFPVIKNEPMAREGR.jpg" alt="Paris — photo 41" width="1600" height="1081" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="41" aria-label="Open photo 42">
-      <picture><source type="image/webp" srcset="images/web/1494599043408-8J7K6IW6OZ2CFVXPAOJB.webp"><img src="images/web/1494599043408-8J7K6IW6OZ2CFVXPAOJB.jpg" alt="Paris — photo 42" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494599043408-8J7K6IW6OZ2CFVXPAOJB-sm.webp 800w, images/web/1494599043408-8J7K6IW6OZ2CFVXPAOJB.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494599043408-8J7K6IW6OZ2CFVXPAOJB-sm.jpg 800w, images/web/1494599043408-8J7K6IW6OZ2CFVXPAOJB.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494599043408-8J7K6IW6OZ2CFVXPAOJB.jpg" alt="Paris — photo 42" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="42" aria-label="Open photo 43">
-      <picture><source type="image/webp" srcset="images/web/1494599021269-AZ32F8PTO8DAGYMLI7N3.webp"><img src="images/web/1494599021269-AZ32F8PTO8DAGYMLI7N3.jpg" alt="Paris — photo 43" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494599021269-AZ32F8PTO8DAGYMLI7N3-sm.webp 800w, images/web/1494599021269-AZ32F8PTO8DAGYMLI7N3.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494599021269-AZ32F8PTO8DAGYMLI7N3-sm.jpg 800w, images/web/1494599021269-AZ32F8PTO8DAGYMLI7N3.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494599021269-AZ32F8PTO8DAGYMLI7N3.jpg" alt="Paris — photo 43" width="1081" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="43" aria-label="Open photo 44">
-      <picture><source type="image/webp" srcset="images/web/1494599064794-TZYQMNP4AC054AS4MGVY.webp"><img src="images/web/1494599064794-TZYQMNP4AC054AS4MGVY.jpg" alt="Paris — photo 44" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494599064794-TZYQMNP4AC054AS4MGVY-sm.webp 800w, images/web/1494599064794-TZYQMNP4AC054AS4MGVY.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494599064794-TZYQMNP4AC054AS4MGVY-sm.jpg 800w, images/web/1494599064794-TZYQMNP4AC054AS4MGVY.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494599064794-TZYQMNP4AC054AS4MGVY.jpg" alt="Paris — photo 44" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="44" aria-label="Open photo 45">
-      <picture><source type="image/webp" srcset="images/web/1494599091398-DC79FWF30X8RQM1FETH6.webp"><img src="images/web/1494599091398-DC79FWF30X8RQM1FETH6.jpg" alt="Paris — photo 45" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/1494599091398-DC79FWF30X8RQM1FETH6-sm.webp 800w, images/web/1494599091398-DC79FWF30X8RQM1FETH6.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/1494599091398-DC79FWF30X8RQM1FETH6-sm.jpg 800w, images/web/1494599091398-DC79FWF30X8RQM1FETH6.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/1494599091398-DC79FWF30X8RQM1FETH6.jpg" alt="Paris — photo 45" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
   </div>
@@ -261,7 +261,7 @@
     <div class="related-posts-grid">
 
       <a class="related-card" href="../iceland/">
-        <picture><source type="image/webp" srcset="../../images/web/iceland.webp"><img src="../../images/web/iceland.jpg" alt="Iceland" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/iceland-sm.webp 480w, ../../images/web/iceland.webp 900w" sizes="100vw"><img srcset="../../images/web/iceland-sm.jpg 480w, ../../images/web/iceland.jpg 900w" sizes="100vw" src="../../images/web/iceland.jpg" alt="Iceland" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>
@@ -270,7 +270,7 @@
       </a>
 
       <a class="related-card" href="../barcelona/">
-        <picture><source type="image/webp" srcset="../../images/web/barcelona.webp"><img src="../../images/web/barcelona.jpg" alt="Barcelona" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/barcelona-sm.webp 480w, ../../images/web/barcelona.webp 900w" sizes="100vw"><img srcset="../../images/web/barcelona-sm.jpg 480w, ../../images/web/barcelona.jpg 900w" sizes="100vw" src="../../images/web/barcelona.jpg" alt="Barcelona" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>
@@ -279,7 +279,7 @@
       </a>
 
       <a class="related-card" href="../cinque-terre/">
-        <picture><source type="image/webp" srcset="../../images/web/cinque-terre.webp"><img src="../../images/web/cinque-terre.jpg" alt="Cinque Terre" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/cinque-terre-sm.webp 480w, ../../images/web/cinque-terre.webp 900w" sizes="100vw"><img srcset="../../images/web/cinque-terre-sm.jpg 480w, ../../images/web/cinque-terre.jpg 900w" sizes="100vw" src="../../images/web/cinque-terre.jpg" alt="Cinque Terre" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>
@@ -288,7 +288,7 @@
       </a>
 
       <a class="related-card" href="../florence/">
-        <picture><source type="image/webp" srcset="../../images/web/florence.webp"><img src="../../images/web/florence.jpg" alt="Florence" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/florence-sm.webp 480w, ../../images/web/florence.webp 900w" sizes="100vw"><img srcset="../../images/web/florence-sm.jpg 480w, ../../images/web/florence.jpg 900w" sizes="100vw" src="../../images/web/florence.jpg" alt="Florence" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>
@@ -297,7 +297,7 @@
       </a>
 
       <a class="related-card" href="../milan/">
-        <picture><source type="image/webp" srcset="../../images/web/milan.webp"><img src="../../images/web/milan.jpg" alt="Milan" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/milan-sm.webp 480w, ../../images/web/milan.webp 900w" sizes="100vw"><img srcset="../../images/web/milan-sm.jpg 480w, ../../images/web/milan.jpg 900w" sizes="100vw" src="../../images/web/milan.jpg" alt="Milan" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>
@@ -306,7 +306,7 @@
       </a>
 
       <a class="related-card" href="../naples/">
-        <picture><source type="image/webp" srcset="../../images/web/naples.webp"><img src="../../images/web/naples.jpg" alt="Naples" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/naples-sm.webp 480w, ../../images/web/naples.webp 900w" sizes="100vw"><img srcset="../../images/web/naples-sm.jpg 480w, ../../images/web/naples.jpg 900w" sizes="100vw" src="../../images/web/naples.jpg" alt="Naples" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>

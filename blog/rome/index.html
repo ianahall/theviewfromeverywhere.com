@@ -10,9 +10,9 @@
   <meta property="og:description" content="Rome if you want to.">
   <meta property="og:type"        content="article">
   <meta property="og:url"         content="https://www.theviewfromeverywhere.com/blog/rome/">
-  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/rome.jpg">
+  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/web/rome.jpg">
   <meta name="twitter:card"       content="summary_large_image">
-  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/rome.jpg">
+  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/rome.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -21,7 +21,10 @@
 <body>
 
   <header class="site-header">
-    <nav aria-label="Primary">
+    <div class="site-title">
+      <a href="../../index.html">The View from Everywhere</a>
+    </div>
+    <nav class="site-nav-primary" aria-label="Primary">
       <a href="../../index.html?cat=all" data-filter="all">All</a>
       <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
       <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
@@ -29,10 +32,7 @@
       <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <div class="site-title">
-      <a href="../../index.html">The View from Everywhere</a>
-    </div>
-    <nav aria-label="Secondary">
+    <nav class="site-nav-secondary" aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
       <a href="../../our-story/index.html">About</a>
     </nav>
@@ -48,18 +48,18 @@
     <a class="mobile-ig" href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">IG</a>
   </div>
   <nav id="mobile-nav" class="mobile-nav" hidden>
-    <a href="../../index.html?cat=all">All</a>
-    <a href="../../index.html?cat=United+States">USA</a>
-    <a href="../../index.html?cat=Parks">Parks</a>
-    <a href="../../index.html?cat=Europe">Europe</a>
-    <a href="../../index.html?cat=Africa">Africa</a>
-    <a href="../../index.html?cat=Asia">Asia</a>
+    <a href="../../index.html?cat=all" data-filter="all">All</a>
+    <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
+    <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
+    <a href="../../index.html?cat=Europe" data-filter="Europe">Europe</a>
+    <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
+    <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="../../our-story/index.html">About</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
   <div class="post-hero">
-    <picture><source type="image/webp" srcset="../../images/web/rome.webp"><img src="../../images/web/rome.jpg" alt="Rome" loading="eager" decoding="async"></picture>
+    <picture><source type="image/webp" srcset="../../images/web/rome-sm.webp 480w, ../../images/web/rome.webp 900w" sizes="100vw"><img srcset="../../images/web/rome-sm.jpg 480w, ../../images/web/rome.jpg 900w" sizes="100vw" src="../../images/web/rome.jpg" alt="Rome" loading="eager" decoding="async"></picture>
     <div class="post-hero-overlay"></div>
     <div class="post-hero-body">
       <p class="post-hero-category">Europe</p>
@@ -75,95 +75,95 @@
   <div class="post-gallery" id="gallery">
 
     <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
-      <picture><source type="image/webp" srcset="images/web/000057970029.webp"><img src="images/web/000057970029.jpg" alt="Rome — photo 1" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000057970029-sm.webp 800w, images/web/000057970029.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000057970029-sm.jpg 800w, images/web/000057970029.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000057970029.jpg" alt="Rome — photo 1" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
-      <picture><source type="image/webp" srcset="images/web/000057970024.webp"><img src="images/web/000057970024.jpg" alt="Rome — photo 2" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000057970024-sm.webp 800w, images/web/000057970024.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000057970024-sm.jpg 800w, images/web/000057970024.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000057970024.jpg" alt="Rome — photo 2" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
-      <picture><source type="image/webp" srcset="images/web/000057970028.webp"><img src="images/web/000057970028.jpg" alt="Rome — photo 3" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000057970028-sm.webp 800w, images/web/000057970028.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000057970028-sm.jpg 800w, images/web/000057970028.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000057970028.jpg" alt="Rome — photo 3" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
-      <picture><source type="image/webp" srcset="images/web/000057970031.webp"><img src="images/web/000057970031.jpg" alt="Rome — photo 4" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000057970031-sm.webp 800w, images/web/000057970031.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000057970031-sm.jpg 800w, images/web/000057970031.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000057970031.jpg" alt="Rome — photo 4" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
-      <picture><source type="image/webp" srcset="images/web/IMG_0852.webp"><img src="images/web/IMG_0852.jpg" alt="Rome — photo 5" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0852-sm.webp 800w, images/web/IMG_0852.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0852-sm.jpg 800w, images/web/IMG_0852.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0852.jpg" alt="Rome — photo 5" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
-      <picture><source type="image/webp" srcset="images/web/IMG_0793+1.webp"><img src="images/web/IMG_0793+1.jpg" alt="Rome — photo 6" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0793+1-sm.webp 800w, images/web/IMG_0793+1.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0793+1-sm.jpg 800w, images/web/IMG_0793+1.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0793+1.jpg" alt="Rome — photo 6" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
-      <picture><source type="image/webp" srcset="images/web/000057970021.webp"><img src="images/web/000057970021.jpg" alt="Rome — photo 7" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000057970021-sm.webp 800w, images/web/000057970021.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000057970021-sm.jpg 800w, images/web/000057970021.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000057970021.jpg" alt="Rome — photo 7" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
-      <picture><source type="image/webp" srcset="images/web/IMG_1352.webp"><img src="images/web/IMG_1352.jpg" alt="Rome — photo 8" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1352-sm.webp 800w, images/web/IMG_1352.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1352-sm.jpg 800w, images/web/IMG_1352.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1352.jpg" alt="Rome — photo 8" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
-      <picture><source type="image/webp" srcset="images/web/IMG_1353.webp"><img src="images/web/IMG_1353.jpg" alt="Rome — photo 9" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1353-sm.webp 800w, images/web/IMG_1353.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1353-sm.jpg 800w, images/web/IMG_1353.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1353.jpg" alt="Rome — photo 9" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
-      <picture><source type="image/webp" srcset="images/web/000057970022.webp"><img src="images/web/000057970022.jpg" alt="Rome — photo 10" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000057970022-sm.webp 800w, images/web/000057970022.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000057970022-sm.jpg 800w, images/web/000057970022.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000057970022.jpg" alt="Rome — photo 10" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
-      <picture><source type="image/webp" srcset="images/web/IMG_1331.webp"><img src="images/web/IMG_1331.jpg" alt="Rome — photo 11" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1331-sm.webp 800w, images/web/IMG_1331.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1331-sm.jpg 800w, images/web/IMG_1331.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1331.jpg" alt="Rome — photo 11" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
-      <picture><source type="image/webp" srcset="images/web/IMG_1273.webp"><img src="images/web/IMG_1273.jpg" alt="Rome — photo 12" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1273-sm.webp 800w, images/web/IMG_1273.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1273-sm.jpg 800w, images/web/IMG_1273.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1273.jpg" alt="Rome — photo 12" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
-      <picture><source type="image/webp" srcset="images/web/IMG_1281.webp"><img src="images/web/IMG_1281.jpg" alt="Rome — photo 13" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1281-sm.webp 800w, images/web/IMG_1281.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1281-sm.jpg 800w, images/web/IMG_1281.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1281.jpg" alt="Rome — photo 13" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
-      <picture><source type="image/webp" srcset="images/web/IMG_0779.webp"><img src="images/web/IMG_0779.jpg" alt="Rome — photo 14" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0779-sm.webp 800w, images/web/IMG_0779.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0779-sm.jpg 800w, images/web/IMG_0779.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0779.jpg" alt="Rome — photo 14" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
-      <picture><source type="image/webp" srcset="images/web/IMG_1465.webp"><img src="images/web/IMG_1465.jpg" alt="Rome — photo 15" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1465-sm.webp 800w, images/web/IMG_1465.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1465-sm.jpg 800w, images/web/IMG_1465.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1465.jpg" alt="Rome — photo 15" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="15" aria-label="Open photo 16">
-      <picture><source type="image/webp" srcset="images/web/IMG_1399_small.webp"><img src="images/web/IMG_1399_small.jpg" alt="Rome — photo 16" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1399_small-sm.webp 800w, images/web/IMG_1399_small.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1399_small-sm.jpg 800w, images/web/IMG_1399_small.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1399_small.jpg" alt="Rome — photo 16" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="16" aria-label="Open photo 17">
-      <picture><source type="image/webp" srcset="images/web/IMG_1441.webp"><img src="images/web/IMG_1441.jpg" alt="Rome — photo 17" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1441-sm.webp 800w, images/web/IMG_1441.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1441-sm.jpg 800w, images/web/IMG_1441.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1441.jpg" alt="Rome — photo 17" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="17" aria-label="Open photo 18">
-      <picture><source type="image/webp" srcset="images/web/IMG_1437.webp"><img src="images/web/IMG_1437.jpg" alt="Rome — photo 18" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1437-sm.webp 800w, images/web/IMG_1437.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1437-sm.jpg 800w, images/web/IMG_1437.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1437.jpg" alt="Rome — photo 18" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="18" aria-label="Open photo 19">
-      <picture><source type="image/webp" srcset="images/web/IMG_1409.webp"><img src="images/web/IMG_1409.jpg" alt="Rome — photo 19" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1409-sm.webp 800w, images/web/IMG_1409.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1409-sm.jpg 800w, images/web/IMG_1409.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1409.jpg" alt="Rome — photo 19" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="19" aria-label="Open photo 20">
-      <picture><source type="image/webp" srcset="images/web/000057970036.webp"><img src="images/web/000057970036.jpg" alt="Rome — photo 20" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000057970036-sm.webp 800w, images/web/000057970036.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000057970036-sm.jpg 800w, images/web/000057970036.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000057970036.jpg" alt="Rome — photo 20" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="20" aria-label="Open photo 21">
-      <picture><source type="image/webp" srcset="images/web/IMG_0912+1.webp"><img src="images/web/IMG_0912+1.jpg" alt="Rome — photo 21" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0912+1-sm.webp 800w, images/web/IMG_0912+1.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0912+1-sm.jpg 800w, images/web/IMG_0912+1.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0912+1.jpg" alt="Rome — photo 21" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="21" aria-label="Open photo 22">
-      <picture><source type="image/webp" srcset="images/web/IMG_0922+1.webp"><img src="images/web/IMG_0922+1.jpg" alt="Rome — photo 22" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_0922+1-sm.webp 800w, images/web/IMG_0922+1.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_0922+1-sm.jpg 800w, images/web/IMG_0922+1.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_0922+1.jpg" alt="Rome — photo 22" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="22" aria-label="Open photo 23">
-      <picture><source type="image/webp" srcset="images/web/IMG_1357.webp"><img src="images/web/IMG_1357.jpg" alt="Rome — photo 23" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_1357-sm.webp 800w, images/web/IMG_1357.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_1357-sm.jpg 800w, images/web/IMG_1357.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_1357.jpg" alt="Rome — photo 23" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
   </div>
@@ -173,7 +173,7 @@
     <div class="related-posts-grid">
 
       <a class="related-card" href="../iceland/">
-        <picture><source type="image/webp" srcset="../../images/web/iceland.webp"><img src="../../images/web/iceland.jpg" alt="Iceland" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/iceland-sm.webp 480w, ../../images/web/iceland.webp 900w" sizes="100vw"><img srcset="../../images/web/iceland-sm.jpg 480w, ../../images/web/iceland.jpg 900w" sizes="100vw" src="../../images/web/iceland.jpg" alt="Iceland" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>
@@ -182,7 +182,7 @@
       </a>
 
       <a class="related-card" href="../barcelona/">
-        <picture><source type="image/webp" srcset="../../images/web/barcelona.webp"><img src="../../images/web/barcelona.jpg" alt="Barcelona" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/barcelona-sm.webp 480w, ../../images/web/barcelona.webp 900w" sizes="100vw"><img srcset="../../images/web/barcelona-sm.jpg 480w, ../../images/web/barcelona.jpg 900w" sizes="100vw" src="../../images/web/barcelona.jpg" alt="Barcelona" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>
@@ -191,7 +191,7 @@
       </a>
 
       <a class="related-card" href="../cinque-terre/">
-        <picture><source type="image/webp" srcset="../../images/web/cinque-terre.webp"><img src="../../images/web/cinque-terre.jpg" alt="Cinque Terre" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/cinque-terre-sm.webp 480w, ../../images/web/cinque-terre.webp 900w" sizes="100vw"><img srcset="../../images/web/cinque-terre-sm.jpg 480w, ../../images/web/cinque-terre.jpg 900w" sizes="100vw" src="../../images/web/cinque-terre.jpg" alt="Cinque Terre" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>
@@ -200,7 +200,7 @@
       </a>
 
       <a class="related-card" href="../florence/">
-        <picture><source type="image/webp" srcset="../../images/web/florence.webp"><img src="../../images/web/florence.jpg" alt="Florence" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/florence-sm.webp 480w, ../../images/web/florence.webp 900w" sizes="100vw"><img srcset="../../images/web/florence-sm.jpg 480w, ../../images/web/florence.jpg 900w" sizes="100vw" src="../../images/web/florence.jpg" alt="Florence" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>
@@ -209,7 +209,7 @@
       </a>
 
       <a class="related-card" href="../milan/">
-        <picture><source type="image/webp" srcset="../../images/web/milan.webp"><img src="../../images/web/milan.jpg" alt="Milan" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/milan-sm.webp 480w, ../../images/web/milan.webp 900w" sizes="100vw"><img srcset="../../images/web/milan-sm.jpg 480w, ../../images/web/milan.jpg 900w" sizes="100vw" src="../../images/web/milan.jpg" alt="Milan" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>
@@ -218,7 +218,7 @@
       </a>
 
       <a class="related-card" href="../naples/">
-        <picture><source type="image/webp" srcset="../../images/web/naples.webp"><img src="../../images/web/naples.jpg" alt="Naples" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/naples-sm.webp 480w, ../../images/web/naples.webp 900w" sizes="100vw"><img srcset="../../images/web/naples-sm.jpg 480w, ../../images/web/naples.jpg 900w" sizes="100vw" src="../../images/web/naples.jpg" alt="Naples" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">Europe</p>

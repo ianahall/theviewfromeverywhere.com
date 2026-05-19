@@ -10,9 +10,9 @@
   <meta property="og:description" content="Death Valley">
   <meta property="og:type"        content="article">
   <meta property="og:url"         content="https://www.theviewfromeverywhere.com/blog/death-valley/">
-  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/death-valley.jpg">
+  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/web/death-valley.jpg">
   <meta name="twitter:card"       content="summary_large_image">
-  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/death-valley.jpg">
+  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/death-valley.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -21,7 +21,10 @@
 <body>
 
   <header class="site-header">
-    <nav aria-label="Primary">
+    <div class="site-title">
+      <a href="../../index.html">The View from Everywhere</a>
+    </div>
+    <nav class="site-nav-primary" aria-label="Primary">
       <a href="../../index.html?cat=all" data-filter="all">All</a>
       <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
       <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
@@ -29,10 +32,7 @@
       <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <div class="site-title">
-      <a href="../../index.html">The View from Everywhere</a>
-    </div>
-    <nav aria-label="Secondary">
+    <nav class="site-nav-secondary" aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
       <a href="../../our-story/index.html">About</a>
     </nav>
@@ -48,18 +48,18 @@
     <a class="mobile-ig" href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">IG</a>
   </div>
   <nav id="mobile-nav" class="mobile-nav" hidden>
-    <a href="../../index.html?cat=all">All</a>
-    <a href="../../index.html?cat=United+States">USA</a>
-    <a href="../../index.html?cat=Parks">Parks</a>
-    <a href="../../index.html?cat=Europe">Europe</a>
-    <a href="../../index.html?cat=Africa">Africa</a>
-    <a href="../../index.html?cat=Asia">Asia</a>
+    <a href="../../index.html?cat=all" data-filter="all">All</a>
+    <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
+    <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
+    <a href="../../index.html?cat=Europe" data-filter="Europe">Europe</a>
+    <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
+    <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="../../our-story/index.html">About</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
   <div class="post-hero">
-    <picture><source type="image/webp" srcset="../../images/web/death-valley.webp"><img src="../../images/web/death-valley.jpg" alt="Death Valley" loading="eager" decoding="async"></picture>
+    <picture><source type="image/webp" srcset="../../images/web/death-valley-sm.webp 480w, ../../images/web/death-valley.webp 900w" sizes="100vw"><img srcset="../../images/web/death-valley-sm.jpg 480w, ../../images/web/death-valley.jpg 900w" sizes="100vw" src="../../images/web/death-valley.jpg" alt="Death Valley" loading="eager" decoding="async"></picture>
     <div class="post-hero-overlay"></div>
     <div class="post-hero-body">
       <p class="post-hero-category">Parks</p>
@@ -75,123 +75,123 @@
   <div class="post-gallery" id="gallery">
 
     <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
-      <picture><source type="image/webp" srcset="images/web/IMG_4518.webp"><img src="images/web/IMG_4518.jpg" alt="Death Valley — photo 1" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4518-sm.webp 800w, images/web/IMG_4518.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4518-sm.jpg 800w, images/web/IMG_4518.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4518.jpg" alt="Death Valley — photo 1" width="1600" height="1066" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
-      <picture><source type="image/webp" srcset="images/web/IMG_6038.webp"><img src="images/web/IMG_6038.jpg" alt="Death Valley — photo 2" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_6038-sm.webp 800w, images/web/IMG_6038.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_6038-sm.jpg 800w, images/web/IMG_6038.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_6038.jpg" alt="Death Valley — photo 2" width="1600" height="1200" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
-      <picture><source type="image/webp" srcset="images/web/000013420006.webp"><img src="images/web/000013420006.jpg" alt="Death Valley — photo 3" loading="eager" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013420006-sm.webp 800w, images/web/000013420006.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013420006-sm.jpg 800w, images/web/000013420006.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013420006.jpg" alt="Death Valley — photo 3" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
-      <picture><source type="image/webp" srcset="images/web/000013480020.webp"><img src="images/web/000013480020.jpg" alt="Death Valley — photo 4" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013480020-sm.webp 800w, images/web/000013480020.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013480020-sm.jpg 800w, images/web/000013480020.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013480020.jpg" alt="Death Valley — photo 4" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
-      <picture><source type="image/webp" srcset="images/web/000013420007.webp"><img src="images/web/000013420007.jpg" alt="Death Valley — photo 5" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013420007-sm.webp 800w, images/web/000013420007.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013420007-sm.jpg 800w, images/web/000013420007.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013420007.jpg" alt="Death Valley — photo 5" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
-      <picture><source type="image/webp" srcset="images/web/IMG_4565.webp"><img src="images/web/IMG_4565.jpg" alt="Death Valley — photo 6" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4565-sm.webp 800w, images/web/IMG_4565.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4565-sm.jpg 800w, images/web/IMG_4565.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4565.jpg" alt="Death Valley — photo 6" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
-      <picture><source type="image/webp" srcset="images/web/IMG_4566.webp"><img src="images/web/IMG_4566.jpg" alt="Death Valley — photo 7" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4566-sm.webp 800w, images/web/IMG_4566.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4566-sm.jpg 800w, images/web/IMG_4566.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4566.jpg" alt="Death Valley — photo 7" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
-      <picture><source type="image/webp" srcset="images/web/IMG_4560.webp"><img src="images/web/IMG_4560.jpg" alt="Death Valley — photo 8" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4560-sm.webp 800w, images/web/IMG_4560.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4560-sm.jpg 800w, images/web/IMG_4560.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4560.jpg" alt="Death Valley — photo 8" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
-      <picture><source type="image/webp" srcset="images/web/IMG_4561.webp"><img src="images/web/IMG_4561.jpg" alt="Death Valley — photo 9" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4561-sm.webp 800w, images/web/IMG_4561.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4561-sm.jpg 800w, images/web/IMG_4561.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4561.jpg" alt="Death Valley — photo 9" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
-      <picture><source type="image/webp" srcset="images/web/000013420005.webp"><img src="images/web/000013420005.jpg" alt="Death Valley — photo 10" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013420005-sm.webp 800w, images/web/000013420005.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013420005-sm.jpg 800w, images/web/000013420005.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013420005.jpg" alt="Death Valley — photo 10" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
-      <picture><source type="image/webp" srcset="images/web/IMG_4538.webp"><img src="images/web/IMG_4538.jpg" alt="Death Valley — photo 11" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4538-sm.webp 800w, images/web/IMG_4538.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4538-sm.jpg 800w, images/web/IMG_4538.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4538.jpg" alt="Death Valley — photo 11" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
-      <picture><source type="image/webp" srcset="images/web/IMG_4535.webp"><img src="images/web/IMG_4535.jpg" alt="Death Valley — photo 12" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4535-sm.webp 800w, images/web/IMG_4535.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4535-sm.jpg 800w, images/web/IMG_4535.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4535.jpg" alt="Death Valley — photo 12" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
-      <picture><source type="image/webp" srcset="images/web/IMG_4536.webp"><img src="images/web/IMG_4536.jpg" alt="Death Valley — photo 13" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4536-sm.webp 800w, images/web/IMG_4536.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4536-sm.jpg 800w, images/web/IMG_4536.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4536.jpg" alt="Death Valley — photo 13" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
-      <picture><source type="image/webp" srcset="images/web/IMG_6095.webp"><img src="images/web/IMG_6095.jpg" alt="Death Valley — photo 14" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_6095-sm.webp 800w, images/web/IMG_6095.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_6095-sm.jpg 800w, images/web/IMG_6095.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_6095.jpg" alt="Death Valley — photo 14" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
-      <picture><source type="image/webp" srcset="images/web/000013420011.webp"><img src="images/web/000013420011.jpg" alt="Death Valley — photo 15" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013420011-sm.webp 800w, images/web/000013420011.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013420011-sm.jpg 800w, images/web/000013420011.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013420011.jpg" alt="Death Valley — photo 15" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="15" aria-label="Open photo 16">
-      <picture><source type="image/webp" srcset="images/web/IMG_4578.webp"><img src="images/web/IMG_4578.jpg" alt="Death Valley — photo 16" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4578-sm.webp 800w, images/web/IMG_4578.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4578-sm.jpg 800w, images/web/IMG_4578.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4578.jpg" alt="Death Valley — photo 16" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="16" aria-label="Open photo 17">
-      <picture><source type="image/webp" srcset="images/web/IMG_4579.webp"><img src="images/web/IMG_4579.jpg" alt="Death Valley — photo 17" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4579-sm.webp 800w, images/web/IMG_4579.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4579-sm.jpg 800w, images/web/IMG_4579.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4579.jpg" alt="Death Valley — photo 17" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="17" aria-label="Open photo 18">
-      <picture><source type="image/webp" srcset="images/web/IMG_4580.webp"><img src="images/web/IMG_4580.jpg" alt="Death Valley — photo 18" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4580-sm.webp 800w, images/web/IMG_4580.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4580-sm.jpg 800w, images/web/IMG_4580.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4580.jpg" alt="Death Valley — photo 18" width="1067" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="18" aria-label="Open photo 19">
-      <picture><source type="image/webp" srcset="images/web/000013620008.webp"><img src="images/web/000013620008.jpg" alt="Death Valley — photo 19" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013620008-sm.webp 800w, images/web/000013620008.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013620008-sm.jpg 800w, images/web/000013620008.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013620008.jpg" alt="Death Valley — photo 19" width="1168" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="19" aria-label="Open photo 20">
-      <picture><source type="image/webp" srcset="images/web/IMG_6072.webp"><img src="images/web/IMG_6072.jpg" alt="Death Valley — photo 20" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_6072-sm.webp 800w, images/web/IMG_6072.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_6072-sm.jpg 800w, images/web/IMG_6072.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_6072.jpg" alt="Death Valley — photo 20" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="20" aria-label="Open photo 21">
-      <picture><source type="image/webp" srcset="images/web/IMG_4689.webp"><img src="images/web/IMG_4689.jpg" alt="Death Valley — photo 21" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4689-sm.webp 800w, images/web/IMG_4689.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4689-sm.jpg 800w, images/web/IMG_4689.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4689.jpg" alt="Death Valley — photo 21" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="21" aria-label="Open photo 22">
-      <picture><source type="image/webp" srcset="images/web/IMG_4689.webp"><img src="images/web/IMG_4689.jpg" alt="Death Valley — photo 22" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4689-sm.webp 800w, images/web/IMG_4689.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4689-sm.jpg 800w, images/web/IMG_4689.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4689.jpg" alt="Death Valley — photo 22" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="22" aria-label="Open photo 23">
-      <picture><source type="image/webp" srcset="images/web/IMG_4701.webp"><img src="images/web/IMG_4701.jpg" alt="Death Valley — photo 23" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4701-sm.webp 800w, images/web/IMG_4701.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4701-sm.jpg 800w, images/web/IMG_4701.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4701.jpg" alt="Death Valley — photo 23" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="23" aria-label="Open photo 24">
-      <picture><source type="image/webp" srcset="images/web/IMG_4700.webp"><img src="images/web/IMG_4700.jpg" alt="Death Valley — photo 24" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4700-sm.webp 800w, images/web/IMG_4700.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4700-sm.jpg 800w, images/web/IMG_4700.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4700.jpg" alt="Death Valley — photo 24" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="24" aria-label="Open photo 25">
-      <picture><source type="image/webp" srcset="images/web/IMG_6067.webp"><img src="images/web/IMG_6067.jpg" alt="Death Valley — photo 25" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_6067-sm.webp 800w, images/web/IMG_6067.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_6067-sm.jpg 800w, images/web/IMG_6067.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_6067.jpg" alt="Death Valley — photo 25" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="25" aria-label="Open photo 26">
-      <picture><source type="image/webp" srcset="images/web/IMG_6051.webp"><img src="images/web/IMG_6051.jpg" alt="Death Valley — photo 26" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_6051-sm.webp 800w, images/web/IMG_6051.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_6051-sm.jpg 800w, images/web/IMG_6051.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_6051.jpg" alt="Death Valley — photo 26" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="26" aria-label="Open photo 27">
-      <picture><source type="image/webp" srcset="images/web/000013420014.webp"><img src="images/web/000013420014.jpg" alt="Death Valley — photo 27" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013420014-sm.webp 800w, images/web/000013420014.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013420014-sm.jpg 800w, images/web/000013420014.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013420014.jpg" alt="Death Valley — photo 27" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="27" aria-label="Open photo 28">
-      <picture><source type="image/webp" srcset="images/web/000013480016.webp"><img src="images/web/000013480016.jpg" alt="Death Valley — photo 28" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013480016-sm.webp 800w, images/web/000013480016.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013480016-sm.jpg 800w, images/web/000013480016.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013480016.jpg" alt="Death Valley — photo 28" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="28" aria-label="Open photo 29">
-      <picture><source type="image/webp" srcset="images/web/IMG_4718-001.webp"><img src="images/web/IMG_4718-001.jpg" alt="Death Valley — photo 29" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/IMG_4718-001-sm.webp 800w, images/web/IMG_4718-001.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4718-001-sm.jpg 800w, images/web/IMG_4718-001.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4718-001.jpg" alt="Death Valley — photo 29" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
     <button class="post-gallery-item" data-index="29" aria-label="Open photo 30">
-      <picture><source type="image/webp" srcset="images/web/000013480018.webp"><img src="images/web/000013480018.jpg" alt="Death Valley — photo 30" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" srcset="images/web/000013480018-sm.webp 800w, images/web/000013480018.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013480018-sm.jpg 800w, images/web/000013480018.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013480018.jpg" alt="Death Valley — photo 30" width="1600" height="1061" loading="lazy" decoding="async"></picture>
     </button>
 
   </div>
@@ -201,7 +201,7 @@
     <div class="related-posts-grid">
 
       <a class="related-card" href="../hawaii/">
-        <picture><source type="image/webp" srcset="../../images/web/hawaii.webp"><img src="../../images/web/hawaii.jpg" alt="Hawaii" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/hawaii-sm.webp 480w, ../../images/web/hawaii.webp 900w" sizes="100vw"><img srcset="../../images/web/hawaii-sm.jpg 480w, ../../images/web/hawaii.jpg 900w" sizes="100vw" src="../../images/web/hawaii.jpg" alt="Hawaii" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -210,7 +210,7 @@
       </a>
 
       <a class="related-card" href="../joshua-tree/">
-        <picture><source type="image/webp" srcset="../../images/web/joshua-tree.webp"><img src="../../images/web/joshua-tree.jpg" alt="Joshua Tree" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/joshua-tree-sm.webp 480w, ../../images/web/joshua-tree.webp 900w" sizes="100vw"><img srcset="../../images/web/joshua-tree-sm.jpg 480w, ../../images/web/joshua-tree.jpg 900w" sizes="100vw" src="../../images/web/joshua-tree.jpg" alt="Joshua Tree" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -219,7 +219,7 @@
       </a>
 
       <a class="related-card" href="../badlands/">
-        <picture><source type="image/webp" srcset="../../images/web/badlands.webp"><img src="../../images/web/badlands.jpg" alt="Badlands" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/badlands-sm.webp 480w, ../../images/web/badlands.webp 900w" sizes="100vw"><img srcset="../../images/web/badlands-sm.jpg 480w, ../../images/web/badlands.jpg 900w" sizes="100vw" src="../../images/web/badlands.jpg" alt="Badlands" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -228,7 +228,7 @@
       </a>
 
       <a class="related-card" href="../yellowstone/">
-        <picture><source type="image/webp" srcset="../../images/web/yellowstone.webp"><img src="../../images/web/yellowstone.jpg" alt="Yellowstone" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/yellowstone-sm.webp 480w, ../../images/web/yellowstone.webp 900w" sizes="100vw"><img srcset="../../images/web/yellowstone-sm.jpg 480w, ../../images/web/yellowstone.jpg 900w" sizes="100vw" src="../../images/web/yellowstone.jpg" alt="Yellowstone" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -237,7 +237,7 @@
       </a>
 
       <a class="related-card" href="../monument-rocks/">
-        <picture><source type="image/webp" srcset="../../images/web/monument-rocks.webp"><img src="../../images/web/monument-rocks.jpg" alt="Monument Rocks" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/monument-rocks-sm.webp 480w, ../../images/web/monument-rocks.webp 900w" sizes="100vw"><img srcset="../../images/web/monument-rocks-sm.jpg 480w, ../../images/web/monument-rocks.jpg 900w" sizes="100vw" src="../../images/web/monument-rocks.jpg" alt="Monument Rocks" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
@@ -246,7 +246,7 @@
       </a>
 
       <a class="related-card" href="../acadia/">
-        <picture><source type="image/webp" srcset="../../images/web/acadia.webp"><img src="../../images/web/acadia.jpg" alt="Acadia" loading="eager" decoding="async"></picture>
+        <picture><source type="image/webp" srcset="../../images/web/acadia-sm.webp 480w, ../../images/web/acadia.webp 900w" sizes="100vw"><img srcset="../../images/web/acadia-sm.jpg 480w, ../../images/web/acadia.jpg 900w" sizes="100vw" src="../../images/web/acadia.jpg" alt="Acadia" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
           <p class="related-card-category">United States</p>
