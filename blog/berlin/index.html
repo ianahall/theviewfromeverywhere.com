@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berlin — The View from Everywhere</title>
+  <meta name="description" content="Berlin, my friend.">
+  <meta property="og:title" content="Berlin — The View from Everywhere">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+  <!-- Desktop header -->
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a href="../../index.html">All</a>
+      <a href="../../index.html?cat=United+States">USA</a>
+      <a href="../../index.html?cat=Parks">Parks</a>
+      <a href="../../index.html?cat=Europe">Europe</a>
+      <a href="../../index.html?cat=Africa">Africa</a>
+      <a href="../../index.html?cat=Asia">Asia</a>
+    </nav>
+    <div class="site-title"><a href="../../index.html">The View from Everywhere</a></div>
+    <nav aria-label="Secondary">
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+      <a href="../../our-story/index.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Mobile header -->
+  <div class="mobile-bar">
+    <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" onclick="
+      var nav = document.getElementById('mobile-nav');
+      var open = nav.classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
+    ">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-title"><a href="../../index.html">The View from Everywhere</a></div>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#555;">IG</a>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="../../index.html">All</a>
+    <a href="../../index.html?cat=United+States">USA</a>
+    <a href="../../index.html?cat=Parks">Parks</a>
+    <a href="../../index.html?cat=Europe">Europe</a>
+    <a href="../../index.html?cat=Africa">Africa</a>
+    <a href="../../index.html?cat=Asia">Asia</a>
+    <a href="../../our-story/index.html">About</a>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="post-hero">
+    <img src="../../images/berlin.jpg" alt="Berlin">
+    <div class="post-hero-overlay"></div>
+    <div class="post-hero-body">
+      <p class="post-hero-category">Europe</p>
+      <h1 class="post-hero-title">Berlin</h1>
+      <p class="post-hero-date">February 4, 2017</p>
+    </div>
+  </div>
+
+  <!-- Body copy -->
+  <div class="post-body">
+    <p class="post-lede">2-4-17</p>
+  </div>
+
+  <!-- Gallery — click any image to open lightbox -->
+  <div class="post-gallery" id="gallery">
+
+    <button class="post-gallery-item" data-index="0" aria-label="Open image 1">
+      <img src="images/1493999755287-668SFH0ILXTGO43RUZHA.jpeg" alt="Berlin 1" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="1" aria-label="Open image 2">
+      <img src="images/1493999513437-JJ7CL66A64UH6O4TEUMI.jpeg" alt="Berlin 2" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="2" aria-label="Open image 3">
+      <img src="images/1493999658946-SJVIL9T9S47ATORI2APR.jpeg" alt="Berlin 3" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="3" aria-label="Open image 4">
+      <img src="images/1493999710440-KN73MBXPI54LI41GH53X.jpeg" alt="Berlin 4" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="4" aria-label="Open image 5">
+      <img src="images/1493999575890-C3KFHEQZUXVY9GWCSKTE.jpeg" alt="Berlin 5" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="5" aria-label="Open image 6">
+      <img src="images/1493999793809-57F0QO3JUUO8GGDZXI2I.jpeg" alt="Berlin 6" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="6" aria-label="Open image 7">
+      <img src="images/1493999911682-K0LIL5287H2CT3UAL9BW.jpeg" alt="Berlin 7" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="7" aria-label="Open image 8">
+      <img src="images/1493999864733-EONRMHG3GVME031EWI7S.jpeg" alt="Berlin 8" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="8" aria-label="Open image 9">
+      <img src="images/1494000047944-D6I10BUIFUDKGSF81E36.jpeg" alt="Berlin 9" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="9" aria-label="Open image 10">
+      <img src="images/1494000102205-81MAB77ZQDQBG079XJGI.jpeg" alt="Berlin 10" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="10" aria-label="Open image 11">
+      <img src="images/1494000078466-J8STYK0KA6CECDQJ61AU.jpeg" alt="Berlin 11" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="11" aria-label="Open image 12">
+      <img src="images/1494000125278-BY6P0MM8U3R47DX8999Y.jpeg" alt="Berlin 12" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="12" aria-label="Open image 13">
+      <img src="images/1494000246793-NISSIVAM5Y58858NG4F6.jpeg" alt="Berlin 13" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="13" aria-label="Open image 14">
+      <img src="images/1494000280773-0WAWQQ1M9XTO5VQJO1UQ.jpeg" alt="Berlin 14" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="14" aria-label="Open image 15">
+      <img src="images/1493999981807-KUNCF0J4L5ND8MW3J166.jpeg" alt="Berlin 15" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="15" aria-label="Open image 16">
+      <img src="images/1494000388029-GA9YN2BAY839JQ9FZ2QR.jpeg" alt="Berlin 16" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="16" aria-label="Open image 17">
+      <img src="images/1494001562227-1SM9EMCSM1XJBCUXGLDF.jpeg" alt="Berlin 17" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="17" aria-label="Open image 18">
+      <img src="images/1494000418594-5UMGH5AQS2V3T86835X6.jpeg" alt="Berlin 18" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="18" aria-label="Open image 19">
+      <img src="images/1494000511163-YHLU1R4RWQEM6JM6IAXQ.jpeg" alt="Berlin 19" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="19" aria-label="Open image 20">
+      <img src="images/1494000445983-HCNZ966SMADRGER709YO.jpeg" alt="Berlin 20" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="20" aria-label="Open image 21">
+      <img src="images/1494000210976-GZCOMDPTAI7DTRCNUI4I.jpeg" alt="Berlin 21" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="21" aria-label="Open image 22">
+      <img src="images/1494001473739-XEOOUUQCBFLQ2ZNIUDWH.jpeg" alt="Berlin 22" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="22" aria-label="Open image 23">
+      <img src="images/1494000599230-3SSX4RCJ0JGDTCGVCNVL.jpeg" alt="Berlin 23" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="23" aria-label="Open image 24">
+      <img src="images/1494000681551-DWNKNKTRELL1ZQICAF3D.jpeg" alt="Berlin 24" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="24" aria-label="Open image 25">
+      <img src="images/1494000860250-5ESN56SK4DPHEHL6RRPF.jpeg" alt="Berlin 25" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="25" aria-label="Open image 26">
+      <img src="images/1494000803852-F8FIN3RD6R7FRZ7SOSQL.jpeg" alt="Berlin 26" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="26" aria-label="Open image 27">
+      <img src="images/1494000906863-WDCG32RPXSW48ER9PM87.jpeg" alt="Berlin 27" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="27" aria-label="Open image 28">
+      <img src="images/1494000977121-XL5OA9LEDBOZXWXGL3GZ.jpeg" alt="Berlin 28" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="28" aria-label="Open image 29">
+      <img src="images/1494001018895-8R21WPESWZAMF8C8EDMG.jpeg" alt="Berlin 29" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="29" aria-label="Open image 30">
+      <img src="images/1494001096779-YMLEZO0KWPJ7QFEFLQR4.jpeg" alt="Berlin 30" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="30" aria-label="Open image 31">
+      <img src="images/1494001060324-MVM1621HBHKS6EWUNQQC.jpeg" alt="Berlin 31" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="31" aria-label="Open image 32">
+      <img src="images/1494001160700-PMY46COS7827M4ETFSH5.jpeg" alt="Berlin 32" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="32" aria-label="Open image 33">
+      <img src="images/1494001129754-CE5RNLLPAY24CEJFAYWA.jpeg" alt="Berlin 33" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="33" aria-label="Open image 34">
+      <img src="images/1494001191183-UMDJRCYT8842I6K453M0.jpeg" alt="Berlin 34" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="34" aria-label="Open image 35">
+      <img src="images/1494001211529-EQKFMIFO9VU4AZQA6F0G.jpeg" alt="Berlin 35" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="35" aria-label="Open image 36">
+      <img src="images/1494001527436-HQU6XXNFQH6ZZUB1YBDD.jpeg" alt="Berlin 36" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="36" aria-label="Open image 37">
+      <img src="images/1494001758198-J1VBY9MPILJ0L2HZPO5X.jpeg" alt="Berlin 37" loading="lazy">
+    </button>
+
+  </div><!-- /.post-gallery -->
+
+  <!-- Related posts -->
+  <section class="related-posts">
+    <h2 class="related-posts-heading">Related Posts</h2>
+    <div class="related-posts-grid">
+
+      <a class="related-card" href="../iceland/">
+        <img src="../../images/iceland.jpg" alt="Iceland" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Iceland</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../barcelona/">
+        <img src="../../images/barcelona.jpg" alt="Barcelona" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Barcelona</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../cinque-terre/">
+        <img src="../../images/cinque-terre.jpg" alt="Cinque Terre" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Cinque Terre</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../florence/">
+        <img src="../../images/florence.jpg" alt="Florence" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Florence</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../milan/">
+        <img src="../../images/milan.jpg" alt="Milan" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Milan</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../naples/">
+        <img src="../../images/naples.jpg" alt="Naples" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Naples</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lb-close" class="lightbox-close" aria-label="Close">&times;</button>
+    <button id="lb-prev"  class="lightbox-btn lightbox-prev" aria-label="Previous">&#8249;</button>
+    <div class="lightbox-img-wrap">
+      <img id="lb-img" src="" alt="">
+    </div>
+    <button id="lb-next"  class="lightbox-btn lightbox-next" aria-label="Next">&#8250;</button>
+    <div id="lb-count" class="lightbox-count"></div>
+  </div>
+
+  <script>
+  (function () {
+    var items   = Array.from(document.querySelectorAll('.post-gallery-item'));
+    var srcs    = items.map(function (btn) { return btn.querySelector('img').src; });
+    var total   = srcs.length;
+    var current = 0;
+    var lightbox = document.getElementById('lightbox');
+    var lbImg    = document.getElementById('lb-img');
+    var lbCount  = document.getElementById('lb-count');
+    function open(index) {
+      current = (index + total) % total;
+      lbImg.src = srcs[current];
+      lbCount.textContent = (current + 1) + ' / ' + total;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+      lbImg.src = '';
+    }
+    items.forEach(function (btn) {
+      btn.addEventListener('click', function () { open(parseInt(btn.dataset.index, 10)); });
+    });
+    document.getElementById('lb-close').addEventListener('click', close);
+    document.getElementById('lb-prev').addEventListener('click', function () { open(current - 1); });
+    document.getElementById('lb-next').addEventListener('click', function () { open(current + 1); });
+    lightbox.addEventListener('click', function (e) { if (e.target === lightbox) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'ArrowLeft')  { open(current - 1); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { open(current + 1); e.preventDefault(); }
+      if (e.key === 'Escape')     { close(); }
+    });
+  })();
+  </script>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <nav>
+      <a href="../../index.html">All Posts</a>
+      <a href="../../our-story/index.html">About</a>
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <p class="footer-quote">"The world is a book, and those who do not travel read only one page."</p>
+  </footer>
+
+</body>
+</html>

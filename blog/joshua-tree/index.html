@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joshua Tree — The View from Everywhere</title>
+  <meta name="description" content="Joshua Tree, yeah you know me!">
+  <meta property="og:title" content="Joshua Tree — The View from Everywhere">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+  <!-- Desktop header -->
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a href="../../index.html">All</a>
+      <a href="../../index.html?cat=United+States">USA</a>
+      <a href="../../index.html?cat=Parks">Parks</a>
+      <a href="../../index.html?cat=Europe">Europe</a>
+      <a href="../../index.html?cat=Africa">Africa</a>
+      <a href="../../index.html?cat=Asia">Asia</a>
+    </nav>
+    <div class="site-title"><a href="../../index.html">The View from Everywhere</a></div>
+    <nav aria-label="Secondary">
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+      <a href="../../our-story/index.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Mobile header -->
+  <div class="mobile-bar">
+    <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" onclick="
+      var nav = document.getElementById('mobile-nav');
+      var open = nav.classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
+    ">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-title"><a href="../../index.html">The View from Everywhere</a></div>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#555;">IG</a>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="../../index.html">All</a>
+    <a href="../../index.html?cat=United+States">USA</a>
+    <a href="../../index.html?cat=Parks">Parks</a>
+    <a href="../../index.html?cat=Europe">Europe</a>
+    <a href="../../index.html?cat=Africa">Africa</a>
+    <a href="../../index.html?cat=Asia">Asia</a>
+    <a href="../../our-story/index.html">About</a>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="post-hero">
+    <img src="../../images/joshua-tree.jpg" alt="Joshua Tree">
+    <div class="post-hero-overlay"></div>
+    <div class="post-hero-body">
+      <p class="post-hero-category">United States</p>
+      <h1 class="post-hero-title">Joshua Tree</h1>
+      <p class="post-hero-date">August 27, 2016</p>
+    </div>
+  </div>
+
+  <!-- Body copy -->
+  <div class="post-body">
+    
+  </div>
+
+  <!-- Gallery — click any image to open lightbox -->
+  <div class="post-gallery" id="gallery">
+
+    <button class="post-gallery-item" data-index="0" aria-label="Open image 1">
+      <img src="images/000013420017.jpg" alt="Joshua Tree 1" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="1" aria-label="Open image 2">
+      <img src="images/000013420016.jpg" alt="Joshua Tree 2" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="2" aria-label="Open image 3">
+      <img src="images/000013480024.jpg" alt="Joshua Tree 3" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="3" aria-label="Open image 4">
+      <img src="images/IMG_4890.jpg" alt="Joshua Tree 4" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="4" aria-label="Open image 5">
+      <img src="images/IMG_4894.jpg" alt="Joshua Tree 5" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="5" aria-label="Open image 6">
+      <img src="images/DSCF9893.jpg" alt="Joshua Tree 6" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="6" aria-label="Open image 7">
+      <img src="images/DSCF9896.jpg" alt="Joshua Tree 7" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="7" aria-label="Open image 8">
+      <img src="images/000013420021.jpg" alt="Joshua Tree 8" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="8" aria-label="Open image 9">
+      <img src="images/IMG_4934.jpg" alt="Joshua Tree 9" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="9" aria-label="Open image 10">
+      <img src="images/IMG_4939.jpg" alt="Joshua Tree 10" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="10" aria-label="Open image 11">
+      <img src="images/IMG_4946.jpg" alt="Joshua Tree 11" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="11" aria-label="Open image 12">
+      <img src="images/IMG_4836.jpg" alt="Joshua Tree 12" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="12" aria-label="Open image 13">
+      <img src="images/IMG_4929.jpg" alt="Joshua Tree 13" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="13" aria-label="Open image 14">
+      <img src="images/000013420019.jpg" alt="Joshua Tree 14" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="14" aria-label="Open image 15">
+      <img src="images/IMG_6401.jpg" alt="Joshua Tree 15" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="15" aria-label="Open image 16">
+      <img src="images/DSCF9938.jpg" alt="Joshua Tree 16" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="16" aria-label="Open image 17">
+      <img src="images/DSCF9940.jpg" alt="Joshua Tree 17" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="17" aria-label="Open image 18">
+      <img src="images/DSCF9939.jpg" alt="Joshua Tree 18" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="18" aria-label="Open image 19">
+      <img src="images/IMG_4910.jpg" alt="Joshua Tree 19" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="19" aria-label="Open image 20">
+      <img src="images/IMG_4930.jpg" alt="Joshua Tree 20" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="20" aria-label="Open image 21">
+      <img src="images/DSCF9915.jpg" alt="Joshua Tree 21" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="21" aria-label="Open image 22">
+      <img src="images/IMG_4838.jpg" alt="Joshua Tree 22" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="22" aria-label="Open image 23">
+      <img src="images/IMG_4842.jpg" alt="Joshua Tree 23" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="23" aria-label="Open image 24">
+      <img src="images/IMG_5492.jpg" alt="Joshua Tree 24" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="24" aria-label="Open image 25">
+      <img src="images/IMG_5491.jpg" alt="Joshua Tree 25" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="25" aria-label="Open image 26">
+      <img src="images/IMG_5493.jpg" alt="Joshua Tree 26" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="26" aria-label="Open image 27">
+      <img src="images/000013480033.jpg" alt="Joshua Tree 27" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="27" aria-label="Open image 28">
+      <img src="images/000013480032.jpg" alt="Joshua Tree 28" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="28" aria-label="Open image 29">
+      <img src="images/IMG_5464.jpg" alt="Joshua Tree 29" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="29" aria-label="Open image 30">
+      <img src="images/IMG_5423.jpg" alt="Joshua Tree 30" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="30" aria-label="Open image 31">
+      <img src="images/IMG_5426.jpg" alt="Joshua Tree 31" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="31" aria-label="Open image 32">
+      <img src="images/IMG_4993.jpg" alt="Joshua Tree 32" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="32" aria-label="Open image 33">
+      <img src="images/IMG_5528.jpg" alt="Joshua Tree 33" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="33" aria-label="Open image 34">
+      <img src="images/IMG_5073.jpg" alt="Joshua Tree 34" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="34" aria-label="Open image 35">
+      <img src="images/IMG_4976.jpg" alt="Joshua Tree 35" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="35" aria-label="Open image 36">
+      <img src="images/IMG_5532.jpg" alt="Joshua Tree 36" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="36" aria-label="Open image 37">
+      <img src="images/IMG_5161.jpg" alt="Joshua Tree 37" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="37" aria-label="Open image 38">
+      <img src="images/IMG_4812.jpg" alt="Joshua Tree 38" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="38" aria-label="Open image 39">
+      <img src="images/DSCF0012.jpg" alt="Joshua Tree 39" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="39" aria-label="Open image 40">
+      <img src="images/DSCF0029.jpg" alt="Joshua Tree 40" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="40" aria-label="Open image 41">
+      <img src="images/DSCF0035.jpg" alt="Joshua Tree 41" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="41" aria-label="Open image 42">
+      <img src="images/IMG_5272.jpg" alt="Joshua Tree 42" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="42" aria-label="Open image 43">
+      <img src="images/IMG_5236.jpg" alt="Joshua Tree 43" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="43" aria-label="Open image 44">
+      <img src="images/DSCF0084.jpg" alt="Joshua Tree 44" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="44" aria-label="Open image 45">
+      <img src="images/IMG_5299.jpg" alt="Joshua Tree 45" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="45" aria-label="Open image 46">
+      <img src="images/IMG_5285.jpg" alt="Joshua Tree 46" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="46" aria-label="Open image 47">
+      <img src="images/DSCF0059.jpg" alt="Joshua Tree 47" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="47" aria-label="Open image 48">
+      <img src="images/IMG_5246.jpg" alt="Joshua Tree 48" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="48" aria-label="Open image 49">
+      <img src="images/IMG_5194.jpg" alt="Joshua Tree 49" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="49" aria-label="Open image 50">
+      <img src="images/IMG_5195.jpg" alt="Joshua Tree 50" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="50" aria-label="Open image 51">
+      <img src="images/IMG_6152.jpg" alt="Joshua Tree 51" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="51" aria-label="Open image 52">
+      <img src="images/IMG_6130.jpg" alt="Joshua Tree 52" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="52" aria-label="Open image 53">
+      <img src="images/DSCF9934.jpg" alt="Joshua Tree 53" loading="lazy">
+    </button>
+
+  </div><!-- /.post-gallery -->
+
+  <!-- Related posts -->
+  <section class="related-posts">
+    <h2 class="related-posts-heading">Related Posts</h2>
+    <div class="related-posts-grid">
+
+      <a class="related-card" href="../hawaii/">
+        <img src="../../images/hawaii.jpg" alt="Hawaii" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Hawaii</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../badlands/">
+        <img src="../../images/badlands.jpg" alt="Badlands" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Badlands</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../yellowstone/">
+        <img src="../../images/yellowstone.jpg" alt="Yellowstone" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Yellowstone</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../monument-rocks/">
+        <img src="../../images/monument-rocks.jpg" alt="Monument Rocks" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Monument Rocks</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../acadia/">
+        <img src="../../images/acadia.jpg" alt="Acadia" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Acadia</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../great-salt-plains/">
+        <img src="../../images/great-salt-plains.jpg" alt="Great Salt Plains" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Great Salt Plains</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lb-close" class="lightbox-close" aria-label="Close">&times;</button>
+    <button id="lb-prev"  class="lightbox-btn lightbox-prev" aria-label="Previous">&#8249;</button>
+    <div class="lightbox-img-wrap">
+      <img id="lb-img" src="" alt="">
+    </div>
+    <button id="lb-next"  class="lightbox-btn lightbox-next" aria-label="Next">&#8250;</button>
+    <div id="lb-count" class="lightbox-count"></div>
+  </div>
+
+  <script>
+  (function () {
+    var items   = Array.from(document.querySelectorAll('.post-gallery-item'));
+    var srcs    = items.map(function (btn) { return btn.querySelector('img').src; });
+    var total   = srcs.length;
+    var current = 0;
+    var lightbox = document.getElementById('lightbox');
+    var lbImg    = document.getElementById('lb-img');
+    var lbCount  = document.getElementById('lb-count');
+    function open(index) {
+      current = (index + total) % total;
+      lbImg.src = srcs[current];
+      lbCount.textContent = (current + 1) + ' / ' + total;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+      lbImg.src = '';
+    }
+    items.forEach(function (btn) {
+      btn.addEventListener('click', function () { open(parseInt(btn.dataset.index, 10)); });
+    });
+    document.getElementById('lb-close').addEventListener('click', close);
+    document.getElementById('lb-prev').addEventListener('click', function () { open(current - 1); });
+    document.getElementById('lb-next').addEventListener('click', function () { open(current + 1); });
+    lightbox.addEventListener('click', function (e) { if (e.target === lightbox) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'ArrowLeft')  { open(current - 1); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { open(current + 1); e.preventDefault(); }
+      if (e.key === 'Escape')     { close(); }
+    });
+  })();
+  </script>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <nav>
+      <a href="../../index.html">All Posts</a>
+      <a href="../../our-story/index.html">About</a>
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <p class="footer-quote">"The world is a book, and those who do not travel read only one page."</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amsterdam — The View from Everywhere</title>
+  <meta name="description" content="Amsterdaaaaaamn... there are a lot of bikes!">
+  <meta property="og:title" content="Amsterdam — The View from Everywhere">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+  <!-- Desktop header -->
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a href="../../index.html">All</a>
+      <a href="../../index.html?cat=United+States">USA</a>
+      <a href="../../index.html?cat=Parks">Parks</a>
+      <a href="../../index.html?cat=Europe">Europe</a>
+      <a href="../../index.html?cat=Africa">Africa</a>
+      <a href="../../index.html?cat=Asia">Asia</a>
+    </nav>
+    <div class="site-title"><a href="../../index.html">The View from Everywhere</a></div>
+    <nav aria-label="Secondary">
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+      <a href="../../our-story/index.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Mobile header -->
+  <div class="mobile-bar">
+    <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" onclick="
+      var nav = document.getElementById('mobile-nav');
+      var open = nav.classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
+    ">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-title"><a href="../../index.html">The View from Everywhere</a></div>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#555;">IG</a>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="../../index.html">All</a>
+    <a href="../../index.html?cat=United+States">USA</a>
+    <a href="../../index.html?cat=Parks">Parks</a>
+    <a href="../../index.html?cat=Europe">Europe</a>
+    <a href="../../index.html?cat=Africa">Africa</a>
+    <a href="../../index.html?cat=Asia">Asia</a>
+    <a href="../../our-story/index.html">About</a>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="post-hero">
+    <img src="../../images/amsterdam.jpg" alt="Amsterdam">
+    <div class="post-hero-overlay"></div>
+    <div class="post-hero-body">
+      <p class="post-hero-category">Europe</p>
+      <h1 class="post-hero-title">Amsterdam</h1>
+      <p class="post-hero-date">June 7, 2012</p>
+    </div>
+  </div>
+
+  <!-- Body copy -->
+  <div class="post-body">
+    <p class="post-lede">Amsterdam is a helluva town I say. It's the kind of place I'd like to live in one day, or at least visit if I ever have a kid who studies abroad there. Speaking of which, I first visited this fair city when I was in college studying horticulture. Visit the Netherlands and you'll never think of tulips in the same way again! Coming from the US, the first thing you'll notice is the superior airport and train system. I mean, would you ever eat a banana while in the subway in New York City? Viva la the simple things in life! I dare say there are few cooler places to stay in Amsterdam than the Miauw Suites. Located in "9 straatjes", a Soho-like area in City Centre, not only do you have great views of the canal, but you can also sit and watch thousands of bicyclists peddle by your window. The suite we stayed in also had a sink in the bedroom and a shower stall / toilet combo situated in between the bedroom and living room. It might sound strange, but it was pretty suite!&nbsp; Oh, and for a fun fact, "miauw" means "meow" in Dutch! Amsterdam is known for its canals, so a canal boat ride should definitely be on your itinerary. While some people complain, I actually enjoy doing touristy things. Sometimes it's quite fun to drink a beer and shoot the shit with a tourist from another part of the world that, like you, is super excited to be whereever they are in the world! I have a very clear memory of hanging out in Museumplein&nbsp;both times I was in Amsterdam, which is a public space surrounded by several amazing museums. There's something so nice about the sloped corner of the park, which reminds me of the Hypar Pavilion, at New York’s Lincoln Center.&nbsp; If cheese is your jam, be sure to swing by Amsterdam Cheese Company. They have lots and lots of samples, and are known for their delicious Dutch gouda. Also, be sure to swing by Amsterdam's famous floating Flower Market (known locally as Bloemenmakrt), which has been in operation since 1862. While I didn't buy any flowers, I did get a couple of fun souveniers there..&nbsp; I imagine if you ever find yourself in Texas you might say, "Wow, lots of people here wear cowboy hats." Well, similarly, while in Amsterdam you'll undoubtedly notice that almost everyone rides bikes.&nbsp;This is why, when walking around, you definitely need to make sure you're aware of the bike lanes. It's also why you should definitely rent a bike to ride around yourself! We rented a couple of cruisers from Mike's Bikes. Unlike riding a bike in other major cities, riding around Amsterdam is extremely fun and relaxing. The Anne Frank Museum is an important place to visit while in Amsterdam. It's situated right on the canal, so sitting and reflecting a little after your visit is pretty convenient, and necessary.&nbsp; For years and years I've thought that FOAM was one of the best and most exciting photography magazines out there. Lucky for me (and you), their museum in Amsterdam is quite exciting as well! While there we saw an incredible photo series of rural families living in Eastern Europe.&nbsp;</p>
+  </div>
+
+  <!-- Gallery — click any image to open lightbox -->
+  <div class="post-gallery" id="gallery">
+
+    <button class="post-gallery-item" data-index="0" aria-label="Open image 1">
+      <img src="images/IMG_0121.jpg" alt="Amsterdam 1" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="1" aria-label="Open image 2">
+      <img src="images/IMG_0130-001.jpg" alt="Amsterdam 2" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="2" aria-label="Open image 3">
+      <img src="images/-1A_3.jpg" alt="Amsterdam 3" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="3" aria-label="Open image 4">
+      <img src="images/_MG_8892.jpg" alt="Amsterdam 4" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="4" aria-label="Open image 5">
+      <img src="images/_MG_8891.jpg" alt="Amsterdam 5" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="5" aria-label="Open image 6">
+      <img src="images/_MG_8889.jpg" alt="Amsterdam 6" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="6" aria-label="Open image 7">
+      <img src="images/_MG_8886-001.jpg" alt="Amsterdam 7" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="7" aria-label="Open image 8">
+      <img src="images/-11_1.jpg" alt="Amsterdam 8" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="8" aria-label="Open image 9">
+      <img src="images/IMG_0340.jpg" alt="Amsterdam 9" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="9" aria-label="Open image 10">
+      <img src="images/-15_1.jpg" alt="Amsterdam 10" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="10" aria-label="Open image 11">
+      <img src="images/-16_1.jpg" alt="Amsterdam 11" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="11" aria-label="Open image 12">
+      <img src="images/IMG_0320.jpg" alt="Amsterdam 12" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="12" aria-label="Open image 13">
+      <img src="images/-9A_2.jpg" alt="Amsterdam 13" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="13" aria-label="Open image 14">
+      <img src="images/-10_1.jpg" alt="Amsterdam 14" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="14" aria-label="Open image 15">
+      <img src="images/-13_1.jpg" alt="Amsterdam 15" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="15" aria-label="Open image 16">
+      <img src="images/-27_1.jpg" alt="Amsterdam 16" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="16" aria-label="Open image 17">
+      <img src="images/-28_1.jpg" alt="Amsterdam 17" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="17" aria-label="Open image 18">
+      <img src="images/-32_1.jpg" alt="Amsterdam 18" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="18" aria-label="Open image 19">
+      <img src="images/1-9_1.jpg" alt="Amsterdam 19" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="19" aria-label="Open image 20">
+      <img src="images/9-3_1.jpg" alt="Amsterdam 20" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="20" aria-label="Open image 21">
+      <img src="images/-36_1.jpg" alt="Amsterdam 21" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="21" aria-label="Open image 22">
+      <img src="images/9-8_1.jpg" alt="Amsterdam 22" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="22" aria-label="Open image 23">
+      <img src="images/IMG_0189.jpg" alt="Amsterdam 23" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="23" aria-label="Open image 24">
+      <img src="images/IMG_0184-001.jpg" alt="Amsterdam 24" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="24" aria-label="Open image 25">
+      <img src="images/IMG_0330-001.jpg" alt="Amsterdam 25" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="25" aria-label="Open image 26">
+      <img src="images/IMG_0254.jpg" alt="Amsterdam 26" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="26" aria-label="Open image 27">
+      <img src="images/IMG_0251.jpg" alt="Amsterdam 27" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="27" aria-label="Open image 28">
+      <img src="images/IMG_0175.jpg" alt="Amsterdam 28" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="28" aria-label="Open image 29">
+      <img src="images/-21_1.jpg" alt="Amsterdam 29" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="29" aria-label="Open image 30">
+      <img src="images/IMG_5803.jpg" alt="Amsterdam 30" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="30" aria-label="Open image 31">
+      <img src="images/-33_1.jpg" alt="Amsterdam 31" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="31" aria-label="Open image 32">
+      <img src="images/-34_1.jpg" alt="Amsterdam 32" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="32" aria-label="Open image 33">
+      <img src="images/IMG_0211.jpg" alt="Amsterdam 33" loading="lazy">
+    </button>
+
+  </div><!-- /.post-gallery -->
+
+  <!-- Related posts -->
+  <section class="related-posts">
+    <h2 class="related-posts-heading">Related Posts</h2>
+    <div class="related-posts-grid">
+
+      <a class="related-card" href="../iceland/">
+        <img src="../../images/iceland.jpg" alt="Iceland" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Iceland</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../barcelona/">
+        <img src="../../images/barcelona.jpg" alt="Barcelona" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Barcelona</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../cinque-terre/">
+        <img src="../../images/cinque-terre.jpg" alt="Cinque Terre" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Cinque Terre</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../florence/">
+        <img src="../../images/florence.jpg" alt="Florence" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Florence</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../milan/">
+        <img src="../../images/milan.jpg" alt="Milan" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Milan</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../naples/">
+        <img src="../../images/naples.jpg" alt="Naples" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Naples</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lb-close" class="lightbox-close" aria-label="Close">&times;</button>
+    <button id="lb-prev"  class="lightbox-btn lightbox-prev" aria-label="Previous">&#8249;</button>
+    <div class="lightbox-img-wrap">
+      <img id="lb-img" src="" alt="">
+    </div>
+    <button id="lb-next"  class="lightbox-btn lightbox-next" aria-label="Next">&#8250;</button>
+    <div id="lb-count" class="lightbox-count"></div>
+  </div>
+
+  <script>
+  (function () {
+    var items   = Array.from(document.querySelectorAll('.post-gallery-item'));
+    var srcs    = items.map(function (btn) { return btn.querySelector('img').src; });
+    var total   = srcs.length;
+    var current = 0;
+    var lightbox = document.getElementById('lightbox');
+    var lbImg    = document.getElementById('lb-img');
+    var lbCount  = document.getElementById('lb-count');
+    function open(index) {
+      current = (index + total) % total;
+      lbImg.src = srcs[current];
+      lbCount.textContent = (current + 1) + ' / ' + total;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+      lbImg.src = '';
+    }
+    items.forEach(function (btn) {
+      btn.addEventListener('click', function () { open(parseInt(btn.dataset.index, 10)); });
+    });
+    document.getElementById('lb-close').addEventListener('click', close);
+    document.getElementById('lb-prev').addEventListener('click', function () { open(current - 1); });
+    document.getElementById('lb-next').addEventListener('click', function () { open(current + 1); });
+    lightbox.addEventListener('click', function (e) { if (e.target === lightbox) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'ArrowLeft')  { open(current - 1); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { open(current + 1); e.preventDefault(); }
+      if (e.key === 'Escape')     { close(); }
+    });
+  })();
+  </script>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <nav>
+      <a href="../../index.html">All Posts</a>
+      <a href="../../our-story/index.html">About</a>
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <p class="footer-quote">"The world is a book, and those who do not travel read only one page."</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Osaka — The View from Everywhere</title>
+  <meta name="description" content="Here in Osaka!">
+  <meta property="og:title" content="Osaka — The View from Everywhere">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+  <!-- Desktop header -->
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a href="../../index.html">All</a>
+      <a href="../../index.html?cat=United+States">USA</a>
+      <a href="../../index.html?cat=Parks">Parks</a>
+      <a href="../../index.html?cat=Europe">Europe</a>
+      <a href="../../index.html?cat=Africa">Africa</a>
+      <a href="../../index.html?cat=Asia">Asia</a>
+    </nav>
+    <div class="site-title"><a href="../../index.html">The View from Everywhere</a></div>
+    <nav aria-label="Secondary">
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+      <a href="../../our-story/index.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Mobile header -->
+  <div class="mobile-bar">
+    <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" onclick="
+      var nav = document.getElementById('mobile-nav');
+      var open = nav.classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
+    ">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-title"><a href="../../index.html">The View from Everywhere</a></div>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#555;">IG</a>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="../../index.html">All</a>
+    <a href="../../index.html?cat=United+States">USA</a>
+    <a href="../../index.html?cat=Parks">Parks</a>
+    <a href="../../index.html?cat=Europe">Europe</a>
+    <a href="../../index.html?cat=Africa">Africa</a>
+    <a href="../../index.html?cat=Asia">Asia</a>
+    <a href="../../our-story/index.html">About</a>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="post-hero">
+    <img src="../../images/osaka.jpg" alt="Osaka">
+    <div class="post-hero-overlay"></div>
+    <div class="post-hero-body">
+      <p class="post-hero-category">Asia</p>
+      <h1 class="post-hero-title">Osaka</h1>
+      <p class="post-hero-date">November 4, 2016</p>
+    </div>
+  </div>
+
+  <!-- Body copy -->
+  <div class="post-body">
+    <p class="post-lede">nov 4</p>
+  </div>
+
+  <!-- Gallery — click any image to open lightbox -->
+  <div class="post-gallery" id="gallery">
+
+    <button class="post-gallery-item" data-index="0" aria-label="Open image 1">
+      <img src="images/000026360024.jpg" alt="Osaka 1" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="1" aria-label="Open image 2">
+      <img src="images/IMG_9342.jpg" alt="Osaka 2" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="2" aria-label="Open image 3">
+      <img src="images/IMG_9361.jpg" alt="Osaka 3" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="3" aria-label="Open image 4">
+      <img src="images/IMG_9374.jpg" alt="Osaka 4" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="4" aria-label="Open image 5">
+      <img src="images/IMG_9412.jpg" alt="Osaka 5" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="5" aria-label="Open image 6">
+      <img src="images/000026360021.jpg" alt="Osaka 6" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="6" aria-label="Open image 7">
+      <img src="images/IMG_9397.jpg" alt="Osaka 7" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="7" aria-label="Open image 8">
+      <img src="images/IMG_9388.jpg" alt="Osaka 8" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="8" aria-label="Open image 9">
+      <img src="images/IMG_9302.jpg" alt="Osaka 9" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="9" aria-label="Open image 10">
+      <img src="images/IMG_9289.jpg" alt="Osaka 10" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="10" aria-label="Open image 11">
+      <img src="images/IMG_9047.jpg" alt="Osaka 11" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="11" aria-label="Open image 12">
+      <img src="images/IMG_9281.jpg" alt="Osaka 12" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="12" aria-label="Open image 13">
+      <img src="images/IMG_9463.jpg" alt="Osaka 13" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="13" aria-label="Open image 14">
+      <img src="images/IMG_9418.jpg" alt="Osaka 14" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="14" aria-label="Open image 15">
+      <img src="images/000026360016.jpg" alt="Osaka 15" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="15" aria-label="Open image 16">
+      <img src="images/000026490003.jpg" alt="Osaka 16" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="16" aria-label="Open image 17">
+      <img src="images/000026490022.jpg" alt="Osaka 17" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="17" aria-label="Open image 18">
+      <img src="images/IMG_9043.jpg" alt="Osaka 18" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="18" aria-label="Open image 19">
+      <img src="images/000026410013.jpg" alt="Osaka 19" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="19" aria-label="Open image 20">
+      <img src="images/000026410015.jpg" alt="Osaka 20" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="20" aria-label="Open image 21">
+      <img src="images/000026410016.jpg" alt="Osaka 21" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="21" aria-label="Open image 22">
+      <img src="images/IMG_9003.jpg" alt="Osaka 22" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="22" aria-label="Open image 23">
+      <img src="images/IMG_9408.jpg" alt="Osaka 23" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="23" aria-label="Open image 24">
+      <img src="images/000026360020.jpg" alt="Osaka 24" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="24" aria-label="Open image 25">
+      <img src="images/000026360019.jpg" alt="Osaka 25" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="25" aria-label="Open image 26">
+      <img src="images/000026360018.jpg" alt="Osaka 26" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="26" aria-label="Open image 27">
+      <img src="images/000026460018.jpg" alt="Osaka 27" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="27" aria-label="Open image 28">
+      <img src="images/000026460033.jpg" alt="Osaka 28" loading="lazy">
+    </button>
+
+    <button class="post-gallery-item" data-index="28" aria-label="Open image 29">
+      <img src="images/000026460006.jpg" alt="Osaka 29" loading="lazy">
+    </button>
+
+  </div><!-- /.post-gallery -->
+
+  <!-- Related posts -->
+  <section class="related-posts">
+    <h2 class="related-posts-heading">Related Posts</h2>
+    <div class="related-posts-grid">
+
+      <a class="related-card" href="../hong-kong/">
+        <img src="../../images/hong-kong.jpg" alt="Hong Kong" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Hong Kong</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../nara/">
+        <img src="../../images/nara.jpg" alt="Nara" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Nara</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../kyoto/">
+        <img src="../../images/kyoto.jpg" alt="Kyoto" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Kyoto</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../tokyo/">
+        <img src="../../images/tokyo.jpg" alt="Tokyo" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Tokyo</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../capetown/">
+        <img src="../../images/capetown.jpg" alt="Cape Town" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Cape Town</p>
+        </div>
+      </a>
+
+      <a class="related-card" href="../iceland/">
+        <img src="../../images/iceland.jpg" alt="Iceland" loading="lazy">
+        <div class="related-card-overlay"></div>
+        <div class="related-card-body">
+          <p class="related-card-title">Iceland</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lb-close" class="lightbox-close" aria-label="Close">&times;</button>
+    <button id="lb-prev"  class="lightbox-btn lightbox-prev" aria-label="Previous">&#8249;</button>
+    <div class="lightbox-img-wrap">
+      <img id="lb-img" src="" alt="">
+    </div>
+    <button id="lb-next"  class="lightbox-btn lightbox-next" aria-label="Next">&#8250;</button>
+    <div id="lb-count" class="lightbox-count"></div>
+  </div>
+
+  <script>
+  (function () {
+    var items   = Array.from(document.querySelectorAll('.post-gallery-item'));
+    var srcs    = items.map(function (btn) { return btn.querySelector('img').src; });
+    var total   = srcs.length;
+    var current = 0;
+    var lightbox = document.getElementById('lightbox');
+    var lbImg    = document.getElementById('lb-img');
+    var lbCount  = document.getElementById('lb-count');
+    function open(index) {
+      current = (index + total) % total;
+      lbImg.src = srcs[current];
+      lbCount.textContent = (current + 1) + ' / ' + total;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+      lbImg.src = '';
+    }
+    items.forEach(function (btn) {
+      btn.addEventListener('click', function () { open(parseInt(btn.dataset.index, 10)); });
+    });
+    document.getElementById('lb-close').addEventListener('click', close);
+    document.getElementById('lb-prev').addEventListener('click', function () { open(current - 1); });
+    document.getElementById('lb-next').addEventListener('click', function () { open(current + 1); });
+    lightbox.addEventListener('click', function (e) { if (e.target === lightbox) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'ArrowLeft')  { open(current - 1); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { open(current + 1); e.preventDefault(); }
+      if (e.key === 'Escape')     { close(); }
+    });
+  })();
+  </script>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <nav>
+      <a href="../../index.html">All Posts</a>
+      <a href="../../our-story/index.html">About</a>
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <p class="footer-quote">"The world is a book, and those who do not travel read only one page."</p>
+  </footer>
+
+</body>
+</html>

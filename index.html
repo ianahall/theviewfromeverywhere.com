@@ -16,17 +16,17 @@
   <!-- Desktop header -->
   <header class="site-header">
     <nav aria-label="Primary">
-      <a href="https://www.theviewfromeverywhere.com/blog">All</a>
-      <a href="https://www.theviewfromeverywhere.com/blog?category=United%20States">USA</a>
-      <a href="https://www.theviewfromeverywhere.com/blog?category=Parks">Parks</a>
-      <a href="https://www.theviewfromeverywhere.com/blog?category=Europe">Europe</a>
-      <a href="https://www.theviewfromeverywhere.com/blog?category=Africa">Africa</a>
-      <a href="https://www.theviewfromeverywhere.com/blog?category=Asia">Asia</a>
+      <a href="?cat=all"             data-filter="all">All</a>
+      <a href="?cat=United+States"   data-filter="United States">USA</a>
+      <a href="?cat=Parks"           data-filter="Parks">Parks</a>
+      <a href="?cat=Europe"          data-filter="Europe">Europe</a>
+      <a href="?cat=Africa"          data-filter="Africa">Africa</a>
+      <a href="?cat=Asia"            data-filter="Asia">Asia</a>
     </nav>
     <div class="site-title"><a href="index.html">The View from Everywhere</a></div>
     <nav aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.theviewfromeverywhere.com/our-story">About</a>
+      <a href="our-story/index.html">About</a>
     </nav>
   </header>
 
@@ -43,20 +43,20 @@
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#555;">IG</a>
   </div>
   <nav id="mobile-nav" class="mobile-nav">
-    <a href="https://www.theviewfromeverywhere.com/blog">All</a>
-    <a href="https://www.theviewfromeverywhere.com/blog?category=United%20States">USA</a>
-    <a href="https://www.theviewfromeverywhere.com/blog?category=Parks">Parks</a>
-    <a href="https://www.theviewfromeverywhere.com/blog?category=Europe">Europe</a>
-    <a href="https://www.theviewfromeverywhere.com/blog?category=Africa">Africa</a>
-    <a href="https://www.theviewfromeverywhere.com/blog?category=Asia">Asia</a>
-    <a href="https://www.theviewfromeverywhere.com/our-story">About</a>
+    <a href="?cat=all">All</a>
+    <a href="?cat=United+States">USA</a>
+    <a href="?cat=Parks">Parks</a>
+    <a href="?cat=Europe">Europe</a>
+    <a href="?cat=Africa">Africa</a>
+    <a href="?cat=Asia">Asia</a>
+    <a href="our-story/index.html">About</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
   <!-- Blog grid -->
   <main class="blog-list">
 
-    <a class="blog-card" href="blog/hawaii/">
+    <a class="blog-card" href="blog/hawaii/" data-categories="United States">
       <img class="blog-card-image" src="images/hawaii.jpg" alt="Hawaii" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -66,7 +66,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/5/4/budapest">
+    <a class="blog-card" href="blog/budapest/" data-categories="Europe">
       <img class="blog-card-image" src="images/budapest.jpg" alt="Budapest" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -76,7 +76,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/5/3/vienna">
+    <a class="blog-card" href="blog/vienna/" data-categories="Europe">
       <img class="blog-card-image" src="images/vienna.jpg" alt="Vienna" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -86,7 +86,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/5/5/prague">
+    <a class="blog-card" href="blog/prague/" data-categories="Europe">
       <img class="blog-card-image" src="images/prague.jpg" alt="Prague" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -96,7 +96,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/5/5/berlin">
+    <a class="blog-card" href="blog/berlin/" data-categories="Europe">
       <img class="blog-card-image" src="images/berlin.jpg" alt="Berlin" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -106,7 +106,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/5/3/copenhagen">
+    <a class="blog-card" href="blog/copenhagen/" data-categories="Europe">
       <img class="blog-card-image" src="images/copenhagen.jpg" alt="Copenhagen" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -116,7 +116,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/7/13/osaka">
+    <a class="blog-card" href="blog/osaka/" data-categories="Asia">
       <img class="blog-card-image" src="images/osaka.jpg" alt="Osaka" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -126,7 +126,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/28/nara">
+    <a class="blog-card" href="blog/nara/" data-categories="Asia">
       <img class="blog-card-image" src="images/nara.jpg" alt="Nara" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -136,7 +136,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/7/14/kyoto">
+    <a class="blog-card" href="blog/kyoto/" data-categories="Asia">
       <img class="blog-card-image" src="images/kyoto.jpg" alt="Kyoto" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -146,7 +146,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/7/15/tokyo">
+    <a class="blog-card" href="blog/tokyo/" data-categories="Asia">
       <img class="blog-card-image" src="images/tokyo.jpg" alt="Tokyo" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -156,7 +156,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/28/hong-kong">
+    <a class="blog-card" href="blog/hong-kong/" data-categories="Asia">
       <img class="blog-card-image" src="images/hong-kong.jpg" alt="Hong Kong" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -166,7 +166,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/8/5/great-salt-plains">
+    <a class="blog-card" href="blog/great-salt-plains/" data-categories="United States Parks">
       <img class="blog-card-image" src="images/great-salt-plains.jpg" alt="Great Salt Plains" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -175,7 +175,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/8/11/monument-rocks-the-chalk-pyramids">
+    <a class="blog-card" href="blog/monument-rocks/" data-categories="United States">
       <img class="blog-card-image" src="images/monument-rocks.jpg" alt="Monument Rocks" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -185,7 +185,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/8/6/great-sand-dunes">
+    <a class="blog-card" href="blog/great-sand-dunes/" data-categories="United States Parks">
       <img class="blog-card-image" src="images/great-sand-dunes.jpg" alt="Great Sand Dunes" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -194,7 +194,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/7/26/joshua-tree">
+    <a class="blog-card" href="blog/joshua-tree/" data-categories="United States Parks">
       <img class="blog-card-image" src="images/joshua-tree.jpg" alt="Joshua Tree" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -204,7 +204,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/8/7/death-valley">
+    <a class="blog-card" href="blog/death-valley/" data-categories="Parks United States">
       <img class="blog-card-image" src="images/death-valley.jpg" alt="Death Valley" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -213,7 +213,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/8/5/yosemite">
+    <a class="blog-card" href="blog/yosemite/" data-categories="United States Parks">
       <img class="blog-card-image" src="images/yosemite.jpg" alt="Yosemite" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -222,7 +222,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/7/27/yellowstone">
+    <a class="blog-card" href="blog/yellowstone/" data-categories="United States Parks">
       <img class="blog-card-image" src="images/yellowstone.jpg" alt="Yellowstone" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -231,7 +231,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/7/27/badlands">
+    <a class="blog-card" href="blog/badlands/" data-categories="United States Parks">
       <img class="blog-card-image" src="images/badlands.jpg" alt="Badlands" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -240,7 +240,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/8/4/acadia">
+    <a class="blog-card" href="blog/acadia/" data-categories="United States Parks">
       <img class="blog-card-image" src="images/acadia.jpg" alt="Acadia" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -249,7 +249,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/27/barcelona">
+    <a class="blog-card" href="blog/barcelona/" data-categories="Europe">
       <img class="blog-card-image" src="images/barcelona.jpg" alt="Barcelona" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -259,7 +259,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/27/rome">
+    <a class="blog-card" href="blog/rome/" data-categories="Europe">
       <img class="blog-card-image" src="images/rome.jpg" alt="Rome" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -269,7 +269,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/27/naples">
+    <a class="blog-card" href="blog/naples/" data-categories="Europe">
       <img class="blog-card-image" src="images/naples.jpg" alt="Naples" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -279,7 +279,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/27/florence">
+    <a class="blog-card" href="blog/florence/" data-categories="Europe">
       <img class="blog-card-image" src="images/florence.jpg" alt="Florence" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -289,7 +289,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/27/cinque-terre">
+    <a class="blog-card" href="blog/cinque-terre/" data-categories="Europe">
       <img class="blog-card-image" src="images/cinque-terre.jpg" alt="Cinque Terre" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -299,7 +299,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/27/venice">
+    <a class="blog-card" href="blog/venice/" data-categories="Europe">
       <img class="blog-card-image" src="images/venice.jpg" alt="Venice" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -309,7 +309,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/27/milan">
+    <a class="blog-card" href="blog/milan/" data-categories="Europe">
       <img class="blog-card-image" src="images/milan.jpg" alt="Milan" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -319,7 +319,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/26/iceland">
+    <a class="blog-card" href="blog/iceland/" data-categories="Europe">
       <img class="blog-card-image" src="images/iceland.jpg" alt="Iceland" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -329,17 +329,17 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/26/capetown-south-africa">
-      <img class="blog-card-image" src="images/capetown.jpg" alt="Capetown" loading="lazy">
+    <a class="blog-card" href="blog/capetown/" data-categories="Africa">
+      <img class="blog-card-image" src="images/capetown.jpg" alt="Cape Town" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Africa</p>
-        <h2 class="blog-card-title">Capetown</h2>
-        <p class="blog-card-excerpt">See you next time, Capetown.</p>
+        <h2 class="blog-card-title">Cape Town</h2>
+        <p class="blog-card-excerpt">See you next time, Cape Town.</p>
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/5/12/paris">
+    <a class="blog-card" href="blog/paris/" data-categories="Europe">
       <img class="blog-card-image" src="images/paris.jpg" alt="Paris" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -348,7 +348,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/3/26/tunis-tunisia">
+    <a class="blog-card" href="blog/tunisia/" data-categories="Africa">
       <img class="blog-card-image" src="images/tunisia.jpg" alt="Tunisia" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -358,7 +358,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/5/2/amsterdam">
+    <a class="blog-card" href="blog/amsterdam/" data-categories="Europe">
       <img class="blog-card-image" src="images/amsterdam.jpg" alt="Amsterdam" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -367,7 +367,7 @@
       </div>
     </a>
 
-    <a class="blog-card" href="https://www.theviewfromeverywhere.com/blog/2017/5/2/london">
+    <a class="blog-card" href="blog/london/" data-categories="Europe">
       <img class="blog-card-image" src="images/london.jpg" alt="London" loading="lazy">
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
@@ -382,13 +382,37 @@
   <footer class="site-footer">
     <nav aria-label="Footer">
       <a href="index.html">Home</a>
-      <a href="https://www.theviewfromeverywhere.com/our-story">About</a>
-      <a href="https://www.theviewfromeverywhere.com/contact">Contact</a>
-      <a href="https://www.theviewfromeverywhere.com/index">Index</a>
+      <a href="our-story/index.html">About</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
     </nav>
     <p class="footer-quote">"True objectivity, then, is not a position; it is an achievement. It is the view from everywhere."</p>
   </footer>
+
+  <script>
+  (function () {
+    var cat = (new URLSearchParams(window.location.search).get('cat') || 'all').toLowerCase();
+
+    // Highlight active nav link
+    document.querySelectorAll('[data-filter]').forEach(function (a) {
+      var f = a.dataset.filter.toLowerCase();
+      var match = (cat === 'all' && f === 'all') || (cat !== 'all' && f.toLowerCase() === cat);
+      if (match) {
+        a.style.color = '#000';
+        a.style.fontWeight = '600';
+      }
+    });
+
+    if (cat === 'all') return;
+
+    // Filter cards
+    document.querySelectorAll('.blog-card').forEach(function (card) {
+      var cats = (card.dataset.categories || '').toLowerCase();
+      if (cats.indexOf(cat) === -1) {
+        card.style.display = 'none';
+      }
+    });
+  })();
+  </script>
 
 </body>
 </html>
