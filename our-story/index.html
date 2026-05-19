@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Story — The View from Everywhere</title>
+  <meta name="description" content="Ian and Kellyn enjoy traveling. Following their 2015 marriage, they took time off to explore the world.">
+  <meta property="og:title" content="Our Story — The View from Everywhere">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- Desktop header -->
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a href="../index.html?cat=all">All</a>
+      <a href="../index.html?cat=United+States">USA</a>
+      <a href="../index.html?cat=Parks">Parks</a>
+      <a href="../index.html?cat=Europe">Europe</a>
+      <a href="../index.html?cat=Africa">Africa</a>
+      <a href="../index.html?cat=Asia">Asia</a>
+    </nav>
+    <div class="site-title"><a href="../index.html">The View from Everywhere</a></div>
+    <nav aria-label="Secondary">
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+      <a href="index.html" style="color:#111;">About</a>
+    </nav>
+  </header>
+
+  <!-- Mobile header -->
+  <div class="mobile-bar">
+    <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" onclick="
+      var nav = document.getElementById('mobile-nav');
+      var open = nav.classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
+    ">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-title"><a href="../index.html">The View from Everywhere</a></div>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#555;">IG</a>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="../index.html?cat=all">All</a>
+    <a href="../index.html?cat=United+States">USA</a>
+    <a href="../index.html?cat=Parks">Parks</a>
+    <a href="../index.html?cat=Europe">Europe</a>
+    <a href="../index.html?cat=Africa">Africa</a>
+    <a href="../index.html?cat=Asia">Asia</a>
+    <a href="index.html">About</a>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+
+  <!-- Photo -->
+  <div class="page-photo">
+    <img src="ian-and-kellyn.jpg" alt="Ian and Kellyn">
+    <p class="page-photo-caption">Look! It's Ian and Kellyn!</p>
+  </div>
+
+  <!-- Body -->
+  <div class="page-body">
+
+    <h2 class="page-heading">We like to travel. In 2015, after getting hitched, we took some time off from making websites and designing clothes to go see some things.</h2>
+
+    <p class="page-text">In the United States we spend most of our time visiting National Parks, while in Europe and Asia we worked on crossing places off our very long list.</p>
+
+    <p class="page-text">The title of this site relates to a program created by the United Nations Educational, Scientific and Cultural Organization (Unesco) shortly after World War II. The program's purpose was to prevent an apocalyptic third world war by promoting intercultural understanding. At the time many thought the fundamental cause of international conflict was humanity's failure to realize the ideals of a world community and that we are all grounded in common values.</p>
+
+    <p class="page-text">To understand yourself in the diverse and global world, you have to understand others. Travel helps with this.</p>
+
+    <h2 class="page-heading page-heading--lower">the view from everywhere:</h2>
+
+    <p class="page-quote"><em>"...an observation is objective if it is the creation of many inquirers with many different points of view." True objectivity, then, is not a position; it is an achievement. It is the view from everywhere.</em></p>
+
+  </div>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="../index.html">Home</a>
+      <a href="index.html">About</a>
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <p class="footer-quote">"True objectivity, then, is not a position; it is an achievement. It is the view from everywhere."</p>
+  </footer>
+
+</body>
+</html>

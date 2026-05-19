@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — The View from Everywhere</title>
+  <meta name="description" content="Based in Brooklyn, NY, we're always looking to collaborate with sponsors, publications, and fellow travelers.">
+  <meta property="og:title" content="Contact — The View from Everywhere">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- Desktop header -->
+  <header class="site-header">
+    <nav aria-label="Primary">
+      <a href="../index.html?cat=all">All</a>
+      <a href="../index.html?cat=United+States">USA</a>
+      <a href="../index.html?cat=Parks">Parks</a>
+      <a href="../index.html?cat=Europe">Europe</a>
+      <a href="../index.html?cat=Africa">Africa</a>
+      <a href="../index.html?cat=Asia">Asia</a>
+    </nav>
+    <div class="site-title"><a href="../index.html">The View from Everywhere</a></div>
+    <nav aria-label="Secondary">
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+      <a href="../our-story/index.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Mobile header -->
+  <div class="mobile-bar">
+    <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" onclick="
+      var nav = document.getElementById('mobile-nav');
+      var open = nav.classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
+    ">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-title"><a href="../index.html">The View from Everywhere</a></div>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#555;">IG</a>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav">
+    <a href="../index.html?cat=all">All</a>
+    <a href="../index.html?cat=United+States">USA</a>
+    <a href="../index.html?cat=Parks">Parks</a>
+    <a href="../index.html?cat=Europe">Europe</a>
+    <a href="../index.html?cat=Africa">Africa</a>
+    <a href="../index.html?cat=Asia">Asia</a>
+    <a href="../our-story/index.html">About</a>
+    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+
+  <!-- Body -->
+  <div class="page-body page-body--contact">
+
+    <h1 class="page-heading">Get in Touch.</h1>
+
+    <p class="page-text"><em>Based in Brooklyn, NY, we're always looking to collaborate with sponsors, publications, and fellow travelers. If you're up to something fun, we'd love to hear from you. Drop us a line below!</em></p>
+
+    <form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST">
+      <div class="contact-field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="contact-field">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div class="contact-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Say hello..." required></textarea>
+      </div>
+      <button type="submit" class="contact-submit">Send Message</button>
+    </form>
+
+  </div>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="../index.html">Home</a>
+      <a href="../our-story/index.html">About</a>
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <p class="footer-quote">"True objectivity, then, is not a position; it is an achievement. It is the view from everywhere."</p>
+  </footer>
+
+</body>
+</html>
