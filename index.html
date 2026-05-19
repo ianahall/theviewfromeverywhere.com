@@ -4,376 +4,415 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The View from Everywhere</title>
-  <meta name="description" content="The View From Everywhere is a travel site that highlights the lovely places we've been lucky enough to visit on Earth.">
-  <meta property="og:site_name" content="The View from Everywhere">
-  <meta property="og:title" content="The View from Everywhere">
-  <meta property="og:url" content="https://www.theviewfromeverywhere.com">
-  <meta property="og:type" content="website">
+  <meta name="description" content="A travel photography journal by Ian and Kellyn. National Parks, Europe, Asia, and Africa.">
+  <link rel="canonical" href="https://www.theviewfromeverywhere.com/">
+  <meta property="og:site_name"   content="The View from Everywhere">
+  <meta property="og:title"       content="The View from Everywhere">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://www.theviewfromeverywhere.com/">
+  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/hawaii.jpg">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/hawaii.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Desktop header -->
   <header class="site-header">
     <nav aria-label="Primary">
-      <a href="?cat=all"             data-filter="all">All</a>
-      <a href="?cat=United+States"   data-filter="United States">USA</a>
-      <a href="?cat=Parks"           data-filter="Parks">Parks</a>
-      <a href="?cat=Europe"          data-filter="Europe">Europe</a>
-      <a href="?cat=Africa"          data-filter="Africa">Africa</a>
-      <a href="?cat=Asia"            data-filter="Asia">Asia</a>
+      <a href="./index.html?cat=all" data-filter="all">All</a>
+      <a href="./index.html?cat=United+States" data-filter="United States">USA</a>
+      <a href="./index.html?cat=Parks" data-filter="Parks">Parks</a>
+      <a href="./index.html?cat=Europe" data-filter="Europe">Europe</a>
+      <a href="./index.html?cat=Africa" data-filter="Africa">Africa</a>
+      <a href="./index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <div class="site-title"><a href="index.html">The View from Everywhere</a></div>
+    <div class="site-title">
+      <a href="./index.html">The View from Everywhere</a>
+    </div>
     <nav aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
-      <a href="our-story/index.html">About</a>
+      <a href="./our-story/index.html">About</a>
     </nav>
   </header>
 
-  <!-- Mobile header -->
   <div class="mobile-bar">
-    <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" onclick="
-      var nav = document.getElementById('mobile-nav');
-      var open = nav.classList.toggle('open');
-      this.setAttribute('aria-expanded', open);
-    ">
+    <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <div class="mobile-title"><a href="index.html">The View from Everywhere</a></div>
-    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#555;">IG</a>
+    <div class="mobile-title">
+      <a href="./index.html">The View from Everywhere</a>
+    </div>
+    <a class="mobile-ig" href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">IG</a>
   </div>
-  <nav id="mobile-nav" class="mobile-nav">
-    <a href="?cat=all">All</a>
-    <a href="?cat=United+States">USA</a>
-    <a href="?cat=Parks">Parks</a>
-    <a href="?cat=Europe">Europe</a>
-    <a href="?cat=Africa">Africa</a>
-    <a href="?cat=Asia">Asia</a>
-    <a href="our-story/index.html">About</a>
+  <nav id="mobile-nav" class="mobile-nav" hidden>
+    <a href="./index.html?cat=all">All</a>
+    <a href="./index.html?cat=United+States">USA</a>
+    <a href="./index.html?cat=Parks">Parks</a>
+    <a href="./index.html?cat=Europe">Europe</a>
+    <a href="./index.html?cat=Africa">Africa</a>
+    <a href="./index.html?cat=Asia">Asia</a>
+    <a href="./our-story/index.html">About</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
-  <!-- Blog grid -->
-  <main class="blog-list">
-
-    <a class="blog-card" href="blog/hawaii/" data-categories="United States">
-      <img class="blog-card-image" src="images/hawaii.jpg" alt="Hawaii" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">United States</p>
-        <h2 class="blog-card-title">Hawaii</h2>
-        <p class="blog-card-excerpt">Oh what a Hawaii!</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/budapest/" data-categories="Europe">
-      <img class="blog-card-image" src="images/budapest.jpg" alt="Budapest" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Budapest</h2>
-        <p class="blog-card-excerpt">When I say "Buda" you say "Pest"!</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/vienna/" data-categories="Europe">
-      <img class="blog-card-image" src="images/vienna.jpg" alt="Vienna" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Vienna</h2>
-        <p class="blog-card-excerpt">Oh what a wiener.</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/prague/" data-categories="Europe">
-      <img class="blog-card-image" src="images/prague.jpg" alt="Prague" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Prague</h2>
-        <p class="blog-card-excerpt">Prague gone it!</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/berlin/" data-categories="Europe">
-      <img class="blog-card-image" src="images/berlin.jpg" alt="Berlin" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Berlin</h2>
-        <p class="blog-card-excerpt">Berlin, my friend.</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/copenhagen/" data-categories="Europe">
-      <img class="blog-card-image" src="images/copenhagen.jpg" alt="Copenhagen" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Copenhagen</h2>
-        <p class="blog-card-excerpt">Copenhagen 4 Life...</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/osaka/" data-categories="Asia">
-      <img class="blog-card-image" src="images/osaka.jpg" alt="Osaka" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Asia</p>
-        <h2 class="blog-card-title">Osaka</h2>
-        <p class="blog-card-excerpt">Here in Osaka!</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/nara/" data-categories="Asia">
-      <img class="blog-card-image" src="images/nara.jpg" alt="Nara" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Asia</p>
-        <h2 class="blog-card-title">Nara</h2>
-        <p class="blog-card-excerpt">Deer God!</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/kyoto/" data-categories="Asia">
-      <img class="blog-card-image" src="images/kyoto.jpg" alt="Kyoto" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Asia</p>
-        <h2 class="blog-card-title">Kyoto</h2>
-        <p class="blog-card-excerpt">Kyoto, ya know.</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/tokyo/" data-categories="Asia">
-      <img class="blog-card-image" src="images/tokyo.jpg" alt="Tokyo" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Asia</p>
-        <h2 class="blog-card-title">Tokyo</h2>
-        <p class="blog-card-excerpt">Tokyoooo!</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/hong-kong/" data-categories="Asia">
-      <img class="blog-card-image" src="images/hong-kong.jpg" alt="Hong Kong" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Asia</p>
-        <h2 class="blog-card-title">Hong Kong</h2>
-        <p class="blog-card-excerpt">Oh, duck it.</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/great-salt-plains/" data-categories="United States Parks">
-      <img class="blog-card-image" src="images/great-salt-plains.jpg" alt="Great Salt Plains" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">United States &middot; Parks</p>
-        <h2 class="blog-card-title">Great Salt Plains</h2>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/monument-rocks/" data-categories="United States">
-      <img class="blog-card-image" src="images/monument-rocks.jpg" alt="Monument Rocks" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">United States</p>
-        <h2 class="blog-card-title">Monument Rocks</h2>
-        <p class="blog-card-excerpt">The Chalk Pyramids</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/great-sand-dunes/" data-categories="United States Parks">
-      <img class="blog-card-image" src="images/great-sand-dunes.jpg" alt="Great Sand Dunes" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">United States &middot; Parks</p>
-        <h2 class="blog-card-title">Great Sand Dunes</h2>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/joshua-tree/" data-categories="United States Parks">
-      <img class="blog-card-image" src="images/joshua-tree.jpg" alt="Joshua Tree" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">United States &middot; Parks</p>
-        <h2 class="blog-card-title">Joshua Tree</h2>
-        <p class="blog-card-excerpt">Joshua Tree, yeah you know me!</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/death-valley/" data-categories="Parks United States">
-      <img class="blog-card-image" src="images/death-valley.jpg" alt="Death Valley" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Parks &middot; United States</p>
-        <h2 class="blog-card-title">Death Valley</h2>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/yosemite/" data-categories="United States Parks">
-      <img class="blog-card-image" src="images/yosemite.jpg" alt="Yosemite" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">United States &middot; Parks</p>
-        <h2 class="blog-card-title">Yosemite</h2>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/yellowstone/" data-categories="United States Parks">
-      <img class="blog-card-image" src="images/yellowstone.jpg" alt="Yellowstone" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">United States &middot; Parks</p>
-        <h2 class="blog-card-title">Yellowstone</h2>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/badlands/" data-categories="United States Parks">
-      <img class="blog-card-image" src="images/badlands.jpg" alt="Badlands" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">United States &middot; Parks</p>
-        <h2 class="blog-card-title">Badlands</h2>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/acadia/" data-categories="United States Parks">
-      <img class="blog-card-image" src="images/acadia.jpg" alt="Acadia" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">United States &middot; Parks</p>
-        <h2 class="blog-card-title">Acadia</h2>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/barcelona/" data-categories="Europe">
-      <img class="blog-card-image" src="images/barcelona.jpg" alt="Barcelona" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Barcelona</h2>
-        <p class="blog-card-excerpt">A New Favorite City</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/rome/" data-categories="Europe">
-      <img class="blog-card-image" src="images/rome.jpg" alt="Rome" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Rome</h2>
-        <p class="blog-card-excerpt">Rome if you want to.</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/naples/" data-categories="Europe">
-      <img class="blog-card-image" src="images/naples.jpg" alt="Naples" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Naples</h2>
-        <p class="blog-card-excerpt">Come for the pizza, stay for the volcano.</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/florence/" data-categories="Europe">
-      <img class="blog-card-image" src="images/florence.jpg" alt="Florence" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Florence</h2>
-        <p class="blog-card-excerpt">The David and Butter Chicken</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/cinque-terre/" data-categories="Europe">
-      <img class="blog-card-image" src="images/cinque-terre.jpg" alt="Cinque Terre" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Cinque Terre</h2>
-        <p class="blog-card-excerpt">Five lands, sweet wine and biscuits.</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/venice/" data-categories="Europe">
-      <img class="blog-card-image" src="images/venice.jpg" alt="Venice" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Venice</h2>
-        <p class="blog-card-excerpt">A lot of boats, a lot of moats.</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/milan/" data-categories="Europe">
-      <img class="blog-card-image" src="images/milan.jpg" alt="Milan" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Milan</h2>
-        <p class="blog-card-excerpt">Northern Italy</p>
-      </div>
-    </a>
-
-    <a class="blog-card" href="blog/iceland/" data-categories="Europe">
-      <img class="blog-card-image" src="images/iceland.jpg" alt="Iceland" loading="lazy">
-      <div class="blog-card-overlay"></div>
-      <div class="blog-card-body">
-        <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Iceland</h2>
-        <p class="blog-card-excerpt">Iceland is a game-changer.</p>
-      </div>
-    </a>
+  <main class="blog-list" id="blog-list">
 
     <a class="blog-card" href="blog/capetown/" data-categories="Africa">
-      <img class="blog-card-image" src="images/capetown.jpg" alt="Cape Town" loading="lazy">
+      <picture><source type="image/webp" srcset="images/web/capetown.webp"><img class="blog-card-image" src="images/web/capetown.jpg" alt="Cape Town" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Africa</p>
         <h2 class="blog-card-title">Cape Town</h2>
         <p class="blog-card-excerpt">See you next time, Cape Town.</p>
+        <p class="blog-card-date">February 21, 2014</p>
       </div>
     </a>
 
-    <a class="blog-card" href="blog/paris/" data-categories="Europe">
-      <img class="blog-card-image" src="images/paris.jpg" alt="Paris" loading="lazy">
+    <a class="blog-card" href="blog/iceland/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/iceland.webp"><img class="blog-card-image" src="images/web/iceland.jpg" alt="Iceland" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
-        <h2 class="blog-card-title">Paris</h2>
+        <h2 class="blog-card-title">Iceland</h2>
+        <p class="blog-card-excerpt">Iceland is a game-changer.</p>
+        <p class="blog-card-date">February 24, 2015</p>
       </div>
     </a>
 
     <a class="blog-card" href="blog/tunisia/" data-categories="Africa">
-      <img class="blog-card-image" src="images/tunisia.jpg" alt="Tunisia" loading="lazy">
+      <picture><source type="image/webp" srcset="images/web/tunisia.webp"><img class="blog-card-image" src="images/web/tunisia.jpg" alt="Tunisia" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Africa</p>
         <h2 class="blog-card-title">Tunisia</h2>
         <p class="blog-card-excerpt">From Tunis to La Marsa to Carthage</p>
+        <p class="blog-card-date">June 9, 2012</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/barcelona/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/barcelona.webp"><img class="blog-card-image" src="images/web/barcelona.jpg" alt="Barcelona" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Barcelona</h2>
+        <p class="blog-card-excerpt">A New Favorite City</p>
+        <p class="blog-card-date">May 27, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/cinque-terre/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/cinque-terre.webp"><img class="blog-card-image" src="images/web/cinque-terre.jpg" alt="Cinque Terre" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Cinque Terre</h2>
+        <p class="blog-card-excerpt">Five lands, sweet wine and biscuits.</p>
+        <p class="blog-card-date">May 10, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/florence/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/florence.webp"><img class="blog-card-image" src="images/web/florence.jpg" alt="Florence" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Florence</h2>
+        <p class="blog-card-excerpt">The David and Butter Chicken</p>
+        <p class="blog-card-date">May 13, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/milan/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/milan.webp"><img class="blog-card-image" src="images/web/milan.jpg" alt="Milan" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Milan</h2>
+        <p class="blog-card-excerpt">Northern Italy</p>
+        <p class="blog-card-date">May 5, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/naples/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/naples.webp"><img class="blog-card-image" src="images/web/naples.jpg" alt="Naples" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Naples</h2>
+        <p class="blog-card-excerpt">Come for the pizza, stay for the volcano.</p>
+        <p class="blog-card-date">May 15, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/rome/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/rome.webp"><img class="blog-card-image" src="images/web/rome.jpg" alt="Rome" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Rome</h2>
+        <p class="blog-card-excerpt">Rome if you want to.</p>
+        <p class="blog-card-date">May 18, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/venice/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/venice.webp"><img class="blog-card-image" src="images/web/venice.jpg" alt="Venice" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Venice</h2>
+        <p class="blog-card-excerpt">A lot of boats, a lot of moats.</p>
+        <p class="blog-card-date">May 8, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/hong-kong/" data-categories="Asia">
+      <picture><source type="image/webp" srcset="images/web/hong-kong.webp"><img class="blog-card-image" src="images/web/hong-kong.jpg" alt="Hong Kong" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Asia</p>
+        <h2 class="blog-card-title">Hong Kong</h2>
+        <p class="blog-card-excerpt">Oh, duck it.</p>
+        <p class="blog-card-date">October 25, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/nara/" data-categories="Asia">
+      <picture><source type="image/webp" srcset="images/web/nara.webp"><img class="blog-card-image" src="images/web/nara.jpg" alt="Nara" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Asia</p>
+        <h2 class="blog-card-title">Nara</h2>
+        <p class="blog-card-excerpt">Deer God!</p>
+        <p class="blog-card-date">November 2, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/hawaii/" data-categories="United States">
+      <picture><source type="image/webp" srcset="images/web/hawaii.webp"><img class="blog-card-image" src="images/web/hawaii.jpg" alt="Hawaii" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">United States</p>
+        <h2 class="blog-card-title">Hawaii</h2>
+        <p class="blog-card-excerpt">Oh what a Hawaii!</p>
+        <p class="blog-card-date">March 31, 2017</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/paris/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/paris.webp"><img class="blog-card-image" src="images/web/paris.jpg" alt="Paris" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Paris</h2>
+        <p class="blog-card-excerpt">la Ville LumièreGay Perry!</p>
+        <p class="blog-card-date">June 10, 2012</p>
       </div>
     </a>
 
     <a class="blog-card" href="blog/amsterdam/" data-categories="Europe">
-      <img class="blog-card-image" src="images/amsterdam.jpg" alt="Amsterdam" loading="lazy">
+      <picture><source type="image/webp" srcset="images/web/amsterdam.webp"><img class="blog-card-image" src="images/web/amsterdam.jpg" alt="Amsterdam" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
         <h2 class="blog-card-title">Amsterdam</h2>
+        <p class="blog-card-excerpt">Amsterdaaaaaamn... there are a lot of bikes!</p>
+        <p class="blog-card-date">June 7, 2012</p>
       </div>
     </a>
 
     <a class="blog-card" href="blog/london/" data-categories="Europe">
-      <img class="blog-card-image" src="images/london.jpg" alt="London" loading="lazy">
+      <picture><source type="image/webp" srcset="images/web/london.webp"><img class="blog-card-image" src="images/web/london.jpg" alt="London" loading="lazy" decoding="async"></picture>
       <div class="blog-card-overlay"></div>
       <div class="blog-card-body">
         <p class="blog-card-category">Europe</p>
         <h2 class="blog-card-title">London</h2>
-        <p class="blog-card-excerpt">You have to love ol' London town.</p>
+        <p class="blog-card-excerpt">You have to love ol’ London town.</p>
+        <p class="blog-card-date">August 27, 2011</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/copenhagen/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/copenhagen.webp"><img class="blog-card-image" src="images/web/copenhagen.jpg" alt="Copenhagen" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Copenhagen</h2>
+        <p class="blog-card-excerpt">Copenhagen 4 Life…</p>
+        <p class="blog-card-date">February 1, 2017</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/vienna/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/vienna.webp"><img class="blog-card-image" src="images/web/vienna.jpg" alt="Vienna" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Vienna</h2>
+        <p class="blog-card-excerpt">Oh what a wiener.</p>
+        <p class="blog-card-date">February 10, 2017</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/budapest/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/budapest.webp"><img class="blog-card-image" src="images/web/budapest.jpg" alt="Budapest" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Budapest</h2>
+        <p class="blog-card-excerpt">When I say “Buda” you say “Pest”!</p>
+        <p class="blog-card-date">February 13, 2017</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/berlin/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/berlin.webp"><img class="blog-card-image" src="images/web/berlin.jpg" alt="Berlin" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Berlin</h2>
+        <p class="blog-card-excerpt">Berlin, my friend.</p>
+        <p class="blog-card-date">February 4, 2017</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/prague/" data-categories="Europe">
+      <picture><source type="image/webp" srcset="images/web/prague.webp"><img class="blog-card-image" src="images/web/prague.jpg" alt="Prague" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Europe</p>
+        <h2 class="blog-card-title">Prague</h2>
+        <p class="blog-card-excerpt">Prague gone it!</p>
+        <p class="blog-card-date">February 7, 2017</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/osaka/" data-categories="Asia">
+      <picture><source type="image/webp" srcset="images/web/osaka.webp"><img class="blog-card-image" src="images/web/osaka.jpg" alt="Osaka" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Asia</p>
+        <h2 class="blog-card-title">Osaka</h2>
+        <p class="blog-card-excerpt">Here in Osaka!</p>
+        <p class="blog-card-date">November 4, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/kyoto/" data-categories="Asia">
+      <picture><source type="image/webp" srcset="images/web/kyoto.webp"><img class="blog-card-image" src="images/web/kyoto.jpg" alt="Kyoto" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Asia</p>
+        <h2 class="blog-card-title">Kyoto</h2>
+        <p class="blog-card-excerpt">Kyoto, ya know.</p>
+        <p class="blog-card-date">November 1, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/tokyo/" data-categories="Asia">
+      <picture><source type="image/webp" srcset="images/web/tokyo.webp"><img class="blog-card-image" src="images/web/tokyo.jpg" alt="Tokyo" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Asia</p>
+        <h2 class="blog-card-title">Tokyo</h2>
+        <p class="blog-card-excerpt">Tokyoooo!</p>
+        <p class="blog-card-date">October 28, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/joshua-tree/" data-categories="United States Parks">
+      <picture><source type="image/webp" srcset="images/web/joshua-tree.webp"><img class="blog-card-image" src="images/web/joshua-tree.jpg" alt="Joshua Tree" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">United States</p>
+        <h2 class="blog-card-title">Joshua Tree</h2>
+        <p class="blog-card-excerpt">Joshua Tree, yeah you know me!</p>
+        <p class="blog-card-date">August 27, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/badlands/" data-categories="United States Parks">
+      <picture><source type="image/webp" srcset="images/web/badlands.webp"><img class="blog-card-image" src="images/web/badlands.jpg" alt="Badlands" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">United States</p>
+        <h2 class="blog-card-title">Badlands</h2>
+        <p class="blog-card-date">August 11, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/yellowstone/" data-categories="United States Parks">
+      <picture><source type="image/webp" srcset="images/web/yellowstone.webp"><img class="blog-card-image" src="images/web/yellowstone.jpg" alt="Yellowstone" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">United States</p>
+        <h2 class="blog-card-title">Yellowstone</h2>
+        <p class="blog-card-date">August 15, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/monument-rocks/" data-categories="United States">
+      <picture><source type="image/webp" srcset="images/web/monument-rocks.webp"><img class="blog-card-image" src="images/web/monument-rocks.jpg" alt="Monument Rocks" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">United States</p>
+        <h2 class="blog-card-title">Monument Rocks</h2>
+        <p class="blog-card-excerpt">The Chalk Pyramids</p>
+        <p class="blog-card-date">September 13, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/acadia/" data-categories="United States Parks">
+      <picture><source type="image/webp" srcset="images/web/acadia.webp"><img class="blog-card-image" src="images/web/acadia.jpg" alt="Acadia" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">United States</p>
+        <h2 class="blog-card-title">Acadia</h2>
+        <p class="blog-card-date">July 21, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/great-salt-plains/" data-categories="United States Parks">
+      <picture><source type="image/webp" srcset="images/web/great-salt-plains.webp"><img class="blog-card-image" src="images/web/great-salt-plains.jpg" alt="Great Salt Plains" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">United States</p>
+        <h2 class="blog-card-title">Great Salt Plains</h2>
+        <p class="blog-card-date">September 14, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/yosemite/" data-categories="United States Parks">
+      <picture><source type="image/webp" srcset="images/web/yosemite.webp"><img class="blog-card-image" src="images/web/yosemite.jpg" alt="Yosemite" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">United States</p>
+        <h2 class="blog-card-title">Yosemite</h2>
+        <p class="blog-card-date">August 23, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/great-sand-dunes/" data-categories="United States Parks">
+      <picture><source type="image/webp" srcset="images/web/great-sand-dunes.webp"><img class="blog-card-image" src="images/web/great-sand-dunes.jpg" alt="Great Sand Dunes" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">United States</p>
+        <h2 class="blog-card-title">Great Sand Dunes</h2>
+        <p class="blog-card-date">September 9, 2016</p>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/death-valley/" data-categories="Parks United States">
+      <picture><source type="image/webp" srcset="images/web/death-valley.webp"><img class="blog-card-image" src="images/web/death-valley.jpg" alt="Death Valley" loading="lazy" decoding="async"></picture>
+      <div class="blog-card-overlay"></div>
+      <div class="blog-card-body">
+        <p class="blog-card-category">Parks</p>
+        <h2 class="blog-card-title">Death Valley</h2>
+        <p class="blog-card-date">August 26, 2016</p>
       </div>
     </a>
 
@@ -381,38 +420,14 @@
 
   <footer class="site-footer">
     <nav aria-label="Footer">
-      <a href="index.html">Home</a>
-      <a href="our-story/index.html">About</a>
+      <a href="./index.html">Home</a>
+      <a href="./our-story/index.html">About</a>
+      <a href="./contact/index.html">Contact</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
     </nav>
-    <p class="footer-quote">"True objectivity, then, is not a position; it is an achievement. It is the view from everywhere."</p>
+    <p class="footer-quote">&ldquo;True objectivity, then, is not a position; it is an achievement. It is the view from everywhere.&rdquo;</p>
   </footer>
 
-  <script>
-  (function () {
-    var cat = (new URLSearchParams(window.location.search).get('cat') || 'all').toLowerCase();
-
-    // Highlight active nav link
-    document.querySelectorAll('[data-filter]').forEach(function (a) {
-      var f = a.dataset.filter.toLowerCase();
-      var match = (cat === 'all' && f === 'all') || (cat !== 'all' && f.toLowerCase() === cat);
-      if (match) {
-        a.style.color = '#000';
-        a.style.fontWeight = '600';
-      }
-    });
-
-    if (cat === 'all') return;
-
-    // Filter cards
-    document.querySelectorAll('.blog-card').forEach(function (card) {
-      var cats = (card.dataset.categories || '').toLowerCase();
-      if (cats.indexOf(cat) === -1) {
-        card.style.display = 'none';
-      }
-    });
-  })();
-  </script>
-
+  <script src="app.js"></script>
 </body>
 </html>

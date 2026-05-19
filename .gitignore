@@ -1,0 +1,23 @@
+# Full-resolution source images — too large for GitHub Pages.
+# These are in git history but excluded from future commits.
+# Re-download with: bash download_images.sh
+# Then optimize with: python3 optimize.py
+images/*.jpg
+images/*.jpeg
+images/*.png
+blog/*/images/*.jpg
+blog/*/images/*.jpeg
+blog/*/images/*.png
+
+# Keep optimized web derivatives (these ARE committed and deployed)
+!images/web/
+!blog/*/images/web/
+
+# Keep the Our Story photo (it IS committed)
+!our-story/ian-and-kellyn.jpg
+!our-story/ian-and-kellyn.webp
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store

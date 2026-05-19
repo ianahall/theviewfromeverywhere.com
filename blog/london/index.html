@@ -4,44 +4,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>London — The View from Everywhere</title>
-  <meta name="description" content="London's Calling. Answer the Call!">
-  <meta property="og:title" content="London — The View from Everywhere">
-  <meta property="og:type" content="article">
+  <meta name="description" content="You have to love ol’ London town.">
+  <link rel="canonical" href="https://www.theviewfromeverywhere.com/blog/london/">
+  <meta property="og:title"       content="London — The View from Everywhere">
+  <meta property="og:description" content="You have to love ol’ London town.">
+  <meta property="og:type"        content="article">
+  <meta property="og:url"         content="https://www.theviewfromeverywhere.com/blog/london/">
+  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/london.jpg">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/london.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
 
-  <!-- Desktop header -->
   <header class="site-header">
     <nav aria-label="Primary">
-      <a href="../../index.html">All</a>
-      <a href="../../index.html?cat=United+States">USA</a>
-      <a href="../../index.html?cat=Parks">Parks</a>
-      <a href="../../index.html?cat=Europe">Europe</a>
-      <a href="../../index.html?cat=Africa">Africa</a>
-      <a href="../../index.html?cat=Asia">Asia</a>
+      <a href="../../index.html?cat=all" data-filter="all">All</a>
+      <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
+      <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
+      <a href="../../index.html?cat=Europe" data-filter="Europe">Europe</a>
+      <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
+      <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <div class="site-title"><a href="../../index.html">The View from Everywhere</a></div>
+    <div class="site-title">
+      <a href="../../index.html">The View from Everywhere</a>
+    </div>
     <nav aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
       <a href="../../our-story/index.html">About</a>
     </nav>
   </header>
 
-  <!-- Mobile header -->
   <div class="mobile-bar">
-    <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" onclick="
-      var nav = document.getElementById('mobile-nav');
-      var open = nav.classList.toggle('open');
-      this.setAttribute('aria-expanded', open);
-    ">
+    <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <div class="mobile-title"><a href="../../index.html">The View from Everywhere</a></div>
-    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#555;">IG</a>
+    <div class="mobile-title">
+      <a href="../../index.html">The View from Everywhere</a>
+    </div>
+    <a class="mobile-ig" href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">IG</a>
   </div>
-  <nav id="mobile-nav" class="mobile-nav">
-    <a href="../../index.html">All</a>
+  <nav id="mobile-nav" class="mobile-nav" hidden>
+    <a href="../../index.html?cat=all">All</a>
     <a href="../../index.html?cat=United+States">USA</a>
     <a href="../../index.html?cat=Parks">Parks</a>
     <a href="../../index.html?cat=Europe">Europe</a>
@@ -51,9 +58,8 @@
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
-  <!-- Hero -->
   <div class="post-hero">
-    <img src="../../images/london.jpg" alt="London">
+    <picture><source type="image/webp" srcset="../../images/web/london.webp"><img src="../../images/web/london.jpg" alt="London" loading="eager" decoding="async"></picture>
     <div class="post-hero-overlay"></div>
     <div class="post-hero-body">
       <p class="post-hero-category">Europe</p>
@@ -62,249 +68,252 @@
     </div>
   </div>
 
-  <!-- Body copy -->
   <div class="post-body">
-    <p class="post-lede">You have to love ol' London town. It's a great city, and is home to a lot of really special place. In this post you'll see a few museums, a couple of hot spots, and some a-ok places to eat and drink! Most museums in London are free to enter. Something about hopping and bopping from museum to museum is really fun and exciting. Some of our favorites were The National Gallery, The National Portrait Gallery, the Tate Modern, V&amp;A, and for a taste of the strange, the Wellcome Collection. We ended up traveling to London on the cheap for Kel's birthday. Because we booked a vacation package, our hotel was in a neighborhood we weren't terribly familiar with called Earl's Court. Lucky for us, Earl's Court is home to the Troubadour, a historic coffee house where Bob Dylan, Paul Simon, Elton John, Morrissey, and many more have all played over the years. Behind the coffee shop is a beautiful, peaceful spot for a stroll called Brompton Cemetery. I highly recommend checking them both out! Now there're a lot of problems in the world, but I do think that we'd get along a bit better if there were more spots around like Drink, Shop &amp; Do. In short, folks get together here to drink booze, peruse hand-made crafts in the store, and sit around communal tables to drunkenly make art (and crafts) together.&nbsp;Kellyn was in heaven! Prior to visiting London I heard a lot about Borough Market. Turns out, it definitely lives up to the hype. Not only that, there are some seriously great cheese shops and pubs in the nearby area. For example, Globe Tavern is a sweet spot to grab a pint. Word on the street is that this is where Bridget from Bridget Jones Diaries would pour one back in the movies! There are tons of great places to see and things to do in London. The signage is especially fun. Give Away, Cockfosters, Sheer Drops, and of course, Mind the Gap.... London has it all! One of the A+ recommendations we received was to visit Gordon's Wine Bar. It's in a bit of a touristy area down by the Thames, but gee does it set the mood and boy is it easy on the eyes. If you feel like drinking some fermented grape juice like it's 1890, this is your spot! Over near the Wellcome Collection, there's a great little pub called Bree Louise&nbsp;that serves award-winning ale and cider in an authentic pub atmosphere. I had a terrific handmade pie and a nice, cloudy cider while chilling out there. It's a pub in the true sense - a public place for the young and old alike to get together to talk, laugh, and drink.&nbsp;Also, the place is carpeted, which for some reason made me really happy. A friend's parents recommended going on a Jack the Ripper murder mystery walking tour. Because we were running late, we had to run about 20 minutes straight to make it on time. The tour was super fun, and appropriately touristy. The final stop is a hipster pub called The Ten Bells where Jack himself used to gaze at his soon-to-be victims, Annie Chapman and Mary Kelly,&nbsp;while they drank pomegranate margaritas (j/k).&nbsp; That about does it! If London calls, please do yourself a solid and pick up the phone. You won't regret it!</p>
+    <p class="post-lede">You have to love ol&#x27; London town. It&#x27;s a great city, and is home to a lot of really special place. In this post you&#x27;ll see a few museums, a couple of hot spots, and some a-ok places to eat and drink! Most museums in London are free to enter. Something about hopping and bopping from museum to museum is really fun and exciting. Some of our favorites were The National Gallery, The National Portrait Gallery, the Tate Modern, V&amp;amp;A, and for a taste of the strange, the Wellcome Collection. We ended up traveling to London on the cheap for Kel&#x27;s birthday. Because we booked a vacation package, our hotel was in a neighborhood we weren&#x27;t terribly familiar with called Earl&#x27;s Court. Lucky for us, Earl&#x27;s Court is home to the Troubadour, a historic coffee house where Bob Dylan, Paul Simon, Elton John, Morrissey, and many more have all played over the years. Behind the coffee shop is a beautiful, peaceful spot for a stroll called Brompton Cemetery. I highly recommend checking them both out! Now there&#x27;re a lot of problems in the world, but I do think that we&#x27;d get along a bit better if there were more spots around like Drink, Shop &amp;amp; Do. In short, folks get together here to drink booze, peruse hand-made crafts in the store, and sit around communal tables to drunkenly make art (and crafts) together.&amp;nbsp;Kellyn was in heaven! Prior to visiting London I heard a lot about Borough Market. Turns out, it definitely lives up to the hype. Not only that, there are some seriously great cheese shops and pubs in the nearby area. For example, Globe Tavern is a sweet spot to grab a pint. Word on the street is that this is where Bridget from Bridget Jones Diaries would pour one back in the movies! There are tons of great places to see and things to do in London. The signage is especially fun. Give Away, Cockfosters, Sheer Drops, and of course, Mind the Gap.... London has it all! One of the A+ recommendations we received was to visit Gordon&#x27;s Wine Bar. It&#x27;s in a bit of a touristy area down by the Thames, but gee does it set the mood and boy is it easy on the eyes. If you feel like drinking some fermented grape juice like it&#x27;s 1890, this is your spot! Over near the Wellcome Collection, there&#x27;s a great little pub called Bree Louise&amp;nbsp;that serves award-winning ale and cider in an authentic pub atmosphere. I had a terrific handmade pie and a nice, cloudy cider while chilling out there. It&#x27;s a pub in the true sense - a public place for the young and old alike to get together to talk, laugh, and drink.&amp;nbsp;Also, the place is carpeted, which for some reason made me really happy. A friend&#x27;s parents recommended going on a Jack the Ripper murder mystery walking tour. Because we were running late, we had to run about 20 minutes straight to make it on time. The tour was super fun, and appropriately touristy. The final stop is a hipster pub called The Ten Bells where Jack himself used to gaze at his soon-to-be victims, Annie Chapman and Mary Kelly,&amp;nbsp;while they drank pomegranate margaritas (j/k).&amp;nbsp; That about does it! If London calls, please do yourself a solid and pick up the phone. You won&#x27;t regret it!</p>
   </div>
 
-  <!-- Gallery — click any image to open lightbox -->
   <div class="post-gallery" id="gallery">
 
-    <button class="post-gallery-item" data-index="0" aria-label="Open image 1">
-      <img src="images/029_29.jpg" alt="London 1" loading="lazy">
+    <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
+      <picture><source type="image/webp" srcset="images/web/029_29.webp"><img src="images/web/029_29.jpg" alt="London — photo 1" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="1" aria-label="Open image 2">
-      <img src="images/020_20.jpg" alt="London 2" loading="lazy">
+    <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
+      <picture><source type="image/webp" srcset="images/web/020_20.webp"><img src="images/web/020_20.jpg" alt="London — photo 2" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="2" aria-label="Open image 3">
-      <img src="images/019_19.jpg" alt="London 3" loading="lazy">
+    <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
+      <picture><source type="image/webp" srcset="images/web/019_19.webp"><img src="images/web/019_19.jpg" alt="London — photo 3" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="3" aria-label="Open image 4">
-      <img src="images/030_30.jpg" alt="London 4" loading="lazy">
+    <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
+      <picture><source type="image/webp" srcset="images/web/030_30.webp"><img src="images/web/030_30.jpg" alt="London — photo 4" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="4" aria-label="Open image 5">
-      <img src="images/015_15.jpg" alt="London 5" loading="lazy">
+    <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
+      <picture><source type="image/webp" srcset="images/web/015_15.webp"><img src="images/web/015_15.jpg" alt="London — photo 5" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="5" aria-label="Open image 6">
-      <img src="images/016_16.jpg" alt="London 6" loading="lazy">
+    <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
+      <picture><source type="image/webp" srcset="images/web/016_16.webp"><img src="images/web/016_16.jpg" alt="London — photo 6" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="6" aria-label="Open image 7">
-      <img src="images/005_5.jpg" alt="London 7" loading="lazy">
+    <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
+      <picture><source type="image/webp" srcset="images/web/005_5.webp"><img src="images/web/005_5.jpg" alt="London — photo 7" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="7" aria-label="Open image 8">
-      <img src="images/011_11.jpg" alt="London 8" loading="lazy">
+    <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
+      <picture><source type="image/webp" srcset="images/web/011_11.webp"><img src="images/web/011_11.jpg" alt="London — photo 8" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="8" aria-label="Open image 9">
-      <img src="images/_MG_1161.jpg" alt="London 9" loading="lazy">
+    <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
+      <picture><source type="image/webp" srcset="images/web/_MG_1161.webp"><img src="images/web/_MG_1161.jpg" alt="London — photo 9" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="9" aria-label="Open image 10">
-      <img src="images/_MG_1141.jpg" alt="London 10" loading="lazy">
+    <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
+      <picture><source type="image/webp" srcset="images/web/_MG_1141.webp"><img src="images/web/_MG_1141.jpg" alt="London — photo 10" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="10" aria-label="Open image 11">
-      <img src="images/_MG_1035.jpg" alt="London 11" loading="lazy">
+    <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
+      <picture><source type="image/webp" srcset="images/web/_MG_1035.webp"><img src="images/web/_MG_1035.jpg" alt="London — photo 11" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="11" aria-label="Open image 12">
-      <img src="images/_MG_1236.jpg" alt="London 12" loading="lazy">
+    <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
+      <picture><source type="image/webp" srcset="images/web/_MG_1236.webp"><img src="images/web/_MG_1236.jpg" alt="London — photo 12" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="12" aria-label="Open image 13">
-      <img src="images/_MG_1237.jpg" alt="London 13" loading="lazy">
+    <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
+      <picture><source type="image/webp" srcset="images/web/_MG_1237.webp"><img src="images/web/_MG_1237.jpg" alt="London — photo 13" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="13" aria-label="Open image 14">
-      <img src="images/_MG_1079.jpg" alt="London 14" loading="lazy">
+    <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
+      <picture><source type="image/webp" srcset="images/web/_MG_1079.webp"><img src="images/web/_MG_1079.jpg" alt="London — photo 14" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="14" aria-label="Open image 15">
-      <img src="images/_MG_1496.jpg" alt="London 15" loading="lazy">
+    <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
+      <picture><source type="image/webp" srcset="images/web/_MG_1496.webp"><img src="images/web/_MG_1496.jpg" alt="London — photo 15" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="15" aria-label="Open image 16">
-      <img src="images/_MG_1483.jpg" alt="London 16" loading="lazy">
+    <button class="post-gallery-item" data-index="15" aria-label="Open photo 16">
+      <picture><source type="image/webp" srcset="images/web/_MG_1483.webp"><img src="images/web/_MG_1483.jpg" alt="London — photo 16" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="16" aria-label="Open image 17">
-      <img src="images/_MG_1487.jpg" alt="London 17" loading="lazy">
+    <button class="post-gallery-item" data-index="16" aria-label="Open photo 17">
+      <picture><source type="image/webp" srcset="images/web/_MG_1487.webp"><img src="images/web/_MG_1487.jpg" alt="London — photo 17" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="17" aria-label="Open image 18">
-      <img src="images/_MG_1276.jpg" alt="London 18" loading="lazy">
+    <button class="post-gallery-item" data-index="17" aria-label="Open photo 18">
+      <picture><source type="image/webp" srcset="images/web/_MG_1276.webp"><img src="images/web/_MG_1276.jpg" alt="London — photo 18" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="18" aria-label="Open image 19">
-      <img src="images/_MG_1259.jpg" alt="London 19" loading="lazy">
+    <button class="post-gallery-item" data-index="18" aria-label="Open photo 19">
+      <picture><source type="image/webp" srcset="images/web/_MG_1259.webp"><img src="images/web/_MG_1259.jpg" alt="London — photo 19" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="19" aria-label="Open image 20">
-      <img src="images/_MG_1390.jpg" alt="London 20" loading="lazy">
+    <button class="post-gallery-item" data-index="19" aria-label="Open photo 20">
+      <picture><source type="image/webp" srcset="images/web/_MG_1390.webp"><img src="images/web/_MG_1390.jpg" alt="London — photo 20" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="20" aria-label="Open image 21">
-      <img src="images/_MG_1303.jpg" alt="London 21" loading="lazy">
+    <button class="post-gallery-item" data-index="20" aria-label="Open photo 21">
+      <picture><source type="image/webp" srcset="images/web/_MG_1303.webp"><img src="images/web/_MG_1303.jpg" alt="London — photo 21" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="21" aria-label="Open image 22">
-      <img src="images/_MG_1309.jpg" alt="London 22" loading="lazy">
+    <button class="post-gallery-item" data-index="21" aria-label="Open photo 22">
+      <picture><source type="image/webp" srcset="images/web/_MG_1309.webp"><img src="images/web/_MG_1309.jpg" alt="London — photo 22" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="22" aria-label="Open image 23">
-      <img src="images/_MG_1313.jpg" alt="London 23" loading="lazy">
+    <button class="post-gallery-item" data-index="22" aria-label="Open photo 23">
+      <picture><source type="image/webp" srcset="images/web/_MG_1313.webp"><img src="images/web/_MG_1313.jpg" alt="London — photo 23" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="23" aria-label="Open image 24">
-      <img src="images/IMG_3478.jpg" alt="London 24" loading="lazy">
+    <button class="post-gallery-item" data-index="23" aria-label="Open photo 24">
+      <picture><source type="image/webp" srcset="images/web/IMG_3478.webp"><img src="images/web/IMG_3478.jpg" alt="London — photo 24" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="24" aria-label="Open image 25">
-      <img src="images/_MG_1184.jpg" alt="London 25" loading="lazy">
+    <button class="post-gallery-item" data-index="24" aria-label="Open photo 25">
+      <picture><source type="image/webp" srcset="images/web/_MG_1184.webp"><img src="images/web/_MG_1184.jpg" alt="London — photo 25" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="25" aria-label="Open image 26">
-      <img src="images/IMG_3511.jpg" alt="London 26" loading="lazy">
+    <button class="post-gallery-item" data-index="25" aria-label="Open photo 26">
+      <picture><source type="image/webp" srcset="images/web/IMG_3511.webp"><img src="images/web/IMG_3511.jpg" alt="London — photo 26" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="26" aria-label="Open image 27">
-      <img src="images/_MG_1464.jpg" alt="London 27" loading="lazy">
+    <button class="post-gallery-item" data-index="26" aria-label="Open photo 27">
+      <picture><source type="image/webp" srcset="images/web/_MG_1464.webp"><img src="images/web/_MG_1464.jpg" alt="London — photo 27" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="27" aria-label="Open image 28">
-      <img src="images/_MG_1081.jpg" alt="London 28" loading="lazy">
+    <button class="post-gallery-item" data-index="27" aria-label="Open photo 28">
+      <picture><source type="image/webp" srcset="images/web/_MG_1081.webp"><img src="images/web/_MG_1081.jpg" alt="London — photo 28" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="28" aria-label="Open image 29">
-      <img src="images/_MG_1053.jpg" alt="London 29" loading="lazy">
+    <button class="post-gallery-item" data-index="28" aria-label="Open photo 29">
+      <picture><source type="image/webp" srcset="images/web/_MG_1053.webp"><img src="images/web/_MG_1053.jpg" alt="London — photo 29" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="29" aria-label="Open image 30">
-      <img src="images/IMG_3578.jpg" alt="London 30" loading="lazy">
+    <button class="post-gallery-item" data-index="29" aria-label="Open photo 30">
+      <picture><source type="image/webp" srcset="images/web/IMG_3578.webp"><img src="images/web/IMG_3578.jpg" alt="London — photo 30" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="30" aria-label="Open image 31">
-      <img src="images/_MG_1124.jpg" alt="London 31" loading="lazy">
+    <button class="post-gallery-item" data-index="30" aria-label="Open photo 31">
+      <picture><source type="image/webp" srcset="images/web/_MG_1124.webp"><img src="images/web/_MG_1124.jpg" alt="London — photo 31" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="31" aria-label="Open image 32">
-      <img src="images/024_24.jpg" alt="London 32" loading="lazy">
+    <button class="post-gallery-item" data-index="31" aria-label="Open photo 32">
+      <picture><source type="image/webp" srcset="images/web/024_24.webp"><img src="images/web/024_24.jpg" alt="London — photo 32" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="32" aria-label="Open image 33">
-      <img src="images/023_23.jpg" alt="London 33" loading="lazy">
+    <button class="post-gallery-item" data-index="32" aria-label="Open photo 33">
+      <picture><source type="image/webp" srcset="images/web/023_23.webp"><img src="images/web/023_23.jpg" alt="London — photo 33" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="33" aria-label="Open image 34">
-      <img src="images/_MG_1108.jpg" alt="London 34" loading="lazy">
+    <button class="post-gallery-item" data-index="33" aria-label="Open photo 34">
+      <picture><source type="image/webp" srcset="images/web/_MG_1108.webp"><img src="images/web/_MG_1108.jpg" alt="London — photo 34" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="34" aria-label="Open image 35">
-      <img src="images/_MG_1186.jpg" alt="London 35" loading="lazy">
+    <button class="post-gallery-item" data-index="34" aria-label="Open photo 35">
+      <picture><source type="image/webp" srcset="images/web/_MG_1186.webp"><img src="images/web/_MG_1186.jpg" alt="London — photo 35" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="35" aria-label="Open image 36">
-      <img src="images/_MG_1190.jpg" alt="London 36" loading="lazy">
+    <button class="post-gallery-item" data-index="35" aria-label="Open photo 36">
+      <picture><source type="image/webp" srcset="images/web/_MG_1190.webp"><img src="images/web/_MG_1190.jpg" alt="London — photo 36" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="36" aria-label="Open image 37">
-      <img src="images/027_27.jpg" alt="London 37" loading="lazy">
+    <button class="post-gallery-item" data-index="36" aria-label="Open photo 37">
+      <picture><source type="image/webp" srcset="images/web/027_27.webp"><img src="images/web/027_27.jpg" alt="London — photo 37" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="37" aria-label="Open image 38">
-      <img src="images/018_18.jpg" alt="London 38" loading="lazy">
+    <button class="post-gallery-item" data-index="37" aria-label="Open photo 38">
+      <picture><source type="image/webp" srcset="images/web/018_18.webp"><img src="images/web/018_18.jpg" alt="London — photo 38" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="38" aria-label="Open image 39">
-      <img src="images/026_26.jpg" alt="London 39" loading="lazy">
+    <button class="post-gallery-item" data-index="38" aria-label="Open photo 39">
+      <picture><source type="image/webp" srcset="images/web/026_26.webp"><img src="images/web/026_26.jpg" alt="London — photo 39" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="39" aria-label="Open image 40">
-      <img src="images/_MG_1201.jpg" alt="London 40" loading="lazy">
+    <button class="post-gallery-item" data-index="39" aria-label="Open photo 40">
+      <picture><source type="image/webp" srcset="images/web/_MG_1201.webp"><img src="images/web/_MG_1201.jpg" alt="London — photo 40" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="40" aria-label="Open image 41">
-      <img src="images/_MG_1365.jpg" alt="London 41" loading="lazy">
+    <button class="post-gallery-item" data-index="40" aria-label="Open photo 41">
+      <picture><source type="image/webp" srcset="images/web/_MG_1365.webp"><img src="images/web/_MG_1365.jpg" alt="London — photo 41" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="41" aria-label="Open image 42">
-      <img src="images/_MG_1361.jpg" alt="London 42" loading="lazy">
+    <button class="post-gallery-item" data-index="41" aria-label="Open photo 42">
+      <picture><source type="image/webp" srcset="images/web/_MG_1361.webp"><img src="images/web/_MG_1361.jpg" alt="London — photo 42" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="42" aria-label="Open image 43">
-      <img src="images/_MG_1225.jpg" alt="London 43" loading="lazy">
+    <button class="post-gallery-item" data-index="42" aria-label="Open photo 43">
+      <picture><source type="image/webp" srcset="images/web/_MG_1225.webp"><img src="images/web/_MG_1225.jpg" alt="London — photo 43" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="43" aria-label="Open image 44">
-      <img src="images/028_28.jpg" alt="London 44" loading="lazy">
+    <button class="post-gallery-item" data-index="43" aria-label="Open photo 44">
+      <picture><source type="image/webp" srcset="images/web/028_28.webp"><img src="images/web/028_28.jpg" alt="London — photo 44" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="44" aria-label="Open image 45">
-      <img src="images/017_17.jpg" alt="London 45" loading="lazy">
+    <button class="post-gallery-item" data-index="44" aria-label="Open photo 45">
+      <picture><source type="image/webp" srcset="images/web/017_17.webp"><img src="images/web/017_17.jpg" alt="London — photo 45" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="45" aria-label="Open image 46">
-      <img src="images/_MG_1403.jpg" alt="London 46" loading="lazy">
+    <button class="post-gallery-item" data-index="45" aria-label="Open photo 46">
+      <picture><source type="image/webp" srcset="images/web/_MG_1403.webp"><img src="images/web/_MG_1403.jpg" alt="London — photo 46" loading="lazy" decoding="async"></picture>
     </button>
 
-  </div><!-- /.post-gallery -->
+  </div>
 
-  <!-- Related posts -->
   <section class="related-posts">
     <h2 class="related-posts-heading">Related Posts</h2>
     <div class="related-posts-grid">
 
       <a class="related-card" href="../iceland/">
-        <img src="../../images/iceland.jpg" alt="Iceland" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/iceland.webp"><img src="../../images/web/iceland.jpg" alt="Iceland" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">Europe</p>
           <p class="related-card-title">Iceland</p>
         </div>
       </a>
 
       <a class="related-card" href="../barcelona/">
-        <img src="../../images/barcelona.jpg" alt="Barcelona" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/barcelona.webp"><img src="../../images/web/barcelona.jpg" alt="Barcelona" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">Europe</p>
           <p class="related-card-title">Barcelona</p>
         </div>
       </a>
 
       <a class="related-card" href="../cinque-terre/">
-        <img src="../../images/cinque-terre.jpg" alt="Cinque Terre" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/cinque-terre.webp"><img src="../../images/web/cinque-terre.jpg" alt="Cinque Terre" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">Europe</p>
           <p class="related-card-title">Cinque Terre</p>
         </div>
       </a>
 
       <a class="related-card" href="../florence/">
-        <img src="../../images/florence.jpg" alt="Florence" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/florence.webp"><img src="../../images/web/florence.jpg" alt="Florence" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">Europe</p>
           <p class="related-card-title">Florence</p>
         </div>
       </a>
 
       <a class="related-card" href="../milan/">
-        <img src="../../images/milan.jpg" alt="Milan" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/milan.webp"><img src="../../images/web/milan.jpg" alt="Milan" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">Europe</p>
           <p class="related-card-title">Milan</p>
         </div>
       </a>
 
       <a class="related-card" href="../naples/">
-        <img src="../../images/naples.jpg" alt="Naples" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/naples.webp"><img src="../../images/web/naples.jpg" alt="Naples" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">Europe</p>
           <p class="related-card-title">Naples</p>
         </div>
       </a>
@@ -312,63 +321,26 @@
     </div>
   </section>
 
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
     <button id="lb-close" class="lightbox-close" aria-label="Close">&times;</button>
-    <button id="lb-prev"  class="lightbox-btn lightbox-prev" aria-label="Previous">&#8249;</button>
+    <button id="lb-prev"  class="lightbox-btn lightbox-prev" aria-label="Previous image">&#8249;</button>
     <div class="lightbox-img-wrap">
       <img id="lb-img" src="" alt="">
     </div>
-    <button id="lb-next"  class="lightbox-btn lightbox-next" aria-label="Next">&#8250;</button>
-    <div id="lb-count" class="lightbox-count"></div>
+    <button id="lb-next"  class="lightbox-btn lightbox-next" aria-label="Next image">&#8250;</button>
+    <p id="lb-count" class="lightbox-count"></p>
   </div>
 
-  <script>
-  (function () {
-    var items   = Array.from(document.querySelectorAll('.post-gallery-item'));
-    var srcs    = items.map(function (btn) { return btn.querySelector('img').src; });
-    var total   = srcs.length;
-    var current = 0;
-    var lightbox = document.getElementById('lightbox');
-    var lbImg    = document.getElementById('lb-img');
-    var lbCount  = document.getElementById('lb-count');
-    function open(index) {
-      current = (index + total) % total;
-      lbImg.src = srcs[current];
-      lbCount.textContent = (current + 1) + ' / ' + total;
-      lightbox.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-    function close() {
-      lightbox.classList.remove('open');
-      document.body.style.overflow = '';
-      lbImg.src = '';
-    }
-    items.forEach(function (btn) {
-      btn.addEventListener('click', function () { open(parseInt(btn.dataset.index, 10)); });
-    });
-    document.getElementById('lb-close').addEventListener('click', close);
-    document.getElementById('lb-prev').addEventListener('click', function () { open(current - 1); });
-    document.getElementById('lb-next').addEventListener('click', function () { open(current + 1); });
-    lightbox.addEventListener('click', function (e) { if (e.target === lightbox) close(); });
-    document.addEventListener('keydown', function (e) {
-      if (!lightbox.classList.contains('open')) return;
-      if (e.key === 'ArrowLeft')  { open(current - 1); e.preventDefault(); }
-      if (e.key === 'ArrowRight') { open(current + 1); e.preventDefault(); }
-      if (e.key === 'Escape')     { close(); }
-    });
-  })();
-  </script>
-
-  <!-- Footer -->
   <footer class="site-footer">
-    <nav>
-      <a href="../../index.html">All Posts</a>
+    <nav aria-label="Footer">
+      <a href="../../index.html">Home</a>
       <a href="../../our-story/index.html">About</a>
+      <a href="../../contact/index.html">Contact</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
     </nav>
-    <p class="footer-quote">"The world is a book, and those who do not travel read only one page."</p>
+    <p class="footer-quote">&ldquo;True objectivity, then, is not a position; it is an achievement. It is the view from everywhere.&rdquo;</p>
   </footer>
 
+  <script src="../../app.js"></script>
 </body>
 </html>

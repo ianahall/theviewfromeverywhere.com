@@ -5,43 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yellowstone — The View from Everywhere</title>
   <meta name="description" content="Yellowstone">
-  <meta property="og:title" content="Yellowstone — The View from Everywhere">
-  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://www.theviewfromeverywhere.com/blog/yellowstone/">
+  <meta property="og:title"       content="Yellowstone — The View from Everywhere">
+  <meta property="og:description" content="Yellowstone">
+  <meta property="og:type"        content="article">
+  <meta property="og:url"         content="https://www.theviewfromeverywhere.com/blog/yellowstone/">
+  <meta property="og:image"       content="https://www.theviewfromeverywhere.com/images/yellowstone.jpg">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/yellowstone.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
 
-  <!-- Desktop header -->
   <header class="site-header">
     <nav aria-label="Primary">
-      <a href="../../index.html">All</a>
-      <a href="../../index.html?cat=United+States">USA</a>
-      <a href="../../index.html?cat=Parks">Parks</a>
-      <a href="../../index.html?cat=Europe">Europe</a>
-      <a href="../../index.html?cat=Africa">Africa</a>
-      <a href="../../index.html?cat=Asia">Asia</a>
+      <a href="../../index.html?cat=all" data-filter="all">All</a>
+      <a href="../../index.html?cat=United+States" data-filter="United States">USA</a>
+      <a href="../../index.html?cat=Parks" data-filter="Parks">Parks</a>
+      <a href="../../index.html?cat=Europe" data-filter="Europe">Europe</a>
+      <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
+      <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <div class="site-title"><a href="../../index.html">The View from Everywhere</a></div>
+    <div class="site-title">
+      <a href="../../index.html">The View from Everywhere</a>
+    </div>
     <nav aria-label="Secondary">
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
       <a href="../../our-story/index.html">About</a>
     </nav>
   </header>
 
-  <!-- Mobile header -->
   <div class="mobile-bar">
-    <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" onclick="
-      var nav = document.getElementById('mobile-nav');
-      var open = nav.classList.toggle('open');
-      this.setAttribute('aria-expanded', open);
-    ">
+    <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <div class="mobile-title"><a href="../../index.html">The View from Everywhere</a></div>
-    <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#555;">IG</a>
+    <div class="mobile-title">
+      <a href="../../index.html">The View from Everywhere</a>
+    </div>
+    <a class="mobile-ig" href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">IG</a>
   </div>
-  <nav id="mobile-nav" class="mobile-nav">
-    <a href="../../index.html">All</a>
+  <nav id="mobile-nav" class="mobile-nav" hidden>
+    <a href="../../index.html?cat=all">All</a>
     <a href="../../index.html?cat=United+States">USA</a>
     <a href="../../index.html?cat=Parks">Parks</a>
     <a href="../../index.html?cat=Europe">Europe</a>
@@ -51,9 +58,8 @@
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
-  <!-- Hero -->
   <div class="post-hero">
-    <img src="../../images/yellowstone.jpg" alt="Yellowstone">
+    <picture><source type="image/webp" srcset="../../images/web/yellowstone.webp"><img src="../../images/web/yellowstone.jpg" alt="Yellowstone" loading="eager" decoding="async"></picture>
     <div class="post-hero-overlay"></div>
     <div class="post-hero-body">
       <p class="post-hero-category">United States</p>
@@ -62,125 +68,128 @@
     </div>
   </div>
 
-  <!-- Body copy -->
   <div class="post-body">
-    
+    <p class="post-lede"></p>
   </div>
 
-  <!-- Gallery — click any image to open lightbox -->
   <div class="post-gallery" id="gallery">
 
-    <button class="post-gallery-item" data-index="0" aria-label="Open image 1">
-      <img src="images/000013460007.jpg" alt="Yellowstone 1" loading="lazy">
+    <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
+      <picture><source type="image/webp" srcset="images/web/000013460007.webp"><img src="images/web/000013460007.jpg" alt="Yellowstone — photo 1" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="1" aria-label="Open image 2">
-      <img src="images/IMG_4398-001.jpg" alt="Yellowstone 2" loading="lazy">
+    <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
+      <picture><source type="image/webp" srcset="images/web/IMG_4398-001.webp"><img src="images/web/IMG_4398-001.jpg" alt="Yellowstone — photo 2" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="2" aria-label="Open image 3">
-      <img src="images/000013540021.jpg" alt="Yellowstone 3" loading="lazy">
+    <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
+      <picture><source type="image/webp" srcset="images/web/000013540021.webp"><img src="images/web/000013540021.jpg" alt="Yellowstone — photo 3" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="3" aria-label="Open image 4">
-      <img src="images/IMG_3593.jpg" alt="Yellowstone 4" loading="lazy">
+    <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
+      <picture><source type="image/webp" srcset="images/web/IMG_3593.webp"><img src="images/web/IMG_3593.jpg" alt="Yellowstone — photo 4" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="4" aria-label="Open image 5">
-      <img src="images/IMG_3590.jpg" alt="Yellowstone 5" loading="lazy">
+    <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
+      <picture><source type="image/webp" srcset="images/web/IMG_3590.webp"><img src="images/web/IMG_3590.jpg" alt="Yellowstone — photo 5" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="5" aria-label="Open image 6">
-      <img src="images/IMG_3633.jpg" alt="Yellowstone 6" loading="lazy">
+    <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
+      <picture><source type="image/webp" srcset="images/web/IMG_3633.webp"><img src="images/web/IMG_3633.jpg" alt="Yellowstone — photo 6" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="6" aria-label="Open image 7">
-      <img src="images/000013460011.jpg" alt="Yellowstone 7" loading="lazy">
+    <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
+      <picture><source type="image/webp" srcset="images/web/000013460011.webp"><img src="images/web/000013460011.jpg" alt="Yellowstone — photo 7" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="7" aria-label="Open image 8">
-      <img src="images/IMG_3625.jpg" alt="Yellowstone 8" loading="lazy">
+    <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
+      <picture><source type="image/webp" srcset="images/web/IMG_3625.webp"><img src="images/web/IMG_3625.jpg" alt="Yellowstone — photo 8" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="8" aria-label="Open image 9">
-      <img src="images/IMG_3621.jpg" alt="Yellowstone 9" loading="lazy">
+    <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
+      <picture><source type="image/webp" srcset="images/web/IMG_3621.webp"><img src="images/web/IMG_3621.jpg" alt="Yellowstone — photo 9" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="9" aria-label="Open image 10">
-      <img src="images/IMG_3616.jpg" alt="Yellowstone 10" loading="lazy">
+    <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
+      <picture><source type="image/webp" srcset="images/web/IMG_3616.webp"><img src="images/web/IMG_3616.jpg" alt="Yellowstone — photo 10" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="10" aria-label="Open image 11">
-      <img src="images/IMG_3623.jpg" alt="Yellowstone 11" loading="lazy">
+    <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
+      <picture><source type="image/webp" srcset="images/web/IMG_3623.webp"><img src="images/web/IMG_3623.jpg" alt="Yellowstone — photo 11" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="11" aria-label="Open image 12">
-      <img src="images/IMG_3611.jpg" alt="Yellowstone 12" loading="lazy">
+    <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
+      <picture><source type="image/webp" srcset="images/web/IMG_3611.webp"><img src="images/web/IMG_3611.jpg" alt="Yellowstone — photo 12" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="12" aria-label="Open image 13">
-      <img src="images/000013540023.jpg" alt="Yellowstone 13" loading="lazy">
+    <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
+      <picture><source type="image/webp" srcset="images/web/000013540023.webp"><img src="images/web/000013540023.jpg" alt="Yellowstone — photo 13" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="13" aria-label="Open image 14">
-      <img src="images/000013460012.jpg" alt="Yellowstone 14" loading="lazy">
+    <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
+      <picture><source type="image/webp" srcset="images/web/000013460012.webp"><img src="images/web/000013460012.jpg" alt="Yellowstone — photo 14" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="14" aria-label="Open image 15">
-      <img src="images/000013540024.jpg" alt="Yellowstone 15" loading="lazy">
+    <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
+      <picture><source type="image/webp" srcset="images/web/000013540024.webp"><img src="images/web/000013540024.jpg" alt="Yellowstone — photo 15" loading="lazy" decoding="async"></picture>
     </button>
 
-  </div><!-- /.post-gallery -->
+  </div>
 
-  <!-- Related posts -->
   <section class="related-posts">
     <h2 class="related-posts-heading">Related Posts</h2>
     <div class="related-posts-grid">
 
       <a class="related-card" href="../hawaii/">
-        <img src="../../images/hawaii.jpg" alt="Hawaii" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/hawaii.webp"><img src="../../images/web/hawaii.jpg" alt="Hawaii" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">United States</p>
           <p class="related-card-title">Hawaii</p>
         </div>
       </a>
 
       <a class="related-card" href="../joshua-tree/">
-        <img src="../../images/joshua-tree.jpg" alt="Joshua Tree" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/joshua-tree.webp"><img src="../../images/web/joshua-tree.jpg" alt="Joshua Tree" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">United States</p>
           <p class="related-card-title">Joshua Tree</p>
         </div>
       </a>
 
       <a class="related-card" href="../badlands/">
-        <img src="../../images/badlands.jpg" alt="Badlands" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/badlands.webp"><img src="../../images/web/badlands.jpg" alt="Badlands" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">United States</p>
           <p class="related-card-title">Badlands</p>
         </div>
       </a>
 
       <a class="related-card" href="../monument-rocks/">
-        <img src="../../images/monument-rocks.jpg" alt="Monument Rocks" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/monument-rocks.webp"><img src="../../images/web/monument-rocks.jpg" alt="Monument Rocks" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">United States</p>
           <p class="related-card-title">Monument Rocks</p>
         </div>
       </a>
 
       <a class="related-card" href="../acadia/">
-        <img src="../../images/acadia.jpg" alt="Acadia" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/acadia.webp"><img src="../../images/web/acadia.jpg" alt="Acadia" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">United States</p>
           <p class="related-card-title">Acadia</p>
         </div>
       </a>
 
       <a class="related-card" href="../great-salt-plains/">
-        <img src="../../images/great-salt-plains.jpg" alt="Great Salt Plains" loading="lazy">
+        <picture><source type="image/webp" srcset="../../images/web/great-salt-plains.webp"><img src="../../images/web/great-salt-plains.jpg" alt="Great Salt Plains" loading="eager" decoding="async"></picture>
         <div class="related-card-overlay"></div>
         <div class="related-card-body">
+          <p class="related-card-category">United States</p>
           <p class="related-card-title">Great Salt Plains</p>
         </div>
       </a>
@@ -188,63 +197,26 @@
     </div>
   </section>
 
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
     <button id="lb-close" class="lightbox-close" aria-label="Close">&times;</button>
-    <button id="lb-prev"  class="lightbox-btn lightbox-prev" aria-label="Previous">&#8249;</button>
+    <button id="lb-prev"  class="lightbox-btn lightbox-prev" aria-label="Previous image">&#8249;</button>
     <div class="lightbox-img-wrap">
       <img id="lb-img" src="" alt="">
     </div>
-    <button id="lb-next"  class="lightbox-btn lightbox-next" aria-label="Next">&#8250;</button>
-    <div id="lb-count" class="lightbox-count"></div>
+    <button id="lb-next"  class="lightbox-btn lightbox-next" aria-label="Next image">&#8250;</button>
+    <p id="lb-count" class="lightbox-count"></p>
   </div>
 
-  <script>
-  (function () {
-    var items   = Array.from(document.querySelectorAll('.post-gallery-item'));
-    var srcs    = items.map(function (btn) { return btn.querySelector('img').src; });
-    var total   = srcs.length;
-    var current = 0;
-    var lightbox = document.getElementById('lightbox');
-    var lbImg    = document.getElementById('lb-img');
-    var lbCount  = document.getElementById('lb-count');
-    function open(index) {
-      current = (index + total) % total;
-      lbImg.src = srcs[current];
-      lbCount.textContent = (current + 1) + ' / ' + total;
-      lightbox.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-    function close() {
-      lightbox.classList.remove('open');
-      document.body.style.overflow = '';
-      lbImg.src = '';
-    }
-    items.forEach(function (btn) {
-      btn.addEventListener('click', function () { open(parseInt(btn.dataset.index, 10)); });
-    });
-    document.getElementById('lb-close').addEventListener('click', close);
-    document.getElementById('lb-prev').addEventListener('click', function () { open(current - 1); });
-    document.getElementById('lb-next').addEventListener('click', function () { open(current + 1); });
-    lightbox.addEventListener('click', function (e) { if (e.target === lightbox) close(); });
-    document.addEventListener('keydown', function (e) {
-      if (!lightbox.classList.contains('open')) return;
-      if (e.key === 'ArrowLeft')  { open(current - 1); e.preventDefault(); }
-      if (e.key === 'ArrowRight') { open(current + 1); e.preventDefault(); }
-      if (e.key === 'Escape')     { close(); }
-    });
-  })();
-  </script>
-
-  <!-- Footer -->
   <footer class="site-footer">
-    <nav>
-      <a href="../../index.html">All Posts</a>
+    <nav aria-label="Footer">
+      <a href="../../index.html">Home</a>
       <a href="../../our-story/index.html">About</a>
+      <a href="../../contact/index.html">Contact</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
     </nav>
-    <p class="footer-quote">"The world is a book, and those who do not travel read only one page."</p>
+    <p class="footer-quote">&ldquo;True objectivity, then, is not a position; it is an achievement. It is the view from everywhere.&rdquo;</p>
   </footer>
 
+  <script src="../../app.js"></script>
 </body>
 </html>
