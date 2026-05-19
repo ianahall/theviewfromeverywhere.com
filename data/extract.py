@@ -13,6 +13,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from email.utils import parsedate
@@ -74,10 +75,15 @@ def img_filename(url):
     """Derive a collision-safe local filename from a Squarespace CDN URL."""
     path  = url.split('?')[0]
     parts = path.rstrip('/').split('/')
-    orig  = parts[-1]
+    raw   = parts[-1]
+    # Use unquote_plus (decodes both %XX and + as space) only when the segment
+    # contains percent-encoding, which signals the whole name is URL-encoded.
+    # Filenames with literal + signs (e.g. IMG_1228+1.jpg) have no %XX sequences.
+    decode = urllib.parse.unquote_plus if re.search(r'%[0-9A-Fa-f]{2}', raw) else urllib.parse.unquote
+    orig   = decode(raw)
     if orig.lower().startswith('image-asset'):
         ext    = orig.rsplit('.', 1)[-1] if '.' in orig else 'jpg'
-        unique = parts[-2]
+        unique = decode(parts[-2])
         return f'{unique}.{ext}'
     return orig
 
