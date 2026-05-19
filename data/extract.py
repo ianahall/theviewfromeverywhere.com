@@ -239,10 +239,18 @@ def extract(xml_path):
         blocks       = parse_blocks(content)
         card_excerpt = EXCERPT_OVERRIDE.get(folder) or strip_tags(excerpt) or ''
 
+        try:
+            parsed  = parsedate(pub_date)
+            dt      = datetime(*parsed[:6])
+            date_iso = dt.strftime('%Y-%m-%d')
+        except Exception:
+            date_iso = ''
+
         posts.append({
             'folder':       folder,
             'title':        title,
             'date':         fmt_date(pub_date),
+            'date_iso':     date_iso,
             'categories':   cats,
             'card_excerpt': card_excerpt,
             'hero_image':   hero_image,
@@ -268,7 +276,27 @@ if __name__ == '__main__':
         n_imgs = sum(len(b['images']) for b in p['blocks'] if b['type'] == 'gallery')
         print(f"  {p['folder']}: {n_para} paragraphs, {n_gal} galleries, {n_imgs} images")
 
+    # Write monolithic posts.json (backward compat / reference)
     out = os.path.join(os.path.dirname(__file__), 'posts.json')
     with open(out, 'w', encoding='utf-8') as f:
         json.dump({'posts': posts}, f, ensure_ascii=False, indent=2)
-    print(f'\nWrote {out}')
+    print(f'Wrote {out}')
+
+    # Write per-post JSON files into posts/ directory
+    root_dir   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    posts_dir  = os.path.join(root_dir, 'posts')
+    os.makedirs(posts_dir, exist_ok=True)
+
+    for p in posts:
+        slug      = p['folder']
+        post_data = {k: v for k, v in p.items() if k != 'folder'}
+        dest      = os.path.join(posts_dir, f'{slug}.json')
+        with open(dest, 'w', encoding='utf-8') as f:
+            json.dump(post_data, f, ensure_ascii=False, indent=2)
+
+    # Write _index.json — ordered list of slugs for homepage display
+    index_path = os.path.join(posts_dir, '_index.json')
+    with open(index_path, 'w') as f:
+        json.dump([p['folder'] for p in posts], f, indent=2)
+
+    print(f'Wrote {len(posts)} per-post files + _index.json to posts/')

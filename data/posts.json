@@ -4,6 +4,7 @@
       "folder": "capetown",
       "title": "Cape Town",
       "date": "February 21, 2014",
+      "date_iso": "2014-02-21",
       "categories": [
         "Africa"
       ],
@@ -250,6 +251,7 @@
       "folder": "iceland",
       "title": "Iceland",
       "date": "February 24, 2015",
+      "date_iso": "2015-02-24",
       "categories": [
         "Europe"
       ],
@@ -518,6 +520,7 @@
       "folder": "tunisia",
       "title": "Tunisia",
       "date": "June 9, 2012",
+      "date_iso": "2012-06-09",
       "categories": [
         "Africa"
       ],
@@ -706,6 +709,7 @@
       "folder": "barcelona",
       "title": "Barcelona",
       "date": "May 27, 2016",
+      "date_iso": "2016-05-27",
       "categories": [
         "Europe"
       ],
@@ -984,6 +988,7 @@
       "folder": "cinque-terre",
       "title": "Cinque Terre",
       "date": "May 10, 2016",
+      "date_iso": "2016-05-10",
       "categories": [
         "Europe"
       ],
@@ -1188,6 +1193,7 @@
       "folder": "florence",
       "title": "Florence",
       "date": "May 13, 2016",
+      "date_iso": "2016-05-13",
       "categories": [
         "Europe"
       ],
@@ -1322,6 +1328,7 @@
       "folder": "milan",
       "title": "Milan",
       "date": "May 5, 2016",
+      "date_iso": "2016-05-05",
       "categories": [
         "Europe"
       ],
@@ -1450,6 +1457,7 @@
       "folder": "naples",
       "title": "Naples",
       "date": "May 15, 2016",
+      "date_iso": "2016-05-15",
       "categories": [
         "Europe"
       ],
@@ -1628,6 +1636,7 @@
       "folder": "rome",
       "title": "Rome",
       "date": "May 18, 2016",
+      "date_iso": "2016-05-18",
       "categories": [
         "Europe"
       ],
@@ -1814,6 +1823,7 @@
       "folder": "venice",
       "title": "Venice",
       "date": "May 8, 2016",
+      "date_iso": "2016-05-08",
       "categories": [
         "Europe"
       ],
@@ -2008,6 +2018,7 @@
       "folder": "hong-kong",
       "title": "Hong Kong",
       "date": "October 25, 2016",
+      "date_iso": "2016-10-25",
       "categories": [
         "Asia"
       ],
@@ -2264,6 +2275,7 @@
       "folder": "nara",
       "title": "Nara",
       "date": "November 2, 2016",
+      "date_iso": "2016-11-02",
       "categories": [
         "Asia"
       ],
@@ -2412,6 +2424,7 @@
       "folder": "hawaii",
       "title": "Hawaii",
       "date": "March 31, 2017",
+      "date_iso": "2017-03-31",
       "categories": [
         "United States"
       ],
@@ -2756,6 +2769,7 @@
       "folder": "paris",
       "title": "Paris",
       "date": "June 10, 2012",
+      "date_iso": "2012-06-10",
       "categories": [
         "Europe"
       ],
@@ -2968,6 +2982,7 @@
       "folder": "amsterdam",
       "title": "Amsterdam",
       "date": "June 7, 2012",
+      "date_iso": "2012-06-07",
       "categories": [
         "Europe"
       ],
@@ -3236,6 +3251,7 @@
       "folder": "london",
       "title": "London",
       "date": "August 27, 2011",
+      "date_iso": "2011-08-27",
       "categories": [
         "Europe"
       ],
@@ -3574,6 +3590,7 @@
       "folder": "copenhagen",
       "title": "Copenhagen",
       "date": "February 1, 2017",
+      "date_iso": "2017-02-01",
       "categories": [
         "Europe"
       ],
@@ -3672,6 +3689,7 @@
       "folder": "vienna",
       "title": "Vienna",
       "date": "February 10, 2017",
+      "date_iso": "2017-02-10",
       "categories": [
         "Europe"
       ],
@@ -3806,6 +3824,7 @@
       "folder": "budapest",
       "title": "Budapest",
       "date": "February 13, 2017",
+      "date_iso": "2017-02-13",
       "categories": [
         "Europe"
       ],
@@ -3960,6 +3979,7 @@
       "folder": "berlin",
       "title": "Berlin",
       "date": "February 4, 2017",
+      "date_iso": "2017-02-04",
       "categories": [
         "Europe"
       ],
@@ -4130,6 +4150,7 @@
       "folder": "prague",
       "title": "Prague",
       "date": "February 7, 2017",
+      "date_iso": "2017-02-07",
       "categories": [
         "Europe"
       ],
@@ -4272,6 +4293,7 @@
       "folder": "osaka",
       "title": "Osaka",
       "date": "November 4, 2016",
+      "date_iso": "2016-11-04",
       "categories": [
         "Asia"
       ],
@@ -4482,6 +4504,7 @@
       "folder": "kyoto",
       "title": "Kyoto",
       "date": "November 1, 2016",
+      "date_iso": "2016-11-01",
       "categories": [
         "Asia"
       ],
@@ -4778,6 +4801,7 @@
       "folder": "tokyo",
       "title": "Tokyo",
       "date": "October 28, 2016",
+      "date_iso": "2016-10-28",
       "categories": [
         "Asia"
       ],
@@ -5166,6 +5190,7 @@
       "folder": "joshua-tree",
       "title": "Joshua Tree",
       "date": "August 27, 2016",
+      "date_iso": "2016-08-27",
       "categories": [
         "United States",
         "Parks"
@@ -5517,6 +5542,7 @@
       "folder": "badlands",
       "title": "Badlands",
       "date": "August 11, 2016",
+      "date_iso": "2016-08-11",
       "categories": [
         "United States",
         "Parks"
@@ -5786,6 +5812,7 @@
       "folder": "yellowstone",
       "title": "Yellowstone",
       "date": "August 15, 2016",
+      "date_iso": "2016-08-15",
       "categories": [
         "United States",
         "Parks"
@@ -5901,6 +5928,7 @@
       "folder": "monument-rocks",
       "title": "Monument Rocks",
       "date": "September 13, 2016",
+      "date_iso": "2016-09-13",
       "categories": [
         "United States"
       ],
@@ -5993,6 +6021,7 @@
       "folder": "acadia",
       "title": "Acadia",
       "date": "July 21, 2016",
+      "date_iso": "2016-07-21",
       "categories": [
         "United States",
         "Parks"
@@ -6158,6 +6187,7 @@
       "folder": "great-salt-plains",
       "title": "Great Salt Plains",
       "date": "September 14, 2016",
+      "date_iso": "2016-09-14",
       "categories": [
         "United States",
         "Parks"
@@ -6325,6 +6355,7 @@
       "folder": "yosemite",
       "title": "Yosemite",
       "date": "August 23, 2016",
+      "date_iso": "2016-08-23",
       "categories": [
         "United States",
         "Parks"
@@ -6472,6 +6503,7 @@
       "folder": "great-sand-dunes",
       "title": "Great Sand Dunes",
       "date": "September 9, 2016",
+      "date_iso": "2016-09-09",
       "categories": [
         "United States",
         "Parks"
@@ -6599,6 +6631,7 @@
       "folder": "death-valley",
       "title": "Death Valley",
       "date": "August 26, 2016",
+      "date_iso": "2016-08-26",
       "categories": [
         "Parks",
         "United States"

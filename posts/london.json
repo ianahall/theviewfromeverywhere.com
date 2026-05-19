@@ -1,0 +1,338 @@
+{
+  "title": "London",
+  "date": "August 27, 2011",
+  "date_iso": "2011-08-27",
+  "categories": [
+    "Europe"
+  ],
+  "card_excerpt": "You have to love ol' London town.",
+  "hero_image": "_MG_1079.jpg",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<p>You have to love ol' London town. It's a great city, and is home to a lot of really special place. In this post you'll see a few museums, a couple of hot spots, and some a-ok places to eat and drink!</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "029_29.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493773003787-YJBKBNHN5DNUOOM8PWO0/029_29.jpg?format=original"
+        },
+        {
+          "filename": "020_20.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493773125781-DABXN9WUM5BUU9T1UE3G/020_20.jpg?format=original"
+        },
+        {
+          "filename": "019_19.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493773125969-0JSJJ5OVO4SQ481QDV5W/019_19.jpg?format=original"
+        },
+        {
+          "filename": "030_30.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493773003130-EL0MJX800HRIZ23Y0P9F/030_30.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<p>Most museums in London are free to enter. Something about hopping and bopping from museum to museum is really fun and exciting. Some of our favorites were T<a target=\"_blank\" href=\"https://www.nationalgallery.org.uk/\">he National Gallery</a>, <a target=\"_blank\" href=\"http://www.npg.org.uk/\">The National Portrait Gallery</a>, the <a target=\"_blank\" href=\"http://www.tate.org.uk/visit/tate-modern\">Tate Modern</a>, <a target=\"_blank\" href=\"https://www.vam.ac.uk/\">V&amp;A</a>, and for a taste of the strange, the <a target=\"_blank\" href=\"https://wellcomecollection.org/\">Wellcome Collection</a>.</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "015_15.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493772804424-EEMTEINURG7CVO8FI1T0/015_15.jpg?format=original"
+        },
+        {
+          "filename": "016_16.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493772804426-5KDV2S8F9QQT97XKDM8E/016_16.jpg?format=original"
+        },
+        {
+          "filename": "005_5.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493772879663-6RP86PNAZ9TBC3JC87BG/005_5.jpg?format=original"
+        },
+        {
+          "filename": "011_11.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493772881930-J8E3A0NRLDE3JB14BWIF/011_11.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<p>We ended up traveling to London <a target=\"_blank\" href=\"https://www.travelzoo.com/collection/vacations/uk/\">on the cheap</a> for Kel's birthday. Because we booked a vacation package, our hotel was in a neighborhood we weren't terribly familiar with called Earl's Court. Lucky for us, Earl's Court is home to the <a target=\"_blank\" href=\"https://www.troubadourlondon.com/\">Troubadour</a>, a historic coffee house where Bob Dylan, Paul Simon, Elton John, Morrissey, and <a target=\"_blank\" href=\"https://www.troubadourlondon.com/\">many more</a> have all played over the years. Behind the coffee shop is a beautiful, peaceful spot for a stroll called <a target=\"_blank\" href=\"https://www.google.com/maps/place/Brompton+Cemetery/@51.489714,-0.199073,15z/data=!4m12!1m6!3m5!1s0x48760f8bdf3ada65:0xee14f9e2d887e81d!2sThe+Troubadour!8m2!3d51.4888522!4d-0.1917184!3m4!1s0x0:0xca3562498d604b3f!8m2!3d51.4839686!4d-0.1897207\">Brompton Cemetery</a>. I highly recommend checking them both out!</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "_MG_1161.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774826450-96VHTZKPX6KARRS0RFQK/_MG_1161.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1141.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774837177-W5VTRLR4WWQ9MF378U72/_MG_1141.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "_MG_1035.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775425044-3SXX1LFEHG7QJHD3Y33U/_MG_1035.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1236.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775454493-ZPAHX1TYA1UDEV1CU8LE/_MG_1236.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1237.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775469452-VLBEM0XEK1MLLE9J3ELF/_MG_1237.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1079.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775439623-ZE5P1UUY47C5TLOWZGWY/_MG_1079.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<p>Now there're a lot of problems in the world, but I do think that we'd get along a bit better if there were more spots around like <a target=\"_blank\" href=\"http://drinkshopdo.co.uk/\">Drink, Shop &amp; Do</a>. In short, folks get together here to drink booze, peruse hand-made crafts in the store, and sit around communal tables to drunkenly make art (and crafts) together.&nbsp;Kellyn was in heaven!</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "_MG_1496.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774473275-JPTBAFUGEKJ8N5KF6CJV/_MG_1496.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1483.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774457443-BDFXH05E8FN6QND6294X/_MG_1483.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1487.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774457902-CYNGVUWMS0KFD2CGQBQO/_MG_1487.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "_MG_1276.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774677627-CXPVQ5X1101P4X26QFK2/_MG_1276.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1259.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774668030-VU72STTE1AHH3YLIFZ8N/_MG_1259.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "_MG_1390.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775567276-MGFT3ALQ8DCPHZ2GJSGJ/_MG_1390.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<p>Prior to visiting London I heard a lot about <a target=\"_blank\" href=\"http://boroughmarket.org.uk/\">Borough Market</a>. Turns out, it definitely lives up to the hype. Not only that, there are some seriously great cheese shops and pubs in the nearby area. For example, <a target=\"_blank\" href=\"http://www.theglobeboroughmarket.com/\">Globe Tavern</a> is a sweet spot to grab a pint. Word on the street is that this is where Bridget from <a target=\"_blank\" href=\"http://www.telegraph.co.uk/property/buy/could-bridget-jones-still-afford-that-flat-above-borough-market/\">Bridget Jones Diaries</a> would pour one back in the movies!</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "_MG_1303.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774585863-N3WWTKXCBOHO9XP2B1UM/_MG_1303.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1309.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774591017-PYW17XVRJUEE168M4MFP/_MG_1309.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1313.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774600880-URTEWUPS3MU6K89LZTTA/_MG_1313.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_3478.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774912005-9L465GRMV5IXB8O7TAM8/IMG_3478.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1184.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774942698-IFGEDF3UCUIV4FUVDQ96/_MG_1184.jpg?format=original"
+        },
+        {
+          "filename": "IMG_3511.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774927576-BVVMOGP8WHZO3SMB5KE1/IMG_3511.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1464.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774930218-FWOE5BWX3MXWAL9DT5TJ/_MG_1464.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1081.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774964551-X846CJ3C3V8IGEGB8NZZ/_MG_1081.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1053.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774974267-VDBHJQG3M512H1YSHG7C/_MG_1053.jpg?format=original"
+        },
+        {
+          "filename": "IMG_3578.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775054832-8BAFGHCV1FBW65LLM0PW/IMG_3578.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1124.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775225718-VP3GDMY8PGSEQR0MCVGK/_MG_1124.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<p>There are tons of great places to see and things to do in London. The signage is especially fun. Give Away, Cockfosters, Sheer Drops, and of course, Mind the Gap.... London has it all!</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "024_24.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775311351-OJGYBR1NAPXUKT54KOQK/024_24.jpg?format=original"
+        },
+        {
+          "filename": "023_23.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775310446-SAMH0WORHA0P4G74X0G4/023_23.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "_MG_1108.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493774757556-ERU5PKX1D3VZ67R03UFN/_MG_1108.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<p>One of the A+ recommendations we received was to visit <a target=\"_blank\" href=\"https://gordonswinebar.com/\">Gordon's Wine Bar</a>. It's in a bit of a touristy area down by the Thames, but gee does it set the mood and boy is it easy on the eyes. If you feel like drinking some fermented grape juice like it's 1890, this is your spot!</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "_MG_1186.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775161951-0M4OYNBZ5SHWEQ9R6JTN/_MG_1186.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1190.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775160058-Z40MLJZUYNNP81UTY9NQ/_MG_1190.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "027_27.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775347919-YP7Y95M51S73VL1PGF4Y/027_27.jpg?format=original"
+        },
+        {
+          "filename": "018_18.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775344379-83CXTSY35VCZI9B8DAQP/018_18.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "026_26.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775700638-K2SEQP3SZYLBWBBZZJ32/026_26.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<p>Over near the Wellcome Collection, there's a great little pub called <a target=\"_blank\" href=\"http://www.breelouise.pub/\">Bree Louise</a>&nbsp;that serves award-winning ale and cider in an authentic pub atmosphere. I had a terrific handmade pie and a nice, cloudy cider while chilling out there. It's a pub in the true sense - a public place for the young and old alike to get together to talk, laugh, and drink.&nbsp;Also, the place is carpeted, which for some reason made me really happy.</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "_MG_1201.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775777026-1MC90Z2E2WX2I71MD8DV/_MG_1201.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1365.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775519867-HZCU1G7CX3091BH1VX3M/_MG_1365.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1361.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775492186-N4TCC7MKMQ6F92SZPJYW/_MG_1361.jpg?format=original"
+        },
+        {
+          "filename": "_MG_1225.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775787932-2DFFY7XW1L5JCLKUXD44/_MG_1225.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "028_28.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775680370-JWTR94H1KQ847CIGYTH0/028_28.jpg?format=original"
+        },
+        {
+          "filename": "017_17.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775677900-08H9IKNGWTDZBWCTG3Y5/017_17.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<p>A friend's parents recommended going on a Jack the Ripper murder mystery <a target=\"_blank\" href=\"https://www.jack-the-ripper-tour.com/\">walking tour</a>. Because we were running late, we had to run about 20 minutes straight to make it on time. The tour was super fun, and appropriately touristy. The final stop is a hipster pub called <a target=\"_blank\" href=\"https://www.tripsavvy.com/the-ten-bells-pub-london-1583136\">The Ten Bells</a> where Jack himself used to gaze at his soon-to-be victims, Annie Chapman and Mary Kelly,&nbsp;while they drank pomegranate margaritas (j/k).&nbsp;</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "_MG_1403.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1493775574918-TEK67NUF4PZHFZDM1ANS/_MG_1403.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<p>That about does it! If London calls, please do yourself a solid and pick up the phone. You won't regret it!</p>"
+    }
+  ]
+}

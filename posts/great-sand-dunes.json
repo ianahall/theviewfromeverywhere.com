@@ -1,0 +1,127 @@
+{
+  "title": "Great Sand Dunes",
+  "date": "September 9, 2016",
+  "date_iso": "2016-09-09",
+  "categories": [
+    "United States",
+    "Parks"
+  ],
+  "card_excerpt": "",
+  "hero_image": "IMG_0862.jpg",
+  "blocks": [
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "000013550022.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502061039242-7KQMU5FDABW4LHPO697N/000013550022.jpg?format=original"
+        },
+        {
+          "filename": "IMG_6929.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502056929012-ZC5QHE4PPUU8MEEC6BF6/IMG_6929.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_0959.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502059411687-6GF11NOXFG3TSXITUP6Q/IMG_0959.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_0863.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502060877728-4HUTHDH0NL5PMX9GPT3U/IMG_0863.jpg?format=original"
+        },
+        {
+          "filename": "IMG_6917.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502060075229-BU9REYFHI6I2QOMZ0TAO/IMG_6917.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0857.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502059919082-1YPYLI1DKMPL3X4VNSTD/IMG_0857.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0858.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502060925767-OSFGVNU8I9948KQ5KTKG/IMG_0858.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_0906.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502061615735-SWYXGEUDWO9CAWNIQ3XK/IMG_0906.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_0887.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502056817582-PTSOF7HC0XEB2VZOHXYF/IMG_0887.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0890.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502056841337-HGBY15VFVVKDT0206DLB/IMG_0890.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_0863.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502059356647-WVCZJOKEXZX1RXXZBFP1/IMG_0863.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_0880.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502025171605-LCHBQ8KVZHZPLTVR87SK/IMG_0880.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_0937.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502056855339-F3EYZIH5MFX3N7BHAUKA/IMG_0937.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0921.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502056851182-6FKOCXOB721L3A4XPNCR/IMG_0921.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_6962.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502056937439-UVSXQ4CZCX3ZY61DOV09/IMG_6962.jpg?format=original"
+        }
+      ]
+    }
+  ]
+}

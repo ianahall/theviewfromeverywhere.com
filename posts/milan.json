@@ -1,0 +1,128 @@
+{
+  "title": "Milan",
+  "date": "May 5, 2016",
+  "date_iso": "2016-05-05",
+  "categories": [
+    "Europe"
+  ],
+  "card_excerpt": "Northern Italy",
+  "hero_image": "IMG_0042+3.jpg",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<p>Northern Italy</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_0202.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490670623283-9ECHA2ANZ1Q9MALJOCO9/IMG_0202.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0035+2.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490670579130-EIXV3M0I0T7NSQVOJJDJ/IMG_0035+2.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_0034+2+copy.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490670639980-KNI64REHKG8LFLBBPTX9/IMG_0034+2+copy.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_0206.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490671378433-T85R2XTJEFEH5RMJTP0N/IMG_0206.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0220.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490671069915-8N1JY8KNEF36WVTIVXG6/IMG_0220.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0233.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490671653152-4WRFAGD2EBAUDOFTGGDN/IMG_0233.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0239.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490671686616-AWX1VU914IY4N7J174AG/IMG_0239.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_0253.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490670843583-P603R824LU12FZIGI9IB/IMG_0253.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_0254.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490671117122-EB7QCRRWL6PTSKZYA5CB/IMG_0254.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0263.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490671427098-XI20GFIA4AQAWWY822MD/IMG_0263.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0265.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490671160927-Z9Y7NLBFC28K68FOOQRK/IMG_0265.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_0082+2.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490671842414-VYHYUAJ54LTBUKT9R69I/IMG_0082+2.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0224.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490671940356-MTKH0SZECMPZNGMKLG0S/IMG_0224.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_0268.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490670901126-9NKHI14HIMRUOG2O5QK5/IMG_0268.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_0279.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490670914170-MSBM7VVJTIVOFFNWVEOI/IMG_0279.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0281.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490671537791-RK7FEKDIBWTTRDUFE80V/IMG_0281.jpg?format=original"
+        }
+      ]
+    }
+  ]
+}

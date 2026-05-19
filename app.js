@@ -28,14 +28,12 @@
     var params = new URLSearchParams(window.location.search);
     var cat    = (params.get('cat') || 'all').toLowerCase();
 
-    /* Highlight the matching primary-nav link */
     document.querySelectorAll('[data-filter]').forEach(function (a) {
       if (a.dataset.filter.toLowerCase() === cat) {
         a.classList.add('nav-active');
       }
     });
 
-    /* Hide cards that don't match */
     if (cat !== 'all') {
       cards.forEach(function (card) {
         var cardCats = (card.dataset.categories || '').toLowerCase();
@@ -47,26 +45,50 @@
   }
 
   /* -----------------------------------------------------------------------
+     Back-to-top button
+     Shows after scrolling 400px; smooth-scrolls to top on click.
+  ----------------------------------------------------------------------- */
+  var btt = document.getElementById('back-to-top');
+  if (btt) {
+    btt.removeAttribute('hidden');   // JS available — show the button element
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) {
+        btt.classList.add('visible');
+      } else {
+        btt.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    btt.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* -----------------------------------------------------------------------
      Lightbox (post pages only)
-     Gallery buttons open a full-screen lightbox with prev/next/keyboard nav.
+     Gallery buttons open a full-screen lightbox with prev/next/keyboard nav
+     and a proper focus trap so keyboard users can't escape to the page behind.
   ----------------------------------------------------------------------- */
   var galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
   if (galleryItems.length === 0) return;
 
-  var lightbox = document.getElementById('lightbox');
-  var lbImg    = document.getElementById('lb-img');
-  var lbCount  = document.getElementById('lb-count');
+  var lightbox    = document.getElementById('lightbox');
+  var lbImg       = document.getElementById('lb-img');
+  var lbCount     = document.getElementById('lb-count');
+  var lbClose     = document.getElementById('lb-close');
+  var lbPrev      = document.getElementById('lb-prev');
+  var lbNext      = document.getElementById('lb-next');
   if (!lightbox || !lbImg) return;
 
-  /* data-src points to the full-size JPEG for lightbox display */
-  var srcs = galleryItems.map(function (btn) {
-    return btn.dataset.src || '';
-  });
-
+  var srcs    = galleryItems.map(function (btn) { return btn.dataset.src || ''; });
   var total   = srcs.length;
   var current = 0;
+  var triggerEl = null;   // element that opened the lightbox (restore focus on close)
 
-  function lbOpen(index) {
+  // Focusable elements inside the lightbox (for the focus trap)
+  var focusableInLb = [lbClose, lbPrev, lbNext].filter(Boolean);
+
+  function lbOpen(index, opener) {
     current      = ((index % total) + total) % total;
     lbImg.src    = srcs[current];
     lbImg.alt    = galleryItems[current].getAttribute('aria-label') || '';
@@ -74,34 +96,59 @@
     lightbox.removeAttribute('hidden');
     lightbox.classList.add('open');
     document.body.classList.add('lb-open');
-    lbImg.focus();
+    triggerEl = opener || document.activeElement;
+    // Move focus to close button
+    if (lbClose) lbClose.focus();
   }
 
-  function lbClose() {
+  function lbClose_() {
     lightbox.setAttribute('hidden', '');
     lightbox.classList.remove('open');
     document.body.classList.remove('lb-open');
     lbImg.src = '';
+    // Return focus to the element that opened the lightbox
+    if (triggerEl && typeof triggerEl.focus === 'function') {
+      triggerEl.focus();
+    }
+    triggerEl = null;
   }
 
   galleryItems.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      lbOpen(parseInt(btn.dataset.index, 10));
+      lbOpen(parseInt(btn.dataset.index, 10), btn);
     });
   });
 
-  document.getElementById('lb-close').addEventListener('click', lbClose);
-  document.getElementById('lb-prev').addEventListener('click', function () { lbOpen(current - 1); });
-  document.getElementById('lb-next').addEventListener('click', function () { lbOpen(current + 1); });
+  if (lbClose) lbClose.addEventListener('click', lbClose_);
+  if (lbPrev)  lbPrev.addEventListener('click',  function () { lbOpen(current - 1); });
+  if (lbNext)  lbNext.addEventListener('click',  function () { lbOpen(current + 1); });
 
   lightbox.addEventListener('click', function (e) {
-    if (e.target === lightbox) lbClose();
+    if (e.target === lightbox) lbClose_();
   });
 
   document.addEventListener('keydown', function (e) {
     if (lightbox.hasAttribute('hidden')) return;
-    if (e.key === 'ArrowLeft'  || e.key === 'Left')   { lbOpen(current - 1); e.preventDefault(); }
-    if (e.key === 'ArrowRight' || e.key === 'Right')   { lbOpen(current + 1); e.preventDefault(); }
-    if (e.key === 'Escape')                             { lbClose(); }
+
+    if (e.key === 'ArrowLeft'  || e.key === 'Left')  { lbOpen(current - 1); e.preventDefault(); return; }
+    if (e.key === 'ArrowRight' || e.key === 'Right') { lbOpen(current + 1); e.preventDefault(); return; }
+    if (e.key === 'Escape')                           { lbClose_(); return; }
+
+    // Focus trap: Tab / Shift+Tab cycles only within the lightbox
+    if (e.key === 'Tab') {
+      var first = focusableInLb[0];
+      var last  = focusableInLb[focusableInLb.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    }
   });
 }());

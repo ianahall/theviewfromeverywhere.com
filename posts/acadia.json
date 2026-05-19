@@ -1,0 +1,165 @@
+{
+  "title": "Acadia",
+  "date": "July 21, 2016",
+  "date_iso": "2016-07-21",
+  "categories": [
+    "United States",
+    "Parks"
+  ],
+  "card_excerpt": "",
+  "hero_image": "IMG_3278.jpg",
+  "blocks": [
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_3280.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957943000-Q0K9SCQEJB3G5UYUTKNE/IMG_3280.jpg?format=original"
+        },
+        {
+          "filename": "IMG_3185.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501959382439-MZPAD8Z9BVS85KJMEJ6Z/IMG_3185.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_2624.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957553527-OVBWLU1NTQ75HQU6DHH3/IMG_2624.jpg?format=original"
+        },
+        {
+          "filename": "IMG_2627.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957593505-054Z2NNLK4A233A6PPIE/IMG_2627.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "000013430013.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957578351-JJH1VI7ENVHA5AD5WP7F/000013430013.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_2680.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957709507-15NP7NFJZLX13JD3Z9OP/IMG_2680.jpg?format=original"
+        },
+        {
+          "filename": "IMG_2681.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957977607-BJ87DT26FVOBUZ4JM6H6/IMG_2681.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_2645.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501958149129-OT73998SESOKBX3WKA0G/IMG_2645.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_2697.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501958175551-U45LPJRQY73N073AF7TF/IMG_2697.jpg?format=original"
+        },
+        {
+          "filename": "IMG_2704.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957741732-L6FKKZ21KOQKPGSBAEDI/IMG_2704.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "000013430008.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501958230782-EWPVD38EWR9PGAA7LLMK/000013430008.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_3289.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501958410784-2ZFVMA807XCP372RCZ06/IMG_3289.jpg?format=original"
+        },
+        {
+          "filename": "000013430006.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501958476747-8G4URTCCO3R9N4LUC725/000013430006.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_2709.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957740258-M5T05X844TPMZOO0USJL/IMG_2709.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_3151.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501959808024-L3UEGRD76AK1ISU7FV0I/IMG_3151.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_2647.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501958339986-QOTWN2H44Y345HSSJM9L/IMG_2647.jpg?format=original"
+        },
+        {
+          "filename": "IMG_2662.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957681972-JZZZ4VI59K3EEHXSXKF9/IMG_2662.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_2737.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957778559-0MSSR5NAOHSOG10T2AW1/IMG_2737.jpg?format=original"
+        },
+        {
+          "filename": "IMG_2716.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957768555-0YMBV0CNE9K1Z7RLA0LG/IMG_2716.jpg?format=original"
+        },
+        {
+          "filename": "IMG_2710.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1501957789568-WLTEE86ATJ11BCCTAUM2/IMG_2710.jpg?format=original"
+        }
+      ]
+    }
+  ]
+}

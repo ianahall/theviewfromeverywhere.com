@@ -1,0 +1,92 @@
+{
+  "title": "Monument Rocks",
+  "date": "September 13, 2016",
+  "date_iso": "2016-09-13",
+  "categories": [
+    "United States"
+  ],
+  "card_excerpt": "The Chalk Pyramids",
+  "hero_image": "IMG_1264.jpg",
+  "blocks": [
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_1217.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502461888359-U0JPNSILMPYNAPNRTB9Q/IMG_1217.jpg?format=original"
+        },
+        {
+          "filename": "000013570017.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502461873811-MCJYRQLLD6TD6SUHJ368/000013570017.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_1323.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502464458443-L8Q9TZMFVNWKZKGGUUQL/IMG_1323.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "000013570016.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502749867129-LCZFFRN9PWC6S3LR3QGN/000013570016.jpg?format=original"
+        },
+        {
+          "filename": "000013570006.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502749534620-RVFM33278W60CCIXZ22H/000013570006.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_7171.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502749934913-2PWONJD6OYRZ3YNFAVV9/IMG_7171.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_1288.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502749854364-4VZR5CEP8M0J6TQ7NV3V/IMG_1288.jpg?format=original"
+        },
+        {
+          "filename": "IMG_1282.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502749855657-IB995BG7ZIDLXCQYG6U2/IMG_1282.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_1257.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502921087355-A06C7U4EYR605GFV0L6G/IMG_1257.jpg?format=original"
+        },
+        {
+          "filename": "IMG_1276.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502921762332-XI0IVGDCN3K9JXW2I3S9/IMG_1276.jpg?format=original"
+        },
+        {
+          "filename": "000013570007.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1502920792495-EFR2I9AEPJJ1RIWFHBGY/000013570007.jpg?format=original"
+        }
+      ]
+    }
+  ]
+}

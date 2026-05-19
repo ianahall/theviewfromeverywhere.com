@@ -1,0 +1,134 @@
+{
+  "title": "Florence",
+  "date": "May 13, 2016",
+  "date_iso": "2016-05-13",
+  "categories": [
+    "Europe"
+  ],
+  "card_excerpt": "The David and Butter Chicken",
+  "hero_image": "IMG_0440+2.jpg",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<p>The David and butter chicken</p>"
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "IMG_0443+2.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490665854966-W3J0WX1DMMWHWO03131U/IMG_0443+2.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "000057960003.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666227351-1OJ18KESEG4ZWYTIVYKD/000057960003.jpg?format=original"
+        },
+        {
+          "filename": "000057960004.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490665890489-89AT52LQZ9F5P0Q6RJH6/000057960004.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "000057960005.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666258059-PB68LOYACSGM5VNEW2SO/000057960005.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "000057960018.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490665904175-VRF6Y17YOUYVAXUMWY2J/000057960018.jpg?format=original"
+        },
+        {
+          "filename": "000057960002.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666167263-KDJVUYKC5SIH5EKCZLGG/000057960002.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "000057960011.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490665943179-H85ZX45O716V791UKKVR/000057960011.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "IMG_0491+1.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666020825-KZGAO4D6DAV7Z7UKE6SX/IMG_0491+1.jpg?format=original"
+        },
+        {
+          "filename": "000057960014.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490665987351-BI2HDYET2UK3ZI9VTM3A/000057960014.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0457.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666056879-XUWAN4MGNJHLCCD9CHXU/IMG_0457.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "000057960017.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666126536-CBSBGOLLNMYBOZH5HCDY/000057960017.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 1,
+      "images": [
+        {
+          "filename": "000057960013.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666357724-CVSCUFZX0DYRUD83PT6C/000057960013.jpg?format=original"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "columns": 2,
+      "images": [
+        {
+          "filename": "000057960009.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666314586-QJ6U17VFTA8S99CUSJ43/000057960009.jpg?format=original"
+        },
+        {
+          "filename": "000057960006.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666321993-BYJ5A2TQE4W3VP7T0DOF/000057960006.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0402+2.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666407644-4BML1ZNK97BBTYQGTDV4/IMG_0402+2.jpg?format=original"
+        },
+        {
+          "filename": "IMG_0417+1.jpg",
+          "src_url": "https://images.squarespace-cdn.com/content/v1/58d6f67f9de4bba5f5e41958/1490666419249-F2AJ9IA6RO9SB9VPPAZF/IMG_0417+1.jpg?format=original"
+        }
+      ]
+    }
+  ]
+}
