@@ -325,7 +325,30 @@ def render_post(post, all_posts):
         )
     related_html = '\n\n'.join(related_cards)
 
-    hero_pic = hero_picture(folder, title_e, root='../../')
+    # Use the Squarespace featured image (gallery resolution) if available;
+    # fall back to the homepage thumbnail.
+    hero_fname = post.get('hero_image')
+    hero_stem  = os.path.splitext(hero_fname)[0] if hero_fname else None
+    hero_local = os.path.join(BLOG_DIR, folder, 'images', 'web', f'{hero_stem}.jpg') if hero_stem else None
+
+    if hero_stem and hero_local and os.path.exists(hero_local):
+        dims     = _dims(gal_manifest, hero_stem)
+        hero_pic = (
+            f'<picture>'
+            f'<source type="image/webp"'
+            f' srcset="images/web/{hero_stem}-sm.webp {GAL_HALF_W}w,'
+            f' images/web/{hero_stem}.webp {GAL_FULL_W}w"'
+            f' sizes="100vw">'
+            f'<img'
+            f' srcset="images/web/{hero_stem}-sm.jpg {GAL_HALF_W}w,'
+            f' images/web/{hero_stem}.jpg {GAL_FULL_W}w"'
+            f' sizes="100vw"'
+            f' src="images/web/{hero_stem}.jpg" alt="{title_e}"{dims}'
+            f' loading="eager" decoding="async">'
+            f'</picture>'
+        )
+    else:
+        hero_pic = hero_picture(folder, title_e, root='../../')
 
     return f"""<!DOCTYPE html>
 <html lang="en-US">

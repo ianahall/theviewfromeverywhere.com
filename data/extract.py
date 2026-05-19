@@ -186,8 +186,20 @@ def parse_blocks(content):
 def extract(xml_path):
     tree = ET.parse(xml_path)
     root = tree.getroot()
-    posts = []
 
+    # Build post_id -> attachment filename map for featured images
+    attachments = {}
+    for item in root.findall('.//item'):
+        pt = item.find('wp:post_type', NS)
+        if pt is None or pt.text != 'attachment':
+            continue
+        pid     = item.find('wp:post_id', NS)
+        url_el  = item.find('wp:attachment_url', NS)
+        if pid is not None and url_el is not None:
+            fname = url_el.text.rstrip('/').split('/')[-1]
+            attachments[pid.text] = fname
+
+    posts = []
     for item in root.findall('.//item'):
         post_type = item.find('wp:post_type', NS)
         status    = item.find('wp:status',    NS)
@@ -207,6 +219,15 @@ def extract(xml_path):
         cats     = [c.text for c in item.findall('category')
                     if c.get('domain') == 'category']
 
+        # Featured (hero) image: _thumbnail_id postmeta → attachment filename
+        hero_image = None
+        for meta in item.findall('wp:postmeta', NS):
+            key = meta.find('wp:meta_key', NS)
+            if key is not None and key.text == '_thumbnail_id':
+                tid = meta.find('wp:meta_value', NS).text
+                hero_image = attachments.get(tid)
+                break
+
         blocks       = parse_blocks(content)
         card_excerpt = EXCERPT_OVERRIDE.get(folder) or strip_tags(excerpt) or ''
 
@@ -216,6 +237,7 @@ def extract(xml_path):
             'date':         fmt_date(pub_date),
             'categories':   cats,
             'card_excerpt': card_excerpt,
+            'hero_image':   hero_image,
             'blocks':       blocks,
         })
 
