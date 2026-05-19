@@ -15,7 +15,7 @@
   <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/yellowstone.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -32,10 +32,7 @@
       <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <nav class="site-nav-secondary" aria-label="Secondary">
-      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
-      <a href="../../our-story/index.html">About</a>
-    </nav>
+    <div></div>
   </header>
 
   <div class="mobile-bar">
@@ -55,6 +52,7 @@
     <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
     <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="../../our-story/index.html">About</a>
+    <a href="../../contact/index.html">Contact</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
@@ -68,73 +66,83 @@
     </div>
   </div>
 
-  <div class="post-body">
-    <p class="post-lede"></p>
-  </div>
+  <main class="post-content">
 
-  <div class="post-gallery" id="gallery">
-
-    <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="0" data-src="images/web/000013460007.jpg" aria-label="Open photo 1">
       <picture><source type="image/webp" srcset="images/web/000013460007-sm.webp 800w, images/web/000013460007.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013460007-sm.jpg 800w, images/web/000013460007.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013460007.jpg" alt="Yellowstone — photo 1" width="1061" height="1600" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
+    <button class="gallery-item" data-index="1" data-src="images/web/IMG_4398-001.jpg" aria-label="Open photo 2">
       <picture><source type="image/webp" srcset="images/web/IMG_4398-001-sm.webp 800w, images/web/IMG_4398-001.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4398-001-sm.jpg 800w, images/web/IMG_4398-001.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4398-001.jpg" alt="Yellowstone — photo 2" width="1200" height="1600" loading="eager" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="2" data-src="images/web/000013540021.jpg" aria-label="Open photo 3">
       <picture><source type="image/webp" srcset="images/web/000013540021-sm.webp 800w, images/web/000013540021.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013540021-sm.jpg 800w, images/web/000013540021.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013540021.jpg" alt="Yellowstone — photo 3" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="3" data-src="images/web/IMG_3593.jpg" aria-label="Open photo 4">
       <picture><source type="image/webp" srcset="images/web/IMG_3593-sm.webp 800w, images/web/IMG_3593.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3593-sm.jpg 800w, images/web/IMG_3593.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3593.jpg" alt="Yellowstone — photo 4" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
+    <button class="gallery-item" data-index="4" data-src="images/web/IMG_3590.jpg" aria-label="Open photo 5">
       <picture><source type="image/webp" srcset="images/web/IMG_3590-sm.webp 800w, images/web/IMG_3590.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3590-sm.jpg 800w, images/web/IMG_3590.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3590.jpg" alt="Yellowstone — photo 5" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
+    <button class="gallery-item" data-index="5" data-src="images/web/IMG_3633.jpg" aria-label="Open photo 6">
       <picture><source type="image/webp" srcset="images/web/IMG_3633-sm.webp 800w, images/web/IMG_3633.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3633-sm.jpg 800w, images/web/IMG_3633.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3633.jpg" alt="Yellowstone — photo 6" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="6" data-src="images/web/000013460011.jpg" aria-label="Open photo 7">
       <picture><source type="image/webp" srcset="images/web/000013460011-sm.webp 800w, images/web/000013460011.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013460011-sm.jpg 800w, images/web/000013460011.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013460011.jpg" alt="Yellowstone — photo 7" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
+    <button class="gallery-item" data-index="7" data-src="images/web/IMG_3625.jpg" aria-label="Open photo 8">
       <picture><source type="image/webp" srcset="images/web/IMG_3625-sm.webp 800w, images/web/IMG_3625.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3625-sm.jpg 800w, images/web/IMG_3625.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3625.jpg" alt="Yellowstone — photo 8" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="8" data-src="images/web/IMG_3621.jpg" aria-label="Open photo 9">
       <picture><source type="image/webp" srcset="images/web/IMG_3621-sm.webp 800w, images/web/IMG_3621.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3621-sm.jpg 800w, images/web/IMG_3621.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3621.jpg" alt="Yellowstone — photo 9" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
+    <button class="gallery-item" data-index="9" data-src="images/web/IMG_3616.jpg" aria-label="Open photo 10">
       <picture><source type="image/webp" srcset="images/web/IMG_3616-sm.webp 800w, images/web/IMG_3616.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3616-sm.jpg 800w, images/web/IMG_3616.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3616.jpg" alt="Yellowstone — photo 10" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
+    <button class="gallery-item" data-index="10" data-src="images/web/IMG_3623.jpg" aria-label="Open photo 11">
       <picture><source type="image/webp" srcset="images/web/IMG_3623-sm.webp 800w, images/web/IMG_3623.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3623-sm.jpg 800w, images/web/IMG_3623.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3623.jpg" alt="Yellowstone — photo 11" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
+    <button class="gallery-item" data-index="11" data-src="images/web/IMG_3611.jpg" aria-label="Open photo 12">
       <picture><source type="image/webp" srcset="images/web/IMG_3611-sm.webp 800w, images/web/IMG_3611.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3611-sm.jpg 800w, images/web/IMG_3611.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3611.jpg" alt="Yellowstone — photo 12" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="12" data-src="images/web/000013540023.jpg" aria-label="Open photo 13">
       <picture><source type="image/webp" srcset="images/web/000013540023-sm.webp 800w, images/web/000013540023.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013540023-sm.jpg 800w, images/web/000013540023.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013540023.jpg" alt="Yellowstone — photo 13" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="13" data-src="images/web/000013460012.jpg" aria-label="Open photo 14">
       <picture><source type="image/webp" srcset="images/web/000013460012-sm.webp 800w, images/web/000013460012.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013460012-sm.jpg 800w, images/web/000013460012.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013460012.jpg" alt="Yellowstone — photo 14" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
+    <button class="gallery-item" data-index="14" data-src="images/web/000013540024.jpg" aria-label="Open photo 15">
       <picture><source type="image/webp" srcset="images/web/000013540024-sm.webp 800w, images/web/000013540024.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013540024-sm.jpg 800w, images/web/000013540024.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013540024.jpg" alt="Yellowstone — photo 15" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
-
   </div>
+
+  </main>
 
   <section class="related-posts">
     <h2 class="related-posts-heading">Related Posts</h2>
@@ -209,7 +217,7 @@
 
   <footer class="site-footer">
     <nav aria-label="Footer">
-      <a href="../../index.html">Home</a>
+      <a href="../../index.html">All Posts</a>
       <a href="../../our-story/index.html">About</a>
       <a href="../../contact/index.html">Contact</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>

@@ -14,18 +14,14 @@ Outputs (all deterministic — running twice leaves git status clean):
   blog/*/index.html    — post pages
   sitemap.xml
 
-To regenerate download_images.sh (gitignored, not needed for deploy):
-  Run python3 build.py --with-download-script
-
-Usage:
-  python3 build.py                 # normal build
-  python3 data/extract.py          # re-extract posts.json from Squarespace XML
-  python3 optimize.py              # create / update web image derivatives
+To regenerate download_images.sh (gitignored):
+  python3 build.py --with-download-script
 """
 
 import html as html_lib
 import json
 import os
+import re
 
 # ---------- config ----------------------------------------------------------
 
@@ -46,11 +42,14 @@ def load_posts():
 
 
 def load_manifest(path):
-    """Load {stem: {w, h}} from a manifest.json, or return {} if missing."""
     if os.path.exists(path):
         with open(path) as f:
             return json.load(f)
     return {}
+
+
+def strip_tags(h):
+    return re.sub(r'<[^>]+>', '', h or '').strip()
 
 
 def pick_related(post, all_posts, n=6):
@@ -67,7 +66,6 @@ def pick_related(post, all_posts, n=6):
 # ---------- picture element helpers -----------------------------------------
 
 def _dims(manifest, stem):
-    """Return ' width="W" height="H"' string if manifest has the entry."""
     entry = manifest.get(stem)
     if entry:
         return f' width="{entry["w"]}" height="{entry["h"]}"'
@@ -75,20 +73,15 @@ def _dims(manifest, stem):
 
 
 def thumb_picture(stem, alt_e, manifest, lazy=True):
-    """
-    Homepage / hero thumbnail — two widths.
-    Falls back to original JPEGs if web/ derivatives don't exist.
-    """
+    """Homepage thumbnail — 480w + 900w srcset."""
     web_full_jpg  = f'images/web/{stem}.jpg'
     web_full_webp = f'images/web/{stem}.webp'
     web_half_jpg  = f'images/web/{stem}-sm.jpg'
     web_half_webp = f'images/web/{stem}-sm.webp'
-
     load = 'lazy' if lazy else 'eager'
     dims = _dims(manifest, stem)
 
-    if (os.path.exists(web_full_jpg) and os.path.exists(web_full_webp)
-            and os.path.exists(web_half_jpg) and os.path.exists(web_half_webp)):
+    if all(os.path.exists(p) for p in (web_full_jpg, web_full_webp, web_half_jpg, web_half_webp)):
         return (
             f'<picture>'
             f'<source type="image/webp"'
@@ -101,20 +94,18 @@ def thumb_picture(stem, alt_e, manifest, lazy=True):
             f' loading="{load}" decoding="async">'
             f'</picture>'
         )
-    # Fallback: original (will fail if originals are removed from tracking, but that's a setup issue)
     return f'<img src="images/{stem}.jpg" alt="{alt_e}"{dims} loading="{load}" decoding="async">'
 
 
 def hero_picture(folder, alt_e, root='../../'):
-    """Post hero and related-card image — eager, full thumbnail."""
+    """Post hero and related-card image — 480w + 900w."""
     stem          = folder
     web_full_jpg  = f'{root}images/web/{stem}.jpg'
     web_full_webp = f'{root}images/web/{stem}.webp'
     web_half_jpg  = f'{root}images/web/{stem}-sm.jpg'
     web_half_webp = f'{root}images/web/{stem}-sm.webp'
-
-    local_full  = f'images/web/{stem}.jpg'
-    local_half  = f'images/web/{stem}-sm.jpg'
+    local_full    = f'images/web/{stem}.jpg'
+    local_half    = f'images/web/{stem}-sm.jpg'
 
     if os.path.exists(local_full) and os.path.exists(local_half):
         return (
@@ -133,17 +124,16 @@ def hero_picture(folder, alt_e, root='../../'):
 
 
 def gallery_picture(folder, fname, alt_e, lazy, manifest):
-    """Gallery item — two widths."""
+    """Gallery item — 800w + 1600w srcset."""
     stem          = os.path.splitext(fname)[0]
     web_full_jpg  = f'images/web/{stem}.jpg'
     web_full_webp = f'images/web/{stem}.webp'
     web_half_jpg  = f'images/web/{stem}-sm.jpg'
     web_half_webp = f'images/web/{stem}-sm.webp'
-
-    local_full = os.path.join(BLOG_DIR, folder, web_full_jpg)
-    local_half = os.path.join(BLOG_DIR, folder, web_half_jpg)
-    load       = 'lazy' if lazy else 'eager'
-    dims       = _dims(manifest, stem)
+    local_full    = os.path.join(BLOG_DIR, folder, web_full_jpg)
+    local_half    = os.path.join(BLOG_DIR, folder, web_half_jpg)
+    load          = 'lazy' if lazy else 'eager'
+    dims          = _dims(manifest, stem)
 
     if os.path.exists(local_full) and os.path.exists(local_half):
         return (
@@ -164,12 +154,12 @@ def gallery_picture(folder, fname, alt_e, lazy, manifest):
 # ---------- shared HTML fragments -------------------------------------------
 
 def header_html(root='../../'):
-    """3-column grid: brand left | primary nav center | secondary nav right."""
+    """Brand left | primary nav center. Secondary links live in the footer."""
     base = root + 'index.html'
+
     def flink(href, label, filt):
-        fe = html_lib.escape(filt)
-        le = html_lib.escape(label)
-        return f'<a href="{href}" data-filter="{fe}">{le}</a>'
+        return (f'<a href="{href}" data-filter="{html_lib.escape(filt)}">'
+                f'{html_lib.escape(label)}</a>')
 
     return f"""\
   <header class="site-header">
@@ -184,10 +174,7 @@ def header_html(root='../../'):
       {flink(base + '?cat=Africa',        'Africa', 'Africa')}
       {flink(base + '?cat=Asia',          'Asia',   'Asia')}
     </nav>
-    <nav class="site-nav-secondary" aria-label="Secondary">
-      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
-      <a href="{root}our-story/index.html">About</a>
-    </nav>
+    <div></div>
   </header>
 
   <div class="mobile-bar">
@@ -207,6 +194,7 @@ def header_html(root='../../'):
     {flink(base + '?cat=Africa',        'Africa', 'Africa')}
     {flink(base + '?cat=Asia',          'Asia',   'Asia')}
     <a href="{root}our-story/index.html">About</a>
+    <a href="{root}contact/index.html">Contact</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>\
 """
@@ -216,7 +204,7 @@ def footer_html(root='../../'):
     return f"""\
   <footer class="site-footer">
     <nav aria-label="Footer">
-      <a href="{root}index.html">Home</a>
+      <a href="{root}index.html">All Posts</a>
       <a href="{root}our-story/index.html">About</a>
       <a href="{root}contact/index.html">Contact</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
@@ -225,10 +213,12 @@ def footer_html(root='../../'):
   </footer>\
 """
 
+
 FONT_LINK = (
     '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
     '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-    '  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300'
+    '  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@'
+    '0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400'
     '&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">'
 )
 
@@ -247,37 +237,76 @@ LIGHTBOX_HTML = """\
 # ---------- post page -------------------------------------------------------
 
 def render_post(post, all_posts):
-    folder   = post['folder']
-    title    = post['title']
-    title_e  = html_lib.escape(title)
-    cat      = post['categories'][0] if post['categories'] else ''
-    cat_e    = html_lib.escape(cat)
-    date_e   = html_lib.escape(post['date'])
-    body_e   = html_lib.escape(post['body'])
-    desc_raw = post['card_excerpt'] or post['body'][:120] or title
-    desc_e   = html_lib.escape(desc_raw)
+    folder  = post['folder']
+    title   = post['title']
+    title_e = html_lib.escape(title)
+    cat     = post['categories'][0] if post['categories'] else ''
+    cat_e   = html_lib.escape(cat)
+    date_e  = html_lib.escape(post['date'])
+
+    blocks = post.get('blocks', [])
+
+    # Description: first paragraph text, falling back to card_excerpt
+    first_para = next((b for b in blocks if b['type'] == 'paragraph'), None)
+    if first_para:
+        desc_raw = strip_tags(first_para['html'])[:160]
+    else:
+        desc_raw = post.get('card_excerpt') or title
+    desc_e = html_lib.escape(desc_raw)
 
     canonical = f'{SITE_URL}/blog/{folder}/'
     og_image  = f'{SITE_URL}/images/web/{folder}.jpg'
 
-    gal_manifest = load_manifest(os.path.join(BLOG_DIR, folder, 'images', 'web', 'manifest.json'))
+    gal_manifest = load_manifest(
+        os.path.join(BLOG_DIR, folder, 'images', 'web', 'manifest.json')
+    )
 
-    # Gallery items
-    gallery_items = []
-    for i, img in enumerate(post['images']):
-        fname  = img['filename']
-        alt_e  = html_lib.escape(f'{title} — photo {i + 1}')
-        lazy   = i > 2
-        pic    = gallery_picture(folder, fname, alt_e, lazy, gal_manifest)
-        gallery_items.append(
-            f'    <button class="post-gallery-item" data-index="{i}" aria-label="Open photo {i + 1}">\n'
-            f'      {pic}\n'
-            f'    </button>'
-        )
-    gallery_html = '\n\n'.join(gallery_items)
+    # Render blocks in order; assign a global lightbox index across all galleries
+    content_parts = []
+    global_idx    = 0
+    first_para_done = False
+
+    for block in blocks:
+        if block['type'] == 'paragraph':
+            cls = 'post-lede' if not first_para_done else 'post-text'
+            first_para_done = True
+            # HTML is already valid; output it directly (no escaping)
+            content_parts.append(
+                f'  <div class="{cls}">\n'
+                f'    {block["html"]}\n'
+                f'  </div>'
+            )
+
+        elif block['type'] == 'gallery':
+            cols  = block.get('columns', 2)
+            items = []
+            for img in block['images']:
+                fname    = img['filename']
+                stem     = os.path.splitext(fname)[0]
+                alt_e    = html_lib.escape(f'{title} — photo {global_idx + 1}')
+                lazy     = global_idx > 2
+                pic      = gallery_picture(folder, fname, alt_e, lazy, gal_manifest)
+                full_src = f'images/web/{stem}.jpg'
+                items.append(
+                    f'    <button class="gallery-item"'
+                    f' data-index="{global_idx}"'
+                    f' data-src="{full_src}"'
+                    f' aria-label="Open photo {global_idx + 1}">\n'
+                    f'      {pic}\n'
+                    f'    </button>'
+                )
+                global_idx += 1
+
+            content_parts.append(
+                f'  <div class="gallery-block columns-{cols}">\n'
+                + '\n\n'.join(items)
+                + '\n  </div>'
+            )
+
+    content_html = '\n\n'.join(content_parts)
 
     # Related posts
-    related = pick_related(post, all_posts, n=6)
+    related       = pick_related(post, all_posts, n=6)
     related_cards = []
     for rp in related:
         rf   = rp['folder']
@@ -330,15 +359,11 @@ def render_post(post, all_posts):
     </div>
   </div>
 
-  <div class="post-body">
-    <p class="post-lede">{body_e}</p>
-  </div>
+  <main class="post-content">
 
-  <div class="post-gallery" id="gallery">
+{content_html}
 
-{gallery_html}
-
-  </div>
+  </main>
 
   <section class="related-posts">
     <h2 class="related-posts-heading">Related Posts</h2>
@@ -366,28 +391,23 @@ def render_index(posts):
 
     cards = []
     for post in posts:
-        folder  = post['folder']
-        title_e = html_lib.escape(post['title'])
-        cats    = post['categories']
-        cat_e   = html_lib.escape(cats[0] if cats else '')
-        exc_e   = html_lib.escape(post['card_excerpt'])
-        date_e  = html_lib.escape(post['date'])
+        folder    = post['folder']
+        title_e   = html_lib.escape(post['title'])
+        exc_e     = html_lib.escape(post.get('card_excerpt', ''))
+        cats      = post['categories']
         data_cats = html_lib.escape(' '.join(cats))
 
         pic = thumb_picture(folder, title_e, thumb_manifest, lazy=True)
 
-        excerpt_html = f'\n        <p class="blog-card-excerpt">{exc_e}</p>' if exc_e else ''
-        date_html    = f'\n        <p class="blog-card-date">{date_e}</p>'
+        tagline = f'\n        <p class="blog-card-tagline">{exc_e}</p>' if exc_e else ''
 
         cards.append(
             f'    <a class="blog-card" href="blog/{folder}/" data-categories="{data_cats}">\n'
             f'      {pic}\n'
             f'      <div class="blog-card-overlay"></div>\n'
             f'      <div class="blog-card-body">\n'
-            f'        <p class="blog-card-category">{cat_e}</p>\n'
             f'        <h2 class="blog-card-title">{title_e}</h2>'
-            f'{excerpt_html}'
-            f'{date_html}\n'
+            f'{tagline}\n'
             f'      </div>\n'
             f'    </a>'
         )
@@ -451,7 +471,6 @@ def write_download_script(posts):
         '#!/usr/bin/env bash',
         '# Download full-resolution gallery images from Squarespace CDN.',
         '# Run once after a fresh clone, before python3 optimize.py.',
-        '# Requires: curl',
         'set -euo pipefail',
         '',
         'echo "Downloading gallery images..."',
@@ -461,13 +480,16 @@ def write_download_script(posts):
         folder   = post['folder']
         dir_path = f'blog/{folder}/images'
         lines.append(f'mkdir -p {dir_path}')
-        lines.append(f'echo "  {folder} ({len(post["images"])} images)..."')
-        for img in post['images']:
-            url   = img.get('src_url', '')
-            fname = img['filename']
-            out   = f'{dir_path}/{fname}'
-            if url:
-                lines.append(f'[ -f "{out}" ] || curl -s -L -o "{out}" "{url}" &')
+        lines.append(f'echo "  {folder}..."')
+        for block in post.get('blocks', []):
+            if block['type'] != 'gallery':
+                continue
+            for img in block['images']:
+                url   = img.get('src_url', '')
+                fname = img['filename']
+                out   = f'{dir_path}/{fname}'
+                if url:
+                    lines.append(f'[ -f "{out}" ] || curl -s -L -o "{out}" "{url}" &')
         lines.append('wait')
         lines.append('')
     lines.append('echo "Done."')
@@ -481,7 +503,6 @@ def write_download_script(posts):
 # ---------- main ------------------------------------------------------------
 
 def write_if_changed(path, content):
-    """Only write file if content differs — keeps mtimes stable."""
     if os.path.exists(path):
         with open(path, encoding='utf-8') as f:
             if f.read() == content:
@@ -506,8 +527,7 @@ def main():
         out_dir = os.path.join(BLOG_DIR, folder)
         os.makedirs(out_dir, exist_ok=True)
         os.makedirs(os.path.join(out_dir, 'images'), exist_ok=True)
-        html = render_post(post, posts)
-        if write_if_changed(os.path.join(out_dir, 'index.html'), html):
+        if write_if_changed(os.path.join(out_dir, 'index.html'), render_post(post, posts)):
             changed += 1
 
     if write_if_changed('index.html', render_index(posts)):

@@ -50,7 +50,7 @@
      Lightbox (post pages only)
      Gallery buttons open a full-screen lightbox with prev/next/keyboard nav.
   ----------------------------------------------------------------------- */
-  var galleryItems = Array.from(document.querySelectorAll('.post-gallery-item'));
+  var galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
   if (galleryItems.length === 0) return;
 
   var lightbox = document.getElementById('lightbox');
@@ -58,13 +58,9 @@
   var lbCount  = document.getElementById('lb-count');
   if (!lightbox || !lbImg) return;
 
-  /* Collect the best available source per item */
+  /* data-src points to the full-size JPEG for lightbox display */
   var srcs = galleryItems.map(function (btn) {
-    /* Prefer WebP source if present */
-    var src = btn.querySelector('source[type="image/webp"]');
-    if (src) return src.srcset;
-    var img = btn.querySelector('img');
-    return img ? img.src : '';
+    return btn.dataset.src || '';
   });
 
   var total   = srcs.length;

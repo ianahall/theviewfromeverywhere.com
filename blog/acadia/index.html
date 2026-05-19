@@ -15,7 +15,7 @@
   <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/acadia.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -32,10 +32,7 @@
       <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <nav class="site-nav-secondary" aria-label="Secondary">
-      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
-      <a href="../../our-story/index.html">About</a>
-    </nav>
+    <div></div>
   </header>
 
   <div class="mobile-bar">
@@ -55,6 +52,7 @@
     <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
     <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="../../our-story/index.html">About</a>
+    <a href="../../contact/index.html">Contact</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
@@ -68,93 +66,113 @@
     </div>
   </div>
 
-  <div class="post-body">
-    <p class="post-lede"></p>
-  </div>
+  <main class="post-content">
 
-  <div class="post-gallery" id="gallery">
-
-    <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="0" data-src="images/web/IMG_3280.jpg" aria-label="Open photo 1">
       <picture><source type="image/webp" srcset="images/web/IMG_3280-sm.webp 800w, images/web/IMG_3280.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3280-sm.jpg 800w, images/web/IMG_3280.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3280.jpg" alt="Acadia — photo 1" width="1200" height="1600" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
+    <button class="gallery-item" data-index="1" data-src="images/web/IMG_3185.jpg" aria-label="Open photo 2">
       <picture><source type="image/webp" srcset="images/web/IMG_3185-sm.webp 800w, images/web/IMG_3185.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3185-sm.jpg 800w, images/web/IMG_3185.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3185.jpg" alt="Acadia — photo 2" width="1200" height="1600" loading="eager" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="2" data-src="images/web/IMG_2624.jpg" aria-label="Open photo 3">
       <picture><source type="image/webp" srcset="images/web/IMG_2624-sm.webp 800w, images/web/IMG_2624.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2624-sm.jpg 800w, images/web/IMG_2624.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2624.jpg" alt="Acadia — photo 3" width="1600" height="1067" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
+    <button class="gallery-item" data-index="3" data-src="images/web/IMG_2627.jpg" aria-label="Open photo 4">
       <picture><source type="image/webp" srcset="images/web/IMG_2627-sm.webp 800w, images/web/IMG_2627.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2627-sm.jpg 800w, images/web/IMG_2627.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2627.jpg" alt="Acadia — photo 4" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="4" data-src="images/web/000013430013.jpg" aria-label="Open photo 5">
       <picture><source type="image/webp" srcset="images/web/000013430013-sm.webp 800w, images/web/000013430013.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013430013-sm.jpg 800w, images/web/000013430013.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013430013.jpg" alt="Acadia — photo 5" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="5" data-src="images/web/IMG_2680.jpg" aria-label="Open photo 6">
       <picture><source type="image/webp" srcset="images/web/IMG_2680-sm.webp 800w, images/web/IMG_2680.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2680-sm.jpg 800w, images/web/IMG_2680.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2680.jpg" alt="Acadia — photo 6" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
+    <button class="gallery-item" data-index="6" data-src="images/web/IMG_2681.jpg" aria-label="Open photo 7">
       <picture><source type="image/webp" srcset="images/web/IMG_2681-sm.webp 800w, images/web/IMG_2681.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2681-sm.jpg 800w, images/web/IMG_2681.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2681.jpg" alt="Acadia — photo 7" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="7" data-src="images/web/IMG_2645.jpg" aria-label="Open photo 8">
       <picture><source type="image/webp" srcset="images/web/IMG_2645-sm.webp 800w, images/web/IMG_2645.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2645-sm.jpg 800w, images/web/IMG_2645.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2645.jpg" alt="Acadia — photo 8" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="8" data-src="images/web/IMG_2697.jpg" aria-label="Open photo 9">
       <picture><source type="image/webp" srcset="images/web/IMG_2697-sm.webp 800w, images/web/IMG_2697.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2697-sm.jpg 800w, images/web/IMG_2697.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2697.jpg" alt="Acadia — photo 9" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
+    <button class="gallery-item" data-index="9" data-src="images/web/IMG_2704.jpg" aria-label="Open photo 10">
       <picture><source type="image/webp" srcset="images/web/IMG_2704-sm.webp 800w, images/web/IMG_2704.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2704-sm.jpg 800w, images/web/IMG_2704.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2704.jpg" alt="Acadia — photo 10" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="10" data-src="images/web/000013430008.jpg" aria-label="Open photo 11">
       <picture><source type="image/webp" srcset="images/web/000013430008-sm.webp 800w, images/web/000013430008.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013430008-sm.jpg 800w, images/web/000013430008.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013430008.jpg" alt="Acadia — photo 11" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="11" data-src="images/web/IMG_3289.jpg" aria-label="Open photo 12">
       <picture><source type="image/webp" srcset="images/web/IMG_3289-sm.webp 800w, images/web/IMG_3289.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3289-sm.jpg 800w, images/web/IMG_3289.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3289.jpg" alt="Acadia — photo 12" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
+    <button class="gallery-item" data-index="12" data-src="images/web/000013430006.jpg" aria-label="Open photo 13">
       <picture><source type="image/webp" srcset="images/web/000013430006-sm.webp 800w, images/web/000013430006.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013430006-sm.jpg 800w, images/web/000013430006.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013430006.jpg" alt="Acadia — photo 13" width="1600" height="1061" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="13" data-src="images/web/IMG_2709.jpg" aria-label="Open photo 14">
       <picture><source type="image/webp" srcset="images/web/IMG_2709-sm.webp 800w, images/web/IMG_2709.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2709-sm.jpg 800w, images/web/IMG_2709.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2709.jpg" alt="Acadia — photo 14" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="14" data-src="images/web/IMG_3151.jpg" aria-label="Open photo 15">
       <picture><source type="image/webp" srcset="images/web/IMG_3151-sm.webp 800w, images/web/IMG_3151.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_3151-sm.jpg 800w, images/web/IMG_3151.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_3151.jpg" alt="Acadia — photo 15" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="15" aria-label="Open photo 16">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="15" data-src="images/web/IMG_2647.jpg" aria-label="Open photo 16">
       <picture><source type="image/webp" srcset="images/web/IMG_2647-sm.webp 800w, images/web/IMG_2647.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2647-sm.jpg 800w, images/web/IMG_2647.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2647.jpg" alt="Acadia — photo 16" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="16" aria-label="Open photo 17">
+    <button class="gallery-item" data-index="16" data-src="images/web/IMG_2662.jpg" aria-label="Open photo 17">
       <picture><source type="image/webp" srcset="images/web/IMG_2662-sm.webp 800w, images/web/IMG_2662.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2662-sm.jpg 800w, images/web/IMG_2662.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2662.jpg" alt="Acadia — photo 17" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="17" aria-label="Open photo 18">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="17" data-src="images/web/IMG_2737.jpg" aria-label="Open photo 18">
       <picture><source type="image/webp" srcset="images/web/IMG_2737-sm.webp 800w, images/web/IMG_2737.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2737-sm.jpg 800w, images/web/IMG_2737.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2737.jpg" alt="Acadia — photo 18" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="18" aria-label="Open photo 19">
+    <button class="gallery-item" data-index="18" data-src="images/web/IMG_2716.jpg" aria-label="Open photo 19">
       <picture><source type="image/webp" srcset="images/web/IMG_2716-sm.webp 800w, images/web/IMG_2716.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2716-sm.jpg 800w, images/web/IMG_2716.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2716.jpg" alt="Acadia — photo 19" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="19" aria-label="Open photo 20">
+    <button class="gallery-item" data-index="19" data-src="images/web/IMG_2710.jpg" aria-label="Open photo 20">
       <picture><source type="image/webp" srcset="images/web/IMG_2710-sm.webp 800w, images/web/IMG_2710.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_2710-sm.jpg 800w, images/web/IMG_2710.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_2710.jpg" alt="Acadia — photo 20" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
-
   </div>
+
+  </main>
 
   <section class="related-posts">
     <h2 class="related-posts-heading">Related Posts</h2>
@@ -229,7 +247,7 @@
 
   <footer class="site-footer">
     <nav aria-label="Footer">
-      <a href="../../index.html">Home</a>
+      <a href="../../index.html">All Posts</a>
       <a href="../../our-story/index.html">About</a>
       <a href="../../contact/index.html">Contact</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>

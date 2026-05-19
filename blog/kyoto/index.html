@@ -15,7 +15,7 @@
   <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/kyoto.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -32,10 +32,7 @@
       <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <nav class="site-nav-secondary" aria-label="Secondary">
-      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
-      <a href="../../our-story/index.html">About</a>
-    </nav>
+    <div></div>
   </header>
 
   <div class="mobile-bar">
@@ -55,6 +52,7 @@
     <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
     <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="../../our-story/index.html">About</a>
+    <a href="../../contact/index.html">Contact</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
@@ -68,201 +66,229 @@
     </div>
   </div>
 
-  <div class="post-body">
-    <p class="post-lede"></p>
-  </div>
+  <main class="post-content">
 
-  <div class="post-gallery" id="gallery">
-
-    <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="0" data-src="images/web/IMG_9070.jpg" aria-label="Open photo 1">
       <picture><source type="image/webp" srcset="images/web/IMG_9070-sm.webp 800w, images/web/IMG_9070.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_9070-sm.jpg 800w, images/web/IMG_9070.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_9070.jpg" alt="Kyoto — photo 1" width="1600" height="1200" loading="eager" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="1" data-src="images/web/000026390015.jpg" aria-label="Open photo 2">
       <picture><source type="image/webp" srcset="images/web/000026390015-sm.webp 800w, images/web/000026390015.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390015-sm.jpg 800w, images/web/000026390015.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390015.jpg" alt="Kyoto — photo 2" width="1061" height="1600" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
+    <button class="gallery-item" data-index="2" data-src="images/web/000026390014.jpg" aria-label="Open photo 3">
       <picture><source type="image/webp" srcset="images/web/000026390014-sm.webp 800w, images/web/000026390014.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390014-sm.jpg 800w, images/web/000026390014.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390014.jpg" alt="Kyoto — photo 3" width="1061" height="1600" loading="eager" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="3" data-src="images/web/000026430004.jpg" aria-label="Open photo 4">
       <picture><source type="image/webp" srcset="images/web/000026430004-sm.webp 800w, images/web/000026430004.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430004-sm.jpg 800w, images/web/000026430004.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430004.jpg" alt="Kyoto — photo 4" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="4" data-src="images/web/000026390022.jpg" aria-label="Open photo 5">
       <picture><source type="image/webp" srcset="images/web/000026390022-sm.webp 800w, images/web/000026390022.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390022-sm.jpg 800w, images/web/000026390022.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390022.jpg" alt="Kyoto — photo 5" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
+    <button class="gallery-item" data-index="5" data-src="images/web/000026390007.jpg" aria-label="Open photo 6">
       <picture><source type="image/webp" srcset="images/web/000026390007-sm.webp 800w, images/web/000026390007.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390007-sm.jpg 800w, images/web/000026390007.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390007.jpg" alt="Kyoto — photo 6" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
+    <button class="gallery-item" data-index="6" data-src="images/web/000026390025.jpg" aria-label="Open photo 7">
       <picture><source type="image/webp" srcset="images/web/000026390025-sm.webp 800w, images/web/000026390025.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390025-sm.jpg 800w, images/web/000026390025.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390025.jpg" alt="Kyoto — photo 7" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
+    <button class="gallery-item" data-index="7" data-src="images/web/000026430001.jpg" aria-label="Open photo 8">
       <picture><source type="image/webp" srcset="images/web/000026430001-sm.webp 800w, images/web/000026430001.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430001-sm.jpg 800w, images/web/000026430001.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430001.jpg" alt="Kyoto — photo 8" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
+    <button class="gallery-item" data-index="8" data-src="images/web/000026430003.jpg" aria-label="Open photo 9">
       <picture><source type="image/webp" srcset="images/web/000026430003-sm.webp 800w, images/web/000026430003.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430003-sm.jpg 800w, images/web/000026430003.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430003.jpg" alt="Kyoto — photo 9" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
+    <button class="gallery-item" data-index="9" data-src="images/web/000026410032.jpg" aria-label="Open photo 10">
       <picture><source type="image/webp" srcset="images/web/000026410032-sm.webp 800w, images/web/000026410032.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026410032-sm.jpg 800w, images/web/000026410032.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026410032.jpg" alt="Kyoto — photo 10" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
+    <button class="gallery-item" data-index="10" data-src="images/web/000026390020.jpg" aria-label="Open photo 11">
       <picture><source type="image/webp" srcset="images/web/000026390020-sm.webp 800w, images/web/000026390020.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390020-sm.jpg 800w, images/web/000026390020.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390020.jpg" alt="Kyoto — photo 11" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
+    <button class="gallery-item" data-index="11" data-src="images/web/000026390018.jpg" aria-label="Open photo 12">
       <picture><source type="image/webp" srcset="images/web/000026390018-sm.webp 800w, images/web/000026390018.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390018-sm.jpg 800w, images/web/000026390018.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390018.jpg" alt="Kyoto — photo 12" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
+    <button class="gallery-item" data-index="12" data-src="images/web/000026390024.jpg" aria-label="Open photo 13">
       <picture><source type="image/webp" srcset="images/web/000026390024-sm.webp 800w, images/web/000026390024.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390024-sm.jpg 800w, images/web/000026390024.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390024.jpg" alt="Kyoto — photo 13" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="13" data-src="images/web/000026410033.jpg" aria-label="Open photo 14">
       <picture><source type="image/webp" srcset="images/web/000026410033-sm.webp 800w, images/web/000026410033.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026410033-sm.jpg 800w, images/web/000026410033.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026410033.jpg" alt="Kyoto — photo 14" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="14" data-src="images/web/000026410002.jpg" aria-label="Open photo 15">
       <picture><source type="image/webp" srcset="images/web/000026410002-sm.webp 800w, images/web/000026410002.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026410002-sm.jpg 800w, images/web/000026410002.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026410002.jpg" alt="Kyoto — photo 15" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="15" aria-label="Open photo 16">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="15" data-src="images/web/000026390035.jpg" aria-label="Open photo 16">
       <picture><source type="image/webp" srcset="images/web/000026390035-sm.webp 800w, images/web/000026390035.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390035-sm.jpg 800w, images/web/000026390035.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390035.jpg" alt="Kyoto — photo 16" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="16" aria-label="Open photo 17">
+    <button class="gallery-item" data-index="16" data-src="images/web/000026410001.jpg" aria-label="Open photo 17">
       <picture><source type="image/webp" srcset="images/web/000026410001-sm.webp 800w, images/web/000026410001.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026410001-sm.jpg 800w, images/web/000026410001.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026410001.jpg" alt="Kyoto — photo 17" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="17" aria-label="Open photo 18">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="17" data-src="images/web/000026430009.jpg" aria-label="Open photo 18">
       <picture><source type="image/webp" srcset="images/web/000026430009-sm.webp 800w, images/web/000026430009.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430009-sm.jpg 800w, images/web/000026430009.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430009.jpg" alt="Kyoto — photo 18" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="18" aria-label="Open photo 19">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="18" data-src="images/web/000026410006.jpg" aria-label="Open photo 19">
       <picture><source type="image/webp" srcset="images/web/000026410006-sm.webp 800w, images/web/000026410006.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026410006-sm.jpg 800w, images/web/000026410006.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026410006.jpg" alt="Kyoto — photo 19" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="19" aria-label="Open photo 20">
+    <button class="gallery-item" data-index="19" data-src="images/web/000026410007.jpg" aria-label="Open photo 20">
       <picture><source type="image/webp" srcset="images/web/000026410007-sm.webp 800w, images/web/000026410007.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026410007-sm.jpg 800w, images/web/000026410007.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026410007.jpg" alt="Kyoto — photo 20" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="20" aria-label="Open photo 21">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="20" data-src="images/web/000026430010.jpg" aria-label="Open photo 21">
       <picture><source type="image/webp" srcset="images/web/000026430010-sm.webp 800w, images/web/000026430010.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430010-sm.jpg 800w, images/web/000026430010.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430010.jpg" alt="Kyoto — photo 21" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="21" aria-label="Open photo 22">
+    <button class="gallery-item" data-index="21" data-src="images/web/000026430006.jpg" aria-label="Open photo 22">
       <picture><source type="image/webp" srcset="images/web/000026430006-sm.webp 800w, images/web/000026430006.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430006-sm.jpg 800w, images/web/000026430006.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430006.jpg" alt="Kyoto — photo 22" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="22" aria-label="Open photo 23">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="22" data-src="images/web/000026430014.jpg" aria-label="Open photo 23">
       <picture><source type="image/webp" srcset="images/web/000026430014-sm.webp 800w, images/web/000026430014.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430014-sm.jpg 800w, images/web/000026430014.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430014.jpg" alt="Kyoto — photo 23" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="23" aria-label="Open photo 24">
+    <button class="gallery-item" data-index="23" data-src="images/web/000026430013.jpg" aria-label="Open photo 24">
       <picture><source type="image/webp" srcset="images/web/000026430013-sm.webp 800w, images/web/000026430013.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430013-sm.jpg 800w, images/web/000026430013.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430013.jpg" alt="Kyoto — photo 24" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="24" aria-label="Open photo 25">
+    <button class="gallery-item" data-index="24" data-src="images/web/000026430015.jpg" aria-label="Open photo 25">
       <picture><source type="image/webp" srcset="images/web/000026430015-sm.webp 800w, images/web/000026430015.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430015-sm.jpg 800w, images/web/000026430015.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430015.jpg" alt="Kyoto — photo 25" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="25" aria-label="Open photo 26">
+    <button class="gallery-item" data-index="25" data-src="images/web/000026430016.jpg" aria-label="Open photo 26">
       <picture><source type="image/webp" srcset="images/web/000026430016-sm.webp 800w, images/web/000026430016.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430016-sm.jpg 800w, images/web/000026430016.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430016.jpg" alt="Kyoto — photo 26" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="26" aria-label="Open photo 27">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="26" data-src="images/web/IMG_9110.jpg" aria-label="Open photo 27">
       <picture><source type="image/webp" srcset="images/web/IMG_9110-sm.webp 800w, images/web/IMG_9110.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_9110-sm.jpg 800w, images/web/IMG_9110.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_9110.jpg" alt="Kyoto — photo 27" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="27" aria-label="Open photo 28">
+    <button class="gallery-item" data-index="27" data-src="images/web/IMG_9106.jpg" aria-label="Open photo 28">
       <picture><source type="image/webp" srcset="images/web/IMG_9106-sm.webp 800w, images/web/IMG_9106.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_9106-sm.jpg 800w, images/web/IMG_9106.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_9106.jpg" alt="Kyoto — photo 28" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="28" aria-label="Open photo 29">
+    <button class="gallery-item" data-index="28" data-src="images/web/IMG_9100.jpg" aria-label="Open photo 29">
       <picture><source type="image/webp" srcset="images/web/IMG_9100-sm.webp 800w, images/web/IMG_9100.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_9100-sm.jpg 800w, images/web/IMG_9100.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_9100.jpg" alt="Kyoto — photo 29" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="29" aria-label="Open photo 30">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="29" data-src="images/web/000026430017.jpg" aria-label="Open photo 30">
       <picture><source type="image/webp" srcset="images/web/000026430017-sm.webp 800w, images/web/000026430017.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430017-sm.jpg 800w, images/web/000026430017.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430017.jpg" alt="Kyoto — photo 30" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="30" aria-label="Open photo 31">
+    <button class="gallery-item" data-index="30" data-src="images/web/000026430027.jpg" aria-label="Open photo 31">
       <picture><source type="image/webp" srcset="images/web/000026430027-sm.webp 800w, images/web/000026430027.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026430027-sm.jpg 800w, images/web/000026430027.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026430027.jpg" alt="Kyoto — photo 31" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="31" aria-label="Open photo 32">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="31" data-src="images/web/000026460025.jpg" aria-label="Open photo 32">
       <picture><source type="image/webp" srcset="images/web/000026460025-sm.webp 800w, images/web/000026460025.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026460025-sm.jpg 800w, images/web/000026460025.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026460025.jpg" alt="Kyoto — photo 32" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="32" aria-label="Open photo 33">
+    <button class="gallery-item" data-index="32" data-src="images/web/000026460031.jpg" aria-label="Open photo 33">
       <picture><source type="image/webp" srcset="images/web/000026460031-sm.webp 800w, images/web/000026460031.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026460031-sm.jpg 800w, images/web/000026460031.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026460031.jpg" alt="Kyoto — photo 33" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="33" aria-label="Open photo 34">
+    <button class="gallery-item" data-index="33" data-src="images/web/000026510033.jpg" aria-label="Open photo 34">
       <picture><source type="image/webp" srcset="images/web/000026510033-sm.webp 800w, images/web/000026510033.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026510033-sm.jpg 800w, images/web/000026510033.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026510033.jpg" alt="Kyoto — photo 34" width="1059" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="34" aria-label="Open photo 35">
+    <button class="gallery-item" data-index="34" data-src="images/web/000026490005.jpg" aria-label="Open photo 35">
       <picture><source type="image/webp" srcset="images/web/000026490005-sm.webp 800w, images/web/000026490005.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026490005-sm.jpg 800w, images/web/000026490005.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026490005.jpg" alt="Kyoto — photo 35" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="35" aria-label="Open photo 36">
+    <button class="gallery-item" data-index="35" data-src="images/web/000026490030.jpg" aria-label="Open photo 36">
       <picture><source type="image/webp" srcset="images/web/000026490030-sm.webp 800w, images/web/000026490030.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026490030-sm.jpg 800w, images/web/000026490030.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026490030.jpg" alt="Kyoto — photo 36" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="36" aria-label="Open photo 37">
+    <button class="gallery-item" data-index="36" data-src="images/web/000026510026.jpg" aria-label="Open photo 37">
       <picture><source type="image/webp" srcset="images/web/000026510026-sm.webp 800w, images/web/000026510026.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026510026-sm.jpg 800w, images/web/000026510026.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026510026.jpg" alt="Kyoto — photo 37" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="37" aria-label="Open photo 38">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="37" data-src="images/web/000026410029.jpg" aria-label="Open photo 38">
       <picture><source type="image/webp" srcset="images/web/000026410029-sm.webp 800w, images/web/000026410029.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026410029-sm.jpg 800w, images/web/000026410029.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026410029.jpg" alt="Kyoto — photo 38" width="1061" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="38" aria-label="Open photo 39">
+    <button class="gallery-item" data-index="38" data-src="images/web/000026410026.jpg" aria-label="Open photo 39">
       <picture><source type="image/webp" srcset="images/web/000026410026-sm.webp 800w, images/web/000026410026.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026410026-sm.jpg 800w, images/web/000026410026.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026410026.jpg" alt="Kyoto — photo 39" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="39" aria-label="Open photo 40">
+    <button class="gallery-item" data-index="39" data-src="images/web/000026390027.jpg" aria-label="Open photo 40">
       <picture><source type="image/webp" srcset="images/web/000026390027-sm.webp 800w, images/web/000026390027.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390027-sm.jpg 800w, images/web/000026390027.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390027.jpg" alt="Kyoto — photo 40" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="40" aria-label="Open photo 41">
+    <button class="gallery-item" data-index="40" data-src="images/web/000026390028.jpg" aria-label="Open photo 41">
       <picture><source type="image/webp" srcset="images/web/000026390028-sm.webp 800w, images/web/000026390028.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390028-sm.jpg 800w, images/web/000026390028.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390028.jpg" alt="Kyoto — photo 41" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="41" aria-label="Open photo 42">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="41" data-src="images/web/IMG_9080.jpg" aria-label="Open photo 42">
       <picture><source type="image/webp" srcset="images/web/IMG_9080-sm.webp 800w, images/web/IMG_9080.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_9080-sm.jpg 800w, images/web/IMG_9080.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_9080.jpg" alt="Kyoto — photo 42" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="42" aria-label="Open photo 43">
+    <button class="gallery-item" data-index="42" data-src="images/web/IMG_9278.jpg" aria-label="Open photo 43">
       <picture><source type="image/webp" srcset="images/web/IMG_9278-sm.webp 800w, images/web/IMG_9278.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_9278-sm.jpg 800w, images/web/IMG_9278.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_9278.jpg" alt="Kyoto — photo 43" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="43" aria-label="Open photo 44">
+    <button class="gallery-item" data-index="43" data-src="images/web/IMG_8932.jpg" aria-label="Open photo 44">
       <picture><source type="image/webp" srcset="images/web/IMG_8932-sm.webp 800w, images/web/IMG_8932.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_8932-sm.jpg 800w, images/web/IMG_8932.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_8932.jpg" alt="Kyoto — photo 44" width="1280" height="720" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="44" aria-label="Open photo 45">
+    <button class="gallery-item" data-index="44" data-src="images/web/IMG_8982.jpg" aria-label="Open photo 45">
       <picture><source type="image/webp" srcset="images/web/IMG_8982-sm.webp 800w, images/web/IMG_8982.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_8982-sm.jpg 800w, images/web/IMG_8982.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_8982.jpg" alt="Kyoto — photo 45" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="45" aria-label="Open photo 46">
+    <button class="gallery-item" data-index="45" data-src="images/web/IMG_9175.jpg" aria-label="Open photo 46">
       <picture><source type="image/webp" srcset="images/web/IMG_9175-sm.webp 800w, images/web/IMG_9175.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_9175-sm.jpg 800w, images/web/IMG_9175.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_9175.jpg" alt="Kyoto — photo 46" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="46" aria-label="Open photo 47">
+    <button class="gallery-item" data-index="46" data-src="images/web/000026390019.jpg" aria-label="Open photo 47">
       <picture><source type="image/webp" srcset="images/web/000026390019-sm.webp 800w, images/web/000026390019.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000026390019-sm.jpg 800w, images/web/000026390019.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000026390019.jpg" alt="Kyoto — photo 47" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
-
   </div>
+
+  </main>
 
   <section class="related-posts">
     <h2 class="related-posts-heading">Related Posts</h2>
@@ -337,7 +363,7 @@
 
   <footer class="site-footer">
     <nav aria-label="Footer">
-      <a href="../../index.html">Home</a>
+      <a href="../../index.html">All Posts</a>
       <a href="../../our-story/index.html">About</a>
       <a href="../../contact/index.html">Contact</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>

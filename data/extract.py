@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
 Extract post data from the Squarespace WordPress export XML and write data/posts.json.
-Run once after receiving a new export; posts.json becomes the primary build source.
+
+The content:encoded field is parsed into ordered blocks that preserve the original
+paragraph / gallery sequence, so the static site can render them in the right order.
 
 Usage:
     python3 data/extract.py [path/to/export.xml]
@@ -29,8 +31,7 @@ TITLE_MAP = {
     'monument-rocks-the-chalk-pyramids': 'Monument Rocks',
 }
 
-# Hand-written card excerpts (short taglines shown on the homepage grid).
-# These were authored for the site and are not in the XML export.
+# Hand-written card taglines shown on the homepage grid.
 EXCERPT_OVERRIDE = {
     'hawaii':          'Oh what a Hawaii!',
     'budapest':        'When I say “Buda” you say “Pest”!',
@@ -92,6 +93,94 @@ def strip_tags(html):
     return re.sub(r'<[^>]+>', '', html or '').strip()
 
 
+def is_blank_para(p_html):
+    """True if a <p> contains only whitespace or &nbsp;."""
+    text = re.sub(r'<[^>]+>', '', p_html)
+    return not text.replace('\xa0', '').replace('&nbsp;', '').strip()
+
+
+# ---------- block parser ----------------------------------------------------
+
+CDN_IMG_RE = re.compile(
+    r'https://images\.squarespace-cdn\.com/[^\s"\'<>]+format=original'
+)
+
+# Splits on the two known block-level div types; capturing group keeps matches
+# in the result so we can detect them by content, not by index.
+BLOCK_SPLIT_RE = re.compile(
+    r'(<div\b[^>]*(?:sqs-html-content|image-gallery-wrapper)[^>]*>[\s\S]*?</div>)',
+    re.DOTALL
+)
+
+
+def _gallery_from_urls(url_list):
+    """Deduplicate a URL list and build image dicts; returns [] if empty."""
+    seen = set()
+    images = []
+    for u in url_list:
+        if u not in seen:
+            seen.add(u)
+            images.append({'filename': img_filename(u), 'src_url': u})
+    return images
+
+
+def parse_blocks(content):
+    """
+    Parse Squarespace content:encoded into ordered blocks.
+
+    Handles two gallery formats:
+      - <div class="image-gallery-wrapper"> wrapping <img> tags (most posts)
+      - Standalone <img> tags between text blocks (Paris, some others)
+
+    Returns a list of:
+      { "type": "paragraph", "html": "<p>...</p>\\n..." }
+      { "type": "gallery",   "columns": 2, "images": [{filename, src_url}, ...] }
+    """
+    blocks = []
+
+    # Split on the known div block types; non-matching chunks may hold standalone imgs.
+    chunks = BLOCK_SPLIT_RE.split(content)
+
+    for chunk in chunks:
+        chunk = chunk.strip()
+        if not chunk:
+            continue
+
+        if 'sqs-html-content' in chunk and chunk.startswith('<div'):
+            # Extract inner content (strip outer <div ...> and </div>)
+            inner = re.sub(r'^<div[^>]*>', '', chunk, count=1, flags=re.DOTALL)
+            inner = re.sub(r'</div>\s*$', '', inner, flags=re.DOTALL)
+            paras = re.findall(r'<p(?:\s[^>]*)?>[\s\S]*?</p>', inner, re.DOTALL)
+            paras = [p.strip() for p in paras if not is_blank_para(p)]
+            if paras:
+                blocks.append({'type': 'paragraph', 'html': '\n'.join(paras)})
+
+        elif 'image-gallery-wrapper' in chunk and chunk.startswith('<div'):
+            images = _gallery_from_urls(CDN_IMG_RE.findall(chunk))
+            if images:
+                blocks.append({
+                    'type':    'gallery',
+                    'columns': 1 if len(images) == 1 else 2,
+                    'images':  images,
+                })
+
+        else:
+            # In-between content: collect standalone CDN <img> src attributes
+            urls = re.findall(
+                r'<img\b[^>]*\bsrc="(' + CDN_IMG_RE.pattern + r')"',
+                chunk
+            )
+            images = _gallery_from_urls(urls)
+            if images:
+                blocks.append({
+                    'type':    'gallery',
+                    'columns': 1 if len(images) == 1 else 2,
+                    'images':  images,
+                })
+
+    return blocks
+
+
 # ---------- main ------------------------------------------------------------
 
 def extract(xml_path):
@@ -107,31 +196,18 @@ def extract(xml_path):
         if status is None or status.text != 'publish':
             continue
 
-        raw_slug  = item.find('wp:post_name', NS).text or ''
-        wp_slug   = raw_slug.split('/')[-1]
-        folder    = SLUG_MAP.get(wp_slug, wp_slug)
-        title     = TITLE_MAP.get(wp_slug, item.find('title').text or folder.replace('-', ' ').title())
-        pub_date  = item.find('pubDate').text or ''
-        content   = item.find('content:encoded', NS).text or ''
-        excerpt   = item.find('excerpt:encoded', NS).text or ''
-        cats      = [c.text for c in item.findall('category')
-                     if c.get('domain') == 'category']
+        raw_slug = item.find('wp:post_name', NS).text or ''
+        wp_slug  = raw_slug.split('/')[-1]
+        folder   = SLUG_MAP.get(wp_slug, wp_slug)
+        title    = TITLE_MAP.get(wp_slug,
+                       item.find('title').text or folder.replace('-', ' ').title())
+        pub_date = item.find('pubDate').text or ''
+        content  = item.find('content:encoded', NS).text or ''
+        excerpt  = item.find('excerpt:encoded', NS).text or ''
+        cats     = [c.text for c in item.findall('category')
+                    if c.get('domain') == 'category']
 
-        # Gallery images (deduplicated, order-preserving)
-        raw_urls = re.findall(
-            r'https://images\.squarespace-cdn\.com/[^"\'<>\s]+format=original',
-            content
-        )
-        seen, images = set(), []
-        for u in raw_urls:
-            if u not in seen:
-                seen.add(u)
-                images.append({'filename': img_filename(u), 'src_url': u})
-
-        # Body paragraphs
-        paras = re.findall(r'<p[^>]*>(.*?)</p>', content, re.DOTALL)
-        body  = re.sub(r'\s+', ' ', strip_tags(' '.join(paras))).strip()
-
+        blocks       = parse_blocks(content)
         card_excerpt = EXCERPT_OVERRIDE.get(folder) or strip_tags(excerpt) or ''
 
         posts.append({
@@ -140,8 +216,7 @@ def extract(xml_path):
             'date':         fmt_date(pub_date),
             'categories':   cats,
             'card_excerpt': card_excerpt,
-            'body':         body,
-            'images':       images,
+            'blocks':       blocks,
         })
 
     return posts
@@ -156,7 +231,14 @@ if __name__ == '__main__':
     posts = extract(xml_path)
     print(f'Extracted {len(posts)} published posts')
 
+    # Report block counts
+    for p in posts:
+        n_gal  = sum(1 for b in p['blocks'] if b['type'] == 'gallery')
+        n_para = sum(1 for b in p['blocks'] if b['type'] == 'paragraph')
+        n_imgs = sum(len(b['images']) for b in p['blocks'] if b['type'] == 'gallery')
+        print(f"  {p['folder']}: {n_para} paragraphs, {n_gal} galleries, {n_imgs} images")
+
     out = os.path.join(os.path.dirname(__file__), 'posts.json')
     with open(out, 'w', encoding='utf-8') as f:
         json.dump({'posts': posts}, f, ensure_ascii=False, indent=2)
-    print(f'Wrote {out}')
+    print(f'\nWrote {out}')

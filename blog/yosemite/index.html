@@ -15,7 +15,7 @@
   <meta name="twitter:image"      content="https://www.theviewfromeverywhere.com/images/web/yosemite.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -32,10 +32,7 @@
       <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
       <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     </nav>
-    <nav class="site-nav-secondary" aria-label="Secondary">
-      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
-      <a href="../../our-story/index.html">About</a>
-    </nav>
+    <div></div>
   </header>
 
   <div class="mobile-bar">
@@ -55,6 +52,7 @@
     <a href="../../index.html?cat=Africa" data-filter="Africa">Africa</a>
     <a href="../../index.html?cat=Asia" data-filter="Asia">Asia</a>
     <a href="../../our-story/index.html">About</a>
+    <a href="../../contact/index.html">Contact</a>
     <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
@@ -68,81 +66,99 @@
     </div>
   </div>
 
-  <div class="post-body">
-    <p class="post-lede"></p>
-  </div>
+  <main class="post-content">
 
-  <div class="post-gallery" id="gallery">
-
-    <button class="post-gallery-item" data-index="0" aria-label="Open photo 1">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="0" data-src="images/web/000013530024.jpg" aria-label="Open photo 1">
       <picture><source type="image/webp" srcset="images/web/000013530024-sm.webp 800w, images/web/000013530024.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013530024-sm.jpg 800w, images/web/000013530024.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013530024.jpg" alt="Yosemite — photo 1" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="1" aria-label="Open photo 2">
+    <button class="gallery-item" data-index="1" data-src="images/web/000013520024.jpg" aria-label="Open photo 2">
       <picture><source type="image/webp" srcset="images/web/000013520024-sm.webp 800w, images/web/000013520024.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013520024-sm.jpg 800w, images/web/000013520024.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013520024.jpg" alt="Yosemite — photo 2" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="2" aria-label="Open photo 3">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="2" data-src="images/web/000013520019.jpg" aria-label="Open photo 3">
       <picture><source type="image/webp" srcset="images/web/000013520019-sm.webp 800w, images/web/000013520019.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013520019-sm.jpg 800w, images/web/000013520019.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013520019.jpg" alt="Yosemite — photo 3" width="1600" height="1060" loading="eager" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="3" aria-label="Open photo 4">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="3" data-src="images/web/000013530025.jpg" aria-label="Open photo 4">
       <picture><source type="image/webp" srcset="images/web/000013530025-sm.webp 800w, images/web/000013530025.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013530025-sm.jpg 800w, images/web/000013530025.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013530025.jpg" alt="Yosemite — photo 4" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="4" aria-label="Open photo 5">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="4" data-src="images/web/IMG_4250.jpg" aria-label="Open photo 5">
       <picture><source type="image/webp" srcset="images/web/IMG_4250-sm.webp 800w, images/web/IMG_4250.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4250-sm.jpg 800w, images/web/IMG_4250.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4250.jpg" alt="Yosemite — photo 5" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="5" aria-label="Open photo 6">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="5" data-src="images/web/000013520020.jpg" aria-label="Open photo 6">
       <picture><source type="image/webp" srcset="images/web/000013520020-sm.webp 800w, images/web/000013520020.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013520020-sm.jpg 800w, images/web/000013520020.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013520020.jpg" alt="Yosemite — photo 6" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="6" aria-label="Open photo 7">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="6" data-src="images/web/000013520023.jpg" aria-label="Open photo 7">
       <picture><source type="image/webp" srcset="images/web/000013520023-sm.webp 800w, images/web/000013520023.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013520023-sm.jpg 800w, images/web/000013520023.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013520023.jpg" alt="Yosemite — photo 7" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="7" aria-label="Open photo 8">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="7" data-src="images/web/000013530026.jpg" aria-label="Open photo 8">
       <picture><source type="image/webp" srcset="images/web/000013530026-sm.webp 800w, images/web/000013530026.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013530026-sm.jpg 800w, images/web/000013530026.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013530026.jpg" alt="Yosemite — photo 8" width="1600" height="1060" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="8" aria-label="Open photo 9">
+    <button class="gallery-item" data-index="8" data-src="images/web/IMG_5761.jpg" aria-label="Open photo 9">
       <picture><source type="image/webp" srcset="images/web/IMG_5761-sm.webp 800w, images/web/IMG_5761.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5761-sm.jpg 800w, images/web/IMG_5761.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5761.jpg" alt="Yosemite — photo 9" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="9" aria-label="Open photo 10">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="9" data-src="images/web/IMG_4235.jpg" aria-label="Open photo 10">
       <picture><source type="image/webp" srcset="images/web/IMG_4235-sm.webp 800w, images/web/IMG_4235.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4235-sm.jpg 800w, images/web/IMG_4235.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4235.jpg" alt="Yosemite — photo 10" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="10" aria-label="Open photo 11">
+    <button class="gallery-item" data-index="10" data-src="images/web/IMG_4243.jpg" aria-label="Open photo 11">
       <picture><source type="image/webp" srcset="images/web/IMG_4243-sm.webp 800w, images/web/IMG_4243.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4243-sm.jpg 800w, images/web/IMG_4243.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4243.jpg" alt="Yosemite — photo 11" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="11" aria-label="Open photo 12">
+    <button class="gallery-item" data-index="11" data-src="images/web/IMG_4240.jpg" aria-label="Open photo 12">
       <picture><source type="image/webp" srcset="images/web/IMG_4240-sm.webp 800w, images/web/IMG_4240.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4240-sm.jpg 800w, images/web/IMG_4240.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4240.jpg" alt="Yosemite — photo 12" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="12" aria-label="Open photo 13">
+  <div class="gallery-block columns-1">
+    <button class="gallery-item" data-index="12" data-src="images/web/IMG_4286.jpg" aria-label="Open photo 13">
       <picture><source type="image/webp" srcset="images/web/IMG_4286-sm.webp 800w, images/web/IMG_4286.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4286-sm.jpg 800w, images/web/IMG_4286.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4286.jpg" alt="Yosemite — photo 13" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="13" aria-label="Open photo 14">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="13" data-src="images/web/000013640004.jpg" aria-label="Open photo 14">
       <picture><source type="image/webp" srcset="images/web/000013640004-sm.webp 800w, images/web/000013640004.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/000013640004-sm.jpg 800w, images/web/000013640004.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/000013640004.jpg" alt="Yosemite — photo 14" width="1172" height="1600" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="14" aria-label="Open photo 15">
+    <button class="gallery-item" data-index="14" data-src="images/web/IMG_5750.jpg" aria-label="Open photo 15">
       <picture><source type="image/webp" srcset="images/web/IMG_5750-sm.webp 800w, images/web/IMG_5750.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5750-sm.jpg 800w, images/web/IMG_5750.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5750.jpg" alt="Yosemite — photo 15" width="1200" height="1600" loading="lazy" decoding="async"></picture>
     </button>
+  </div>
 
-    <button class="post-gallery-item" data-index="15" aria-label="Open photo 16">
+  <div class="gallery-block columns-2">
+    <button class="gallery-item" data-index="15" data-src="images/web/IMG_5722-001.jpg" aria-label="Open photo 16">
       <picture><source type="image/webp" srcset="images/web/IMG_5722-001-sm.webp 800w, images/web/IMG_5722-001.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_5722-001-sm.jpg 800w, images/web/IMG_5722-001.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_5722-001.jpg" alt="Yosemite — photo 16" width="1600" height="1200" loading="lazy" decoding="async"></picture>
     </button>
 
-    <button class="post-gallery-item" data-index="16" aria-label="Open photo 17">
+    <button class="gallery-item" data-index="16" data-src="images/web/IMG_4276.jpg" aria-label="Open photo 17">
       <picture><source type="image/webp" srcset="images/web/IMG_4276-sm.webp 800w, images/web/IMG_4276.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img srcset="images/web/IMG_4276-sm.jpg 800w, images/web/IMG_4276.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" src="images/web/IMG_4276.jpg" alt="Yosemite — photo 17" width="1600" height="1067" loading="lazy" decoding="async"></picture>
     </button>
-
   </div>
+
+  </main>
 
   <section class="related-posts">
     <h2 class="related-posts-heading">Related Posts</h2>
@@ -217,7 +233,7 @@
 
   <footer class="site-footer">
     <nav aria-label="Footer">
-      <a href="../../index.html">Home</a>
+      <a href="../../index.html">All Posts</a>
       <a href="../../our-story/index.html">About</a>
       <a href="../../contact/index.html">Contact</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
