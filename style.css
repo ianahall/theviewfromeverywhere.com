@@ -62,9 +62,9 @@ body.lb-open { overflow: hidden; }
 
 .site-header nav a {
   font-family: 'Lora', Georgia, serif;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 400;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
   color: #888;
   transition: color 0.15s;
@@ -75,7 +75,7 @@ body.lb-open { overflow: hidden; }
 .site-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 400;
   letter-spacing: 0.01em;
   white-space: nowrap;
@@ -139,22 +139,22 @@ body.lb-open { overflow: hidden; }
 .blog-card-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 300;
   letter-spacing: 0;
   line-height: 1.05;
   color: #fff;
   text-shadow: 0 1px 12px rgba(0,0,0,0.28);
-  max-width: 260px;
+  max-width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .blog-card-tagline {
   font-family: 'Lora', Georgia, serif;
-  font-size: 11px;
+  font-size: 12px;
   font-style: italic;
-  color: rgba(255,255,255,0.60);
+  color: rgba(255,255,255,0.72);
   margin-top: 6px;
   line-height: 1.4;
   letter-spacing: 0.01em;
@@ -215,7 +215,7 @@ a.post-hero-category:hover {
 .post-hero-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 66px;
+  font-size: 72px;
   font-weight: 300;
   letter-spacing: 0;
   line-height: 1.03;
@@ -267,16 +267,16 @@ a.post-hero-category:hover {
 
 .post-lede p {
   font-family: 'Lora', Georgia, serif;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 400;
-  line-height: 1.80;
+  line-height: 1.78;
   color: #333;
   margin-bottom: 18px;
 }
 .post-text p {
   font-family: 'Lora', Georgia, serif;
-  font-size: 16px;
-  line-height: 1.74;
+  font-size: 17px;
+  line-height: 1.76;
   color: #333;
   margin-bottom: 14px;
 }
@@ -413,7 +413,7 @@ a.post-hero-category:hover {
 .related-card-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   letter-spacing: 0;
   color: #fff;
@@ -684,8 +684,8 @@ a.post-hero-category:hover {
 }
 .site-footer nav a {
   font-family: 'Lora', Georgia, serif;
-  font-size: 10px;
-  letter-spacing: 0.18em;
+  font-size: 11px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #888;
   padding: 4px 14px;
@@ -780,14 +780,14 @@ a.post-hero-category:hover {
     padding: 12px;
   }
   .blog-card { margin-bottom: 12px; }
-  .blog-card-title { font-size: 26px; max-width: 200px; }
+  .blog-card-title { font-size: 28px; max-width: 210px; }
 
-  .post-hero-title { font-size: 38px; }
+  .post-hero-title { font-size: 42px; }
   .post-hero-body  { padding: 48px 20px 28px; }
 
   .post-lede,
   .post-text { padding: 28px 20px 8px; }
-  .post-lede p { font-size: 16px; }
+  .post-lede p { font-size: 17px; }
 
   .gallery-block         { padding: 16px 12px; gap: 8px; }
   .gallery-block.columns-2 { gap: 6px; }
