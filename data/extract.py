@@ -56,7 +56,9 @@ EXCERPT_OVERRIDE = {
     'iceland':         'Iceland is a game-changer.',
     'capetown':        'See you next time, Cape Town.',
     'tunisia':         'From Tunis to La Marsa to Carthage',
-    'london':          "You have to love ol’ London town.",
+    'london':          "You have to love ol' London town.",
+    'paris':           'The City of Lights.',
+    'amsterdam':       'Amsterdaaaaaamn… there are a lot of bikes!',
 }
 
 NS = {

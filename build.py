@@ -72,14 +72,15 @@ def _dims(manifest, stem):
     return ''
 
 
-def thumb_picture(stem, alt_e, manifest, lazy=True):
+def thumb_picture(stem, alt_e, manifest, lazy=True, priority=False):
     """Homepage thumbnail — 480w + 900w srcset."""
     web_full_jpg  = f'images/web/{stem}.jpg'
     web_full_webp = f'images/web/{stem}.webp'
     web_half_jpg  = f'images/web/{stem}-sm.jpg'
     web_half_webp = f'images/web/{stem}-sm.webp'
-    load = 'lazy' if lazy else 'eager'
-    dims = _dims(manifest, stem)
+    load     = 'lazy' if lazy else 'eager'
+    fp_attr  = ' fetchpriority="high"' if priority else ''
+    dims     = _dims(manifest, stem)
 
     if all(os.path.exists(p) for p in (web_full_jpg, web_full_webp, web_half_jpg, web_half_webp)):
         return (
@@ -91,13 +92,13 @@ def thumb_picture(stem, alt_e, manifest, lazy=True):
             f' srcset="{web_half_jpg} {THUMB_HALF_W}w, {web_full_jpg} {THUMB_FULL_W}w"'
             f' sizes="(max-width:700px) 100vw, 50vw"'
             f' src="{web_full_jpg}" alt="{alt_e}"{dims}'
-            f' loading="{load}" decoding="async">'
+            f' loading="{load}"{fp_attr} decoding="async">'
             f'</picture>'
         )
-    return f'<img src="images/{stem}.jpg" alt="{alt_e}"{dims} loading="{load}" decoding="async">'
+    return f'<img src="images/{stem}.jpg" alt="{alt_e}"{dims} loading="{load}"{fp_attr} decoding="async">'
 
 
-def hero_picture(folder, alt_e, root='../../'):
+def hero_picture(folder, alt_e, root='../../', lazy=False):
     """Post hero and related-card image — 480w + 900w."""
     stem          = folder
     web_full_jpg  = f'{root}images/web/{stem}.jpg'
@@ -106,6 +107,7 @@ def hero_picture(folder, alt_e, root='../../'):
     web_half_webp = f'{root}images/web/{stem}-sm.webp'
     local_full    = f'images/web/{stem}.jpg'
     local_half    = f'images/web/{stem}-sm.jpg'
+    load          = 'lazy' if lazy else 'eager'
 
     if os.path.exists(local_full) and os.path.exists(local_half):
         return (
@@ -117,10 +119,10 @@ def hero_picture(folder, alt_e, root='../../'):
             f' srcset="{web_half_jpg} {THUMB_HALF_W}w, {web_full_jpg} {THUMB_FULL_W}w"'
             f' sizes="100vw"'
             f' src="{web_full_jpg}" alt="{alt_e}"'
-            f' loading="eager" decoding="async">'
+            f' loading="{load}" decoding="async">'
             f'</picture>'
         )
-    return f'<img src="{root}images/{stem}.jpg" alt="{alt_e}" loading="eager" decoding="async">'
+    return f'<img src="{root}images/{stem}.jpg" alt="{alt_e}" loading="{load}" decoding="async">'
 
 
 def gallery_picture(folder, fname, alt_e, lazy, manifest):
@@ -234,6 +236,23 @@ LIGHTBOX_HTML = """\
   </div>"""
 
 
+# ---------- gallery aspect detection ----------------------------------------
+
+def gallery_aspect(images, manifest):
+    """Return 'aspect-vertical' if the majority of images are portrait; else ''."""
+    portrait = 0
+    landscape = 0
+    for img in images:
+        stem = os.path.splitext(img['filename'])[0]
+        entry = manifest.get(stem)
+        if entry:
+            if entry['h'] > entry['w'] * 1.2:
+                portrait += 1
+            else:
+                landscape += 1
+    return 'aspect-vertical' if portrait > landscape else ''
+
+
 # ---------- post page -------------------------------------------------------
 
 def render_post(post, all_posts):
@@ -278,7 +297,11 @@ def render_post(post, all_posts):
             )
 
         elif block['type'] == 'gallery':
-            cols  = block.get('columns', 2)
+            cols   = block.get('columns', 2)
+            aspect = gallery_aspect(block['images'], gal_manifest)
+            classes = f'gallery-block columns-{cols}'
+            if aspect:
+                classes += f' {aspect}'
             items = []
             for img in block['images']:
                 fname    = img['filename']
@@ -298,7 +321,7 @@ def render_post(post, all_posts):
                 global_idx += 1
 
             content_parts.append(
-                f'  <div class="gallery-block columns-{cols}">\n'
+                f'  <div class="{classes}">\n'
                 + '\n\n'.join(items)
                 + '\n  </div>'
             )
@@ -312,7 +335,7 @@ def render_post(post, all_posts):
         rf   = rp['folder']
         rt_e = html_lib.escape(rp['title'])
         rc_e = html_lib.escape(rp['categories'][0] if rp['categories'] else '')
-        pic  = hero_picture(rf, rt_e)
+        pic  = hero_picture(rf, rt_e, lazy=True)
         related_cards.append(
             f'      <a class="related-card" href="../{rf}/">\n'
             f'        {pic}\n'
@@ -344,7 +367,7 @@ def render_post(post, all_posts):
             f' images/web/{hero_stem}.jpg {GAL_FULL_W}w"'
             f' sizes="100vw"'
             f' src="images/web/{hero_stem}.jpg" alt="{title_e}"{dims}'
-            f' loading="eager" decoding="async">'
+            f' loading="eager" fetchpriority="high" decoding="async">'
             f'</picture>'
         )
     else:
@@ -413,14 +436,16 @@ def render_index(posts):
     thumb_manifest = load_manifest('images/web/manifest.json')
 
     cards = []
-    for post in posts:
+    for i, post in enumerate(posts):
         folder    = post['folder']
         title_e   = html_lib.escape(post['title'])
         exc_e     = html_lib.escape(post.get('card_excerpt', ''))
         cats      = post['categories']
         data_cats = html_lib.escape(' '.join(cats))
 
-        pic = thumb_picture(folder, title_e, thumb_manifest, lazy=True)
+        eager    = i < 4
+        priority = i == 0
+        pic = thumb_picture(folder, title_e, thumb_manifest, lazy=not eager, priority=priority)
 
         tagline = f'\n        <p class="blog-card-tagline">{exc_e}</p>' if exc_e else ''
 
