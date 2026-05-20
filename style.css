@@ -118,9 +118,9 @@ body.lb-open { overflow: hidden; }
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0,0,0,0.50) 0%,
-    rgba(0,0,0,0.06) 30%,
-    rgba(0,0,0,0)    50%
+    rgba(0,0,0,0.68) 0%,
+    rgba(0,0,0,0.20) 38%,
+    rgba(0,0,0,0)    62%
   );
   pointer-events: none;
 }
@@ -130,34 +130,48 @@ body.lb-open { overflow: hidden; }
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 56px 20px 20px;
+  padding: 72px 24px 26px;
   text-align: center;
   color: #fff;
   line-height: normal;
 }
 
+.blog-card-date {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.82);
+  margin-bottom: 8px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.55);
+}
+
 .blog-card-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 36px;
-  font-weight: 300;
+  font-size: 48px;
+  font-weight: 520;
   letter-spacing: 0;
-  line-height: 1.05;
+  line-height: 0.98;
   color: #fff;
-  text-shadow: 0 1px 12px rgba(0,0,0,0.28);
-  max-width: 280px;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.45);
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .blog-card-tagline {
   font-family: 'Lora', Georgia, serif;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 600;
   font-style: italic;
-  color: rgba(255,255,255,0.72);
-  margin-top: 6px;
-  line-height: 1.4;
+  color: rgba(255,255,255,0.88);
+  margin-top: 10px;
+  line-height: 1.32;
   letter-spacing: 0.01em;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.55);
 }
 
 /* ============================================================
@@ -780,7 +794,10 @@ a.post-hero-category:hover {
     padding: 12px;
   }
   .blog-card { margin-bottom: 12px; }
-  .blog-card-title { font-size: 28px; max-width: 210px; }
+  .blog-card-body { padding: 58px 18px 22px; }
+  .blog-card-date { font-size: 10px; margin-bottom: 7px; }
+  .blog-card-title { font-size: 38px; max-width: 290px; }
+  .blog-card-tagline { font-size: 14px; max-width: 300px; margin-left: auto; margin-right: auto; }
 
   .post-hero-title { font-size: 42px; }
   .post-hero-body  { padding: 48px 20px 28px; }

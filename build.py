@@ -640,6 +640,7 @@ def render_index(posts):
         folder    = post['folder']
         title_e   = html_lib.escape(post['title'])
         exc_e     = html_lib.escape(post.get('card_excerpt', ''))
+        date_e    = html_lib.escape(post.get('date', ''))
         cats      = post['categories']
         data_cats = html_lib.escape(' '.join(cats))
 
@@ -648,12 +649,14 @@ def render_index(posts):
         pic = thumb_picture(folder, title_e, thumb_manifest, lazy=not eager, priority=priority)
 
         tagline = f'\n        <p class="blog-card-tagline">{exc_e}</p>' if exc_e else ''
+        date_line = f'        <p class="blog-card-date">{date_e}</p>\n' if date_e else ''
 
         cards.append(
             f'    <a class="blog-card" href="blog/{folder}/" data-categories="{data_cats}">\n'
             f'      {pic}\n'
             f'      <div class="blog-card-overlay"></div>\n'
             f'      <div class="blog-card-body">\n'
+            f'{date_line}'
             f'        <h2 class="blog-card-title">{title_e}</h2>'
             f'{tagline}\n'
             f'      </div>\n'
