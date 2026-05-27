@@ -322,7 +322,10 @@ def header_html(root='../../'):
       {flink(base + '?cat=Africa',        'Africa', 'Africa')}
       {flink(base + '?cat=Asia',          'Asia',   'Asia')}
     </nav>
-    <div></div>
+    <nav class="site-nav-secondary" aria-label="Secondary">
+      <a href="{root}our-story/index.html">About</a>
+      <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
   </header>
 
   <div class="mobile-bar">

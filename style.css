@@ -41,16 +41,26 @@ body.lb-open { overflow: hidden; }
 
 /* --- Site header ------------------------------------------ */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 200;
-  background: #fff;
+  background: transparent;
+  border-bottom: 1px solid transparent;
   height: 56px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 0 32px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Solid background once user scrolls down */
+.site-header.header-scrolled {
+  background: rgba(255,255,255,0.97);
+  border-bottom-color: rgba(0,0,0,0.05);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .site-nav-primary {
@@ -60,17 +70,31 @@ body.lb-open { overflow: hidden; }
   justify-content: center;
 }
 
+/* Secondary nav (Instagram, About) — right column */
+.site-nav-secondary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+/* All header nav links default to white (over hero/cards) */
 .site-header nav a {
   font-family: 'Lora', Georgia, serif;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: #888;
-  transition: color 0.15s;
+  color: rgba(255,255,255,0.80);
+  transition: color 0.2s;
 }
 .site-header nav a:hover,
-.site-header nav a.nav-active { color: #111; }
+.site-header nav a.nav-active { color: #fff; }
+
+/* After scroll: restore dark text */
+.site-header.header-scrolled nav a              { color: #888; }
+.site-header.header-scrolled nav a:hover,
+.site-header.header-scrolled nav a.nav-active   { color: #111; }
 
 .site-title {
   font-family: 'Newsreader', Georgia, serif;
@@ -79,10 +103,12 @@ body.lb-open { overflow: hidden; }
   font-weight: 400;
   letter-spacing: 0.01em;
   white-space: nowrap;
-  color: #111;
+  color: #fff;
   text-align: left;
+  transition: color 0.2s;
 }
 .site-title a { color: inherit; }
+.site-header.header-scrolled .site-title { color: #111; }
 
 /* --- Blog masonry grid ------------------------------------ */
 .blog-list {
@@ -829,15 +855,22 @@ a.post-hero-category:hover {
     color: #e0e0e0;
   }
 
-  /* Header */
+  /* Header — transparent overlay by default (same as light mode) */
   .site-header {
-    background: #121212;
+    background: transparent;
+    border-bottom-color: transparent;
+  }
+  /* nav/title colours over dark images: already white from base rules, no override needed */
+
+  /* Scrolled state: solid dark */
+  .site-header.header-scrolled {
+    background: rgba(18,18,18,0.97);
     border-bottom-color: rgba(255,255,255,0.07);
   }
-  .site-header nav a        { color: #888; }
-  .site-header nav a:hover,
-  .site-header nav a.nav-active { color: #e0e0e0; }
-  .site-title a             { color: #e0e0e0; }
+  .site-header.header-scrolled nav a        { color: #888; }
+  .site-header.header-scrolled nav a:hover,
+  .site-header.header-scrolled nav a.nav-active { color: #e0e0e0; }
+  .site-header.header-scrolled .site-title  { color: #e0e0e0; }
 
   /* Mobile header */
   .mobile-bar {

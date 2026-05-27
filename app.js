@@ -3,6 +3,18 @@
   'use strict';
 
   /* -----------------------------------------------------------------------
+     Overlay header — toggle .header-scrolled on scroll
+  ----------------------------------------------------------------------- */
+  var siteHeader = document.querySelector('.site-header');
+  if (siteHeader) {
+    var onHeaderScroll = function () {
+      siteHeader.classList.toggle('header-scrolled', window.scrollY > 20);
+    };
+    window.addEventListener('scroll', onHeaderScroll, { passive: true });
+    onHeaderScroll(); // run once on load in case page is already scrolled
+  }
+
+  /* -----------------------------------------------------------------------
      Mobile menu toggle
   ----------------------------------------------------------------------- */
   var mobileBtn = document.querySelector('.mobile-menu-btn');
