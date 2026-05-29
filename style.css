@@ -380,12 +380,11 @@ a.post-hero-category:hover { opacity: 0.75; }
   margin-right: auto;
 }
 
-/* First gallery block in a post has no top padding */
-.gallery-block:first-of-type,
+/* First gallery after text: no extra top padding (60px from wrapper is enough) */
 .post-lede + .gallery-block,
-.post-text + .gallery-block { padding-top: 0; }
+.post-text  + .gallery-block { padding-top: 0; }
 
-/* Consecutive galleries: bottom of prev + top of next = 34px row gap */
+/* Consecutive galleries: 17px bottom + 17px top = 34px row gap */
 .gallery-block + .gallery-block { padding-top: 17px; }
 
 /* Portrait/vertical galleries: force uniform crop so pairs align */
