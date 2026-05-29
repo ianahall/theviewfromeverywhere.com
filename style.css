@@ -139,6 +139,7 @@ body.lb-open { overflow: hidden; }
 .blog-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: dense;   /* backfill wide cards into their correct 2-row slot */
   gap: 35px;
   padding: 0;
 }
