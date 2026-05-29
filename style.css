@@ -139,8 +139,7 @@ body.lb-open { overflow: hidden; }
 }
 .blog-card[hidden] { display: none; }
 
-/* Every 3rd card (1, 4, 7…) spans full width — Squarespace pattern */
-.blog-card:nth-child(3n+1) { grid-column: 1 / -1; }
+/* All cards: strict 2-column layout, no full-width exceptions */
 
 .blog-card picture { display: block; }
 .blog-card picture img {
@@ -190,11 +189,6 @@ body.lb-open { overflow: hidden; }
   color: #fff;
   text-shadow: 0 2px 16px rgba(0,0,0,0.5);
 }
-/* Full-width featured cards get the larger fluid size */
-.blog-card:nth-child(3n+1) .blog-card-title {
-  font-size: 6.94vw;             /* exact: 87.64px / 1262px = 6.94vw (full-width) */
-}
-
 /* Card tagline/excerpt */
 .blog-card-tagline {
   font-family: 'Lora', Georgia, serif;
@@ -888,11 +882,8 @@ a.post-hero-category:hover { opacity: 0.75; }
     gap: 20px;
     padding: 0;
   }
-  /* Single-column on mobile: reset full-width span */
-  .blog-card:nth-child(3n+1) { grid-column: auto; }
-  /* Clamp vw titles so they don't get tiny on small screens */
-  .blog-card-title,
-  .blog-card:nth-child(3n+1) .blog-card-title { font-size: clamp(28px, 8vw, 48px); }
+  /* Clamp vw titles on small screens */
+  .blog-card-title { font-size: clamp(28px, 8vw, 48px); }
   .blog-card-body { padding: 32px 24px; }
   .blog-card-tagline { font-size: 16px; line-height: 20px; }
 
