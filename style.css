@@ -236,47 +236,60 @@ body.lb-open { overflow: hidden; }
     rgba(0,0,0,0)    68%
   );
 }
+/*
+   Post hero body — mirrors .Blog-header-content on post page.
+   Squarespace uses position:relative (in-flow), but our absolute
+   overlay achieves identical visual output.
+   Padding/flex values are exact matches from DevTools.
+*/
 .post-hero-body {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 80px 48px 44px;
-  text-align: center;
+  inset: 0;                      /* fill full hero area */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;     /* exact: flex-end */
+  align-items: center;           /* exact: center */
+  padding: 60px;                 /* exact: 60px uniform */
   color: #fff;
 }
+
+/* .Blog-meta--top: category · author · date above the title
+   font: 500 20px/24px; color:#fff; letter-spacing: normal; text-transform: none */
 .post-hero-category {
-  display: inline-block;
   font-family: 'Lora', Georgia, serif;
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.85);
+  font-size: 20px;               /* exact: 20px */
+  font-weight: 500;              /* exact: 500 */
+  line-height: 24px;             /* exact: 24px */
+  letter-spacing: normal;        /* exact: normal */
+  text-transform: none;          /* exact: none */
+  color: #fff;                   /* exact: rgb(255,255,255) */
   margin-bottom: 10px;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
   text-decoration: none;
 }
-a.post-hero-category:hover {
-  color: #fff;
-}
+a.post-hero-category:hover { opacity: 0.75; }
+
+/* Post hero title — h1 equivalent of .Blog-title
+   font-size: 7.92vw (= 100px at 1262px); weight 400; line-height 1 */
 .post-hero-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 72px;
-  font-weight: 300;
-  letter-spacing: 0;
-  line-height: 1.03;
+  font-size: 7.92vw;             /* exact: 100px / 1262px = 7.92vw */
+  font-weight: 400;              /* exact: 400 */
+  letter-spacing: normal;        /* exact: normal */
+  line-height: 1;                /* exact: 1:1 tight leading */
   color: #fff;
-  text-shadow: 0 2px 24px rgba(0,0,0,0.55);
+  text-shadow: 0 2px 24px rgba(0,0,0,0.45);
 }
+
+/* Date shown separately below title in our layout */
 .post-hero-date {
   font-family: 'Lora', Georgia, serif;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.75);
+  font-size: 20px;               /* match .Blog-meta--top register */
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #fff;
   margin-top: 14px;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
 }
 
 /* Category tag bar — sits between hero and post content */
@@ -842,7 +855,10 @@ a.post-hero-category:hover {
   .blog-card-tagline { font-size: 16px; line-height: 20px; }
 
   .post-hero-title { font-size: 42px; }
-  .post-hero-body  { padding: 48px 20px 28px; }
+  .post-hero-body  { padding: 32px 24px; }
+  .post-hero-title { font-size: clamp(36px, 10vw, 64px); }
+  .post-hero-category,
+  .post-hero-date  { font-size: 15px; line-height: 20px; }
 
   .post-lede,
   .post-text { padding: 28px 20px 8px; }
