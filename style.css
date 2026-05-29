@@ -155,44 +155,18 @@ body.lb-open { overflow: hidden; }
 }
 .blog-card[hidden] { display: none; }
 
-/* --- Group A: wide LEFT, narrow RIGHT stacked --- */
-.blog-card:nth-child(6n+1) {
-  grid-column: 1 / span 2;
-  grid-row: span 2;
-  aspect-ratio: unset;   /* height comes from spanning 2 rows */
-}
-.blog-card:nth-child(6n+2),
-.blog-card:nth-child(6n+3) { grid-column: 3; }
-
-/* --- Group B: narrow LEFT stacked, wide RIGHT --- */
-.blog-card:nth-child(6n+4),
-.blog-card:nth-child(6n+5) { grid-column: 1; }
-.blog-card:nth-child(6n+6) {
-  grid-column: 2 / span 2;
-  grid-row: span 2;
-  aspect-ratio: unset;
-}
-
-/* Wide-card titles scale with the larger card width */
-.blog-card:nth-child(6n+1) .blog-card-title,
-.blog-card:nth-child(6n+6) .blog-card-title { font-size: 5.5vw; }
-
 /*
-   Filtered view: nth-child counts DOM position, not visible position,
-   so the alternating pattern breaks when cards are hidden. JS adds
-   .blog-list--filtered when any category filter is active; this resets
-   every card to an equal 2-column grid with no spanning.
+   Grid placement is handled entirely by JavaScript (app.js), which
+   applies inline grid-column / grid-row / aspect-ratio to each card
+   based on its VISIBLE index — not its DOM index. This means the
+   alternating 2/3–1/3 pattern works correctly for both the full list
+   and any filtered view.
+   The CSS nth-child rules have been removed; JS inline styles take
+   precedence anyway (higher specificity), so they are not needed.
 */
-.blog-list--filtered {
-  grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
-}
-.blog-list--filtered .blog-card {
-  grid-column: auto !important;
-  grid-row: auto !important;
-  aspect-ratio: 3 / 2;
-}
-.blog-list--filtered .blog-card-title { font-size: 4.17vw !important; }
+
+/* Wide cards (JS adds .blog-card--wide) get a scaled-up title */
+.blog-card--wide .blog-card-title { font-size: 5.5vw; }
 
 /*
    Pictures are position:absolute on ALL cards.

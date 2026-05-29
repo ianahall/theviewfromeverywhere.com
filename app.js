@@ -46,14 +46,7 @@
       }
     });
 
-    var blogList = document.querySelector('.blog-list');
-
     if (cat !== 'all') {
-      // nth-child selectors count DOM position, not visible position, so the
-      // alternating 2/3–1/3 pattern breaks when cards are hidden. Switch to a
-      // simple equal 2-column grid for filtered views.
-      if (blogList) blogList.classList.add('blog-list--filtered');
-
       cards.forEach(function (card) {
         var cardCats = (card.dataset.categories || '').toLowerCase();
         if (cardCats.indexOf(cat) === -1) {
@@ -61,6 +54,43 @@
         }
       });
     }
+
+    // Apply the alternating 2/3–1/3 grid layout based on each card's
+    // VISIBLE position. CSS nth-child counts DOM position and breaks when
+    // cards are hidden, so we apply inline styles keyed to visible index.
+    // This runs for both 'all' and filtered views.
+    var visibleCards = Array.from(cards).filter(function (c) { return !c.hidden; });
+
+    visibleCards.forEach(function (card, i) {
+      var pos = i % 6;        // position within the 6-card repeating cycle
+      var isWide = (pos === 0 || pos === 5);
+
+      // Reset previous inline styles
+      card.style.gridColumn = '';
+      card.style.gridRow    = '';
+      card.style.aspectRatio = '';
+      card.classList.remove('blog-card--wide');
+
+      if (pos === 0) {
+        // Wide LEFT: spans cols 1-2, rows 1-2 of each group
+        card.style.gridColumn  = '1 / span 2';
+        card.style.gridRow     = 'span 2';
+        card.style.aspectRatio = 'unset';
+        card.classList.add('blog-card--wide');
+      } else if (pos === 1 || pos === 2) {
+        // Narrow RIGHT
+        card.style.gridColumn = '3';
+      } else if (pos === 3 || pos === 4) {
+        // Narrow LEFT
+        card.style.gridColumn = '1';
+      } else {
+        // Wide RIGHT: spans cols 2-3, rows 1-2 of each group
+        card.style.gridColumn  = '2 / span 2';
+        card.style.gridRow     = 'span 2';
+        card.style.aspectRatio = 'unset';
+        card.classList.add('blog-card--wide');
+      }
+    });
   }
 
   /* -----------------------------------------------------------------------
