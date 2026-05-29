@@ -115,7 +115,13 @@ body.lb-open { overflow: hidden; }
 .site-title a { color: inherit; }
 .site-header.header-scrolled .site-title { color: #111; }
 
-/* --- Blog grid: edge-to-edge, two equal columns -------------------- */
+/* --- Blog grid: edge-to-edge, alternating full / two-halves -------- */
+/*
+   Squarespace measured at 1262×726px:
+   - Full-width card:  1262×841px  (3:2 ratio, title 6.94vw)
+   - Half-width card:   614×409px  (3:2 ratio, title 4.17vw)
+   Height = width × 0.667 → aspect-ratio: 3/2 confirmed.
+*/
 .blog-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -133,76 +139,72 @@ body.lb-open { overflow: hidden; }
 }
 .blog-card[hidden] { display: none; }
 
+/* Every 3rd card (1, 4, 7…) spans full width — Squarespace pattern */
+.blog-card:nth-child(3n+1) { grid-column: 1 / -1; }
+
 .blog-card picture { display: block; }
 .blog-card picture img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 3 / 2;          /* exact: height = 66.7% of width */
   object-fit: cover;
   display: block;
   transition: opacity 0.4s ease;
 }
 .blog-card:hover picture img { opacity: 0.88; }
 
-/* Shorter, softer gradient — image stays dominant */
+/* Dark scrim — mirrors Squarespace's .Blog-header:before overlay */
 .blog-card-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0,0,0,0.68) 0%,
-    rgba(0,0,0,0.20) 38%,
-    rgba(0,0,0,0)    62%
+    rgba(0,0,0,0.72) 0%,
+    rgba(0,0,0,0.28) 44%,
+    rgba(0,0,0,0)    68%
   );
   pointer-events: none;
 }
 
+/* Exact match: position:absolute; fill card; flex-col; justify-content:flex-end; align-items:center; padding:60px */
 .blog-card-body {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 72px 24px 26px;
-  text-align: center;
+  inset: 0;                      /* fills entire card (was bottom:0 only) */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;     /* exact: pushes text to bottom */
+  align-items: center;           /* exact: centers text horizontally */
+  padding: 60px;                 /* exact: uniform 60px all sides */
   color: #fff;
   line-height: normal;
 }
 
-.blog-card-date {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.82);
-  margin-bottom: 8px;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.55);
-}
-
+/* Card title — viewport-proportional, tight leading */
 .blog-card-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 32px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 1;
+  font-size: 4.17vw;             /* exact: 52.58px / 1262px = 4.17vw (half-width) */
+  font-weight: 400;              /* exact: 400 */
+  letter-spacing: normal;        /* exact: normal */
+  line-height: 1;                /* exact: 1:1 — no extra leading */
   color: #fff;
-  text-shadow: 0 2px 14px rgba(0,0,0,0.45);
-  max-width: 260px;
-  margin-left: auto;
-  margin-right: auto;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.5);
 }
+/* Full-width featured cards get the larger fluid size */
+.blog-card:nth-child(3n+1) .blog-card-title {
+  font-size: 6.94vw;             /* exact: 87.64px / 1262px = 6.94vw (full-width) */
+}
+
+/* Card tagline/excerpt */
 .blog-card-tagline {
   font-family: 'Lora', Georgia, serif;
-  font-size: 16px;
-  font-weight: 600;
-  font-style: italic;
-  color: rgba(255,255,255,0.88);
+  font-size: 20px;               /* exact: 20px */
+  font-weight: 500;              /* exact: 500 */
+  font-style: normal;            /* exact: none — NOT italic */
+  line-height: 24px;             /* exact: 24px (1.2 ratio) */
+  letter-spacing: normal;        /* exact: normal */
+  color: #fff;                   /* exact: rgb(255,255,255) — fully opaque */
   margin-top: 10px;
-  line-height: 1.32;
-  letter-spacing: 0.01em;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.55);
 }
 
 /* ============================================================
@@ -831,10 +833,13 @@ a.post-hero-category:hover {
     gap: 20px;
     padding: 0;
   }
-  .blog-card-body { padding: 48px 18px 22px; }
-  .blog-card-date { font-size: 10px; margin-bottom: 7px; }
-  .blog-card-title { font-size: 36px; max-width: 300px; }
-  .blog-card-tagline { font-size: 14px; max-width: 300px; margin-left: auto; margin-right: auto; }
+  /* Single-column on mobile: reset full-width span */
+  .blog-card:nth-child(3n+1) { grid-column: auto; }
+  /* Clamp vw titles so they don't get tiny on small screens */
+  .blog-card-title,
+  .blog-card:nth-child(3n+1) .blog-card-title { font-size: clamp(28px, 8vw, 48px); }
+  .blog-card-body { padding: 32px 24px; }
+  .blog-card-tagline { font-size: 16px; line-height: 20px; }
 
   .post-hero-title { font-size: 42px; }
   .post-hero-body  { padding: 48px 20px 28px; }
