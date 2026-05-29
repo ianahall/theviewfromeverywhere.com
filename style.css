@@ -178,6 +178,23 @@ body.lb-open { overflow: hidden; }
 .blog-card:nth-child(6n+6) .blog-card-title { font-size: 5.5vw; }
 
 /*
+   Filtered view: nth-child counts DOM position, not visible position,
+   so the alternating pattern breaks when cards are hidden. JS adds
+   .blog-list--filtered when any category filter is active; this resets
+   every card to an equal 2-column grid with no spanning.
+*/
+.blog-list--filtered {
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+}
+.blog-list--filtered .blog-card {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  aspect-ratio: 3 / 2;
+}
+.blog-list--filtered .blog-card-title { font-size: 4.17vw !important; }
+
+/*
    Pictures are position:absolute on ALL cards.
    Narrow cards: .blog-card has aspect-ratio → definite height → inset:0 resolves.
    Wide cards:   .blog-card has grid-span height → definite height → inset:0 resolves.

@@ -46,7 +46,14 @@
       }
     });
 
+    var blogList = document.querySelector('.blog-list');
+
     if (cat !== 'all') {
+      // nth-child selectors count DOM position, not visible position, so the
+      // alternating 2/3–1/3 pattern breaks when cards are hidden. Switch to a
+      // simple equal 2-column grid for filtered views.
+      if (blogList) blogList.classList.add('blog-list--filtered');
+
       cards.forEach(function (card) {
         var cardCats = (card.dataset.categories || '').toLowerCase();
         if (cardCats.indexOf(cat) === -1) {
