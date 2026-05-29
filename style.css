@@ -360,11 +360,17 @@ a.post-hero-category:hover { opacity: 0.75; }
 .post-lede a:hover,
 .post-text a:hover { text-decoration-color: currentColor; }
 
-/* Gallery blocks */
+/*
+   Gallery blocks
+   Squarespace at 1262×670px:
+   - Each block: padding 17px all sides (first block gets padding-top: 0)
+   - H gap between images: 20px (margin-right on .margin-wrapper)
+   - V gap between gallery blocks (rows): 17px bottom + 17px top = 34px
+*/
 .gallery-block {
   display: grid;
-  gap: 20px;
-  padding: 28px 20px;
+  gap: 20px;                     /* exact: 20px H gap between images */
+  padding: 17px;                 /* exact: 17px all sides */
 }
 .gallery-block.columns-2 { grid-template-columns: repeat(2, 1fr); }
 .gallery-block.columns-1 {
@@ -374,8 +380,13 @@ a.post-hero-category:hover { opacity: 0.75; }
   margin-right: auto;
 }
 
-/* Consecutive galleries share no extra space between them */
-.gallery-block + .gallery-block { padding-top: 0; }
+/* First gallery block in a post has no top padding */
+.gallery-block:first-of-type,
+.post-lede + .gallery-block,
+.post-text + .gallery-block { padding-top: 0; }
+
+/* Consecutive galleries: bottom of prev + top of next = 34px row gap */
+.gallery-block + .gallery-block { padding-top: 17px; }
 
 /* Portrait/vertical galleries: force uniform crop so pairs align */
 .gallery-block.aspect-vertical .gallery-item picture img,
@@ -413,27 +424,37 @@ a.post-hero-category:hover { opacity: 0.75; }
   outline-offset: 2px;
 }
 
-/* Related posts */
+/*
+   Related posts — .BlogItem-related
+   Squarespace at 1262×670px:
+   - wrapper: padding 0 40px 36px, no border-top
+   - heading (.BlogItem-related-label): 28px/100-weight/1.4px tracking/rgb(166,166,166)/jubilat
+   - 2 cards side by side, 34px gap between them
+   - card title: 4.17vw = same as half-width grid cards
+*/
 .related-posts {
-  padding: 56px 20px;
-  margin-top: 20px;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  padding: 0 40px 36px;          /* exact: 0 top, 40px sides, 36px bottom */
+  margin-top: 0;
+  border-top: none;              /* exact: no border */
 }
 .related-posts-heading {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 9px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #aaa;
+  font-family: 'Newsreader', Georgia, serif; /* sub for jubilat */
+  font-optical-sizing: auto;
+  font-size: 28px;               /* exact: 28px */
+  font-weight: 100;              /* exact: 100 (extra-thin) */
+  letter-spacing: 1.4px;         /* exact: 1.4px */
+  color: rgb(166, 166, 166);     /* exact: rgb(166,166,166) */
+  text-transform: none;          /* exact: none */
+  line-height: 33.6px;           /* exact: 33.6px (1.2 ratio) */
   text-align: center;
-  margin-bottom: 28px;
-  font-weight: 400;
+  margin-bottom: 23.24px;        /* exact: 23.24px */
+  font-style: normal;
 }
 .related-posts-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
+  grid-template-columns: repeat(2, 1fr); /* exact: 2 cards */
+  gap: 34px;                     /* exact: 34px between cards */
+  max-width: 1440px;
   margin: 0 auto;
 }
 .related-card {
@@ -458,32 +479,40 @@ a.post-hero-category:hover { opacity: 0.75; }
   background: linear-gradient(to top, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0) 60%);
   pointer-events: none;
 }
+/* Related card body — identical structure to homepage grid cards */
 .related-card-body {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 32px 16px 16px;
-  text-align: center;
+  inset: 0;                      /* fill card — same as .blog-card-body */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;     /* exact: flex-end */
+  align-items: center;           /* exact: center */
+  padding: 60px;                 /* exact: 60px uniform */
   color: #fff;
 }
-.related-card-category {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 9px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.80);
-  margin-bottom: 5px;
-  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
-}
+/* Related cards use the same half-width title size as grid cards */
 .related-card-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-size: 4.17vw;             /* exact: same as half-width grid card */
+  font-weight: 400;              /* exact: 400 */
+  letter-spacing: normal;        /* exact: normal */
+  line-height: 1;                /* exact: 1:1 */
   color: #fff;
-  text-shadow: 0 1px 10px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+}
+/* Category label — equivalent of .Blog-excerpt p on related cards:
+   20px / 500 / 24px / #fff (exact from DevTools) */
+.related-card-category {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 20px;               /* exact: 20px */
+  font-weight: 500;              /* exact: 500 */
+  font-style: normal;
+  line-height: 24px;             /* exact: 24px */
+  letter-spacing: normal;
+  color: #fff;
+  margin-top: 10px;
+  order: 2;                      /* renders below title — matches Squarespace excerpt position */
 }
 
 /* ============================================================
@@ -881,8 +910,10 @@ a.post-hero-category:hover { opacity: 0.75; }
   .gallery-block         { padding: 16px 12px; gap: 8px; }
   .gallery-block.columns-2 { gap: 6px; }
 
-  .related-posts-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .related-posts      { padding: 40px 12px; }
+  .related-posts-grid { grid-template-columns: 1fr; gap: 20px; }
+  .related-posts      { padding: 0 20px 36px; }
+  .related-card-title { font-size: clamp(24px, 8vw, 36px); }
+  .related-card-body  { padding: 32px 24px; }
 
   .page-body    { padding: 40px 20px 60px; }
   .page-heading { font-size: 22px; }
@@ -955,8 +986,7 @@ a.post-hero-category:hover { opacity: 0.75; }
   .post-text a:hover { text-decoration-color: currentColor; }
 
   /* Related posts */
-  .related-posts { border-top-color: rgba(255,255,255,0.08); }
-  .related-posts-heading { color: #666; }
+  .related-posts-heading { color: #555; }
 
   /* Footer */
   .site-footer  { background-color: #121212; border-top: 1px solid rgba(255,255,255,0.08); }
