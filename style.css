@@ -125,14 +125,20 @@ body.lb-open { overflow: hidden; }
 /* --- Blog grid: 3-column base, alternating 2/3–1/3 pattern --------- */
 /*
    6-card repeating cycle:
-   Group A (6n+1, 6n+2, 6n+3): wide card LEFT  (cols 1-2) + two narrow RIGHT (col 3)
-   Group B (6n+4, 6n+5, 6n+6): two narrow LEFT (col 1)   + wide card RIGHT  (cols 2-3)
-   Wide card spans 2 rows to match the height of the two stacked narrow cards.
-   Narrow cards use aspect-ratio:3/2 to set row heights; wide cards fill via span.
+   Group A (6n+1, 6n+2, 6n+3): wide LEFT  (cols 1-2, row-span 2) + narrow RIGHT x2 (col 3)
+   Group B (6n+4, 6n+5, 6n+6): narrow LEFT x2 (col 1) + wide RIGHT (cols 2-3, row-span 2)
+
+   Height alignment strategy:
+   - Narrow cards: aspect-ratio:3/2 on .blog-card gives the grid a definite height
+     for auto row-sizing. Picture is position:absolute to fill this definite area.
+   - Wide cards: grid-row:span 2 — height = (2 × narrow row height) + gap.
+     aspect-ratio:unset; picture position:absolute fills the spanning area.
+   - Because .blog-card has a definite height (either from aspect-ratio or grid span),
+     position:absolute; inset:0 on picture always resolves correctly.
 */
 .blog-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;  /* 3 equal columns = thirds */
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 35px;
   padding: 0;
 }
@@ -144,7 +150,7 @@ body.lb-open { overflow: hidden; }
   background: #111;
   cursor: pointer;
   line-height: 0;
-  aspect-ratio: 3 / 2;  /* narrow cards: sets row heights */
+  aspect-ratio: 3 / 2;   /* narrow cards: gives grid a definite row height */
 }
 .blog-card[hidden] { display: none; }
 
@@ -152,7 +158,7 @@ body.lb-open { overflow: hidden; }
 .blog-card:nth-child(6n+1) {
   grid-column: 1 / span 2;
   grid-row: span 2;
-  aspect-ratio: unset;   /* fill the 2-row span instead */
+  aspect-ratio: unset;   /* height comes from spanning 2 rows */
 }
 .blog-card:nth-child(6n+2),
 .blog-card:nth-child(6n+3) { grid-column: 3; }
@@ -163,14 +169,24 @@ body.lb-open { overflow: hidden; }
 .blog-card:nth-child(6n+6) {
   grid-column: 2 / span 2;
   grid-row: span 2;
-  aspect-ratio: unset;   /* fill the 2-row span instead */
+  aspect-ratio: unset;
 }
 
-/* Wide-card title scales with the larger card width */
+/* Wide-card titles scale with the larger card width */
 .blog-card:nth-child(6n+1) .blog-card-title,
 .blog-card:nth-child(6n+6) .blog-card-title { font-size: 5.5vw; }
 
-.blog-card picture { display: block; width: 100%; height: 100%; }
+/*
+   Pictures are position:absolute on ALL cards.
+   Narrow cards: .blog-card has aspect-ratio → definite height → inset:0 resolves.
+   Wide cards:   .blog-card has grid-span height → definite height → inset:0 resolves.
+   This guarantees the image always fills the full card area with no gaps.
+*/
+.blog-card picture {
+  display: block;
+  position: absolute;
+  inset: 0;
+}
 .blog-card picture img {
   width: 100%;
   height: 100%;
