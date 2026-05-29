@@ -734,40 +734,54 @@ a.post-hero-category:hover { opacity: 0.75; }
 
 /* ============================================================
    Footer
+   Squarespace computed at 1262×670px:
+   wrapper: 34px padding top/bottom, 40px sides, white bg, no border-top
+   nav links: 15px/400/0.75px tracking/uppercase/#111, margin 0 7.5px
+   quote: 16px/400/25.6px lh/0.32px tracking/centered/black, em=italic
+   gap nav→quote: 34px (margin-top matching padding-top)
    ============================================================ */
 .site-footer {
-  padding: 52px 32px;
+  padding: 34px 40px;            /* exact: 34px top/bottom, 40px sides */
+  background-color: #fff;        /* exact: rgb(255,255,255) */
+  border-top: none;              /* exact: no border on footer itself */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  gap: 0;                        /* gap handled by margin-top on quote block */
 }
 .site-footer nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;            /* exact: text-align center */
 }
 .site-footer nav a {
   font-family: 'Lora', Georgia, serif;
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #888;
-  padding: 4px 14px;
+  font-size: 15px;               /* exact: 15px */
+  font-weight: 400;              /* exact: 400 */
+  line-height: 15px;             /* exact: 1:1 tight */
+  letter-spacing: 0.75px;        /* exact: 0.75px */
+  text-transform: uppercase;     /* exact: uppercase */
+  color: rgb(17, 17, 17);        /* exact: rgb(17,17,17) */
+  font-style: normal;            /* exact: normal */
+  margin: 0 7.5px;               /* exact: 7.5px left + right = 15px between links */
   transition: color 0.15s;
 }
 .site-footer nav a:hover { color: #000; }
+
 .footer-quote {
   font-family: 'Lora', Georgia, serif;
-  font-size: 13px;
-  font-style: italic;
-  color: #bbb;
-  text-align: center;
-  max-width: 540px;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
+  font-size: 16px;               /* exact: 16px */
+  font-weight: 400;              /* exact: 400 */
+  line-height: 25.6px;           /* exact: 25.6px (1.6 ratio) */
+  letter-spacing: 0.32px;        /* exact: 0.32px */
+  color: #000;                   /* exact: rgb(0,0,0) */
+  text-align: center;            /* exact: center */
+  font-style: normal;            /* italic lives on the <em> inside, not the p */
+  margin-top: 34px;              /* exact: 34px gap between nav and quote */
+  max-width: 640px;
 }
+.footer-quote em { font-style: italic; } /* exact: italic on <em> child */
 
 /* ============================================================
    Mobile header
@@ -945,10 +959,10 @@ a.post-hero-category:hover { opacity: 0.75; }
   .related-posts-heading { color: #666; }
 
   /* Footer */
-  .site-footer  { border-top-color: rgba(255,255,255,0.08); }
+  .site-footer  { background-color: #121212; border-top: 1px solid rgba(255,255,255,0.08); }
   .site-footer nav a  { color: #777; }
   .site-footer nav a:hover { color: #e0e0e0; }
-  .footer-quote { color: #555; }
+  .footer-quote { color: #888; }
 
   /* Static pages */
   .page-heading  { color: #e0e0e0; }

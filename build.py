@@ -360,7 +360,7 @@ def footer_html(root='../../'):
       <a href="{root}contact/index.html">Contact</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
     </nav>
-    <p class="footer-quote">&ldquo;True objectivity, then, is not a position; it is an achievement. It is the view from everywhere.&rdquo;</p>
+    <p class="footer-quote"><em>&ldquo;True objectivity, then, is not a position; it is an achievement. It is the view from everywhere.&rdquo;</em></p>
   </footer>\
 """
 
