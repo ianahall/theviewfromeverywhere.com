@@ -3,6 +3,18 @@
   'use strict';
 
   /* -----------------------------------------------------------------------
+     Pinned header — toggle .header-scrolled on scroll
+  ----------------------------------------------------------------------- */
+  var siteHeader = document.querySelector('.site-header');
+  if (siteHeader) {
+    var onHeaderScroll = function () {
+      siteHeader.classList.toggle('header-scrolled', window.scrollY > 20);
+    };
+    window.addEventListener('scroll', onHeaderScroll, { passive: true });
+    onHeaderScroll();
+  }
+
+  /* -----------------------------------------------------------------------
      Mobile menu toggle
   ----------------------------------------------------------------------- */
   var mobileBtn = document.querySelector('.mobile-menu-btn');
