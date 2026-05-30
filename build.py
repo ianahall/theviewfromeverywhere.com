@@ -355,7 +355,7 @@ def footer_html(root='../../'):
     return f"""\
   <footer class="site-footer">
     <nav aria-label="Footer">
-      <a href="{root}index.html">All Posts</a>
+      <a href="{root}index.html">Home</a>
       <a href="{root}our-story/index.html">About</a>
       <a href="{root}contact/index.html">Contact</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
@@ -651,17 +651,23 @@ def render_index(posts):
         priority = i == 0
         pic = thumb_picture(folder, title_e, thumb_manifest, lazy=not eager, priority=priority)
 
-        tagline = f'\n        <p class="blog-card-tagline">{exc_e}</p>' if exc_e else ''
-        date_line = f'        <p class="blog-card-date">{date_e}</p>\n' if date_e else ''
+        # Category label (italic, above title) — joins multiple categories with ", "
+        cat_label = html_lib.escape(', '.join(cats)) if cats else ''
+        cat_line  = f'        <p class="blog-card-category">{cat_label}</p>\n' if cat_label else ''
+
+        tagline   = f'\n        <p class="blog-card-tagline">{exc_e}</p>' if exc_e else ''
+        # Date goes BELOW title/excerpt, uppercase via CSS
+        date_line = f'\n        <p class="blog-card-date">{date_e}</p>' if date_e else ''
 
         cards.append(
             f'    <a class="blog-card" href="blog/{folder}/" data-categories="{data_cats}">\n'
             f'      {pic}\n'
             f'      <div class="blog-card-overlay"></div>\n'
             f'      <div class="blog-card-body">\n'
-            f'{date_line}'
+            f'{cat_line}'
             f'        <h2 class="blog-card-title">{title_e}</h2>'
-            f'{tagline}\n'
+            f'{tagline}'
+            f'{date_line}\n'
             f'      </div>\n'
             f'    </a>'
         )
