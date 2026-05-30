@@ -127,34 +127,33 @@ body.lb-open { overflow: hidden; }
 
 .blog-card {
   display: block;
-  position: relative;
-  overflow: hidden;
-  background: #111;
+  /*
+     Asymmetric gutter: card has padding top+left only.
+     White page background shows through as gutter lines.
+     No overflow:hidden here — clipping happens on .blog-card-inner.
+  */
+  background: #fff;
+  padding: 34px 0 0 34px;
   cursor: pointer;
   line-height: 0;
   aspect-ratio: 3 / 2;   /* narrow cards: gives grid a definite row height */
 }
 .blog-card[hidden] { display: none; }
 
-/*
-   Grid placement is handled entirely by JavaScript (app.js), which
-   applies inline grid-column / grid-row / aspect-ratio to each card
-   based on its VISIBLE index — not its DOM index. This means the
-   alternating 2/3–1/3 pattern works correctly for both the full list
-   and any filtered view.
-   The CSS nth-child rules have been removed; JS inline styles take
-   precedence anyway (higher specificity), so they are not needed.
-*/
-
-/* Wide cards (JS adds .blog-card--wide) get a scaled-up title */
+/* Grid placement owned by JavaScript (see app.js).
+   Wide cards (JS adds .blog-card--wide) get a scaled-up title. */
 .blog-card--wide .blog-card-title { font-size: 5.5vw; }
 
-/*
-   Pictures are position:absolute on ALL cards.
-   Narrow cards: .blog-card has aspect-ratio → definite height → inset:0 resolves.
-   Wide cards:   .blog-card has grid-span height → definite height → inset:0 resolves.
-   This guarantees the image always fills the full card area with no gaps.
-*/
+/* Inner wrapper fills the content box (inside the 34px padding).
+   All image/overlay/body content clips here, not at the card edge. */
+.blog-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #111;
+}
+
 .blog-card picture {
   display: block;
   position: absolute;
@@ -169,7 +168,6 @@ body.lb-open { overflow: hidden; }
 }
 .blog-card:hover picture img { opacity: 0.88; }
 
-/* Dark scrim — mirrors Squarespace's .Blog-header:before overlay */
 .blog-card-overlay {
   position: absolute;
   inset: 0;
@@ -182,15 +180,14 @@ body.lb-open { overflow: hidden; }
   pointer-events: none;
 }
 
-/* Exact match: position:absolute; fill card; flex-col; justify-content:flex-end; align-items:center; padding:60px */
 .blog-card-body {
   position: absolute;
-  inset: 0;                      /* fills entire card (was bottom:0 only) */
+  inset: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;     /* exact: pushes text to bottom */
-  align-items: center;           /* exact: centers text horizontally */
-  padding: 60px;                 /* exact: uniform 60px all sides */
+  justify-content: flex-end;
+  align-items: center;
+  padding: 60px;
   color: #fff;
   line-height: normal;
 }

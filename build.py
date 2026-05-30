@@ -661,13 +661,15 @@ def render_index(posts):
 
         cards.append(
             f'    <a class="blog-card" href="blog/{folder}/" data-categories="{data_cats}">\n'
-            f'      {pic}\n'
-            f'      <div class="blog-card-overlay"></div>\n'
-            f'      <div class="blog-card-body">\n'
+            f'      <div class="blog-card-inner">\n'
+            f'        {pic}\n'
+            f'        <div class="blog-card-overlay"></div>\n'
+            f'        <div class="blog-card-body">\n'
             f'{cat_line}'
-            f'        <h2 class="blog-card-title">{title_e}</h2>'
+            f'          <h2 class="blog-card-title">{title_e}</h2>'
             f'{tagline}'
             f'{date_line}\n'
+            f'        </div>\n'
             f'      </div>\n'
             f'    </a>'
         )
