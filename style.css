@@ -156,7 +156,7 @@ body.lb-open { overflow: hidden; }
 
 /* Grid placement owned by JavaScript (see app.js).
    Wide cards (JS adds .blog-card--wide) get a scaled-up title. */
-.blog-card--wide .blog-card-title { font-size: 5.5vw; }
+.blog-card--wide .blog-card-title { font-size: clamp(40px, 4vw, 64px); }
 
 /* Inner wrapper fills the content box (inside the 34px padding).
    All image/overlay/body content clips here, not at the card edge. */
@@ -201,6 +201,7 @@ body.lb-open { overflow: hidden; }
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  text-align: center;
   padding: 60px;
   color: #fff;
   line-height: normal;
@@ -218,14 +219,14 @@ body.lb-open { overflow: hidden; }
   margin-bottom: 6px;
 }
 
-/* Card title — viewport-proportional, tight leading */
+/* Card title — 32px matches Squarespace's base packed-layout title */
 .blog-card-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 4.17vw;
+  font-size: 32px;
   font-weight: 400;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 1.1;
   color: #fff;
   text-shadow: 0 2px 16px rgba(0,0,0,0.5);
 }
@@ -946,10 +947,9 @@ a.post-hero-category:hover { opacity: 0.75; }
     grid-row: auto;
     aspect-ratio: 3 / 2;
   }
-  /* Clamp all card titles uniformly */
+  /* All card titles same size on single-column mobile */
   .blog-card-title,
-  .blog-card:nth-child(6n+1) .blog-card-title,
-  .blog-card:nth-child(6n+6) .blog-card-title { font-size: clamp(28px, 8vw, 44px); }
+  .blog-card--wide .blog-card-title { font-size: 28px; }
   .blog-card-body { padding: 32px 24px; }
   .blog-card-tagline { font-size: 16px; line-height: 20px; }
 
