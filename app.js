@@ -55,42 +55,60 @@
       });
     }
 
-    // Apply the alternating 2/3–1/3 grid layout based on each card's
-    // VISIBLE position. CSS nth-child counts DOM position and breaks when
-    // cards are hidden, so we apply inline styles keyed to visible index.
-    // This runs for both 'all' and filtered views.
-    var visibleCards = Array.from(cards).filter(function (c) { return !c.hidden; });
+    /* -------------------------------------------------------------------
+       Grid layout — alternating 2/3–1/3 mosaic.
+       Runs on load and on every resize/orientation-change so that:
+         • Mobile (≤700px): all inline styles are cleared → CSS takes over
+         • Desktop (>700px): inline styles set the 6-card repeating pattern
+       Inline styles from JS beat CSS rules, so clearing them on mobile
+       is the correct way to let the mobile media query win (Bug 1 fix).
+    ------------------------------------------------------------------- */
+    var MOBILE_BREAKPOINT = 700;
 
-    visibleCards.forEach(function (card, i) {
-      var pos = i % 6;        // position within the 6-card repeating cycle
-      var isWide = (pos === 0 || pos === 5);
+    function applyGridLayout() {
+      var isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+      var visibleCards = Array.from(cards).filter(function (c) { return !c.hidden; });
 
-      // Reset previous inline styles
-      card.style.gridColumn = '';
-      card.style.gridRow    = '';
-      card.style.aspectRatio = '';
-      card.classList.remove('blog-card--wide');
+      visibleCards.forEach(function (card, i) {
+        // Always clear first — ensures mobile gets a clean slate
+        card.style.gridColumn  = '';
+        card.style.gridRow     = '';
+        card.style.aspectRatio = '';
+        card.classList.remove('blog-card--wide');
 
-      if (pos === 0) {
-        // Wide LEFT: spans cols 1-2, rows 1-2 of each group
-        card.style.gridColumn  = '1 / span 2';
-        card.style.gridRow     = 'span 2';
-        card.style.aspectRatio = 'unset';
-        card.classList.add('blog-card--wide');
-      } else if (pos === 1 || pos === 2) {
-        // Narrow RIGHT
-        card.style.gridColumn = '3';
-      } else if (pos === 3 || pos === 4) {
-        // Narrow LEFT
-        card.style.gridColumn = '1';
-      } else {
-        // Wide RIGHT: spans cols 2-3, rows 1-2 of each group
-        card.style.gridColumn  = '2 / span 2';
-        card.style.gridRow     = 'span 2';
-        card.style.aspectRatio = 'unset';
-        card.classList.add('blog-card--wide');
-      }
-    });
+        if (isMobile) return; // let CSS media query handle single-column layout
+
+        var pos = i % 6;   // position within the 6-card repeating cycle
+
+        if (pos === 0) {
+          // Wide LEFT: spans cols 1-2, rows 1-2
+          card.style.gridColumn  = '1 / span 2';
+          card.style.gridRow     = 'span 2';
+          card.style.aspectRatio = 'unset';
+          card.classList.add('blog-card--wide');
+        } else if (pos === 1 || pos === 2) {
+          card.style.gridColumn = '3';           // Narrow RIGHT
+        } else if (pos === 3 || pos === 4) {
+          card.style.gridColumn = '1';           // Narrow LEFT
+        } else {
+          // Wide RIGHT: spans cols 2-3, rows 1-2
+          card.style.gridColumn  = '2 / span 2';
+          card.style.gridRow     = 'span 2';
+          card.style.aspectRatio = 'unset';
+          card.classList.add('blog-card--wide');
+        }
+      });
+    }
+
+    // Run once on load
+    applyGridLayout();
+
+    // Re-run on resize / orientation change (debounced 150ms)
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(applyGridLayout, 150);
+    }, { passive: true });
   }
 
   /* -----------------------------------------------------------------------
