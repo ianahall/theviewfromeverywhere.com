@@ -104,7 +104,7 @@ body.lb-open { overflow: hidden; }
 .site-title {
   font-family: 'Newsreader', Georgia, serif;
   font-optical-sizing: auto;
-  font-size: 54px;              /* exact: 54px over hero */
+  font-size: 42px;
   font-weight: 600;             /* exact: 600 */
   letter-spacing: normal;       /* exact: normal (= 0) */
   line-height: 1em;
