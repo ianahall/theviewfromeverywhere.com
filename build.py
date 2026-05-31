@@ -357,7 +357,9 @@ def footer_html(root='../../'):
     <nav aria-label="Footer">
       <a href="{root}index.html">Home</a>
       <a href="{root}our-story/index.html">About</a>
+      <a href="{root}our-story/index.html">Our Story</a>
       <a href="{root}contact/index.html">Contact</a>
+      <a href="{root}index.html">Index</a>
       <a href="https://www.instagram.com/theviewfromeverywhere/" target="_blank" rel="noopener">Instagram</a>
     </nav>
     <p class="footer-quote"><em>&ldquo;True objectivity, then, is not a position; it is an achievement. It is the view from everywhere.&rdquo;</em></p>
