@@ -499,7 +499,7 @@ a.post-hero-category:hover { opacity: 0.75; }
 }
 .related-posts-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* exact: 2 cards */
+  grid-template-columns: repeat(3, 1fr); /* 6 cards in 2 rows of 3 */
   gap: 34px;                     /* exact: 34px between cards */
   max-width: 1440px;
   margin: 0 auto;
@@ -972,7 +972,7 @@ a.post-hero-category:hover { opacity: 0.75; }
   .gallery-block         { padding: 16px 12px; gap: 8px; }
   .gallery-block.columns-2 { gap: 6px; }
 
-  .related-posts-grid { grid-template-columns: 1fr; gap: 20px; }
+  .related-posts-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .related-posts      { padding: 0 20px 36px; }
   .related-card-title { font-size: clamp(24px, 8vw, 36px); }
   .related-card-body  { padding: 32px 24px; }
